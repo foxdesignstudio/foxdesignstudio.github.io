@@ -45,8 +45,6 @@ $(document).ready(function(){
 			$('.fab').removeClass('jump');
 	});*/
 
-	var s = skrollr.init();
-
 	$('.feedback__btn').click(function(){
 		$('.callback-wrapper').slideToggle();
 	});
