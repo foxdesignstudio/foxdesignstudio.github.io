@@ -4,6 +4,12 @@ $(document).ready(function(){
 	   $('.preloader').delay(3000).fadeOut('slow');	
 	});
 
+	if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+	    skrollr.init({
+	        forceHeight: false
+	    });
+	}
+
 	$('.tabs a').click(function(){									
 		$(this).parents('.tab-wrapper').find('.content__item').addClass('hide');
 		$(this).parent().siblings().removeClass('active');				
