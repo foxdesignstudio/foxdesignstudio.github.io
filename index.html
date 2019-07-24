@@ -2,938 +2,393 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>FOX Design</title>
+	<title>Autoservice</title>
 	<link rel="shortcut icon" href="img/favicon.png">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--IE8-9 only!-->
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Open+Sans:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css"> <!--BOOTSTRAP 4-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/fonts.css">		
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
 </head>
-
 <body>
-	<div class="site-wrapper">
+	<div class="popup" id="call">
+
+		<form class="callback">
+			<div class="callback_logo"><img src="img/logo.png" alt="лого формы"></div>
+			<h5>Оставьте заявку, и мы обязательно перезвоним</h5>				
+				<input type="text" name="firstname" placeholder="Ваше имя..." required>   				
+				<input type="text" name="lastname" placeholder="Ваша фамилия..." required>
+				<input type="text" name="phone" placeholder="Ваш телефон..." required>
+			<button class="button">заказать звонок</button>	
+		</form>
 
-		<div class="particles">
-			<div class="particles__left" id="particles-1"></div>
-			<div class="particles__center"></div>
-			<div class="particles__right" id="particles-2"></div>
-		</div>
-
-		<div class="preloader">
-			<div class="preloader__content">
-
-				<div class="preloader__img">
-					<img src="img/logo.png" alt="лого прелоадера сайта">
-				</div>
-				<div class="preloader__title">
-					FOX Design
-				</div>
-
-			</div>			
-		</div>
-
-		<div class="container" id="first">
-
-			<div class="header__wrapper"
-				data-0="transform: translate3d(0px, 122px, 0px)"
-				data-600="transform: translate3d(0px, -750px, 0px)">
-
-				<div class="header__layer--mountains"
-				data-0="background-position: 0 -1px"
-				data-400="background-position: 0 -100px">
-
-					<div class="header__layer--climber"
-					data-0="background-position: 0 -80px"										
-					data-600="background-position: 0 200px">					
-					</div>
-
-						<div class="header__layer--text"
-						data-0="left: 38%; opacity: 1"							
-						data-100="left: 100%; opacity: 0">
-
-							<div class="line" 
-								data-sal="zoom-in"
-								data-sal-duration="1300"
-								data-sal-delay="500"
-								data-sal-easing="ease-out-bounce">
-								Вершины созданы
-							</div>
-
-							<div class="line"
-								data-sal="zoom-in"
-								data-sal-duration="1600"
-								data-sal-delay="700"
-								data-sal-easing="ease-out-bounce">
-								для того, чтобы их
-							</div>
-
-							<div class="line"
-								data-sal="zoom-in"
-								data-sal-duration="1900"
-								data-sal-delay="1000"
-								data-sal-easing="ease-out-bounce">
-								покоряли!
-							</div>
-
-						</div>
-
-				</div>
-
-			</div>
-
-			<div class="navigator">
-
-				<span class="navigator__link--trigger">			
-				</span>
-
-				<ul class="navigator__menu">
-					<li class="navigator__item">
-						<a href="#" class="navigator__link color" data-tooltip="наверх"></a>
-					</li>
-					<li class="navigator__item">
-						<a href="#info" class="navigator__link" data-tooltip="введение"></a>
-					</li>
-					<li class="navigator__item">
-						<a href="#skillz" class="navigator__link" data-tooltip="навыки"></a>
-					</li>
-					<li class="navigator__item">
-						<a href="#portfolio" class="navigator__link" data-tooltip="портфолио"></a>
-					</li>
-					<li class="navigator__item">
-						<a href="#about" class="navigator__link" data-tooltip="инфо"></a>
-					</li>
-					<li class="navigator__item">
-						<a href="#feedback" class="navigator__link" data-tooltip="связь"></a>
-					</li>
-					<li class="navigator__item">
-						<a href="#end" class="navigator__link color" data-tooltip="вниз"></a>
-					</li>
-				</ul>
-				
-			</div>
-
-			<div class="fab">
-				<span class="fab-action-button">
-					<i class="fab-action-button__icon"></i>
-				</span>
-				<ul class="fab-buttons">
-					<li class="fab-buttons__item">
-						<a href="#" class="fab-buttons__link" title="Facebook">
-							<i class="icon-material icon-material_fb"></i>
-						</a>
-					</li>
-					<li class="fab-buttons__item">
-						<a href="#" class="fab-buttons__link" title="Twitter">
-							<i class="icon-material icon-material_tw"></i>
-						</a>
-					</li>
-					<li class="fab-buttons__item">
-						<a href="#" class="fab-buttons__link" title="Linkedin">
-							<i class="icon-material icon-material_li"></i>
-						</a>
-					</li>
-					<li class="fab-buttons__item">
-						<a href="#" class="fab-buttons__link" title="Google+">
-							<i class="icon-material icon-material_gp"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-
-		</div>
-
-		<div class="skrollable" id="skrollr-body">
-		<div class="container">
-
-			<header class="header">
-
-				<div class="top-line">
-					<div class="logo">
-						<img src="img/FD logo.png" alt="">
-					</div>
-					<div class="language">
-						<a href="" class="language__link">RU</a> | <a href="english.html" class="language__link">EN</a>
-					</div>
-				</div>
-
-				<span class="side__part--left"
-					  data-0="transform: rotateY(0deg)"
-					  data-200="transform: rotateY(90deg)"></span>
-					  
-				<div class="header-small"></div>
-
-			</header>
-
-			<ul class="dial"
-				data-0="transform: rotateX(0deg)"
-				data-200="transform: rotateX(90deg)">
-				<li class="dial__item">
-					<a href="#skillz" class="dial__link orange-btns" data-name="Резюме"></a>
-				</li>
-				<li class="dial__item">
-					<a href="#portfolio" class="dial__link orange-btns" data-name="Портфолио"></a>
-				</li>
-				<li class="dial__item">
-					<a href="#feedback" class="dial__link orange-btns" data-name="Связь"></a>
-				</li>
-				<li class="dial__item">
-					<a href="#menu" class="dial__link orange-btns small-btn"><span class="trio-btn"></span></a>
-				</li>
-				<li class="dial__item">
-					<button class="dial__link orange-btns small-switcher">	
-					</button>
-				</li>
-			</ul>
-
-			<span class="menu-launch" id="menu"></span>
-
-			<section class="main">
-
-				<div class="splitter short"
-					data-0="opacity: 0"
-					data-100="opacity: 1" id="info">					
-					<h5 class="splitter__header">Добро пожаловать</h5>
-				</div>
-
-				<div class="information">
-					<p class="information__text">Доброго времени суток!</p>
-					<p class="information__text">Если Вы оказались на этой странице, значит Вас, как и меня, интересует увлекательный мир web-разработки.</p>
-					<p class="information__text">Меня зовут Сергей, и я, как и большинство из нас, уже не представляю свою жизнь без интернета и той свободы, что он дарит каждому. Но, помимо простого обывательского интереса, меня всегда привлекала обратная, сокрытая сторона таких привычных и знакомых страниц всемирной паутниы. Было интересно, как же все это устроено, кем придумано и как работает?</p>		
-					<p class="information__text">Впервые познакомившись с атмосферой окружающей проектирование, создание и настройку интернет-сайта я отчетливо понял, что с этого момента и навсегда свяжу свою жизнь с этим таинственным миром.</p>
-					<p class="information__text">Умение воплощать скупые и лаконичные строки кода в информативные, удобные и красивые интернет-страницы во многом сродни волшебству. Повинуясь только лишь вашему мастерству и накопленным знаниям то, что еще недавно являлось безликим набором символов и статичных картинок преображается в тонко настроенный инструмент взаимодействия между вами и целым миром! Неважно, будь это огромный медийный портал или торговая площадка, сайт-визитка или лэндинг, в каждый из своих проектов один человек или целая команда профессионалов вкладывают частицу себя, своего опыта, времени и своих надежд. Это не просто работа или увлечение. Это стиль жизни.</p>
-					<p class="information__text">Задумывались ли вы хотя бы раз о тех людях, которые незримо стоят за каждой страницей? О тех, кто придумал, разработал, воплотил и поддерживает мириады сайтов, форумов, порталов? Их творений огромное множество, с каждым днем стремящееся к бесконечности. Подобный результат немыслим без увлеченных своим делом энтузиастов. Без тех людей, что живут своей работой, не пасуют перед трудностями и обожают достигать новых вершин не только в своей профессии, но и в жизни!</p>
-					<p class="information__text">Достичь можно любой поставленной цели, главное это упорство, трудолюбие, вера в собственные силы и верность мечте!</p>
-					<p class="information__text">Ведь для чего еще созданы вершины, если не для наслаждения покорить их?</p>
-				</div>
-
-			</section>
-			
-			<section class="resume">	
-
-				<div class="splitter" id="skillz">					
-					<h5 class="splitter__header">Умения и навыки. Резюме</h5>
-					<p class="splitter__text">Перечисление того, что знаю и умею;) Опыт предыдущих работ, описание.</p>
-				</div>
-
-				<div class="tab-wrapper">
-
-					<ul class="switcher tabs">
-						<li class="switcher__item active">
-							<a href="#tab-1" class="switcher__link">навыки</a>
-						</li>
-						<li class="switcher__item">
-							<a href="#tab-2" class="switcher__link">умения</a>
-						</li>
-						<li class="switcher__item">
-							<a href="#tab-3" class="switcher__link">резюме</a>
-						</li>
-					</ul>
-
-					<div class="content">
-
-						<div class="content__item" id="tab-1">
-
-							<div class="skills">
-
-								<div class="skills__item"
-									data-sal="zoom-in"
-									data-sal-duration="500"
-									data-sal-delay="100"
-									data-sal-easing="ease-out-bounce">
-									<div class="skills__image">
-										<img src="img/logo/html.png" alt="">
-									</div>
-									<div class="skills__desc">HTML<br>язык гипертекстовой<br>разметки</div>			
-								</div>
-
-								<div class="skills__item"
-									data-sal="zoom-in"
-									data-sal-duration="500"
-									data-sal-delay="200"
-									data-sal-easing="ease-out-bounce">
-									<div class="skills__image">
-										<img src="img/logo/css.png" alt="">
-									</div>
-									<div class="skills__desc">Таблицы<br>каскадных стилей<br>CSS</div>					
-								</div>
-
-								<div class="skills__item"
-									data-sal="zoom-in"
-									data-sal-duration="500"
-									data-sal-delay="300"
-									data-sal-easing="ease-out-bounce">
-									<div class="skills__image">
-										<img src="img/logo/js.png" alt="">
-									</div>
-									<div class="skills__desc">JavaScript<br>и jQuery</div>								
-								</div>
-
-								<div class="skills__item"
-									data-sal="zoom-in"
-									data-sal-duration="500"
-									data-sal-delay="400"
-									data-sal-easing="ease-out-bounce">
-									<div class="skills__image">
-										<img src="img/logo/sass-color.png" alt="">
-									</div>
-									<div class="skills__desc">Препроцессоры<br>SASS / LESS</div>						
-								</div>
-
-								<div class="skills__item"
-									data-sal="zoom-in"
-									data-sal-duration="500"
-									data-sal-delay="500"
-									data-sal-easing="ease-out-bounce">
-									<div class="skills__image">
-										<img src="img/logo/Bootstrap.png" alt="">
-									</div>
-									<div class="skills__desc">Фреймворк Bootstrap<br>(ver.3-4)</div>					
-								</div>
-
-								<div class="skills__item"
-									data-sal="zoom-in"
-									data-sal-duration="500"
-									data-sal-delay="600"
-									data-sal-easing="ease-out-bounce">
-									<div class="skills__image">
-										<img src="img/logo/gulp.png" alt="">
-									</div>
-									<div class="skills__desc">Таск-менеджер GULP<br>и автоматизация<br>процесса сборки</div>								
-								</div>
-
-								<div class="skills__item"
-									data-sal="zoom-in"
-									data-sal-duration="500"
-									data-sal-delay="700"
-									data-sal-easing="ease-out-bounce">
-									<div class="skills__image">
-										<img src="img/logo/bem.png" alt="">
-									</div>
-									<div class="skills__desc">Методология БЭМ</div>								
-								</div>
-
-								<div class="skills__item"
-									data-sal="zoom-in"
-									data-sal-duration="500"
-									data-sal-delay="800"
-									data-sal-easing="ease-out-bounce">
-									<div class="skills__image">
-										<img src="img/logo/git.png" alt="">
-									</div>
-									<div class="skills__desc">Контроль версий
-									<br>Git</div>								
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="content__item hide" id="tab-2">
-							<ul class="ability">
-								<li class="ability__item">Верстка сайта из PSD-макета</li>
-								<li class="ability__item">Чистый код (100% валидация)</li>
-								<li class="ability__item">Модификация статичных страниц в адаптивные (даже без макета)</li>
-								<li class="ability__item">Работа по БЭМ-методологии (по желанию заказчика)</li>
-								<li class="ability__item">Работа с JS/jQuery-скриптами. Создание/модификация/подключение</li>
-								<li class="ability__item">Использование системы контроля версий git</li>
-								<li class="ability__item">Кроссбраузерность кода (без поддержки IE8 и младше)</li>
-								<li class="ability__item">Создание страниц на основе фреймворка Bootstrap</li>
-								<li class="ability__item">Применение таск-менеджера Gulp. Автоматизация сборки/выкладки</li>
-								<li class="ability__item">SVG (применение/создание)</li>
-								<li class="ability__item">SASS-препроцессор</li>
-								<li class="ability__item">Работа с растровой графикой (Photoshop)</li>
-							</ul>
-						</div>
-
-						<div class="content__item hide" id="tab-3">
-							это - третий блок
-						</div>
-
-					</div>
-					
-				</div>
-				
-			</section>
-
-			<section class="works">
-
-				<div class="splitter" id="portfolio">					
-					<h5 class="splitter__header">Портфолио</h5>
-					<p class="splitter__text">Ниже представлены описание и прямые ссылки на некоторые выполненные работы. <span class="mobile-hide">Кликните по кнопке с названием ниже, чтобы перейти к детальному описанию сайта. Наведите курсор на изображение страницы выбранного сайта слева, чтобы появилось меню выбора миниатюр. Клик по кнопке "перейти" позволит ознакомиться с представленным сайтом напрямую, перейдя по ссылке на хостинг.</span></p>
-				</div>
-
-				<div class="keys-wrapper">
-
-					<ul class="preview keys">
-						<li class="preview__item active">
-							<a href="#tab-4" class="preview__link air-button">Автосервис</a>
-						</li>
-						<li class="preview__item">
-							<a href="#tab-5" class="preview__link air-button">Интернет-магазин</a>
-						</li>
-						<li class="preview__item">
-							<a href="#tab-6" class="preview__link air-button">Салон красоты</a>
-						</li>
-						<li class="preview__item">
-							<a href="#tab-7" class="preview__link air-button">Лэндинг</a>
-						</li>
-						<li class="preview__item">
-							<a href="#tab-0" class="preview__link air-button-small">
-								<img src="img/power-off-black.png" class="power">
-							</a>
-						</li>
-					</ul>
-
-					<div class="sites">
-
-						<div class="sites__item" id="tab-0">
-
-							<div class="slideshow__wrapper"
-									data-sal="zoom-in"
-									data-sal-duration="500"									
-									data-sal-easing="linear">
-
-								<div class="slideshow__part glide-top-1">
-									<div class="slideshow__pic">
-										<div class="slideshow__inner s-one"></div>
-									</div>
-								</div>
-
-								<div class="slideshow__part glide-bottom-1">
-									<div class="slideshow__pic">
-										<div class="slideshow__inner s-two"></div>
-									</div>
-								</div>
-
-								<div class="slideshow__part glide-top-2">
-									<div class="slideshow__pic">
-										<div class="slideshow__inner s-three"></div>
-									</div>
-								</div>
-
-								<div class="slideshow__part glide-bottom-2">
-									<div class="slideshow__pic">
-										<div class="slideshow__inner s-four"></div>
-									</div>
-								</div>
-								
-							</div>
-							
-						</div>
-
-						<div class="sites__item hide" id="tab-4">
-
-							<div class="sites__picture"
-								data-sal="slide-right"
-								data-sal-duration="700"
-								data-sal-delay="50"
-								data-sal-easing="linear">
-
-								<div class="sites__navigation click">
-									<ul class="navigation">
-										<li class="navigation__item active">
-											<a href="#pic1" class="navigation__link" data-number="1"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic2" class="navigation__link" data-number="2"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic3" class="navigation__link" data-number="3"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic4" class="navigation__link" data-number="4"></a>
-										</li>
-									</ul>
-								</div>
-
-								<div class="sites__picture--content">
-
-									<img class="sites__picture--img" id="pic1" src="img/autoservice.png" alt="">						
-							
-									<img class="sites__picture--img hide" id="pic2" src="" alt="">							
-						
-									<img class="sites__picture--img hide" id="pic3" src="" alt="">
-
-								</div>
-
-							</div>
-
-							<div class="sites__description"
-								data-sal="slide-left"
-								data-sal-duration="700"
-								data-sal-delay="50"
-								data-sal-easing="linear">
-								<p class="sites__date">Проект 06 / 2018</p>
-								<h2 class="sites__name">Автосалон "АвтоХолл"</h2>
-								<p class="sites__text">Полностью адаптивен. Многоуровневое вариативное меню навигации. Сайт построен на сетке Bootstrap 3 без применения остального функционала фреймворка. Masonry-grid для галереи изображений, модальные окна на плагине fancybox.</p>
-								<a class="sites__btn air-button">Перейти на сайт</a>							
-							</div>
-
-						</div>
-
-						<div class="sites__item hide" id="tab-5">
-							<div class="sites__picture"
-								data-sal="slide-right"
-								data-sal-duration="700"
-								data-sal-delay="50"
-								data-sal-easing="linear">
-
-								<div class="sites__navigation click">
-									<ul class="navigation">
-										<li class="navigation__item active">
-											<a href="#pic5" class="navigation__link" data-number="1"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic6" class="navigation__link" data-number="2"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic7" class="navigation__link" data-number="3"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic8" class="navigation__link" data-number="M"></a>
-										</li>
-									</ul>
-								</div>
-
-								<div class="sites__picture--content">
-
-									<img class="sites__picture--img" id="pic5" src="img/aware-preview-1.png">
-
-									<img class="sites__picture--img hide" id="pic6" src="img/aware-preview-2.png">
-
-									<img class="sites__picture--img hide" id="pic7" src="img/aware-preview-3.png">
-
-									<img class="sites__picture--img hide" id="pic8" src="img/aware-preview-4.png">
-									
-								</div>
-
-							</div>
-
-							<div class="sites__description"
-								data-sal="slide-left"
-								data-sal-duration="700"
-								data-sal-delay="50"
-								data-sal-easing="linear">
-								<p class="sites__date">Проект 11 / 2018</p>
-								<h2 class="sites__name">Интернет-магазин "Aware"</h2>
-								<p class="sites__text">Пример сложной верстки. <span class="warning">Без скриптов обработки форм и выборки!</span> Страница полностью адаптивна. Без использования фреймворков.</p>
-								<a class="sites__btn air-button">Перейти на сайт</a>							
-							</div>
-						</div>
-
-						<div class="sites__item hide" id="tab-6">
-
-							<div class="sites__picture"
-								data-sal="slide-right"
-								data-sal-duration="700"
-								data-sal-delay="50"
-								data-sal-easing="linear">
-
-								<div class="sites__navigation click">
-									<ul class="navigation">
-										<li class="navigation__item active">
-											<a href="#pic9" class="navigation__link" data-number="1"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic10" class="navigation__link" data-number="2"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic11" class="navigation__link" data-number="3"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic12" class="navigation__link" data-number="M"></a>
-										</li>
-									</ul>
-								</div>
-
-								<div class="sites__picture--content">
-
-									<img class="sites__picture--img scroller" id="pic9" src="img/rapunzel-preview.png">
-									
-								</div>
-
-							</div>
-
-							<div class="sites__description"
-								data-sal="slide-left"
-								data-sal-duration="700"
-								data-sal-delay="50"
-								data-sal-easing="linear">
-								<p class="sites__date">Проект 08 / 2018</p>
-								<h2 class="sites__name">Салон красоты "Rapunzel"</h2>
-								<p class="sites__text">Полностью адаптивен. Построен на сетке Bootstrap 4. Главная панель навигации на плагине .mmenu</p>
-								<a class="sites__btn air-button">Перейти на сайт</a>							
-							</div>
-
-						</div>
-
-						<div class="sites__item hide" id="tab-7">
-
-							<div class="sites__picture"
-								data-sal="slide-right"
-								data-sal-duration="700"
-								data-sal-delay="50"
-								data-sal-easing="linear">
-
-								<div class="sites__navigation click">
-									<ul class="navigation">
-										<li class="navigation__item active">
-											<a href="#pic13" class="navigation__link" data-number="1"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic14" class="navigation__link" data-number="2"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic15" class="navigation__link" data-number="3"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic16" class="navigation__link" data-number="M"></a>
-										</li>
-									</ul>
-								</div>
-
-								<div class="sites__picture--content">
-
-									<img class="sites__picture--img scroller-slow" id="pic13" src="img/skinali-preview.png">
-									
-								</div>
-
-							</div>
-
-							<div class="sites__description"
-								data-sal="slide-left"
-								data-sal-duration="700"
-								data-sal-delay="50"
-								data-sal-easing="linear">
-								<p class="sites__date">Проект 01 / 2019</p>
-								<h2 class="sites__name">Салон продаж "Skinali Fabric"</h2>
-								<p class="sites__text">Полностью адаптивен. Без применения фреймворков. Pop-up окна и формы на модифицированном плагине fancybox.</p>
-								<a class="sites__btn air-button">Перейти на сайт</a>							
-							</div>
-
-						</div>
-
-					</div>
-					
-				</div>
-
-			</section>
-
-			<section class="advantages">
-
-				<div class="splitter">					
-					<h5 class="splitter__header">Преимущества</h5>
-					<p class="splitter__text">Почему Вам стоит доверить работу именно мне?</p>
-				</div>
-
-					<div class="advantages__wrapper">
-
-						<div class="advantages__item">
-
-							<div class="advantages__card s-left inv-right"
-								data-bottom-top="left: -150px; opacity: 0"							
-								data-center-top="left: 125px; opacity: 1">
-								<div class="advantages__card--inner s-right">
-									<h5 class="card__header-l">Точность</h5>
-									<div class="card__footer">
-										<span class="card__text-l">
-											Вополощение макета в вёрстку именно<br>так, как видите это Вы
-										</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="advantages__card--double inv-right"
-								data-bottom-top="left: -170px; opacity: 0"							
-								data-center-top="left: 64px; opacity: 1">
-								<div class="advantages__card--slim s-left bbct">
-									<div class="advantages__card--inner s-right in-center">								
-										<h5 class="card__header-l">Пунктуальность</h5>									
-										<span class="card__text-l">
-											Выполнение всех работ в точности к оговоренному времени 
-										</span>										
-									</div>
-								</div>
-								<div class="advantages__card--slim s-right btct">
-								</div>
-							</div>
-
-							<div class="advantages__card s-right inv-right"
-								data-bottom-top="left: -150px; opacity: 0"							
-								data-center-top="left: 125px; opacity: 1">
-								<div class="advantages__card--inner s-left">
-									<h5 class="card__header-l">Развитие</h5>
-									<div class="card__footer">
-										<span class="card__text-l">
-											Каждый выполненный заказ делает мастерство еще совершеннее
-										</span>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="advantages__item">
-
-							<div class="advantages__logo"
-								data-bottom-top="transform: scale(0)"							
-								data-center-center="transform: scale(1)">
-								<img src="img/logo-old.png" class="advantages__pic" alt="site logo">
-							</div>
-
-						</div>
-
-						<div class="advantages__item">
-
-							<div class="advantages__card s-right inv-left"
-								data-bottom-top="right: -150px; opacity: 0"							
-								data-center-top="right: 125px; opacity: 1">
-
-								<div class="advantages__card--inner s-left">
-									<h5 class="card__header-r">Быстрота</h5>
-									<div class="card__footer">
-										<span class="card__text-r">									
-											Исполнение заказа в максимально сжатые сроки
-										</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="advantages__card--double inv-left"
-								data-bottom-top="right: -170px; opacity: 0"							
-								data-center-top="right: 64px; opacity: 1">
-								<div class="advantages__card--slim s-right bbct">
-									<div class="advantages__card--inner s-left in-center">
-										<h5 class="card__header-r">Ответственность</h5>									
-										<span class="card__text-r">
-											Безупречное исполнение заказа, либо полный возврат средств 
-										</span>	
-									</div>
-								</div>
-								<div class="advantages__card--slim s-left btct">								
-								</div>
-							</div>
-
-							<div class="advantages__card s-left inv-left"
-								data-bottom-top="right: -150px; opacity: 0"							
-								data-center-top="right: 125px; opacity: 1">
-
-								<div class="advantages__card--inner s-right">
-									<h5 class="card__header-r">Самоотдача</h5>
-									<div class="card__footer">
-										<span class="card__text-r">
-											Нет рабочего графика. Есть заказ и его выполнение
-										</span>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-
-			</section>
-
-			<section class="about">
-
-				<div class="splitter" id="about">					
-					<h5 class="splitter__header">Автор, рабочее место и инструменты</h5>
-					<p class="splitter__text">Краткий обзор того, что помогает создавать сайты.</p>
-				</div>
-
-				<div class="about__header">
-
-					<div class="about__portrait">						
-						<img class="about__pic" src="img/Me.png" alt="">						
-					</div>
-
-					<div class="about__desc">
-						<p class="about__text">Данный раздел не несет никакой информационной ценности, и создан исключительно из-за желания автора поделиться гордостью.</p>
-						<p class="about__text">Хотя главными инструментами в web-разработке являются голова и умелые руки, нельзя отрицать, что грамотно подобранная периферия значительно облегчает и ускоряет столь нелегкий процесс.</p>
-						<p class="about__text">Конечно, в идеале, неплохо бы заниматься набором кода на жарком побережье Тайланда, вальяжно тыкая потным пальчиком по кнопкам макбука. Но эту вершину еще предстоит покорить, а пока что справляемся нижеперечисленным.</p>						
-					</div>
-					
-				</div>
-
-				<div class="about__photos">
-					<ul class="about-slider"
-						data-sal="slide-left"
-						data-sal-duration="1000"
-						data-sal-delay="100"
-						data-sal-easing="ease-out-bounce">
-						<li class="about-slider__item">
-							<div class="about-slider__inner">
-								<a class="about-slider__link" data-fancybox="slider" href="img/photo-1.jpg">
-									<img src="img/photo-sm-1.png">
-								</a>
-							</div>
-							<div class="about-slider__title">
-								<div class="about-slider__title--inner">
-									проверка блока
-								</div>
-							</div>
-						</li>
-						<li class="about-slider__item">
-							<div class="about-slider__inner">
-								<a class="about-slider__link" data-fancybox="slider" href="img/photo-2.jpg">
-									<img src="img/photo-sm-2.png">
-								</a>
-							</div>
-							<div class="about-slider__title">
-								<div class="about-slider__title--inner">
-									проверка блока
-								</div>
-							</div>
-						</li>
-						<li class="about-slider__item">
-							<div class="about-slider__inner">
-								<a class="about-slider__link" data-fancybox="slider" href="img/photo-3.jpg">
-									<img src="img/photo-sm-3.png">
-								</a>
-							</div>
-							<div class="about-slider__title">
-								<div class="about-slider__title--inner">
-									проверка блока
-								</div>
-							</div>
-						</li>
-						<li class="about-slider__item">
-							<div class="about-slider__inner">
-								<a class="about-slider__link" data-fancybox="slider" href="img/photo-4.jpg">
-									<img src="img/photo-sm-4.png">
-								</a>
-							</div>
-							<div class="about-slider__title">
-								<div class="about-slider__title--inner">
-									проверка блока
-								</div>
-							</div>
-						</li>
-					</ul>					
-				</div>
-
-			</section>
-
-			<section class="feedback" id="feedback">
-
-				<h2 class="feedback__intro"
-					data-sal="slide-right"
-					data-sal-duration="1600"
-					data-sal-delay="50"
-					data-sal-easing="ease-out-bounce">
-					Хотите работать вместе?
-				</h2>
-
-				<p class="feedback__text"
-					data-sal="slide-left"
-					data-sal-duration="1700"
-					data-sal-delay="150"
-					data-sal-easing="ease-out-bounce">Если Вас заинтересовали мои работы, и Вы видите возможные варианты сотрудничества, пожалуйста, свяжитесь со мной любым из представленных ниже способов!</p>
-
-				<button class="feedback__btn air-button"
-					data-sal="fade-in"
-					data-sal-duration="1800"
-					data-sal-delay="700"
-					data-sal-easing="ease-out-bounce">Сотрудничество</button>
-				
-				<div class="callback-wrapper">
-
-					<div class="callback">
-
-						<div class="callback__section"
-								data-sal="slide-right"
-								data-sal-duration="500"
-								data-sal-delay="0"
-								data-sal-easing="ease-out-bounce">
-							<h6 class="section__title">
-								Электронная почта
-							</h6>
-							<div class="section__content">
-								<ul class="list">
-									<li class="list__item">grayfoxbox@gmail.com</li>
-									<li class="list__item">grayfoxcount@tut.by</li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="callback__section"
-								data-sal="slide-up"
-								data-sal-duration="500"
-								data-sal-delay="0"
-								data-sal-easing="ease-out-bounce">
-							<h6 class="section__title">
-								Телефоны
-							</h6>
-							<div class="section__content">
-								<ul class="list">
-									<li class="list__item">+375 29 863 08 92</li>
-									<li class="list__item">+375 25 637 76 98</li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="callback__section"
-								data-sal="slide-left"
-								data-sal-duration="500"
-								data-sal-delay="0"
-								data-sal-easing="ease-out-bounce">
-							<h6 class="section__title">
-								Социальные сети
-							</h6>
-							<div class="section__content">
-								<div class="social-wrapper">
-									<div class="social__item"><a href="#" class="social__link">vk</a></div>
-									<div class="social__item"><a href="#" class="social__link">f</a></div>
-									<div class="social__item"><a href="#" class="social__link">In</a></div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-				
-			</section>
-
-			<footer class="footer" id="end">
-
-				<div class="footer__wrapper">
-
-					<ul class="footer-shortcuts">
-						<li class="footer-shortcuts__item">
-							<a href="#first" class="footer-shortcuts__link orange-btns" data-name="вверх"></a>
-						</li>
-						<li class="footer-shortcuts__item">
-							<a href="#skillz" class="footer-shortcuts__link orange-btns" data-name="резюме"></a>
-						</li>
-						<li class="footer-shortcuts__item">
-							<a href="#portfolio" class="footer-shortcuts__link orange-btns" data-name="портфолио"></a>
-						</li>
-					</ul>
-
-					<div class="footer__logo">
-						<img src="img/FD logo.png" alt="">
-					</div>
-
-				</div>
-
-				<div class="footer__row"></div>
-
-				<address class="footer__tm">© FOX Design 2019 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; разработка дизайна, вёрстка сайта, скрипты: Тышкевич Сергей.</address>	
-
-			</footer>
-
-		</div>
-		</div>
-		
 	</div>
 
-	<script src="js/libs.min.js"></script>	
-	<script src="js/my.js"></script>
-	<script>
-		sal({			
-			once: false,
+	<div class="popup" id="req">
+
+		<form class="request">
+			<div class="callback_logo"><img src="img/logo.png" alt="лого формы"></div>
+			<h5>Оставьте заявку, и мы обязательно перезвоним</h5>				
+				<input type="text" name="firstname" placeholder="Ваше имя..." required>   				
+				<input type="text" name="lastname" placeholder="Ваша фамилия..." required>
+				<input type="text" name="phone" placeholder="Ваш телефон..." required>
+			<h5>Выберите интересующий вас вид услуги</h5>
+				<select id="услуга" name="Выберите услугу">
+			    	<option value="1">Кузовной ремонт</option>
+			    	<option value="2">Механические работы</option>
+			    	<option value="3">Экспресс-услуги</option>
+			    	<option value="4">Диагностика</option>
+			    	<option value="5">Слесарные работы</option>
+			    	<option value="6">Ремонт пластика</option>
+				</select>
+			<button class="button">Заказать</button>	
+		</form>
+
+	</div>
+
+	<div class="popup" id="map">
+
+		<div class="map">
+			<div class="callback_logo"><img src="img/logo.png" alt="лого формы"></div>
+
+			<h5>Как нас найти:</h5>
+
+			<div class="map-wrap">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2487b825ae447bd02e0c0b480c99c62645a37c2b4aab1cb94a8861bd0a0bd4f6&amp;width=100%&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+			</div>
+		</div>
+
+	</div>
+
+	<header>
+		<div class="top-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="top-addr">						
+							<strong>МОСКВА</strong>
+							<a data-fancybox="pop-up map" href="#map">ул.верейская,29 стр.35</a>	
+						</div>
+					</div>						
+					<div class="col-md-4">
+						<div class="logo_wrap">
+							<a href="#" class="logo"><img src="img/logo.png" alt="автосервис в Москве АВТО ХОЛЛ"></a>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="top-addr ta-right">
+							<strong>+7 (499) <span class="call">391-71-53</span></strong>
+							<a data-fancybox="pop-up form" href="#call">заказать обратный звонок</a>	
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="title">
+						<h1>автосервис с безупречной репутацией</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="buttons-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-11">
+							<div class="header-buttons">
+							<a href="sending.html" class="button l-button">оценить стоимость<br>ремонта по фото</a>
+							<a href="#" class="button">прайс</a>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>				
+		</div>		
+	</header>
+	<nav class="top-menu">
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-md-12">
+				<ul id="menu">
+					<li class="active"><a href="index.html">Главная</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="prices.html">Цены</a></li>
+					<li><a href="works.html">Наши работы</a></li>
+					<li><a href="partners.html">Партнеры</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+				<div class="burger">
+					<span></span>
+					<div class="burger-text">Меню</div>
+				</div>				
+				<div class="guarantee">
+					<div class="g-left">
+					<span>1</span> год
+					</div>
+					<div class="g-right">
+					Гарантия <br> на все работы
+					</div>					
+				</div>				
+				</div>				
+			</div>
+		</div>			
+	</nav>
+
+	<section class="main_cats s_black">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Услуги мастерской <strong>авто</strong><span>холл</span></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="mc_wrap">
+						<li class="mc_item_wrap active">
+							<div class="mc_item">
+								<a href="repair_1.html">
+									<span></span>
+									<h4>кузовной ремонт</h4>
+								</a>
+								<div class="mc_toggle"></div>
+							</div>
+							<ul>
+								<li><a href="repair_1.html#hammer">Рихтовка</a></li>
+								<li><a href="repair_1.html#polishing">Удаление сколов</a></li>
+								<li><a href="repair_1.html#paint">Покраска</a></li>
+								<li><a href="repair_1.html#glass">Замена стекол</a></li>
+								<li><a href="repair_1.html#corrosive">Антикоррозийная обработка кузова</a></li>
+							</ul>							
+						</li>
+						<li class="mc_item_wrap">
+							<div class="mc_item">
+								<a href="repair_2.html">
+									<span></span>
+									<h4>механические работы</h4>
+								</a>
+								<div class="mc_toggle"></div>
+							</div>
+							<ul>
+								<li><a href="repair_2.html#suspension">Ремонт подвески автомобиля</a></li>
+								<li><a href="repair_2.html#chassis">Ремонт ходовой части</a></li>
+								<li><a href="repair_2.html#brakes">Ремонт тормозной системы</a></li>
+								<li><a href="repair_2.html#helm">Ремонт рулевой рейки</a></li>
+								<li><a href="repair_2.html#transmission">Ремонт МКПП</a></li>
+							</ul>
+						</li>
+						<li class="mc_item_wrap">
+							<div class="mc_item">
+								<a href="repair_3.html">
+									<span></span>
+									<h4>экспресс-услуги</h4>
+								</a>
+								<div class="mc_toggle"></div>
+							</div>
+							<ul>
+								<li><a href="repair_3.html#shine">Легкая полировка. Блеск</a></li>
+								<li><a href="repair_3.html#tires">Подкачка шин</a></li>
+								<li><a href="repair_3.html#oil">Замена масел и технических жидкостей</a></li>
+								<li><a href="repair_3.html#air">Заправка систем кондиционирования воздуха</a></li>
+								<li><a href="repair_3.html#angles">Развал-схождение</a></li>
+							</ul>
+						</li>
+						<li class="mc_item_wrap">
+							<div class="mc_item">
+								<a href="repair_4.html">
+									<span></span>
+									<h4>диагностика</h4>
+								</a>
+								<div class="mc_toggle"></div>
+							</div>
+							<ul>
+								<li><a href="repair_4.html#shine">Диагностика системы зажигания</a></li>
+								<li><a href="repair_4.html#tires">Диагностика/адаптация ЭБУ</a></li>
+								<li><a href="repair_4.html#oil">Полная компьютерная диагностика</a></li>
+								<li><a href="repair_4.html#air">Диагностика двигателя</a></li>
+							</ul>
+						</li>
+						<li class="mc_item_wrap">
+							<div class="mc_item">
+								<a href="repair_5.html">
+									<span></span>
+									<h4>слесарные работы</h4>
+								</a>
+								<div class="mc_toggle"></div>
+							</div>
+							<ul>
+								<li><a href="#">Ремонт ходовой части</a></li>
+								<li><a href="#">Замена колодок</a></li>
+								<li><a href="#">Замена коробки передач</a></li>
+								<li><a href="#">Ремонт или замена двигателя</a></li>
+								<li><a href="#">Замена стоек</a></li>
+							</ul>
+						</li>
+						<li class="mc_item_wrap">
+							<div class="mc_item">
+								<a href="repair_6.html">
+									<span></span>
+									<h4>ремонт пластика</h4>
+								</a>
+								<div class="mc_toggle"></div>
+							</div>
+							<ul>
+								<li><a href="#">Удаление трещин пластика</a></li>
+								<li><a href="#">Восстановление бамперов</a></li>
+								<li><a href="#">Ремонт торпеды</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mc_button_wrap">
+							<a class="button" data-fancybox="form-1" href="#req">Оставить заявку</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</section>
+
+	<article class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="art_header">Мы — профессионалы высочайшего класса</h2>
+					<p class="h-description">Мы используем самые качественные материалы и работы осуществляются теми, кто является профессионалами высочайшего класса.</p>
+				</div>	
+			</div>
+		</div>
+		<section class="home_items">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-4">
+						<div class="h-item">
+							<h1 class="h-header">Обработка кузова</h1>
+							<img src="img/ex-1s.jpg" alt="home pic">
+							<p>Нам под силу виртуозное выполнение такого сложного автотехнического процесса, как антикоррозийная обработка автомобиля! Многие владельцы современных машин считают, что коррозия им не страшна, но это не так.</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4">
+						<div class="h-item">
+							<h1 class="h-header">Полировка</h1>
+							<img src="img/ex-2s.jpg" alt="home pic">
+							<p>Автомобиль современного делового человека должен иметь презентабельный вид. Многие наши клиенты, бросив критический взгляд на свою машину, понимают, что ей необходима абразивная полировка кузова. Она применяется в тех случаях, когда на поверхности автомобиля изобилуют дефекты.</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4">
+						<div class="h-item">
+							<h1 class="h-header">Ремонт пластика</h1>
+							<img src="img/ex-3s.jpg" alt="home pic">
+							<p>Одной из самых востребованных нашими клиентами услуг является локальный ремонт бамперов и прочего пластика. В наши дни, как и ранее, бамперы защищают автомобили в ходе столкновения. Бампера современных автомобилей изготовлены из пластика, стоят дорого и являются достаточно ломкими.</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4">
+						<div class="h-item">
+							<h1 class="h-header">Восстановление кузова</h1>
+							<img src="img/ex-4s.jpg" alt="home pic">
+							<p>Наши специалисты способны привести в идеальное состояние приобретенный подержанный автомобиль либо машину, которая недавно побывала в «автопеределке».</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4">
+						<div class="h-item">
+							<h1 class="h-header">Сервисное ослуживание</h1>
+							<img src="img/ex-5s.jpg" alt="home pic">
+							<p>Для владельцев автомашин марки Mercedes, BMW, Mini, Ford, Volkswagen, Mazda, Hyundai, нуждающихся в том, чтобы осуществить кузовной ремонт на самом высоком уровне либо покраску автомобиля, гостеприимно распахивает свои двери сервис «Автохолл».</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4">
+						<div class="h-item">
+							<h1 class="h-header">Стапельные работы</h1>
+							<img src="img/ex-6s.jpg" alt="home pic">
+							<p>Порой, даже с очень внимательным и аккуратным водителем, имеющим большой стаж, случается серьезная авария, которая приводит автомобиль к серьезной деформации кузова. В этом случае нами могут быть выполнены стапельные работы.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>		
+	</article>
+
+	<section class="s-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<h2>Все виды работ по ремонту авто</h2>
+				</div>
+				<div class="col-md-3">
+					<a data-fancybox="form-2" href="#req" class="button sb-button">
+						Оставить заявку
+					</a>
+				</div>
+			</div>
+			<div class="row"> 
+				<div class="col-md-4">
+					<div class="puzzle"><img src="img/garage.png" alt="pic"></div>
+				</div>
+				<div class="col-md-8">
+					<p>При выполнении всех работ, будь то локальная покраска автомобиля или полировка кузова, полная покраска автомобиля или ремонт акпп,  работники технического центра «Автохолл» ставят на первое место тандем «Качество и Скорость». Каждый из нас – от директора центра до рядового работника – является автолюбителем, и мы четко представляем себе, что для человека, привыкшего с помощью автомобиля ежедневно перемещаться по городу из пункта «А» в пункт «Б», наличие идеально функционирующего транспортного средства – вопрос № 1.</p>
+					<p>Желая нашим клиентам удачного пути, мы напоминаем им, что компания «Автохолл» не просто предлагает лучший кузовной ремонт Москвы, но и является своеобразным маяком для всех москвичей, который освещает путь водителей на самых сложных дорогах и гарантирует надежность, безопасность и комфорт!</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="fox">
+						©FOX Design studio 2018
+					</div>
+				</div>
+				<div class="col-md-7">
+					<nav class="bottom-menu">
+						<ul>
+							<li><a href="about.html">о нас</a><li>
+							<li><a href="prices.html">цена</a><li>
+							<li><a href="#">полезная информация</a><li>
+							<li><a href="contacts.html">контакты</a><li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-md-2">
+					<div class="live">
+						<img src="img/live.png" alt="live-internet">
+					</div>
+				</div>
+			</div>
+		</div>		
+	</footer>
+
+	
+	<script	src="js/jquery-3.3.1.min.js"></script>
+  	<script src="js/jquery.fancybox.js"></script>
+  	<script src="js/imagesloaded.pkgd.min.js"></script>
+  	<script src="js/masonry.pkgd.min.js"></script>  	  	
+  	<script src="js/owl.carousel.min.js"></script>
+  	<script src="js/my.js"></script>	
+  	<script>
+		$(document).ready(function() {
+			var start_pos=$('nav.top-menu').offset().top;
+			$(window).scroll(function(){
+				if ($(window).scrollTop()>=start_pos) {
+				if ($('nav.top-menu').hasClass()==false) $('nav.top-menu').addClass('change');
+			}
+			else $('nav.top-menu').removeClass('change');
+			});
 		});
-	</script>
+  	</script>	
 </body>
 </html>
