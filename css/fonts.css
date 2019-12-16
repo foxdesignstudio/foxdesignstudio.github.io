@@ -37,15 +37,3 @@
 	font-style: normal;
 	font-weight: normal;
 }
-
-/@font-face {
-	font-family: 'BenderRegular';
-	src: url('../fonts/BenderRegular/BenderRegular.eot');
-	src: url('../fonts/BenderRegular/BenderRegular.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/BenderRegular/BenderRegular.woff') format('woff'),
-		 url('../fonts/BenderRegular/BenderRegular.ttf') format('truetype');		 
-	font-style: normal;
-	font-weight: normal;
-}
-
-

@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Autoservice</title>
 	<link rel="shortcut icon" href="img/favicon.png">
-
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css"> <!--BOOTSTRAP 4-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/fonts.css">		
@@ -14,12 +13,20 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
 </head>
-<body>
-	<div class="popup" id="call">
 
+<body class="home">
+<!--враппер сайта-->
+<div class="site-wrapper">
+	<!--прелоадер-->
+	<div class="preloader">
+		<div class="preloader__content">
+			<img src="img/logo-gear.png" alt="" class="preloader__botoom">
+			<img src="img/logo-shield.png" alt="" class="preloader__top">
+		</div>
+	</div>
+	<!--модальное окно заказа звонка-->
+	<div class="popup" id="call">
 		<form class="callback">
 			<div class="callback_logo"><img src="img/logo.png" alt="лого формы"></div>
 			<h5>Оставьте заявку, и мы обязательно перезвоним</h5>				
@@ -28,45 +35,42 @@
 				<input type="text" name="phone" placeholder="Ваш телефон..." required>
 			<button class="button">заказать звонок</button>	
 		</form>
-
 	</div>
-
-	<div class="popup" id="req">
-
-		<form class="request">
-			<div class="callback_logo"><img src="img/logo.png" alt="лого формы"></div>
-			<h5>Оставьте заявку, и мы обязательно перезвоним</h5>				
-				<input type="text" name="firstname" placeholder="Ваше имя..." required>   				
-				<input type="text" name="lastname" placeholder="Ваша фамилия..." required>
-				<input type="text" name="phone" placeholder="Ваш телефон..." required>
-			<h5>Выберите интересующий вас вид услуги</h5>
-				<select id="услуга" name="Выберите услугу">
-			    	<option value="1">Кузовной ремонт</option>
-			    	<option value="2">Механические работы</option>
-			    	<option value="3">Экспресс-услуги</option>
-			    	<option value="4">Диагностика</option>
-			    	<option value="5">Слесарные работы</option>
-			    	<option value="6">Ремонт пластика</option>
-				</select>
-			<button class="button">Заказать</button>	
-		</form>
-
-	</div>
-
+	<!--модальное окно карты-->
 	<div class="popup" id="map">
-
 		<div class="map">
-			<div class="callback_logo"><img src="img/logo.png" alt="лого формы"></div>
-
+			<div class="callback_logo">
+				<img src="img/logo.png" alt="лого формы">
+			</div>
 			<h5>Как нас найти:</h5>
-
 			<div class="map-wrap">
 				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2487b825ae447bd02e0c0b480c99c62645a37c2b4aab1cb94a8861bd0a0bd4f6&amp;width=100%&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
 			</div>
 		</div>
-
 	</div>
-
+	<!--модальное окно заказа услуги-->
+	<div class="popup" id="req">
+		<form class="request">
+			<div class="callback_logo">
+				<img src="img/logo.png" alt="лого формы">
+			</div>
+			<h5>Оставьте заявку, и мы обязательно перезвоним</h5>				
+			<input type="text" name="firstname" placeholder="Ваше имя..." required>   				
+			<input type="text" name="lastname" placeholder="Ваша фамилия..." required>
+			<input class="one" type="text" name="phone" placeholder="Ваш телефон..." required>
+			<h5 class="two">Выберите интересующий вас вид услуги</h5>
+			<select id="услуга" name="Выберите услугу">
+		    	<option value="1">Кузовной ремонт</option>
+		    	<option value="2">Механические работы</option>
+		    	<option value="3">Экспресс-услуги</option>
+		    	<option value="4">Диагностика</option>
+		    	<option value="5">Слесарные работы</option>
+		    	<option value="6">Ремонт пластика</option>			    	
+			</select>
+			<button class="button">Заказать</button>	
+		</form>
+	</div>
+	<!--шапка сайта-->
 	<header>
 		<div class="top-line">
 			<div class="container">
@@ -74,7 +78,7 @@
 					<div class="col-md-4">
 						<div class="top-addr">						
 							<strong>МОСКВА</strong>
-							<a data-fancybox="pop-up map" href="#map">ул.верейская,29 стр.35</a>	
+							<a data-fancybox="pop-up-map" href="#map">ул.верейская,29 стр.35</a>	
 						</div>
 					</div>						
 					<div class="col-md-4">
@@ -86,7 +90,7 @@
 					<div class="col-md-4">
 						<div class="top-addr ta-right">
 							<strong>+7 (499) <span class="call">391-71-53</span></strong>
-							<a data-fancybox="pop-up form" href="#call">заказать обратный звонок</a>	
+							<a data-fancybox="pop-up-form" href="#call">заказать обратный звонок</a>	
 						</div>
 					</div>					
 				</div>
@@ -94,8 +98,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="title">
-						<h1>автосервис с безупречной репутацией</h1>
+						<div class="title__wrapper">
+							<div class="title">
+								<h1>автосервис с безупречной репутацией</h1>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -115,6 +121,7 @@
 			</div>				
 		</div>		
 	</header>
+	<!--меню навигации-->
 	<nav class="top-menu">
 		<div class="container">
 			<div class="row no-gutters">
@@ -143,7 +150,7 @@
 			</div>
 		</div>			
 	</nav>
-
+	<!--секция услуг мастерской-->
 	<section class="main_cats s_black">
 		<div class="container">
 			<div class="row">
@@ -153,7 +160,9 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
+					<!--меню услуг-->
 					<ul class="mc_wrap">
+						<!--карточка услуги#1-->
 						<li class="mc_item_wrap active">
 							<div class="mc_item">
 								<a href="repair_1.html">
@@ -170,6 +179,7 @@
 								<li><a href="repair_1.html#corrosive">Антикоррозийная обработка кузова</a></li>
 							</ul>							
 						</li>
+						<!--карточка услуги#2-->
 						<li class="mc_item_wrap">
 							<div class="mc_item">
 								<a href="repair_2.html">
@@ -186,6 +196,7 @@
 								<li><a href="repair_2.html#transmission">Ремонт МКПП</a></li>
 							</ul>
 						</li>
+						<!--карточка услуги#3-->
 						<li class="mc_item_wrap">
 							<div class="mc_item">
 								<a href="repair_3.html">
@@ -202,6 +213,7 @@
 								<li><a href="repair_3.html#angles">Развал-схождение</a></li>
 							</ul>
 						</li>
+						<!--карточка услуги#4-->
 						<li class="mc_item_wrap">
 							<div class="mc_item">
 								<a href="repair_4.html">
@@ -211,12 +223,13 @@
 								<div class="mc_toggle"></div>
 							</div>
 							<ul>
-								<li><a href="repair_4.html#shine">Диагностика системы зажигания</a></li>
-								<li><a href="repair_4.html#tires">Диагностика/адаптация ЭБУ</a></li>
-								<li><a href="repair_4.html#oil">Полная компьютерная диагностика</a></li>
-								<li><a href="repair_4.html#air">Диагностика двигателя</a></li>
+								<li><a href="repair_4.html#ignit">Диагностика системы зажигания</a></li>
+								<li><a href="repair_4.html#electro">Диагностика/адаптация ЭБУ</a></li>
+								<li><a href="repair_4.html#comp">Полная компьютерная диагностика</a></li>
+								<li><a href="repair_4.html#forsage">Диагностика двигателя</a></li>
 							</ul>
 						</li>
+						<!--карточка услуги#5-->
 						<li class="mc_item_wrap">
 							<div class="mc_item">
 								<a href="repair_5.html">
@@ -226,13 +239,14 @@
 								<div class="mc_toggle"></div>
 							</div>
 							<ul>
-								<li><a href="#">Ремонт ходовой части</a></li>
-								<li><a href="#">Замена колодок</a></li>
-								<li><a href="#">Замена коробки передач</a></li>
-								<li><a href="#">Ремонт или замена двигателя</a></li>
-								<li><a href="#">Замена стоек</a></li>
+								<li><a href="repair_5.html#truck">Ремонт ходовой части</a></li>
+								<li><a href="repair_5.html#caskets">Замена колодок</a></li>
+								<li><a href="repair_5.html#gears">Замена коробки передач</a></li>
+								<li><a href="repair_5.html#engine">Ремонт или замена двигателя</a></li>
+								<li><a href="repair_5.html#pillars">Замена стоек</a></li>
 							</ul>
 						</li>
+						<!--карточка услуги#6-->
 						<li class="mc_item_wrap">
 							<div class="mc_item">
 								<a href="repair_6.html">
@@ -242,9 +256,9 @@
 								<div class="mc_toggle"></div>
 							</div>
 							<ul>
-								<li><a href="#">Удаление трещин пластика</a></li>
-								<li><a href="#">Восстановление бамперов</a></li>
-								<li><a href="#">Ремонт торпеды</a></li>
+								<li><a href="repair_6.html#fracture">Удаление трещин пластика</a></li>
+								<li><a href="repair_6.html#bump">Восстановление бамперов</a></li>
+								<li><a href="repair_6.html#torpedo">Ремонт торпеды</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -261,7 +275,7 @@
 			</div>
 		</div>		
 	</section>
-
+	<!--основная секция-->
 	<article class="content">
 		<div class="container">
 			<div class="row">
@@ -271,9 +285,11 @@
 				</div>	
 			</div>
 		</div>
+		<!--секция перечня выполняемых работ-->
 		<section class="home_items">
 			<div class="container">
 				<div class="row">
+					<!--карточка работы#1-->
 					<div class="col-sm-12 col-md-6 col-lg-4">
 						<div class="h-item">
 							<h1 class="h-header">Обработка кузова</h1>
@@ -281,6 +297,7 @@
 							<p>Нам под силу виртуозное выполнение такого сложного автотехнического процесса, как антикоррозийная обработка автомобиля! Многие владельцы современных машин считают, что коррозия им не страшна, но это не так.</p>
 						</div>
 					</div>
+					<!--карточка работы#2-->
 					<div class="col-sm-12 col-md-6 col-lg-4">
 						<div class="h-item">
 							<h1 class="h-header">Полировка</h1>
@@ -288,6 +305,7 @@
 							<p>Автомобиль современного делового человека должен иметь презентабельный вид. Многие наши клиенты, бросив критический взгляд на свою машину, понимают, что ей необходима абразивная полировка кузова. Она применяется в тех случаях, когда на поверхности автомобиля изобилуют дефекты.</p>
 						</div>
 					</div>
+					<!--карточка работы#3-->
 					<div class="col-sm-12 col-md-6 col-lg-4">
 						<div class="h-item">
 							<h1 class="h-header">Ремонт пластика</h1>
@@ -295,6 +313,7 @@
 							<p>Одной из самых востребованных нашими клиентами услуг является локальный ремонт бамперов и прочего пластика. В наши дни, как и ранее, бамперы защищают автомобили в ходе столкновения. Бампера современных автомобилей изготовлены из пластика, стоят дорого и являются достаточно ломкими.</p>
 						</div>
 					</div>
+					<!--карточка работы#4-->
 					<div class="col-sm-12 col-md-6 col-lg-4">
 						<div class="h-item">
 							<h1 class="h-header">Восстановление кузова</h1>
@@ -302,6 +321,7 @@
 							<p>Наши специалисты способны привести в идеальное состояние приобретенный подержанный автомобиль либо машину, которая недавно побывала в «автопеределке».</p>
 						</div>
 					</div>
+					<!--карточка работы#5-->
 					<div class="col-sm-12 col-md-6 col-lg-4">
 						<div class="h-item">
 							<h1 class="h-header">Сервисное ослуживание</h1>
@@ -309,6 +329,7 @@
 							<p>Для владельцев автомашин марки Mercedes, BMW, Mini, Ford, Volkswagen, Mazda, Hyundai, нуждающихся в том, чтобы осуществить кузовной ремонт на самом высоком уровне либо покраску автомобиля, гостеприимно распахивает свои двери сервис «Автохолл».</p>
 						</div>
 					</div>
+					<!--карточка работы#6-->
 					<div class="col-sm-12 col-md-6 col-lg-4">
 						<div class="h-item">
 							<h1 class="h-header">Стапельные работы</h1>
@@ -320,7 +341,7 @@
 			</div>
 		</section>		
 	</article>
-
+	<!--секция заявок-->
 	<section class="s-bottom">
 		<div class="container">
 			<div class="row">
@@ -344,12 +365,12 @@
 			</div>
 		</div>
 	</section>
-
+	<!--подвал сайта-->
 	<footer>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
-					<div class="fox">
+					<div class="signature">
 						©FOX Design studio 2018
 					</div>
 				</div>
@@ -358,21 +379,31 @@
 						<ul>
 							<li><a href="about.html">о нас</a><li>
 							<li><a href="prices.html">цена</a><li>
-							<li><a href="#">полезная информация</a><li>
 							<li><a href="contacts.html">контакты</a><li>
 						</ul>
 					</nav>
 				</div>
 				<div class="col-md-2">
-					<div class="live">
+					<span class="invis">
 						<img src="img/live.png" alt="live-internet">
-					</div>
+					</span>
 				</div>
 			</div>
 		</div>		
 	</footer>
-
-	
+	<!--кнопка-вверх-->
+	<div class="restart">
+		<a href="#top" class="restart-up">
+			<img src="img/arrow-top-square.png" alt="стрелка вверх">
+		</a>
+	</div>
+	<!--кнопка возврата на сайт портфолио-->
+	<div class="homecoming" title="Вернуться на главный сайт">
+		<a href="file:///F:/SSD%20Helper/PHP%20and%20HTML/PORTFOLIO/app/index.html#portfolio" class="homecoming__link">
+			<img src="img/fox-site.png" alt="" class="homecoming__logo">
+		</a>		
+	</div>
+</div>	
 	<script	src="js/jquery-3.3.1.min.js"></script>
   	<script src="js/jquery.fancybox.js"></script>
   	<script src="js/imagesloaded.pkgd.min.js"></script>
@@ -380,13 +411,14 @@
   	<script src="js/owl.carousel.min.js"></script>
   	<script src="js/my.js"></script>	
   	<script>
+  		//скрипт фиксации плавающего меню при скролле страницы
 		$(document).ready(function() {
 			var start_pos=$('nav.top-menu').offset().top;
 			$(window).scroll(function(){
 				if ($(window).scrollTop()>=start_pos) {
-				if ($('nav.top-menu').hasClass()==false) $('nav.top-menu').addClass('change');
-			}
-			else $('nav.top-menu').removeClass('change');
+					if ($('nav.top-menu').hasClass()==false) $('nav.top-menu').addClass('change');
+				}
+				else $('nav.top-menu').removeClass('change');
 			});
 		});
   	</script>	

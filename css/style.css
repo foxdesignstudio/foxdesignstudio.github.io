@@ -7,8 +7,11 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	min-width: 500px;
 	background-color: #000;
 	font-family: "RobotoRegular", sans-serif;
 	overflow-y: scroll;
@@ -18,9 +21,16 @@ body.no_home {
 	background-color: #eee;
 }
 
+.site-wrapper {
+	min-width: 320px;
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+}
+
 header {
 	background-image: url('../img/top_bg.png');
-	background-repeat: no-repeat; /*repeat-x   - задник хидера будет повторятся только по горизонтали*/
+	background-repeat: no-repeat;
 	background-position: top center;
 	min-height: 644px;
 	position: relative; /*пригодится?*/
@@ -55,56 +65,40 @@ header a {
 	display: inline-block;   
 }
 
-
+.one + .two {
+	margin-top: 20px;
+}
 
 /* POP-UP */
 
 .popup	{
 	display: none;
-}
-
-.callback {
-	width: 400px;
-	height: 600px;
 	background-color: #242424;
 	font-size: 16px;
 	text-align: center;
-}
-
-.request {
-	width: 400px;
-	height: 700px;
-	background-color: #242424;
-	font-size: 16px;
-	text-align: center;
+	max-width: 480px;
+	border: 2px solid #fff;
 }
 
 .map {
-	width: 500px;
-	height: 700px;
-	background-color: #242424;
-	font-size: 16px;
-	text-align: center;
-	margin-top: 23px;
+	width: 476px;
 }
 
-.map-wrap {
-	width: 90%;
-	display: inline-block;
+.fancybox-content {
+	padding: 0;
+}
+
+.fancybox-close-small {
+	color: #fff;
 }
 
 .callback_logo {
-	display: flex;
-	justify-content: space-around;
+	width: 130px;
+	margin: auto;
 }
 
-.callback_logo img {
-	width: auto;
-	height: 100%;
-}
-
-form {
-	margin-top: 23px;
+.callback_logo img {	
+	max-width: 100%;
 }
 
 input, textarea, select {
@@ -130,16 +124,21 @@ input[type=text]:focus {
 
 .popup .button {
 	position: relative;
-	margin-top: 45px;
+	margin: 25px 0 20px;
 }
 
 .popup h5 {
 	font-size: 22px;
 	color: #fff;
 	font-family: 'BebasRegular';
-	margin: 30px 15px 10px;
+	margin: 10px 15px;
 }
 
+select {
+	-webkit-appearance: none;
+	position: relative;
+	background: #fff url('../img/triangle-bottom.png') 95% 50% no-repeat;
+}
 
 
 /* TABLE */
@@ -185,8 +184,14 @@ table {
 	background-color: #ddd;
 }
 
-#table-2 th, #table-2 td {
-	width: auto;
+.warn-bold {
+	font-weight: bold;
+	font-style: normal;
+}
+
+#table-2 caption {
+	text-transform: uppercase;
+	font-size: 22px;
 }
 
 #table-3 th {
@@ -226,6 +231,54 @@ table tr:target {
 }
 
 
+/*прелоадер*/
+
+.preloader {
+	z-index: 99;
+	position: fixed;
+	background-color: #242424;
+	display: flex;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;	
+}
+
+.preloader__content {
+	margin: auto;
+	position: relative;
+	height: 165px;
+	width: 170px;
+}
+
+.preloader__top, .preloader__botoom {
+	vertical-align: middle;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.preloader__botoom {
+	animation: gears 4s linear infinite;
+}
+
+@keyframes gears {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(90deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	75% {
+		transform: rotate(270deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
 
 /* SENDING */
 
@@ -283,12 +336,14 @@ table tr:target {
 
 .logo_wrap {
 	position: relative;
+	top: -12px;
 	width: 190px;
 	margin: auto;
 }
 
 .no_home .logo_wrap {
 	transform: scale(0.6);
+	top: -56px;
 }
 
 .no_home .top-line .logo_wrap .logo {
@@ -296,9 +351,7 @@ table tr:target {
 }
 
 .top-line .logo_wrap .logo {
-	border-bottom: none;
-	position: absolute;	
-	margin-top: -15px;
+	border-bottom: none;	
 }
 
 .top-line .logo_wrap .logo:hover {
@@ -306,7 +359,7 @@ table tr:target {
 }
 
 .top-addr {
-    padding-left: 45px;
+    padding-left: 40px;
     background-image: url(../img/map_point.png);
     background-repeat: no-repeat;
     line-height: 26px;
@@ -338,22 +391,30 @@ table tr:target {
 	font-size: 32px;
 }
 
-.title {
-	text-align: center;
-	color: #fff;
-	text-transform: uppercase;
-	margin-top: 90px;
-	font-size: 30px;
-	text-shadow: 2px 2px 1px #000;
+.title__wrapper {
+	margin-top: 90px;		
 }
 
-.button {
+.title {
+	width: 80%;	
+	padding-top: 6px;
+	text-align: center;	
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0 auto;
+	font-size: 30px;
+	text-shadow: 2px 2px 1px #000;
+	background-color: rgba(0,0,0,.60);
+	border: 1px solid rgba(255,255,255,.3);
+}
+
+.button {	
 	display: inline-block; /*создать два раздельных блока в один ряд*/
 	background-color: #D12F22;
 	height: 50px; /*высота кнопки*/
 	vertical-align: middle; /*выравнивание обоих кнопок по одной высоте*/
 	line-height: 50px;
-	padding: 0 20px;
+	padding: 0 26px;
 	font-size: 18px;
 	border-bottom: 4px solid #AC160A;
 	color: #fff;
@@ -452,8 +513,7 @@ header .button {
     cursor: pointer;
     background-color: red;
     padding: 0 0 0 7px;
-	display: none;
-	border-radius: 4px;
+	display: none;	
 }
 
 .burger span {	
@@ -504,9 +564,9 @@ header .button {
 .burger-text {
     font-size: 40px;
 	color: #eee;
-    position: absolute;
-    right: 0;
-    padding: 6px 10px;
+    position: absolute;   
+	right: 10px;
+    top: 5px;
 }
 
 .guarantee {
@@ -866,11 +926,7 @@ p.h-description {
 }
 
 .no_home .art_header {
-	margin: 50px 0;
-}
-
-.no_home .art_header {
-	margin: 50px 0;
+	margin: 30px 0;
 	font-size: 40px;
 	line-height: 1.2;
 }
@@ -897,6 +953,9 @@ p.h-description {
 	padding-bottom: 40px;
 }
 
+.description {
+	text-align: center;
+}
 
 /*   FOOTER   */
 
@@ -935,7 +994,6 @@ footer a {
     height: 60px;
     width: 150px;
     cursor: pointer;
-	border-radius: 4px;
 }
 
 .menu_button_text {
@@ -1058,3 +1116,82 @@ footer a {
 	top: 0;
 	z-index: 1;
 }
+
+/*кнопка вверх*/
+.restart {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 4px;
+	background-color: rgba(255,255,255,.5);
+	box-shadow: 0 0 02px #fff;
+	display: none;
+}
+
+.restart.vis {
+	display: block;
+}
+
+.homecoming {
+	position: fixed;
+	top: calc(50% - 30px);
+	left: -76px;
+	height: 80px;
+	width: 80px;
+	background-color: rgba(255,255,255,.4);
+	border-right: 4px solid #000;
+	transition: left 0.8s;
+}
+.homecoming__link {
+	display: flex;
+	height: 80px;
+}
+.homecoming__logo {
+	display: block;
+	max-height: 64px;
+	margin: auto;
+}
+.homecoming:hover {
+	left: 0;
+}
+.homecoming::before {
+	content: '';
+	height: 0;
+	width: 0;
+	border: 10px solid transparent;
+	border-right-color: #000;
+	position: absolute;
+	left: 100%;
+	top: calc(50% - 10px);
+}
+
+/*кнопка возврата на главный сайт*/
+.homecoming
+	position: fixed
+	top: calc(50% - 30px)
+	left: -76px
+	height: 80px
+	width: 80px
+	background-color: rgba(255,255,255,.4)
+	border-right: 4px solid #000
+	transition: left 0.8s
+	&__link
+		display: flex
+		height: 80px
+	&__logo
+		display: block
+		max-height: 64px
+		margin: auto
+	&:hover 
+		left: 0
+	&::before
+		content: ''
+		height: 0
+		width: 0
+		border: 10px solid transparent
+		border-right-color: #000
+		position: absolute
+		left: 100%
+		top: calc(50% - 10px)

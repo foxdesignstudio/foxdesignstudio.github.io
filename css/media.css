@@ -1,114 +1,15 @@
-@media screen and (max-width: 576px) {
-
-	.owl-carousel .owl-nav button.owl-next {
-		right: -20px;	
-	}
-	.owl-carousel .owl-nav button.owl-prev {
-		left: -20px;
-	}
-	.s_black h2::before {
-		display: none;
-	}
-	.s_black h2::after {
-		display: none;
-	}
-	article h2.art_header::before {
-		display: none;
-	}
-	article h2.art_header::after {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 767px) {
-
-	.top-addr {
-		margin-top: 35px;
-		float: right;
-	}
-	.no_home .top-addr {
-		margin-top: 20px;
-		/margin-right: 10px;
-	}
-	.ta-right {
-		margin-top: 25px;
-	}
-	.top-line {
-		max-height: 250px;
-	} 
-	.logo_wrap {
-		position: absolute;
-    	width: 240px;
-    	top: -70px;
-	}
-	.top-line .logo_wrap .logo {
-		position: static;
-	}
-	.top-line {
-		background-color: rgba(0,0,0,.90);
-	}
-	.no_home .logo_wrap {
-		transform: scale(1);
-	}
-	.no_home .top-line .logo_wrap .logo {
-		position: absolute;
-		margin: -6px 42px 0 0;
-	}	
-	.art_header {
-		font-size: 26px;
-		line-height: 1.8;
-	}
-	.live {
-		float: none;
-		text-align: center;
-		margin-top: 25px;
-	}
-	.bottom-menu {
-		margin-top: 20px;
-		text-align: center;
-	}
-	.fox {
-		text-align: center;
-	}
-
-}
-
-@media screen and (max-width: 990px) {
-
-	.no_home .page_column {
-	    width: 100%;
-	    padding: 0 30px;
-	    float: none;
-	}
-	.grid-item {
-		width: 100%;
-	}
-
-}
-
-@media screen and (min-width: 990px) {
-
-	.grid-item {
-		width: 50%;
-	}
-}
-
-@media (min-width: 1200px) {
-	
+@media (min-width: 1200px) {	
 	#menu {
 		display: block !important;
 	}
 	.grid-item {
 		width: 33.33333%;
-	}
-		
+	}		
 }
 
-@media screen and (max-width: 1200px) {
-	
+@media screen and (max-width: 1200px) {	
 	.burger {
-		display: block;
-		border-radius: 4px;
+		display: block;		
 	}	
 	.guarantee {
 		display: none;
@@ -138,10 +39,173 @@
 	    margin-right: 20px;
 		margin-bottom: 30px;
 	}
+	.grid-item {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.no_home .page_column {
+	    width: 100%;
+	    padding: 0 30px;
+	    float: none;
+	}
+	.contacts_addr {
+		margin-bottom: 6px;
+	}
 
 }
 
+@media screen and (max-width: 767px) {
+	.top-addr {
+		margin-top: 35px;
+		float: right;
+	}
+	.no_home .top-addr {
+		margin-top: 20px;		
+	}
+	.ta-right {
+		margin-top: 25px;
+	}
+	.top-line {
+		max-height: 250px;
+	} 
+	.logo_wrap {
+		position: absolute;
+    	width: 240px;
+    	top: -70px;
+	}
+	.top-line {
+		background-color: rgba(0,0,0,.90);
+	}
+	.no_home .logo_wrap {
+		transform: scale(0.8);
+		top: -84px;
+		left: -20px;
+	}
+	.art_header {
+		font-size: 30px;
+		line-height: 1.4;
+	}
+	.live {
+		float: none;
+		text-align: center;
+		margin-top: 25px;
+	}
+	.bottom-menu {
+		margin-top: 20px;
+		text-align: center;
+	}
+	.fox {
+		text-align: center;
+	}
+	.map-wrap {
+		min-width: 320px;
+	}
+	.top-line {
+		max-height: 170px;
+		padding: 8px 0;
+	}
+	.top-addr, .no_home .top-addr {
+		margin-top: 10px;
+	}
+	.grid-item {
+		width: 100%;
+	}
+	.invis {
+		display: none;
+	}
+}
 
+@media screen and (max-width: 576px) {
+	.owl-carousel .owl-nav button.owl-next {
+		right: -20px;	
+	}
+	.owl-carousel .owl-nav button.owl-prev {
+		left: -20px;
+	}
+	.s_black h2::before {
+		display: none;
+	}
+	.s_black h2::after {
+		display: none;
+	}
+	article h2.art_header::before {
+		display: none;
+	}
+	article h2.art_header::after {
+		display: none;
+	}
+	.popup {
+		max-width: 310px;
+	}
+	.map {
+		width: 306px;
+	}
+}
 
+@media screen and (max-width: 480px) {
+	.mc_item_wrap, .mc_item_wrap:first-child {
+		margin: 0 4px 10px 4px;
+	}
+	.title {
+		font-size: 24px;		
+	}
+	.no_home .page_column {
+		padding: 0;
+	}
+	.week-line ul li {
+		padding: 6px;
+	}
+}
 
+@media screen and (max-width: 450px) {
+	header .button {
+		margin-right: 0;
+	}
+	.logo img {
+		max-width: 60%;
+	}
+	.home .logo_wrap {
+		transform: scale(0.8);
+		top: -84px;
+		left: -20px;
+	}
+	th, td {
+		padding: 2px;
+	}
+	.signature {
+		text-align: center;
+	}
+	.covered {
+		display: none;
+	}
+	th, td {
+		height: 60px;
+	}
+}
 
+@media screen and (max-width: 350px) {
+	.menu_button {
+		width: 120px;
+	}
+	.menu_button_text {
+		padding: 6px 0;
+	}
+	.burger span {
+		display: none;
+	}
+	.burger {
+		width: 120px;
+	}
+	.burger-text {
+		right: 20px;
+	}
+	.top-addr {
+		padding-left: 0;
+		background-image: none;
+	}
+	.no_home .art_header {
+		margin: 22px 0;
+	}
+}
