@@ -218,6 +218,10 @@
 	.l-button {
 		margin-left: auto;
 	}
+	.preloader {		
+		align-items: flex-start;
+		padding-top: 200px;
+	}
 }
 
 @media screen and (max-width: 350px) {

@@ -238,9 +238,10 @@ table tr:target {
 	align-items: center;
 	justify-content: center;
 	top: 0;
+	bottom: 0;
 	left: 0;
-	height: 100vh;
-	width: 100vw;	
+	right: 0;
+	height: 100vh;	
 }
 
 .preloader__content {
@@ -725,15 +726,15 @@ article h2 {
 	height: 25px;
 	position: relative;
 	cursor: pointer;
-	background-image: url("../img/arrow.png");
+	background-image: url("../img/arrow-w.png");
 	background-repeat: no-repeat;
-	background-position: 78px 8px;
+	background-position: center 8px;
 }
 
 .mc_item_wrap.active .mc_toggle,
 .mc_item_wrap:hover .mc_toggle {
 	background-color: #353535;
-	background-position: -60px 8px;
+	background-image: url("../img/arrow-r.png");
 }
 
 .mc_item_wrap_af {
@@ -1119,8 +1120,8 @@ footer a {
 /*кнопка вверх*/
 .restart {
 	position: fixed;
-	bottom: 10px;
-	right: 10px;
+	bottom: 20px;
+	right: 20px;
 	width: 50px;
 	height: 50px;
 	border-radius: 4px;
@@ -1135,8 +1136,7 @@ footer a {
 
 .homecoming {
 	position: fixed;
-	bottom: 50%;
-	transform: translateY(50%);
+	bottom: 20px;	
 	left: -76px;
 	height: 80px;
 	width: 80px;
