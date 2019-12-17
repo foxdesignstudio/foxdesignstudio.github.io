@@ -7,10 +7,6 @@
 	box-sizing: border-box;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
 body {
 	background-color: #000;
 	font-family: "RobotoRegular", sans-serif;
@@ -424,10 +420,6 @@ table tr:target {
 	text-decoration: none;
 }
 
-header .button {
-	margin-right: 30px; /*подвинуть вторую кнопку вправо*/
-}
-
 .l-button {
 	line-height: 20px; /*добавив этот класс мы высотой строки умещаем две строки в кнопку*/
 	padding: 4px 8px 0;
@@ -820,7 +812,7 @@ article.content {
 article h2.art_header::before {
 	content: "";
 	position: absolute;
-	top: 13px;
+	top: calc(50% - 10px);
 	margin-left: -69px;
 	width: 50px; /*ширина равна половине картинки trio.png*/
 	height: 20px;
@@ -830,7 +822,7 @@ article h2.art_header::before {
 article h2.art_header::after {
 	content: "";
 	position: absolute;
-	top: 13px;
+	top: calc(50% - 10px);
 	margin-left: 17px;
 	width: 50px; /*ширина равна половине картинки trio.png*/
 	height: 20px;
@@ -1143,8 +1135,8 @@ footer a {
 
 .homecoming {
 	position: fixed;
-	top: 50%;
-	transform: translateY(-50%);
+	bottom: 50%;
+	transform: translateY(50%);
 	left: -76px;
 	height: 80px;
 	width: 80px;
