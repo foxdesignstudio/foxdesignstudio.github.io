@@ -196,8 +196,14 @@
 	.title__wrapper {
 		margin-top: 30px;
 	}
-	.preloader__content {
-		
+	.mc_item_wrap {
+		width: 158px;
+	}
+	.mc_item span {
+		height: 80px;
+	}
+	.burger {
+		padding: 6px 0 0 50px;
 	}
 }
 
@@ -213,7 +219,7 @@
 	}
 	.burger {
 		width: 120px;
-		padding: 6px 0;
+		padding: 0;
 	}
 	.burger-text {
 		right: 20px;
@@ -224,5 +230,8 @@
 	}
 	.no_home .art_header {
 		margin: 22px 0;
+	}
+	.mc_item_wrap {
+		width: 170px;
 	}
 }
