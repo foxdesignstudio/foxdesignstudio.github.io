@@ -67,9 +67,6 @@
 	.ta-right {
 		margin-top: 25px;
 	}
-	.top-line {
-		max-height: 250px;
-	} 
 	.logo_wrap {
 		position: absolute;
     	width: 240px;
@@ -103,7 +100,7 @@
 		min-width: 320px;
 	}
 	.top-line {
-		max-height: 170px;
+		max-height: 150px;
 		padding: 8px 0;
 	}
 	.top-addr, .no_home .top-addr {
@@ -146,7 +143,7 @@
 
 @media screen and (max-width: 480px) {
 	.mc_item_wrap, .mc_item_wrap:first-child {
-		margin: 0 4px 10px 4px;
+		margin: 4px 4px 10px 4px;
 	}
 	.title {
 		font-size: 24px;		
@@ -185,6 +182,25 @@
 	}
 }
 
+@media screen and (max-width: 380px) {
+	header {
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: initial;
+		min-height: 400px;
+	}
+	.title {
+		font-size: 18px;
+		width: 60%;
+	}
+	.title__wrapper {
+		margin-top: 30px;
+	}
+	.preloader__content {
+		
+	}
+}
+
 @media screen and (max-width: 350px) {
 	.menu_button {
 		width: 120px;
@@ -197,6 +213,7 @@
 	}
 	.burger {
 		width: 120px;
+		padding: 0;
 	}
 	.burger-text {
 		right: 20px;

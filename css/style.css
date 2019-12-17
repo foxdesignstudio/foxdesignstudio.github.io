@@ -512,13 +512,14 @@ header .button {
     height: 60px;
     cursor: pointer;
     background-color: red;
-    padding: 0 0 0 7px;
+    padding: 0 0 0 50px;
 	display: none;	
 }
 
 .burger span {	
   position: absolute;
   top: 27px;
+  left: 8px;
   width: 45px;
   height: 5px;
   background-color: #19121e;
@@ -564,9 +565,8 @@ header .button {
 .burger-text {
     font-size: 40px;
 	color: #eee;
-    position: absolute;   
-	right: 10px;
-    top: 5px;
+	line-height: 60px;
+	text-align: center;
 }
 
 .guarantee {
@@ -996,11 +996,16 @@ footer a {
     cursor: pointer;
 }
 
-.menu_button_text {
+.no_home .menu_button_text {
+	margin: 0;
     font-size: 40px;
     color: #eee;
 	text-align: center;
-    padding: 6px 25px;
+    line-height: 60px;
+}
+
+.no_home .burger-text {
+	margin: 0;
 }
 
 .owl-carousel .owl-stage {
@@ -1136,7 +1141,8 @@ footer a {
 
 .homecoming {
 	position: fixed;
-	top: calc(50% - 30px);
+	top: 50%;
+	transform: translateY(-50%);
 	left: -76px;
 	height: 80px;
 	width: 80px;
@@ -1166,32 +1172,3 @@ footer a {
 	left: 100%;
 	top: calc(50% - 10px);
 }
-
-/*кнопка возврата на главный сайт*/
-.homecoming
-	position: fixed
-	top: calc(50% - 30px)
-	left: -76px
-	height: 80px
-	width: 80px
-	background-color: rgba(255,255,255,.4)
-	border-right: 4px solid #000
-	transition: left 0.8s
-	&__link
-		display: flex
-		height: 80px
-	&__logo
-		display: block
-		max-height: 64px
-		margin: auto
-	&:hover 
-		left: 0
-	&::before
-		content: ''
-		height: 0
-		width: 0
-		border: 10px solid transparent
-		border-right-color: #000
-		position: absolute
-		left: 100%
-		top: calc(50% - 10px)
