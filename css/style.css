@@ -512,7 +512,7 @@ header .button {
     height: 60px;
     cursor: pointer;
     background-color: red;
-    padding: 0 0 0 50px;
+    padding: 6px 0 6px 50px;
 	display: none;	
 }
 
@@ -564,8 +564,7 @@ header .button {
 
 .burger-text {
     font-size: 40px;
-	color: #eee;
-	line-height: 60px;
+	color: #eee;	
 	text-align: center;
 }
 
