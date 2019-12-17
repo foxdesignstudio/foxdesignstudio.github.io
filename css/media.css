@@ -197,13 +197,19 @@
 		margin-top: 30px;
 	}
 	.mc_item_wrap {
-		width: 158px;
+		width: 156px;
 	}
 	.mc_item span {
 		height: 80px;
 	}
 	.burger {
-		padding: 6px 0 0 50px;
+		padding: 4px 0 0 50px;
+	}
+	.mc_item h4 {
+		font-size: 18px;
+	}
+	.no_home .menu_button_text {
+		padding-top: 4px;
 	}
 }
 

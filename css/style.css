@@ -238,6 +238,9 @@ table tr:target {
 	position: fixed;
 	background-color: #242424;
 	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
 	top: 0;
 	left: 0;
 	height: 100vh;
@@ -245,7 +248,6 @@ table tr:target {
 }
 
 .preloader__content {
-	margin: auto;
 	position: relative;
 	height: 165px;
 	width: 170px;
