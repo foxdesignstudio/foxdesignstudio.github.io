@@ -5,7 +5,13 @@ $(document).ready(function(){
 	});
 	//задержка появления анимированного заголовка хидера
 	$('.line').delay(3200).fadeIn();
-
+	//отключение фиксированной высоты документа
+	if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+	    skrollr.init({
+	        forceHeight: false
+	    });
+	}
+	//переключение превью сайтов
 	$('.push a').click(function(){									
 		$(this).parents('.sites__picture').find('.sites__picture--img').addClass('hide');
 		$(this).parent().siblings().removeClass('active');				
@@ -31,8 +37,8 @@ $(document).ready(function(){
 			$('.navigator').removeClass('active');
 	});
 	//скрипт появления fab-навигации для мобильных устройств
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > 460) {
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > $(this).height()) {
 			$('.fab').addClass('jump');
 		} else
 			$('.fab').removeClass('jump');
