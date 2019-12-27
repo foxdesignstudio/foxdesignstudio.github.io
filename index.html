@@ -105,9 +105,6 @@
 					</li>
 				</ul>				
 			</div>		
-		<!--сервисный враппер для работы плагина skrollr на моб.устройствах-->
-		<div class="skrollable" id="skrollr-body">
-		
 			<!--верхняя линия хидера-->
 			<header class="header">
 
@@ -945,7 +942,6 @@
 			</div>
 
 		</div>
-		</div>
 		
 	</div>
 	<!--скрипты-->
@@ -957,7 +953,11 @@
 			once: false,
 		});
 
-		AOS.init();	
+		AOS.init();
+
+		var s = skrollr.init({
+        	forceHeight: false
+    	});	
 	</script>		
 </body>
 </html>

@@ -3,14 +3,13 @@ $(document).ready(function(){
 	$(function() {		
 	   $('.preloader').delay(3000).fadeOut('slow');	
 	});
+	//определение типа устройства
+	var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+	if (isMobile) {
+	  s.destroy();
+	}
 	//задержка появления анимированного заголовка хидера
 	$('.line').delay(3200).fadeIn();
-	//отключение фиксированной высоты документа
-	if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-	    skrollr.init({
-	        forceHeight: false
-	    });
-	}
 	//переключение превью сайтов
 	$('.push a').click(function(){									
 		$(this).parents('.sites__picture').find('.sites__picture--img').addClass('hide');
