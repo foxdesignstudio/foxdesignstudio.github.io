@@ -1,0 +1,260 @@
+@media (min-width: 1200px) {	
+	#menu {
+		display: block !important;
+	}
+	.grid-item {
+		width: 33.33333%;
+	}		
+}
+
+@media screen and (max-width: 1200px) {	
+	.burger {
+		display: block;		
+	}	
+	.guarantee {
+		display: none;
+	}	
+	#menu {
+		position: absolute;
+	    top: 60px; /*сдвигает меню на мобильном вниз, чтобы не перекрывать кнопку menu*/
+	    z-index: 5;
+	    background-color: #242424;
+	    width: 100%;
+		display: none;
+	}	
+	.top-menu li {
+		float: none;
+		display: block;
+		border-bottom: 1px solid #000;
+	}	
+	.top-menu a {
+		background-image: none;
+		padding-left: 20px;
+	}	
+	.top-menu li:nth-child(6) a {
+		border-right: none;
+	}		
+	.mc_item_wrap, .mc_item_wrap:first-child { /*first-child нужен, так как у первого mc_item_wrap есть класс active*/
+	    margin-left: 20px;
+	    margin-right: 20px;
+		margin-bottom: 30px;
+	}
+	.grid-item {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.no_home .page_column {
+	    width: 100%;
+	    padding: 0 30px;
+	    float: none;
+	}
+	.contacts_addr {
+		margin-bottom: 6px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	.title__wrapper {
+		margin-top: 10px;
+	}
+	.top-addr {
+		margin-top: 35px;
+		float: right;
+	}
+	.no_home .top-addr {
+		margin-top: 20px;		
+	}
+	.ta-right {
+		margin-top: 25px;
+	}
+	.logo_wrap {
+		position: absolute;
+    	width: 240px;
+    	top: -78px;
+	}
+	.top-line {
+		background-color: rgba(0,0,0,.90);
+	}
+	.no_home .logo_wrap {
+		transform: scale(0.8);
+		top: -84px;
+		left: -20px;
+	}
+	.art_header {
+		font-size: 30px;
+		line-height: 1.4;
+	}
+	.live {
+		float: none;
+		text-align: center;
+		margin-top: 25px;
+	}
+	.bottom-menu {
+		margin-top: 20px;
+		text-align: center;
+	}
+	.fox {
+		text-align: center;
+	}
+	.map-wrap {
+		min-width: 320px;
+	}
+	.top-line {
+		max-height: 150px;
+		padding: 8px 0;
+	}
+	.top-addr, .no_home .top-addr {
+		margin-top: 10px;
+	}
+	.grid-item {
+		width: 100%;
+	}
+	.invis {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.owl-carousel .owl-nav button.owl-next {
+		right: -20px;	
+	}
+	.owl-carousel .owl-nav button.owl-prev {
+		left: -20px;
+	}
+	.s_black h2::before {
+		display: none;
+	}
+	.s_black h2::after {
+		display: none;
+	}
+	article h2.art_header::before {
+		display: none;
+	}
+	article h2.art_header::after {
+		display: none;
+	}
+	.popup {
+		max-width: 310px;
+	}
+	.map {
+		width: 306px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.mc_item_wrap, .mc_item_wrap:first-child {
+		margin: 4px 2px;
+	}
+	.title {
+		font-size: 24px;		
+	}
+	.no_home .page_column {
+		padding: 0;
+	}
+	.week-line ul li {
+		padding: 8px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.logo img {
+		max-width: 60%;
+	}
+	.home .logo_wrap {
+		transform: scale(0.8);
+		top: -84px;
+		left: -20px;
+	}
+	th, td {
+		padding: 2px;
+	}
+	.signature {
+		text-align: center;
+	}
+	.covered {
+		display: none;
+	}
+	th, td {
+		height: 60px;
+	}
+	.l-button {		
+		display: block;		
+		width: 60px;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	header {
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: initial;
+		min-height: 400px;
+	}
+	.title {
+		font-size: 18px;
+		width: 60%;
+		border: none;
+		background-color: transparent;
+	}
+	.title__wrapper {
+		margin-top: 30px;
+	}
+	.mc_item_wrap {
+		width: 150px;
+	}
+	.mc_item span {
+		height: 80px;
+	}
+	.burger {
+		padding: 3px 0 0 50px;
+	}
+	.mc_item h4 {
+		font-size: 18px;
+	}
+	.no_home .menu_button_text {
+		padding-top: 3px;
+	}
+	.l-button {
+		margin-left: auto;
+	}
+	.preloader {		
+		align-items: flex-start;
+		padding-top: 180px;
+	}
+	.contacts_row {
+		padding-left: 50px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.menu_button {
+		width: 120px;
+	}
+	.menu_button_text {
+		padding: 6px 0;
+	}
+	.burger span {
+		display: none;
+	}
+	.burger {
+		width: 120px;
+		padding: 0;
+	}
+	.burger-text {
+		right: 20px;
+	}
+	.top-addr {
+		padding-left: 0;
+		background-image: none;
+	}
+	.no_home .art_header {
+		margin: 22px 0;
+	}
+	.mc_item_wrap {
+		width: 170px;
+	}
+}
