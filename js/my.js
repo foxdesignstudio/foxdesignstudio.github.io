@@ -1,12 +1,15 @@
 $(document).ready(function(){
-	//отключение прелодера после загрузки
-	$(function() {		
-	   $('.preloader').delay(3000).fadeOut('slow');	
-	});
-	//определение типа устройства
+	//отключение прелодера после загрузки			
+	$('.preloader').delay(3000).fadeOut('slow');	
+	//определение типа устройства - отключение плагина skrollr
 	var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
 	if (isMobile) {
 	  s.destroy();
+	  $('.header__wrapper').css('position','static');
+	  $('.header__layer--text').css('display','none');
+	  $('.dial').css('margin-top','2px');
+	  $('.main').css('margin-top','2px');
+	  $('.social__title').css({'right':'0', 'opacity':'1'});
 	}
 	//задержка появления анимированного заголовка хидера
 	$('.line').delay(3200).fadeIn();

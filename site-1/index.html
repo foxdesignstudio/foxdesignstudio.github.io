@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Skinali factory</title>
+	<link rel="shortcut icon" href="img/logo.png">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--IE8-9 only!-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+<div class="site-wrapper">
+	<!--шапка страницы-->
+	<header class="header" id="start">
+
+		<div class="navbar">
+			<!--меню навигации-->
+			<div class="menu">
+				<ul class="menu__nav">
+					<li class="menu__item"><a href="#catalog" class="menu__link">Каталог</a></li>
+					<li class="menu__item"><a href="#about" class="menu__link">О скинали</a></li>				
+					<li class="menu__item"><a href="#products" class="menu__link">Продукция</a></li>					
+					<li class="menu__item"><a href="#sample" class="menu__link pop">Примерка изображений</a></li>
+				</ul>
+			</div>
+
+			<div class="container">
+				<div class="navbar__wrapper">
+					<!--кнопка меню навигации-->
+					<button class="menu-button">
+						<span class="menu-button__line">						
+						</span>
+						<span class="menu-button__line">						
+						</span>
+						<span class="menu-button__line">						
+						</span>
+					</button>
+					<!--содержимое верхней полосы хидера (navbar)-->
+					<div class="logo">
+						<strong class="logo__text">Фабрика Скинали №1</strong>
+						<span class="logo__desc">Ведущий производитель скинали</span>									
+					</div>
+					<div class="navbar__mobile">
+						<a href="tel:+79121234567" class="navbar__phone">+7 912 123-45-67</a>
+						<span class="navbar__desc">без выходных 9-21</span>
+					</div>
+					<div class="navbar__landline">
+						<a href="tel:+79121234567" class="navbar__phone">+7 912 123-45-67</a>
+						<a class="navbar__mail" href="mailto:info@mail.cu">info@mail.cu</a>
+					</div>
+					<!--кнопка вызова модального окна (консультация)-->
+					<a data-fancybox="consult-form" class="button-blank navbar__button" href="#consult">Получить консультацию</a>
+				</div>
+				<!--Модальное окно для связи с менеджером-->
+				<div class="modal-form" id="consult">
+					<form class="consultation">
+						<div class="consultation__title">Связаться с менеджером</div>
+						<p class="consultation__text">Оставьте запрос, и наши менеджеры очень скоро свяжуться с Вами для консультации.</p>
+						<p class="consultation__text">Мы рады будем ответить на любые Ваши вопросы, и поможем принять правильное решение.</p>
+						<hr class="line">
+						<input type="text" class="modal-form__input" placeholder="Ваше имя" required>
+						<input type="text" class="modal-form__input" placeholder="Ваш телефон" required>
+						<hr class="line">
+						<input type="submit" class="button" value="Отправить">
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="hero">
+			<div class="container">
+				<!--Шапка для десктопной версии-->
+				<div class="desktop">
+					<h1 class="hero__title">
+						Гарантия<br>минимальной цены<br>на скинали
+					</h1>
+					<span class="hero__subtitle">
+						от 3000 р/м2
+					</span>
+				</div>
+				<!--Шапка для мобильных экранов-->
+				<div class="mobile">
+					<span class="hero__logo">
+						<img src="img/logo.png" alt="" class="hero__img">
+					</span>	
+					<h1 class="hero__title">
+						Фабрика скинали №1
+					</h1>
+				</div>
+				<!--кнопка вызова модального окна (заказ)-->
+				<a class="button hero__button" data-fancybox="main-popup" href="#demand">Заказать скинали</a>
+			</div>
+		</div>
+
+	</header>
+	<!--основная секция-->
+	<main>
+		<!--секция оформления заявки на расчет стоимости заказа-->
+		<section class="offer bg-color breaker">
+			<div class="container">
+				<!--форма заявки-->
+				<div class="offer__block back-1">
+
+					<h2 class="offer__title">Оставьте заявку на расчет</h2>
+					<span class="offer__subtitle">и получите скидку 30% на оформление скинали или фартука для кухни</span>
+					
+					<form action="#" class="offer__form form">
+
+						<div class="form__row modified">
+							<div class="form__group">
+								<label class="form__label">Вид стекла</label>								
+								<select class="input form__select" required>									
+									<option value="Закаленное">Закаленное</option>
+									<option value="Матовое">Матовое</option>
+									<option value="Рельефное">Рельефное</option>
+									<option value="Триплекс">Триплекс</option>
+									<option value="Стекло Optiwite">Стекло "Optiwite"</option>
+									<option value="Зеркальные">Зеркальное</option>
+								</select>
+							</div>
+							<div class="form__group quarter">
+								<label class="form__label">Ширина, см</label>
+								<input type="text" class="input form__input bn" required>
+							</div>
+							<div class="form__group quarter">
+								<label class="form__label">Высота, см</label>
+								<input type="text" class="input form__input" required>
+							</div>
+						</div>
+
+						<div class="form__row">
+							<div class="form__checkbox">
+								<input class="checkbox" type="checkbox" id="install">
+								<label class="checkbox__label" for="install">			
+									Монтаж
+								</label>
+							</div>
+							<div class="form__checkbox">
+								<input class="checkbox" type="checkbox" id="delivery">
+								<label class="checkbox__label" for="delivery">			
+									Доставка
+								</label>
+							</div>
+						</div>
+
+						<div class="form__row modified">
+							<div class="form__group">
+								<input type="text" class="input form__input" placeholder="Ваше имя" required>
+							</div>
+							<div class="form__group">
+								<input type="tel" class="input form__input bn" placeholder="Ваш телефон" required>
+							</div>
+							<div class="form__group">
+								<input type="submit" class="button form__button central" value="Получить скидку">
+							</div>
+						</div>
+
+					</form>
+
+				</div>
+
+			</div>
+		</section>
+		<!--секция преимуществ-->
+		<section class="features section">
+			<div class="container">
+
+				<h2 class="section-title">Наши преимущества</h2>
+
+				<div class="features-block">
+
+					<div class="features-block__item">
+						<i class="fab fa-creative-commons-nc features-block__image"></i>
+						<p class="features-block__text">Бесплатный<br>дизайн-макет</p>
+					</div>
+					<div class="features-block__item">
+						<i class="fas fa-award features-block__image"></i>
+						<p class="features-block__text">Пожизненная<br>гарантия</p>
+					</div>
+					<div class="features-block__item">
+						<i class="fas fa-desktop features-block__image"></i>
+						<p class="features-block__text">Высокое<br>качество изображений</p>
+					</div>
+					<div class="features-block__item">
+						<i class="fas fa-history features-block__image"></i>
+						<p class="features-block__text">100% соблюдение<br>сроков</p>
+					</div>
+					<div class="features-block__item">
+						<i class="fas fa-chess-queen features-block__image"></i>
+						<p class="features-block__text">Собственное<br>производство</p>
+					</div>
+					<div class="features-block__item">
+						<i class="fas fa-balance-scale features-block__image"></i>
+						<p class="features-block__text">Самые<br>низкие цены</p>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!--секция каталога скинали-->
+		<section class="catalog section" id="catalog">
+			<div class="container">
+
+				<h2 class="section-title">Каталог скинали</h2>
+				<!--каталог скинали-->
+				<div class="catalog-block">
+
+					<div class="catalog-block__item w1">
+						<a data-fancybox="catalog-pic-1" href="img/sample-a.jpg" class="catalog-block__link">
+							<img src="img/skin-0.png" class="catalog-block__pic" alt="">
+						</a>						
+						<span class="tag">Животные и птицы</span>
+						<div class="catalog-block__buttons">
+							<span class="fitting-button pop">примерить онлайн</span>
+							<a data-fancybox="window-1" href="#demand" class="add-button">заказать</a>				
+						</div>
+					</div>
+					<div class="catalog-block__item w2">
+						<a data-fancybox="catalog-pic-2" href="img/sample-c.jpg" class="catalog-block__link">
+							<img src="img/skin-0.png" class="catalog-block__pic" alt="">
+						</a>						
+						<span class="tag">Страны и города</span>
+						<div class="catalog-block__buttons">
+							<span class="fitting-button pop">примерить онлайн</span>
+							<a data-fancybox="window-2" href="#demand" class="add-button">заказать</a>				
+						</div>
+					</div>
+					<div class="catalog-block__item w3">
+						<a data-fancybox="catalog-pic-3" href="img/sample-p.jpg" class="catalog-block__link">
+							<img src="img/skin-0.png" class="catalog-block__pic" alt="">
+						</a>						
+						<span class="tag">Растения и цветы</span>
+						<div class="catalog-block__buttons">
+							<span class="fitting-button pop">примерить онлайн</span>
+							<a data-fancybox="window-3" href="#demand" class="add-button">заказать</a>				
+						</div>
+					</div>	
+					<div class="catalog-block__item w4">
+						<a data-fancybox="catalog-pic-4" href="img/sample-b.jpg" class="catalog-block__link">
+							<img src="img/skin-0.png" class="catalog-block__pic" alt="">
+						</a>						
+						<span class="tag">Архитектура</span>
+						<div class="catalog-block__buttons">
+							<span class="fitting-button pop">примерить онлайн</span>
+							<a data-fancybox="window-4" href="#demand" class="add-button">заказать</a>				
+						</div>
+					</div>
+					<div class="catalog-block__item w5">
+						<a data-fancybox="catalog-pic-5" href="img/sample-t.jpg" class="catalog-block__link">
+							<img src="img/skin-0.png" class="catalog-block__pic" alt="">
+						</a>						
+						<span class="tag">Авторские работы</span>
+						<div class="catalog-block__buttons">
+							<span class="fitting-button pop">примерить онлайн</span>
+							<a data-fancybox="window-5" href="#demand" class="add-button">заказать</a>				
+						</div>
+					</div>
+					<div class="catalog-block__item w6">
+						<a data-fancybox="catalog-pic-6" href="img/sample-y.jpg" class="catalog-block__link">
+							<img src="img/skin-0.png" class="catalog-block__pic" alt="">
+						</a>						
+						<span class="tag">Абстракция</span>
+						<div class="catalog-block__buttons">
+							<span class="fitting-button pop">примерить онлайн</span>
+							<a data-fancybox="window-6" href="#demand" class="add-button">заказать</a>				
+						</div>
+					</div>
+					<div class="catalog-block__item w7">
+						<a data-fancybox="catalog-pic-7" href="img/sample-k.jpg" class="catalog-block__link">
+							<img src="img/skin-0.png" class="catalog-block__pic" alt="">
+						</a>						
+						<span class="tag">Коллажи</span>
+						<div class="catalog-block__buttons">
+							<span class="fitting-button pop">примерить онлайн</span>
+							<a data-fancybox="window-7" href="#demand" class="add-button">заказать</a>				
+						</div>
+					</div>	
+					<div class="catalog-block__item w8">
+						<a data-fancybox="catalog-pic-8" href="img/sample-u.jpg" class="catalog-block__link">
+							<img src="img/skin-0.png" class="catalog-block__pic" alt="">
+						</a>						
+						<span class="tag">Подводный мир</span>
+						<div class="catalog-block__buttons">
+							<span class="fitting-button pop">примерить онлайн</span>
+							<a data-fancybox="window-8" href="#demand" class="add-button">заказать</a>				
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!--информационная секция-->
+		<section class="section blog-list" id="about">
+			<div class="container">
+
+				<div class="blog-list__header">
+					<h3 class="blog-list__title">Полезное, или что важно знать о скинали...</h3>					
+				</div>
+				<!--модальные окна информации-->
+				<div class="blog-list__wrapper">
+
+					<div class="pop-up" id="glass">
+						<div class="pop-up__wrapper">
+							<h2 class="pop-up__title">Виды стекла для изготовления панелей</h2>						
+							<p class="pop-up__text"><strong>Обычное толстое стекло.</strong> Технология изготовления скинали проста: на лист простого стекла большой толщины с внутренней стороны наклеивают пленку с подготовленным рисунком. Изображение может быть выполнено художником вручную. Для этого он использует масляные краски.</p>
+							<p class="pop-up__text"><strong>Закаленное стекло.</strong> Это высокопрочный материал, который не боится механических воздействий, нажима, ударов. Панели изготавливают путем нанесения фотопечати.</p>
+							<p class="pop-up__text"><strong>Триплекс.</strong> «Бессмертное» стекло. Разбить его можно только намеренно и целенаправленно, и это будет нелегко. Для изготовления скинали соединяют два куска стекла, между которыми помещают изображение. Рисунок невозможно будет стереть или повредить, а панели выдержат даже сильные удары. Но и стоимость таких фартуков скинали для кухни соответствует качеству.</p>
+						</div>
+					</div>
+
+					<div class="pop-up" id="print">
+						<div class="pop-up__wrapper">
+							<h2 class="pop-up__title">Какие бывают виды печати изоображений на скинали для кухни?</h2>				
+							<p class="pop-up__text">Есть несколько технологий нанесения рисунка на стеклянные панели, каждая из которых имеет свои преимущества:</p>
+							<p class="pop-up__text"><strong>Фотопечать.</strong> Это самый популярный способ, так как изображение на стеклянной панели выглядит объемным – «живым». Правильно подобрав фото скинали для кухни, можно визуально расширить пространство: помещение будет казаться светлее, чище и больше. Цветовые контрасты подчеркнут оригинальность оформления кухни.</p>
+							<p class="pop-up__text"><strong>Стереопечать.</strong> В каталогах изображений скинали для кухни нередко встречаются 3D-рисунки высокого качества и разрешения. Такие панели на стене создадут реалистичную иллюзию «параллельного измерения» в помещении. Это хороший вариант для людей, которые устали от однообразия, стремятся сделать свой дом небанальным и красивым.</p>
+							<p class="pop-up__text"><strong>Нанесение пленки.</strong> Кухонные фартуки оформляют недорогими скинали, на которые наклеена пленка с рисунком. Материал может быть гладким или с рельефной фактурой, глянцевым или матовым. Выбор – за заказчиком.</p>
+							<p class="pop-up__text"><strong>Объемные 3D-рисунки</strong> на скинали обойдутся дороже всего, а самый дешевый вариант – панели с пленкой. Но и здесь есть нюансы. Следует помнить, что такие скинали требуют особенно качественного монтажа: даже маленькие щели и зазоры приведут к отсыреванию клеевого состава и отслаиванию пленки от панелей.</p>
+						</div>
+					</div>
+
+					<div class="pop-up" id="work">
+						<div class="pop-up__wrapper">
+							<h2 class="pop-up__title">Варианты крепежа</h2>
+							<p class="pop-up__text">Есть два основных метода закрепления скинали, главным различием которых является внешний вид и легкость демонтажа.</p>
+							<p class="pop-up__text">Первый - <strong>с помощью саморезов.</strong> В данном случае по периметру панели делается несколько отверстий и стекло прикручивается к стене. Шляпки саморезов закрываются декоративными (обычно хромированными) заглушками. В дальнейшем, стекло легко демонтировать и вернуть на место в случае необходимости: например, ремонтные работы на кухне.</p>
+							<p class="pop-up__text">Второй метод - это <strong>крепление на клей.</strong> При таком способе никаких отверстий в стекле не делается, но и демонтировать такой фартук, без повреждения панели будет проблематично.</p>
+						</div>
+					</div>
+
+					<div class="pop-up" id="quest">
+						<div class="pop-up__wrapper">
+							<h2 class="pop-up__title">Вопросы-ответы</h2>
+							<p class="pop-up__text"><strong>Что такое скинали?</strong></p>	
+							<p class="pop-up__text">Скинали ("кухонный фартук") — это декоративная панель из стекла, на обратную поверхность которого нанесено изображение. Цветовая гамма и сюжет изображения подбирается в едином стиле с дизайном Вашего помещения. При производстве скинали используются: простое стекло, стекло каленое и оргстекло. Скинали — последний штрих при оформлении кухни, но они могут также преобразить и старую кухню. Они легко моются, сохраняя безупречный вид на протяжении долгого времени.</p>
+							<p class="pop-up__text"><strong>Срок изготовления?</strong></p>
+							<p class="pop-up__text">Обычный срок изготовления скинали - 2 недели с момента заключения договора.</p>
+							<p class="pop-up__text"><strong>Можно ли использовать свое изображение?</strong></p>
+							<p class="pop-up__text">Да. Но следует помнить, что представленное Вами изображение должно соответствовать обязательным требованиям: формат (.jpg .bmp .tiff .raw), разрешение файла не менее 1080*2560 пикселей (чем больше - тем лучше!)</p>
+							<p class="pop-up__text"><strong>Можно ли крепить скинали на плитку?</strong></p>
+							<p class="pop-up__text">Да, скинали можно крепить на плитку. Демонтировать ее не обязательно. Никаких проблем плитка не доставит и на качество монтажа не повлияет.</p>
+						</div>
+					</div>
+					<!--ярлыки модальных окон информации-->
+					<div class="blog-list__card">
+						<a data-fancybox="modal-1" href="#glass" class="blog-list__link">
+							<img src="img/blog-1.png" alt="">
+							<div class="blog-list__text">Виды стекла</div>
+						</a>
+						
+					</div>
+
+					<div class="blog-list__card">
+						<a data-fancybox="modal-2" href="#print" class="blog-list__link">
+							<img src="img/blog-2.png" alt="">
+							<div class="blog-list__text">Виды печати</div>
+						</a>						
+					</div>
+
+					<div class="blog-list__card">
+						<a data-fancybox="modal-3" href="#work" class="blog-list__link">
+							<img src="img/blog-3.png" alt="">
+							<div class="blog-list__text">Виды крепежа</div>
+						</a>						
+					</div>
+
+					<div class="blog-list__card">
+						<a data-fancybox="modal-4" href="#quest" class="blog-list__link">
+							<img src="img/blog-4.png" alt="">
+							<div class="blog-list__text">Вопросы-ответы</div>
+						</a>						
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!--секция цен на продукцию-->
+		<section class="section price" id="products">
+			<div class="container">
+				<!--модальное окно для заявки-->
+				<div class="modal-form" id="demand">
+					<form class="consultation">
+						<div class="consultation__title">Оставить заявку</div>
+						<p class="consultation__text">Здесь можно оформить заявку на интересующий Вас вид скинали</p>
+						<p class="consultation__text">Выберите понравившийся вариант, и наши специалисты свяжутся с вами, чтобы уточнить детали (размер, количество, сроки)</p>
+						<hr class="line">
+						<input type="text" class="modal-form__input" placeholder="Ваше имя" required>
+						<input type="text" class="modal-form__input" placeholder="Ваш телефон" required>
+						<hr class="line">
+						<label class="modal__label">Выберите вид скинали:</label>
+						<select class="modal-form__select" name="Вид скинали" required>
+							<option value="Прозрачные">Прозрачные</option>
+							<option value="Однотонные">Однотонные</option>
+							<option value="Полноцветные">Полноцветные</option>
+							<option value="Стекло Optiwite">Стекло "Optiwite"</option>
+							<option value="Зеркальные">Зеркальные</option>
+							<option value="С подсветкой">С подсветкой</option>
+							<option value="Световые панели">Световые панели</option>
+							<option value="Панно, картины">Панно, картины</option>
+						</select>
+						<hr class="line">
+						<input type="submit" class="button" value="Отправить">
+					</form>
+				</div> 
+				
+				<h2 class="section-title">Цены и виды скинали</h2>
+				
+				<div class="price-block">
+
+					<div class="price-card">
+						<div class="price-card__image">
+							<img src="img/skinali-1.png" alt="">
+						</div>
+						<div class="price-card__text">
+							<div class="price-card__pricetag">
+								<span class="price-card__info">Прозрачные</span>
+								<span class="price-card__price">от 2800 р/м2</span>
+							</div>
+						</div>
+						<div class="pricetag__button">
+							<a class="small-button" data-fancybox="window-9" href="#demand">Оставить заявку</a>
+						</div>
+					</div>
+
+					<div class="price-card">
+						<div class="price-card__image">
+							<img src="img/skinali-2.png" alt="">
+						</div>
+						<div class="price-card__text">
+							<div class="price-card__pricetag">
+								<span class="price-card__info">Однотонные</span>
+								<span class="price-card__price">от 3000 р/м2</span>
+							</div>
+						</div>
+						<div class="pricetag__button">
+							<a class="small-button" data-fancybox="window-10" href="#demand">Оставить заявку</a>
+						</div>
+					</div>
+
+					<div class="price-card">
+						<div class="price-card__image">
+							<img src="img/skinali-3.png" alt="">
+						</div>
+						<div class="price-card__text">
+							<div class="price-card__pricetag">
+								<span class="price-card__info">Полноцветные</span>
+								<span class="price-card__price">от 3200 р/м2</span>
+							</div>
+						</div>
+						<div class="pricetag__button">
+							<a class="small-button" data-fancybox="window-11" href="#demand">Оставить заявку</a>
+						</div>
+					</div>
+
+					<div class="price-card">
+						<div class="price-card__image">
+							<img src="img/skinali-5.png" alt="">
+						</div>
+						<div class="price-card__text">
+							<div class="price-card__pricetag">
+								<span class="price-card__info">Стекло "Optiwite"</span>
+								<span class="price-card__price">от 3600 р/м2</span>
+							</div>
+						</div>
+						<div class="pricetag__button">
+							<a class="small-button" data-fancybox="window-12" href="#demand">Оставить заявку</a>
+						</div>
+					</div>
+
+					<div class="price-card">
+						<div class="price-card__image">
+							<img src="img/skinali-6.png" alt="">
+						</div>
+						<div class="price-card__text">
+							<div class="price-card__pricetag">
+								<span class="price-card__info">Зеркальные</span>
+								<span class="price-card__price">от 2800 р/м2</span>
+							</div>
+						</div>
+						<div class="pricetag__button">
+							<a class="small-button" data-fancybox="window-13" href="#demand">Оставить заявку</a>
+						</div>
+					</div>
+
+					<div class="price-card">
+						<div class="price-card__image">
+							<img src="img/skinali-4.png" alt="">
+						</div>
+						<div class="price-card__text">
+							<div class="price-card__pricetag">
+								<span class="price-card__info">С подсветкой</span>
+								<span class="price-card__price">от 3800 р/м2</span>
+							</div>
+						</div>
+						<div class="pricetag__button">
+							<a class="small-button" data-fancybox="window-14" href="#demand">Оставить заявку</a>
+						</div>
+					</div>
+
+					<div class="price-card">
+						<div class="price-card__image">
+							<img src="img/skinali-8.png" alt="">
+						</div>
+						<div class="price-card__text">
+							<div class="price-card__pricetag">
+								<span class="price-card__info">Световые панели</span>
+								<span class="price-card__price">от 4200 р/м2</span>
+							</div>
+						</div>
+						<div class="pricetag__button">
+							<a class="small-button" data-fancybox="window-15" href="#demand">Оставить заявку</a>
+						</div>
+					</div>
+
+					<div class="price-card">
+						<div class="price-card__image">
+							<img src="img/skinali-7.png" alt="">
+						</div>
+						<div class="price-card__text">
+							<div class="price-card__pricetag">
+								<span class="price-card__info">Панно, картины</span>
+								<span class="price-card__price">от 3400 р/м2</span>
+							</div>
+						</div>
+						<div class="pricetag__button">
+							<a class="small-button" data-fancybox="window-16" href="#demand">Оставить заявку</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!--секция отзывов-->
+		<section class="section reviews">
+			<div class="container">
+
+				<h2 class="section-title">Отзывы наших клиентов</h2>
+				
+				<div class="reviews-wrapper">
+
+					<div class="reviews-wrapper__item">
+						<div class="reviews-wrapper__text">
+							Хочется отметить высокий уровень обслуживания и подготовку специалистов! Посещение салона оставило после себя самые приятные впечатления. Скорость изготовления заказа также на высоте!
+						</div>
+						<img src="img/babe-1.png" alt="" class="reviews-wrapper__image">
+						<span class="reviews-wrapper__name">Екатерина Иванова</span>
+					</div>
+
+					<div class="reviews-wrapper__item">
+						<div class="reviews-wrapper__text">
+							После завершения всех работ наша кухня просто преобразилась! Мастера фирмы выполнили весь процесс установки и монтажа быстро, аккуратно и качественно. Буду рекомендовать Фабрику скинали всем друзьям и знакомым!
+						</div>
+						<img src="img/babe-2.png" alt="" class="reviews-wrapper__image">
+						<span class="reviews-wrapper__name">Инна Русакова</span>
+					</div>
+
+					<div class="reviews-wrapper__item">
+						<div class="reviews-wrapper__text">
+							Люди явно горят своей работой. От менеджера принимающего заказы, до работников-монтажников, все умелые специалисты в своей сфере. Радует, что подобный подход к работе теперь можно увидеть не только на западе.
+						</div>
+						<img src="img/babe-3.png" alt="" class="reviews-wrapper__image">
+						<span class="reviews-wrapper__name">Наталья Селезнева</span>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!--секция-форма расчета скидок-->
+		<section class="offer">
+			<div class="container">
+				<!--форма расчета скидки клиента-->
+				<div class="offer__block back-2">
+
+					<h2 class="offer__title">Ищите где дешевле и лучше?</h2>
+					<span class="offer__subtitle">Если у вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле, укажите ее -<br> и мы Вам пересчитаем заказ с максимальной скидкой!</span>
+
+					<form action="#" class="offer__form form">
+
+						<div class="form__row modified">
+
+							<div class="form__group">
+								<label class="form__label">Ваше имя</label>
+								<input type="text" class="input form__input" required>
+							</div>
+
+							<div class="form__group">
+								<label class="form__label">Ваш телефон</label>
+								<input type="text" class="input form__input bn" required>
+							</div>
+
+							<div class="form__group">
+								<label class="form__label">Ваша цена</label>
+								<input type="text" class="input form__input" required>
+							</div>
+
+						</div>
+
+						<div class="form__row">
+							<div class="form__group">
+								<input type="submit" class="button form__button" value="Получить скидку">
+							</div>
+							<div class="form__caption">
+								<p class="form__caption--text">Ваши данные надежно защищены<br>Отправленные заявки ни к чему не обязывают</p>
+							</div>
+						</div>
+
+					</form>
+
+				</div>
+
+			</div>
+		</section>
+		<!--секция сравнения 'до и после'-->
+		<section class="section before">			
+
+				<h2 class="section-title">До и после</h2>
+
+				<div class="before-slider__wrapper">
+
+					<div class="before-slider">
+
+						<div class="before-slider__item">
+							<div id="box" class="before-after">
+								<img src="img/bef-af-2.png" alt="">
+								<img src="img/bef-af-1.png" alt="">
+							</div>
+						</div>
+
+						<div class="before-slider__item">
+							<div id="box" class="before-after">
+								<img src="img/bef-af-4.png" alt="">
+								<img src="img/bef-af-3.jpg" alt="">
+							</div>
+						</div>
+
+						<div class="before-slider__item">
+							<div id="box" class="before-after">
+								<img src="img/bef-af-6.png" alt="">
+								<img src="img/bef-af-5.png" alt="">
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+		</section>
+		<!--секция контактов-->
+		<section class="section contacts">
+			<div class="container">
+
+				<h2 class="section-title">Контакты</h2>
+
+				<div class="contacts-block">
+
+					<div class="contacts-block__item">
+						<span class="contacts-block__icon">
+							<i class="fas fa-phone"></i>
+						</span>
+						<span class="contacts-block__text">
+							+7 912 123-45-67
+						</span>
+					</div>
+
+					<div class="contacts-block__item">
+						<span class="contacts-block__icon">
+							<i class="fas fa-map-marker-alt"></i>
+						</span>
+						<span class="contacts-block__text">
+							Каширское шоссе, д.24c4, офис 345
+						</span>
+					</div>
+
+					<div class="contacts-block__item">
+						<span class="contacts-block__icon">
+							<i class="far fa-envelope-open"></i>
+						</span>
+						<span class="contacts-block__text">
+							skinalifactory@mail.ru
+						</span>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!--Модальное окно примерки скинали по категориям-->
+		<article class="sample" id="sample">
+			<div class="container-full">
+			<div class="sample__wrapper">
+				<!--крестик закрытия-->
+				<div class="exit">
+					<span class="exit__bg"></span>
+					<img src="img/cross-exit-black.svg" class="exit__pic" alt="">
+				</div>
+				<!--основная часть с примером кухни-->
+				<div class="sample__selector">
+					<div class="tab-wrap">
+						<!--эскизы скинали-->
+						<div class="content">
+							<div class="tab-cont" id="tab_1">
+								<img src="img/sample-bg1.jpg" class="tab-cont__img" alt="">								
+							</div>
+							<div class="tab-cont hide" id="tab_2">
+								<img src="img/sample-bg2.jpg" class="tab-cont__img" alt="">							
+							</div>
+							<div class="tab-cont hide" id="tab_3">							
+								<img src="img/sample-bg3.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_4">							
+								<img src="img/sample-bg4.png" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_5">							
+								<img src="img/sample-bg5.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_6">							
+								<img src="img/sample-bg6.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_7">							
+								<img src="img/sample-bg7.png" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_8">							
+								<img src="img/sample-bg8.png" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_9">							
+								<img src="img/sample-bg9.png" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_10">							
+								<img src="img/sample-bg10.png" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_11">							
+								<img src="img/sample-bg11.png" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_12">							
+								<img src="img/sample-bg12.png" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_13">
+								<img src="img/sample-bg13.jpg" class="tab-cont__img" alt="">							
+							</div>
+							<div class="tab-cont hide" id="tab_14">
+								<img src="img/sample-bg14.jpg" class="tab-cont__img" alt="">							
+							</div>
+							<div class="tab-cont hide" id="tab_15">							
+								<img src="img/sample-bg15.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_16">							
+								<img src="img/sample-bg16.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_17">							
+								<img src="img/sample-bg17.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_18">							
+								<img src="img/sample-bg18.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_19">							
+								<img src="img/sample-bg19.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_20">							
+								<img src="img/sample-bg20.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_21">							
+								<img src="img/sample-bg21.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_22">							
+								<img src="img/sample-bg22.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_23">							
+								<img src="img/sample-bg23.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_24">							
+								<img src="img/sample-bg24.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_25">
+								<img src="img/sample-bg25.jpg" class="tab-cont__img" alt="">						
+							</div>
+							<div class="tab-cont hide" id="tab_26">
+								<img src="img/sample-bg26.jpg" class="tab-cont__img" alt="">						
+							</div>
+							<div class="tab-cont hide" id="tab_27">							
+								<img src="img/sample-bg27.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_28">							
+								<img src="img/sample-bg28.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_29">							
+								<img src="img/sample-bg29.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_30">							
+								<img src="img/sample-bg30.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_31">							
+								<img src="img/sample-bg31.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_32">							
+								<img src="img/sample-bg32.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_33">							
+								<img src="img/sample-bg33.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_34">							
+								<img src="img/sample-bg34.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_35">							
+								<img src="img/sample-bg35.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_36">							
+								<img src="img/sample-bg36.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_37">
+								<img src="img/sample-bg37.jpg" class="tab-cont__img" alt="">							
+							</div>
+							<div class="tab-cont hide" id="tab_38">
+								<img src="img/sample-bg38.jpg" class="tab-cont__img" alt="">							
+							</div>
+							<div class="tab-cont hide" id="tab_39">							
+								<img src="img/sample-bg39.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_40">							
+								<img src="img/sample-bg40.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_41">							
+								<img src="img/sample-bg41.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_42">							
+								<img src="img/sample-bg42.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_43">							
+								<img src="img/sample-bg43.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_44">							
+								<img src="img/sample-bg44.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_45">							
+								<img src="img/sample-bg45.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_46">							
+								<img src="img/sample-bg46.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_47">							
+								<img src="img/sample-bg47.jpg" class="tab-cont__img" alt="">
+							</div>
+							<div class="tab-cont hide" id="tab_48">							
+								<img src="img/sample-bg48.jpg" class="tab-cont__img" alt="">
+							</div>
+						</div>
+						<!--кнопки переключения эскизов скинали-->
+						<div class="content-switcher">
+							<div class="switcher__left">
+							<fieldset class="switcher__separator">
+								<!--align="center" инлайново нужен для Firefox который не выравнивает <legend> иначе!-->
+								<legend class="switcher__title" align="center">Животные и птицы</legend>
+								<ul class="selector tabs">
+									<li class="selector__item active">
+										<a href="#tab_1" class="selector__link">A-01</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_2" class="selector__link">A-02</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_3" class="selector__link">A-03</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_4" class="selector__link">A-04</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_5" class="selector__link">A-05</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_6" class="selector__link">A-06</a>
+									</li>
+								</ul>
+							</fieldset>
+							<fieldset class="switcher__separator">
+								<legend class="switcher__title" align="center">Страны и города</legend>
+								<ul class="selector tabs">
+									<li class="selector__item">
+										<a href="#tab_7" class="selector__link">C-01</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_8" class="selector__link">C-02</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_9" class="selector__link">C-03</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_10" class="selector__link">C-04</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_11" class="selector__link">C-05</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_12" class="selector__link">C-06</a>
+									</li>
+								</ul>
+							</fieldset>
+							<fieldset class="switcher__separator">
+								<legend class="switcher__title" align="center">Растения и цветы</legend>
+								<ul class="selector tabs">
+									<li class="selector__item">
+										<a href="#tab_13" class="selector__link">P-01</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_14" class="selector__link">P-02</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_15" class="selector__link">P-03</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_16" class="selector__link">P-04</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_17" class="selector__link">P-05</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_18" class="selector__link">P-06</a>
+									</li>
+								</ul>
+							</fieldset>
+							<fieldset class="switcher__separator">
+								<legend class="switcher__title" align="center">Архитектура</legend>
+								<ul class="selector tabs">
+									<li class="selector__item">
+										<a href="#tab_19" class="selector__link">B-01</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_20" class="selector__link">B-02</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_21" class="selector__link">B-03</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_22" class="selector__link">B-04</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_23" class="selector__link">B-05</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_24" class="selector__link">B-06</a>
+									</li>
+								</ul>
+							</fieldset>
+							</div>
+							<div class="switcher__right">
+							<fieldset class="switcher__separator">
+								<legend class="switcher__title" align="center">Авторские работы</legend>
+								<ul class="selector tabs">
+									<li class="selector__item">
+										<a href="#tab_25" class="selector__link">T-01</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_26" class="selector__link">T-02</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_27" class="selector__link">T-03</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_28" class="selector__link">T-04</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_29" class="selector__link">T-05</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_30" class="selector__link">T-06</a>
+									</li>
+								</ul>
+							</fieldset>
+							<fieldset class="switcher__separator">
+								<legend class="switcher__title" align="center">Абстракция</legend>
+								<ul class="selector tabs">
+									<li class="selector__item">
+										<a href="#tab_31" class="selector__link">Y-01</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_32" class="selector__link">Y-02</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_33" class="selector__link">Y-03</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_34" class="selector__link">Y-04</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_35" class="selector__link">Y-05</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_36" class="selector__link">Y-06</a>
+									</li>
+								</ul>
+							</fieldset>
+							<fieldset class="switcher__separator">
+								<legend class="switcher__title" align="center">Коллажи</legend>
+								<ul class="selector tabs">
+									<li class="selector__item">
+										<a href="#tab_37" class="selector__link">K-01</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_38" class="selector__link">K-02</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_39" class="selector__link">K-03</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_40" class="selector__link">K-04</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_41" class="selector__link">K-05</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_42" class="selector__link">K-06</a>
+									</li>
+								</ul>
+							</fieldset>
+							<fieldset class="switcher__separator">
+								<legend class="switcher__title" align="center">Подводный мир</legend>
+								<ul class="selector tabs">
+									<li class="selector__item">
+										<a href="#tab_43" class="selector__link">U-01</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_44" class="selector__link">U-02</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_45" class="selector__link">U-03</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_46" class="selector__link">U-04</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_47" class="selector__link">U-05</a>
+									</li>
+									<li class="selector__item">
+										<a href="#tab_48" class="selector__link">U-06</a>
+									</li>
+								</ul>
+							</fieldset>
+							</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+			<div class="sample__description">
+				<div class="description__right">
+					<p class="description__text">Наш онлайн-констуктор позволит оценить, как будет выглядеть Ваша обновленная кухня после завершения всех монтажных работ. В уютной домашней обстановке, не торопясь, подберите именно тот вариант скинали который наиболее подходит к Вашей кухне!</p>
+				</div>
+			</div>
+			</div>
+		</article>
+		<!--яндекс карта-->
+		<div class="map" id="map">	
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8c60c2f50f60dd24c5dc09ff2117aa23a339394909bdc7eb55023b18017afac3&amp;width=100%&amp;height=300&amp;lang=ru_RU&amp;scroll=false"></script>	
+		</div>
+
+		<section class="section question">
+			<div class="container">
+				<div class="question__wrap">
+					<span class="question-title">Остались вопросы?</span>
+					<a data-fancybox="consult-form-bottom" href="#consult" class="question__link">Задайте их менеджеру</a>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<!--подвал-->
+	<footer class="footer">
+		<div class="container">
+			
+			<div class="footer__wrap">
+				<div class="footer__desc">
+					<h4 class="footer__title">Фабрика скинали #1</h4>
+					<span class="footer__subtitle">ведущий производитель скинали</span>
+					<span class="footer__copyright">FOX Design studio. 2019</span>
+				</div>			
+
+				<div class="footer__contacts">
+					<a href="#" class="footer__phone">+7 499 123-45-67</a>
+					<a href="#" class="footer__mail">skinalifactory@mail.ru</a>
+					<div class="footer-social">
+						<a href="#" class="footer-social__link"><i class="fab fa-facebook-square"></i></a>
+						<a href="#" class="footer-social__link"><i class="fab fa-twitter-square"></i></a>
+						<a href="#" class="footer-social__link"><i class="fab fa-google-plus-square"></i></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	<!--дополнительные элементы-->
+	<!--кнопка наверх-->
+	<a href="#start" class="return" title="наверх">
+		<i class="fas fa-angle-up"></i>
+	</a>
+	<!--прелоадер страницы-->
+	<div class="preloader">		
+		<img src="img/logo.png" alt="" class="preloader__logo">
+	</div>
+
+</div>
+	<!--скрипты-->
+	<script src="js/libs.min.js"></script>
+	<script src="js/my.js"></script>
+	<script>
+		//плагин сравнения изображений twentytwenty
+		$('.before-after').twentytwenty({
+			before_label: 'Без скинали',
+			after_label: 'Со скинали'
+		});
+		//слайдер подключенный к картинкам сравнения
+		$('.before-slider').slick({
+			draggable: false,
+			dots: true,
+			adaptiveHeight: true,
+			arrows : false,
+			dotsClass: 'before-slider__dots',
+		});
+		//слайдер-невидимка для отзывов (адаптив)
+		$('.reviews-wrapper').slick({
+			slidesToShow: 3,
+			infinite: false,
+			arrows : false,
+			responsive: [
+			{
+		      breakpoint: 2560,
+		      settings: {
+		        slidesToShow: 3,
+		      }
+		    },
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 2,
+		      }
+		    },
+		    {
+		      breakpoint: 670,
+		      settings: {
+		        slidesToShow: 1,
+		      }
+		    },
+		    ]
+		});
+	</script>
+
+</body>
+</html>
