@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Rapunzel</title>	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="home">
+<!--враппер сайта-->
+<div class="site-wrapper">
+  <!--шапка сайта-->
+  <header class="header" style="background-image: url('img/category-nails.jpg');">
+    <!--меню навигации (плавающее)-->
+    <div class="navigation">
+      <!--логотип-ссылка-->
+      <div class="page-logo">
+        <a href="index.html" class="page-logo__link">
+          <img src="img/logo.png" class="page-logo__pic">
+        </a>
+      </div>
+      <!--структура меню-->
+      <ul class="navigation-wrapper">
+
+        <li class="navigation__item dropdown" id="glow">
+
+          <div class="navigation__link point active">Услуги</div>
+
+          <ul class="sub-navigation">
+            <li class="sub-navigation__item">
+              <a href="hairs.html" class="sub-navigation__link">Парикмахерский сервис</a>
+            </li>
+            <li class="sub-navigation__item">
+              <a href="cosmetic.html" class="sub-navigation__link">Косметологический сервис</a>
+            </li>
+            <li class="sub-navigation__item">
+              <a href="nails.html" class="sub-navigation__link">Маникюрный сервис</a>
+            </li>
+            <li class="sub-navigation__item">
+              <a href="massage.html" class="sub-navigation__link">Массаж и SPA</a>
+            </li>
+            <li class="sub-navigation__item">
+              <a href="solarium.html" class="sub-navigation__link">Солярий</a>
+            </li>
+          </ul>
+
+        </li>
+
+        <li class="navigation__item">
+          <a href="team.html" class="navigation__link">Специалисты</a>
+        </li>
+
+        <li class="navigation__item">
+          <a href="price.html" class="navigation__link">Прайс-лист</a>
+        </li>
+
+        <li class="navigation__item">
+          <a href="about.html" class="navigation__link">О салоне</a>
+        </li>
+
+      </ul>
+      <!--анимированная кнопка-бургер-->
+      <div class="burger">
+        <span></span>
+      </div>
+
+    </div>
+    <!--содержимое шапки дополнительных страниц-->
+		<div class="page-flex">
+			<div class="container">
+        <!--заголовок категории-->
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+						<div class="header-composition">
+							<div class="welcome-page">
+								<p><span>Rapunzel</span></p>
+								<h1 class="h1 little">маникюрный сервис</h1>  														
+							</div>
+						</div>     							
+					</div>
+				</div>
+        <!--описание категории-->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header text-center">
+              <p>Каждая женщина знает, секрет уверенности в себе - безупречность в деталях. В таком ответственном деле как красота, мелочей быть не может! Именно поэтому, наш салон может предложить милым дамам весь спектр косметических услуг, уделяя особое внимание каждому из направлений.</p>
+              <p>Только в салоне Rapunzel опытные и внимательные мастера подарят вашим ногтям заботу и комфорт которые они заслуживают.</p>
+            </div>
+          </div>
+        </div>			
+        <!--колонки описания маникюрных технологий-->
+        <div class="row">
+          <div class="col-md-12">              
+            <div class="nails-complex text-center">
+
+              <div class="nails-complex-type" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                <i class="fas fa-crown"></i>
+                <h3 class="nails-title">Система IBX</h3>
+                <p>IBX - первая в мире система внутреннего действия. Проникающая и укрепляющая система действует внутри ногтя в отличие от большинства традиционных средств, действующих на поверхности. Технология IBX направлена на максимальное впитывание и внедрение в ногтевую пластину.</p>         
+              </div>
+              <div class="nails-complex-type" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                <i class="fas fa-crown"></i>
+                <h3 class="nails-title">Комбо-маникюр</h3>
+                <p>Комбинированный маникюр - это процедура по уходу за руками, которая включает в себя различные техники обработки ногтевой пластины. То есть вы можете сочетать аппаратный маникюр с обрезным, полировать пластинку по японской технологии, а за кожей ухаживать по программе SPA.</p>         
+              </div>
+              <div class="nails-complex-type" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="1000">
+                <i class="fas fa-crown"></i>
+                <h3 class="nails-title">СПА-маникюр</h3>
+                <p>СПА-маникюр - это очень приятный элемент программы ухода за руками. В него входят массаж, теплые расслабляющие ванночки для рук, пилинг и питательные маски.</p>
+              </div> 
+
+            </div>
+          </div>  
+        </div>
+
+      </div>
+		</div>
+
+  </header>  
+  <!--секция маникюрных услуг--> 
+  <section class="s-services">
+    <!--карусель услуг-->
+    <div class="owl-carousel carousel-sevices">
+
+      <div class="carousel-services-item">
+        <div class="carousel-services-content">
+          <div class="carousel-services-composition">
+            <h3 class="carousel-service-title">Аппаратный маникюр</h3>
+            <p>Современная технология, которая не так давно появилась на рынке, но уже стала популярной. С помощью аппаратного маникюра можно выполнить необходимую обработку ногтя и кутикулы, не повреждая кровеносные сосуды, что обеспечивает 100% безопасность.
+            </p>                     
+          </div>
+        </div>
+        <div class="carousel-services-image" style="background-image: url(img/nails-apparat.jpg);"></div>
+      </div>
+
+      <div class="carousel-services-item">
+        <div class="carousel-services-content">
+          <div class="carousel-services-composition">
+            <h3 class="carousel-service-title">Лечение и укрепление ногтей системой IBX</h3>
+            <p>IBX сцепляется с поверхностью ногтя и проникает в саму ее структуру. Поэтому он не снимается жидкостью для снятия акрила и гель-лаков, а отрастает только вместе с натуральным ногтем, и удалить его можно только срезав.</p>             
+          </div>
+        </div>
+        <div class="carousel-services-image" style="background-image: url(img/nails-ibx.jpg);"></div>
+      </div>
+
+      <div class="carousel-services-item">
+        <div class="carousel-services-content">
+          <div class="carousel-services-composition">
+            <h3 class="carousel-service-title">Все для ухода за ногтями</h3>
+            <p>
+              Наиболее полный спектр услуг по уходу за вашими ногтями. Начиная от легкого ухода, покраски до сложнейших процедур восстановления ногтевых пластин по самым передовым технологиям.  
+            </p>             
+          </div>
+        </div>
+        <div class="carousel-services-image" style="background-image: url(img/nails-arms.jpg);"></div>
+      </div>
+
+      <div class="carousel-services-item">
+        <div class="carousel-services-content">
+          <div class="carousel-services-composition">
+            <h3 class="carousel-service-title">Коррекция вросшего ногтя титановой нитью</h3>
+            <p>Коррекция вросших или поврежденных ногтей титановой нитью безболезненна и не препятствует привычному образу жизни, а результат выглядит совершенно естественно и эстетично.</p>             
+          </div>
+        </div>
+        <div class="carousel-services-image" style="background-image: url(img/nails-foots.jpg);"></div>
+      </div>
+
+      <div class="carousel-services-item">
+        <div class="carousel-services-content">
+          <div class="carousel-services-composition">
+            <h3 class="carousel-service-title">Долговременное покрытие ногтей лаком</h3>
+            <p>
+              Долговременное покрытие держится порядка двух недель, застывает под воздействием ультрафиолета, оно тонкое и пластичное, устойчиво к ударам, не скалывается. Наносится в течение нескольких минут без запиливания ногтя.
+            </p>             
+          </div>
+        </div>
+        <div class="carousel-services-image" style="background-image: url(img/nails-brush.jpg);"></div>
+      </div>
+
+      <div class="carousel-services-item">
+        <div class="carousel-services-content">
+          <div class="carousel-services-composition">
+            <h3 class="carousel-service-title">Парафинотерапия для рук и ног</h3>
+            <p>Теплый расплавленный парафин оказывает укрепляющее влияние на кожу и мышцы рук, увлажняет их и стимулирует процесс кровообращения.</p>             
+          </div>
+        </div>
+        <div class="carousel-services-image" style="background-image: url(img/nails-wax.jpg);"></div>
+      </div>
+
+    </div>
+    
+  </section>
+  <!--секция цен-->
+  <section class="hair-prices st-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <table class="prices__table">
+            <caption>Все представленные цены являются предварительными.<br>Полную стоимость услуги уточняйте при оговаривании деталей заказа с менеджером!</caption>            
+            <tr>
+              <th colspan="2" class="accent">Цены на услуги маникюрного сервиса</th>
+            </tr>
+            <tr>
+              <td>Маникюр с гель-лаком (шеллак)</td>
+              <td>750</td>              
+            </tr>
+            <tr>
+              <td>Аппаратный маникюр</td>
+              <td>200</td>              
+            </tr>
+            <tr>
+              <td>Свадебный маникюр</td>
+              <td>500</td>              
+            </tr>
+            <tr>
+              <td>Французский маникюр</td>
+              <td>800</td>              
+            </tr>
+            <tr>
+              <td>Наращивание ногтей гелем</td>
+              <td>1700</td>             
+            </tr>
+            <tr>
+              <td>Наращивание ногтей на типсы</td>
+              <td>1900</td>             
+            </tr> 
+            <tr>
+              <td>Дизайн маникюра</td>
+              <td>от 100</td>             
+            </tr> 
+          </table>  
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--секция примеров выполненных работ-->
+  <section class="preview">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-12">
+
+          <h2 class="preview__title">Примеры выполненных работ</h2>
+
+          <div class="preview__wrapper owl-carousel">
+            <div class="preview__item">
+              <img src="img/nail-1.jpg" alt="" class="preview__pic">
+            </div>
+            <div class="preview__item">
+              <img src="img/nail-5.jpg" alt="" class="preview__pic">
+            </div>
+            <div class="preview__item">
+              <img src="img/nail-2.jpg" alt="" class="preview__pic">
+            </div>
+            <div class="preview__item">
+              <img src="img/nail-3.jpg" alt="" class="preview__pic">
+            </div>
+            <div class="preview__item">
+              <img src="img/nail-4.jpg" alt="" class="preview__pic">
+            </div>
+
+          </div>
+
+      </div>
+    </div>
+  </section>
+  <!--секция специалиста данной категории-->
+	<section class="s-nails inverse">
+		<div class="container">
+			<div class="row">
+
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="specialist">
+
+                <div class="spec-portrait">
+                    <img src="img/masters-sveta.png" alt="">                                
+                </div>
+
+                <h3 class="spec-name">
+                    Иванова Светлана Игоревна
+                </h3>
+
+                <p class="spec-text">
+                    Мастер высшей категории. Лауреат дизайнерских премий и международных конкурсов.<br>
+                    В команде Rapunzel с 2008 года. Тысячи довольных клиентов и сотни
+                    благодарных отзывов. Руководствуется принципом: или делай превосходно, или не делай вовсе!
+                </p>  
+
+            </div>
+        </div>
+
+				<div class="col-lg-6 col-md-6 col-sm-6">
+
+					<form class="page-callback text-center">
+
+						<div class="success"><span>Спасибо за заявку</span></div>
+
+						<!-- Hidden required fields -->
+						<input type="hidden" name="project_name" value="Rapunzel">
+						<input type="hidden" name="admin_email" value="grayfoxbox@gmail.com">
+						<input type="hidden" name="form_subject" value="Заявка с Rapunzel">
+						<!-- END Hidden required fields -->
+
+						<input type="hidden" name="Страница" value=""> <!-- это будет помечать для админа, с какой страницы ушла заявка-->
+
+						<div class="callback-logo"><img src="img/logo.png" alt="сайт лого"></div>
+						<div class="formhead">Записаться к специалисту</div>
+						<p>Оставьте заявку, и мы перезвоним вам в течение 15 минут.</p>
+
+						<input type="text" name="Имя" placeholder="Ваше имя..." required>
+						<input type="text" name="Телефон" placeholder="Ваш телефон..." required>
+						<select name="Услуга" class="callback__select">
+							<option>Маникюр</option>
+							<option>Наращивание ногтей</option>
+							<option>Художественное оформление</option>
+              <option>Констультация</option>
+						</select>
+						<button class="button button-white">Подтвердить</button>
+						
+					</form>
+					
+				</div>
+
+			</div>
+		</div>
+	</section> 
+  <!--подвал сайта-->
+  <footer class="main-footer">  	
+		<div class="container">
+			<div class="row">
+        <!--колонка футера социальных ссылок-->
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="footer-column first">
+						<a href="index.html"><img src="img/logo.png" alt="логотип сайта" class="logo-footer"></a>
+						<p>Салон красоты<br>бизнес-класса в Москве</p>
+						<div class="social-footer">      			
+  							<nav class="social">
+  								<ul>
+  									<li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+  									<li>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+  									<li>
+                      <a href="#"><i class="fab fa-vk"></i></a>
+                    </li>
+  								</ul>
+  							</nav>
+  						</div>
+					</div>
+				</div>
+        <!--колонка футера со ссылками навигации-->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="footer-column">
+						<nav class="footer-menu">  							
+							<ul>
+								<li>
+                  <a href="hairs.html">Парикмахерский сервис</a>
+                </li>
+								<li>
+                  <a href="">Косметологический сервис</a>
+                </li>
+								<li class="active">
+                  <a href="nails.html">Маникюрный сервис</a>
+                </li>
+								<li>
+                  <a href="massage.html">Массаж и SPA</a>
+                </li>
+								<li>
+                  <a href="solarium.html">Солярий</a>
+                </li>
+								<li>
+                  <a href="team.html">Наши специалисты</a>
+                </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+        <!--колонка футера с адресом и графиком-->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="footer-column">
+						<p class="footer-addr"><i class="fas fa-location-arrow"></i>г.Москва, ул. Ивана Бабушкина 22с1 / м.Профсоюзная</p>  
+						<p class="footer-addr"><i class="far fa-clock"></i>Время работы: ежедневно,<br>10:00 - 22:00</p>
+						<p class="footer-addr"><span class="footer-phone"><i class="fas fa-mobile-alt"></i>+7 (495) 922-77-72</span></p>
+					</div>
+				</div>
+         <!--колонка футера с картой-->
+				<div class="col-lg-4 col-md-12 col-sm-6">
+  				<div class="footer-column">
+    				<div class="map">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c9b9b490c7484bf9b4feeeb061de59ebfb8a6bf086b2524949bb8bb4ec8b6c1&amp;width=100%&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+  				</div>
+				</div>
+				
+		  </div>
+	  </div>
+  </footer>
+	<!--кнопка наверх-->
+	<div class="top" title="Наверх">
+    <i class="fas fa-angle-double-up"></i>
+  </div>
+
+</div>
+	<!--скрипты-->
+	<script src="js/scripts.min.js"></script>
+
+  <script>
+    //настройки плагина owl-carousel
+    $('.preview__wrapper').owlCarousel({
+      nav: true,
+      dots: false,
+      loop: true,
+      smartSpeed: 900,
+      items: 3,      
+      navText: ['<img src="img/left-arrow.svg" class="prev-btn">', '<img src="img/right-arrow.svg" class="next-btn">'],
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        500: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>

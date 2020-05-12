@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Rapunzel</title>	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="home">
+<!--враппер сайта-->
+<div class="site-wrapper">
+	<!--шапка сайта-->
+	<header class="header" style="background-image: url('img/category-hairs.jpg');">
+    	<!--меню навигации (плавающее)-->
+	    <div class="navigation">
+	    	<!--логотип-ссылка-->
+	    	<div class="page-logo">
+	    		<a href="index.html" class="page-logo__link">
+	        		<img src="img/logo.png" class="page-logo__pic">
+	        	</a>
+	    	</div>
+	    	<!--структура меню-->
+	    	<ul class="navigation-wrapper">
+
+		        <li class="navigation__item dropdown" id="glow">
+
+		        	<div class="navigation__link point active">Услуги</div>
+
+					<ul class="sub-navigation">
+						<li class="sub-navigation__item">
+							<a href="hairs.html" class="sub-navigation__link">Парикмахерский сервис</a>
+						</li>
+						<li class="sub-navigation__item">
+							<a href="cosmetic.html" class="sub-navigation__link">Косметологический сервис</a>
+						</li>
+						<li class="sub-navigation__item">
+							<a href="nails.html" class="sub-navigation__link">Маникюрный сервис</a>
+						</li>
+						<li class="sub-navigation__item">
+							<a href="massage.html" class="sub-navigation__link">Массаж и SPA</a>
+						</li>
+						<li class="sub-navigation__item">
+							<a href="solarium.html" class="sub-navigation__link">Солярий</a>
+						</li>
+					</ul>
+		        </li>
+
+				<li class="navigation__item">
+					<a href="team.html" class="navigation__link">Специалисты</a>
+				</li>
+				<li class="navigation__item">
+					<a href="price.html" class="navigation__link">Прайс-лист</a>
+				</li>
+				<li class="navigation__item">
+					<a href="about.html" class="navigation__link">О салоне</a>
+				</li>
+
+	    	</ul>
+			<!--анимированная кнопка-бургер-->
+			<div class="burger">
+				<span></span>
+			</div>
+
+	    </div>
+    	<!--содержимое шапки дополнительных страниц-->
+		<div class="page-flex">
+			<div class="container">
+	        	<!--заголовок категории-->
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+						<div class="header-composition">
+							<div class="welcome-page">
+								<p><span>Rapunzel</span></p>
+								<h1 class="h1 little-2">парикмахерский сервис</h1>  														
+							</div>
+						</div>     							
+					</div>
+				</div>
+		        <!--описание категории-->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="page-header text-center">
+							<p>Стильная и эффектная прическа - неотъемлемая часть любого стиля каждого уважающего себя человека. Не важно, будет это долгожданный поход в дорогой ресторан или будничная поездка в офис - выглядеть нужно на все сто! Ну а помочь в этом нелегком деле смогут только истинные профессионалы своего ремесла.</p>
+							<p>Настоящий парикмахер должен жить своей работой, разбираться во всем современных трендах, и постоянно совершенствовать свое ремесло. Именно таких ръяных энтузиастов и собрал под свои знамена наш салон.</p>
+							<p>Только у нас в Rapunzel, вы всегда можете быть уверены в своих ожиданиях. Любая идея, самый изощренный каприз, смелый полет фантазии - наши мастера воплотят в жизнь всё, с неизменно превосходным результатом.</p>
+						</div>
+					</div>
+				</div>
+				<!--анимированное превью раздела-->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="hairworks">
+							<!--блок десктоп версии-->
+							<div class="hairworks__wrapper">
+								<img src="img/hairs-left.png" alt="" class="hairworks__pic" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1200">
+								<img src="img/hairs-center.png" alt="" class="hairworks__pic" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1200">
+								<img src="img/hairs-right.png" alt="" class="hairworks__pic" data-aos="zoom-in" data-aos-delay="1200" data-aos-duration="1200">
+							</div>
+							<!--блок для мобильных устройств-->
+							<div class="hairworks__wrapper--mobile">
+								<img src="img/hairs.jpg" alt="" class="mobile__pic">
+							</div>
+						</div>
+					</div>
+				</div>
+
+    		</div>
+		</div>
+
+	</header>
+	<!--секция описаний выполняемых работ-->
+	<section class="s-services">
+    <!--карусель услуг-->
+    <div class="owl-carousel carousel-sevices">
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Блондирование и мелирование волос</h3>
+						<p>
+						Благодаря высококачественным порошкам при осветлении волос достигаются максимально светлые оттенки. Продукты не содержат антижелтые пигменты и при этом не дают эффекта желтизны. Плюсом также является фиксированное время действия: после осветления продукт перестает действовать.
+						</p>                     
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/hairs-blonde.jpg);"></div>
+		</div>
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Биологическая завивка волос</h3>
+						<p>Предлагаются три вида средств для биозавивки волос:</p>
+						<p style="text-align: left;">- алкалиновое - для плотных, се­дых волос<br>
+						- экзотермическое - для нормаль­ных, сухих и окрашенных волос<br>
+						- кислотное - для блондированных и тонких волос</p>             
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/wig.jpg);"></div>
+		</div>
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Наращивание натуральных волос</h3>
+						<p>Наращивание натуральных волос может производиться по следующим технологиям:</p>
+						<p style="text-align: left;">- Наращивание на кератиновые капсулы<br>
+						- Наращивание волос на металлические клипсы<br>
+						- Французское наращивание волос<br>
+						- Ленточное наращивание волос
+						</p>						             
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/longhair.jpg);"></div>
+		</div>
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Свадебные и вечерние образы</h3>
+						<p>Вы сможете попробовать различные варианты причесок и выбрать наиболее для вас подходящую.
+						Огромный каталог созданный с учетом всех современных тенденций.</p>            
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/bride.jpg);"></div>
+		</div>
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Стрижка горячими ножницами</h3>
+						<p>Горячие ножницы «запаивают» кончик волоса, делая срез овальным. Благодаря такой процедуре предотвращается вымывание белков, аминокислот и витаминов, нормализуются механизмы увлажнения, восстанавливаются защитные функции волос</p>             
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/hairs-shortcut.jpg);"></div>
+		</div>
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Кератиновое выпрямление волос</h3>
+						<p>Кератиновое выпрямление восполняет недостаток кератина. Состав питает волосы изнутри и обволакивает снаружи. Именно это распрямляет волосы, делает их прямыми, гладкими, блестящими и очень ухоженными.</p>             
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/hairs-forward.jpg);"></div>
+		</div>
+
+    </div>
+	</section>
+	<!--секция цен-->
+	<section class="hair-prices st-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<table class="prices__table">
+						<caption>Все представленные цены являются предварительными.<br>Полную стоимость услуги уточняйте при оговаривании деталей заказа с менеджером!</caption>						
+						<tr>
+							<th colspan="2" class="red">Цены на услуги парикмахерского сервиса</th>
+						</tr>
+						<tr>
+							<td>Стрижка модельная</td>
+							<td>760</td>							
+						</tr>
+						<tr>
+							<td>Стрижка горячими ножницами</td>
+							<td>1000</td>							
+						</tr>
+						<tr>
+							<td>Стрижка челки</td>
+							<td>300</td>							
+						</tr>
+						<tr>
+							<td>Прическа вечерняя</td>
+							<td>1800</td>							
+						</tr>	
+						<tr>
+							<td>Свадебная прическа</td>
+							<td>от 3500</td>							
+						</tr>	
+						<tr>
+							<td>Женская стрижка</td>
+							<td>1100</td>							
+						</tr>	
+						<tr>
+							<td>Мужская стрижка</td>
+							<td>900</td>							
+						</tr>	
+						<tr>
+							<td>Укладка (мужская)</td>
+							<td>300-500</td>							
+						</tr>
+					</table>	
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--секция примеров выполненных работ-->
+	<section class="preview">
+		<div class="container">
+			<div class="row">
+
+			<div class="col-md-12">
+
+			<h2 class="preview__title">Примеры выполненных работ</h2>
+
+			<div class="preview__wrapper owl-carousel">
+				<div class="preview__item">
+					<img src="img/hair-5.jpg" alt="" class="preview__pic">
+				</div>
+				<div class="preview__item">
+					<img src="img/hair-3.jpg" alt="" class="preview__pic">
+				</div>
+				<div class="preview__item">
+					<img src="img/hair-6.jpg" alt="" class="preview__pic">
+				</div>
+				<div class="preview__item">
+					<img src="img/hair-2.jpg" alt="" class="preview__pic">
+				</div>
+				<div class="preview__item">
+					<img src="img/hair-4.jpg" alt="" class="preview__pic">
+				</div>
+				<div class="preview__item">
+					<img src="img/hair-1.jpg" alt="" class="preview__pic">
+				</div>
+			</div>
+
+			</div>
+		</div>
+	</section>
+	<!--секция специалиста данной категории-->
+	<section class="specialist-card__red">
+		<div class="container">
+			<div class="row">
+
+		        <div class="col-lg-6 col-md-6 col-sm-6">
+		            <div class="specialist">
+		                <div class="spec-portrait">
+		                    <img src="img/masters-vika.png" alt="">                                
+		                </div>
+		                <h3 class="spec-name">
+		                    Соколова Виктория Владимировна
+		                </h3>
+		                <p class="spec-text">
+		                    Наше жгучее рыжее солнышко!<br>
+							Взрывной характер и неуемная тяга создавать вокруг себя хаос не помешали (а может, и помогли) Вике стать ведущим специалистом в своей области. Будь то участие в конкурсе, или многочасовая рабочая смена - Вика выкладыватся на все 100%. 
+		                </p>
+		            </div>
+		        </div>
+
+				<div class="col-lg-6 col-md-6 col-sm-6">
+
+					<form class="page-callback text-center">
+
+						<div class="success"><span>Спасибо за заявку</span></div>
+						<!-- Hidden required fields -->
+						<input type="hidden" name="project_name" value="Rapunzel">
+						<input type="hidden" name="admin_email" value="grayfoxbox@gmail.com">
+						<input type="hidden" name="form_subject" value="Заявка с Rapunzel">
+						<!-- END Hidden required fields -->
+						<input type="hidden" name="Страница" value=""> <!-- это будет помечать для админа, с какой страницы ушла заявка-->
+						<div class="callback-logo"><img src="img/logo.png" alt="сайт лого"></div>
+						<div class="formhead">Записаться к специалисту</div>
+						<p>Оставьте заявку, и мы перезвоним вам в течение 15 минут.</p>
+						<input type="text" name="Имя" placeholder="Ваше имя..." required>
+						<input type="text" name="Телефон" placeholder="Ваш телефон..." required>
+						<select name="Услуга" class="callback__select">
+							<option>Женская стрижка</option>
+							<option>Мужская стрижка</option>
+							<option>Укладка</option>
+              				<option>Окрашивание волос</option>
+              				<option>Наращивание</option>
+						</select>
+						<button class="button button-white">Подтвердить</button>
+						
+					</form>
+					
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!--подвал сайта-->
+	<footer class="main-footer">
+		<div class="container">
+			<div class="row">
+                <!--колонка футера социальных ссылок-->
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="footer-column first">
+						<a href="index.html"><img src="img/logo.png" alt="логотип сайта" class="logo-footer"></a>
+						<p>Салон красоты<br>бизнес-класса в Москве</p>
+						<div class="social-footer">      			
+  							<nav class="social">
+  								<ul>
+  									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+  									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+  									<li><a href="#"><i class="fab fa-vk"></i></a></li>
+  								</ul>
+  							</nav>
+  						</div>    					
+
+					</div>
+				</div>
+                <!--колонка футера со ссылками навигации-->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="footer-column">
+						<nav class="footer-menu">							
+							<ul>
+								<li class="active">
+									<a href="hairs.html">Парикмахерский сервис</a>
+								</li>
+								<li>
+									<a href="cosmetic.html">Косметологический сервис</a>
+								</li>
+								<li>
+									<a href="nails.html">Маникюрный сервис</a>
+								</li>
+								<li>
+									<a href="massage.html">Массаж и SPA</a>
+								</li>
+								<li>
+									<a href="solarium.html">Солярий</a>
+								</li>
+								<li>
+									<a href="team.html">Наши специалисты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+                <!--колонка футера с адресом и графиком-->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="footer-column">
+						<p class="footer-addr"><i class="fas fa-location-arrow"></i>г.Москва, ул. Ивана Бабушкина 22с1 / м.Профсоюзная</p>  
+						<p class="footer-addr"><i class="far fa-clock"></i>Время работы: ежедневно,<br>10:00 - 22:00</p>
+						<p class="footer-addr"><span class="footer-phone"><i class="fas fa-mobile-alt"></i>+7 (495) 922-77-72</span></p>
+					</div>
+				</div>
+                <!--колонка футера с картой-->
+				<div class="col-lg-4 col-md-12 col-sm-6">
+					<div class="footer-column">
+					   <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c9b9b490c7484bf9b4feeeb061de59ebfb8a6bf086b2524949bb8bb4ec8b6c1&amp;width=100%&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+	<!--кнопка наверх-->
+	<div class="top" title="Наверх">
+    	<i class="fas fa-angle-double-up"></i>
+	</div>
+
+</div>
+	<!--скрипты-->
+	<script src="js/scripts.min.js"></script>
+
+	<script>
+		//настройки плагина owl-carousel
+		$('.preview__wrapper').owlCarousel({
+			nav: true,
+			dots: false,
+			loop: true,
+			smartSpeed: 900,
+			items: 3,      
+			navText: ['<img src="img/left-arrow.svg" class="prev-btn">', '<img src="img/right-arrow.svg" class="next-btn">'],
+			responsiveClass: true,
+			responsive: {
+				0: {
+				items: 1
+				},
+				500: {
+				items: 2
+				},
+				1000: {
+				items: 3
+				}
+			}
+		});
+	</script>
+
+</body>
+</html>

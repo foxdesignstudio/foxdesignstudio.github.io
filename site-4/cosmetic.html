@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Rapunzel</title>	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="home">
+<!--враппер сайта-->
+<div class="site-wrapper">
+	<!--шапка сайта-->
+	<header class="header" style="background-image: url('img/category-cosmetology.jpg');">
+    	<!--меню навигации (плавающее)-->
+	    <div class="navigation">
+	    	<!--логотип-ссылка-->
+	    	<div class="page-logo">
+	    		<a href="index.html" class="page-logo__link">
+	        		<img src="img/logo.png" class="page-logo__pic">
+	        	</a>
+	    	</div>
+	    	<!--структура меню-->
+	    	<ul class="navigation-wrapper">
+
+		        <li class="navigation__item dropdown" id="glow">
+
+		        	<div class="navigation__link point active">Услуги</div>
+
+					<ul class="sub-navigation">
+						<li class="sub-navigation__item">
+							<a href="hairs.html" class="sub-navigation__link">Парикмахерский сервис</a>
+						</li>
+						<li class="sub-navigation__item">
+							<a href="cosmetic.html" class="sub-navigation__link">Косметологический сервис</a>
+						</li>
+						<li class="sub-navigation__item">
+							<a href="nails.html" class="sub-navigation__link">Маникюрный сервис</a>
+						</li>
+						<li class="sub-navigation__item">
+							<a href="massage.html" class="sub-navigation__link">Массаж и SPA</a>
+						</li>
+						<li class="sub-navigation__item">
+							<a href="solarium.html" class="sub-navigation__link">Солярий</a>
+						</li>
+					</ul>
+		        </li>
+
+				<li class="navigation__item">
+					<a href="team.html" class="navigation__link">Специалисты</a>
+				</li>
+				<li class="navigation__item">
+					<a href="price.html" class="navigation__link">Прайс-лист</a>
+				</li>
+				<li class="navigation__item">
+					<a href="about.html" class="navigation__link">О салоне</a>
+				</li>
+
+	    	</ul>
+			<!--анимированная кнопка-бургер-->
+			<div class="burger">
+				<span></span>
+			</div>
+
+	    </div>
+    	<!--содержимое шапки дополнительных страниц-->
+		<div class="page-flex">
+			<div class="container">
+	        	<!--заголовок категории-->
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+						<div class="header-composition">
+							<div class="welcome-page">
+								<p><span>Rapunzel</span></p>
+								<h1 class="h1 little-3">косметологический сервис</h1>  														
+							</div>
+						</div>     							
+					</div>
+				</div>
+		        <!--описание категории-->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="page-header text-center">
+							<p>Вся мощь и сила прогресса направлена на то, чтобы максимально долго сохранить вашу красоту и женственность! Самые передовые технологии, новейшие средства и накопленный опыт мастеров сошлись вместе, чтобы сполна оправдать ваши самые смелые ожидания.</p>
+							<p>С "Rapunzel" забудьте о старости и проблемах внешности. Все будет идеально!</p>
+						</div>
+					</div>
+				</div>
+				<!--анимированное превью раздела-->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="cosmo__slider">
+							<div class="cosmo__wrapper">
+								<img src="img/cosmetology-babe.jpg" alt="" class="cosmo__babe">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--блок рекламы косметологических услуг-->
+	            <div class="advertising slider">
+
+	              <div class="slider__item" data-aos="fade-down-right" data-aos-delay="1000" data-aos-duration="800">
+	                <span class="slider__pin"><i class="fas fa-crown"></i></span>
+	                <p class="slider__desc">Самые передовые технологии красоты</p>
+	              </div>
+	              <div class="slider__item"  data-aos="fade-down" data-aos-delay="1000" data-aos-duration="800">
+	                <span class="slider__pin"><i class="fas fa-crown"></i></span>
+	                <p class="slider__desc">Квалифицированный персонал</p>
+	              </div>
+	              <div class="slider__item" data-aos="fade-down-left" data-aos-delay="1000" data-aos-duration="800">
+	                <span class="slider__pin"><i class="fas fa-crown"></i></span>
+	                <p class="slider__desc">Только импортные средства и препараты</p>
+	              </div>
+	              <div class="slider__item"  data-aos="fade-up-right" data-aos-delay="1000" data-aos-duration="800" data-aos-anchor-placement="bottom bottom">
+	                <span class="slider__pin"><i class="fas fa-crown"></i></span>
+	                <p class="slider__desc">Профессиональные консультации специалистов</p>
+	              </div>
+	              <div class="slider__item" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="800" data-aos-anchor-placement="bottom bottom">
+	                <span class="slider__pin"><i class="fas fa-crown"></i></span>
+	                <p class="slider__desc">Самые низкие цены в столице</p>
+	              </div>
+	              <div class="slider__item" data-aos="fade-up-left" data-aos-delay="1000" data-aos-duration="800" data-aos-anchor-placement="bottom bottom">
+	                <span class="slider__pin"><i class="fas fa-crown"></i></span>
+	                <p class="slider__desc">Удобный график работы</p>
+	              </div>  
+
+	            </div> 
+
+    		</div>
+		</div>
+
+	</header>
+	<!--секция описаний выполняемых работ-->
+	<section class="s-services">
+    <!--карусель услуг-->
+    <div class="owl-carousel carousel-sevices">
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Контурная пластика</h3>
+						<p>Введение в кожу препаратов, действие которых заключается в разглаживании морщин, подтяжке кожи и выравнивании ее контуров</p>                     
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/cosmo-contur.jpg);"></div>
+		</div>
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Микротоковая терапия</h3>
+						<p>Позволяет воздействовать на функциональную активность клеток кожи, мышцы, лимфатические и кровеносные сосуды. Это способствует выведению лишней жидкости, улучшению питания кожи, формированию красивого овала лица.</p>             
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/cosmo-micro.jpg);"></div>
+		</div>
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Озонотерапия</h3>
+						<p>Озоно-кислородная смесь, вводимая по определенным активным точкам лица, шеи, живота, бедер, служит клеточным катализатором, стимулирует процессы жизнедеятельности клетки, тем самым омолаживает ткани.</p>             
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/cosmo-ozon.jpg);"></div>
+		</div>
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Ультразвуковая терапия</h3>
+						<p>Ультразвук стимулирует синтез колла­гена, эластина и гиалуроновой кислоты в дерме, способствует реструктуризации ткани в целом, заметно повышается эластичность и упругость кожи</p>             
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/cosmo-uzi.jpg);"></div>
+		</div>
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Тредлифтинг</h3>
+						<p>Процесс установки мезонитей, которые представляют собой чрезвычайно тонкие нити, которые способны рассасываться под кожей. После процедуры морщины разгладятся и станут менее заметными.</p>             
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/cosmo-tredlifting.jpg);"></div>
+		</div>
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Интралипотерапия</h3>
+						<p>Новейшая технология коррекции локальных жировых отложений безоперационным путем. Метод работает исключительно в тех зонах, куда введен препарат.</p>             
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/cosmo-lipo.jpg);"></div>
+		</div>
+
+    </div>
+	</section>
+	<!--секция цен-->
+	<section class="hair-prices st-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<table class="prices__table">
+						<caption>Все представленные цены являются предварительными.<br>Полную стоимость услуги уточняйте при оговаривании деталей заказа с менеджером!</caption>						
+						<tr>
+							<th colspan="2" class="blue">Цены услуг косметологии</th>
+						</tr>
+						<tr>
+							<td>Коррекция бровей</td>
+							<td>400</td>							
+						</tr>
+						<tr>
+							<td>Форма бровей</td>
+							<td>600</td>							
+						</tr>
+						<tr>
+							<td>Кератиновое ламинирование ресниц</td>
+							<td>3200</td>							
+						</tr>
+						<tr>
+							<td>Коррекция нарощенных ресниц</td>
+							<td>от 1500</td>							
+						</tr>
+						<tr>
+							<td>Ультразвуковая чистка лица</td>
+							<td>1800</td>							
+						</tr>
+						<tr>
+							<td>Маска</td>
+							<td>650</td>							
+						</tr>
+						<tr>
+							<td>Маска для глаз</td>
+							<td>300</td>							
+						</tr>
+						<tr>
+							<td>Косметологический массаж</td>
+							<td>900</td>							
+						</tr>
+						<tr>
+							<td>Бандажная маска для лица</td>
+							<td>1400</td>							
+						</tr>
+						<tr>
+							<td>Коллагеновая маска для лица</td>
+							<td>1300</td>							
+						</tr>
+					</table>	
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--секция примеров выполненных работ-->
+	<section class="preview">
+		<div class="container">
+			<div class="row">
+
+			<div class="col-md-12">
+
+			<h2 class="preview__title">Наши довольные клиентки</h2>
+
+			<div class="preview__wrapper owl-carousel">
+				<div class="preview__item">
+					<img src="img/cosmetic-1.jpg" alt="" class="preview__pic">
+				</div>
+				<div class="preview__item">
+					<img src="img/cosmetic-2.jpg" alt="" class="preview__pic">
+				</div>
+				<div class="preview__item">
+					<img src="img/cosmetic-4.jpg" alt="" class="preview__pic">
+				</div>
+				<div class="preview__item">
+					<img src="img/cosmetic-3.jpg" alt="" class="preview__pic">
+				</div>
+				<div class="preview__item">
+					<img src="img/cosmetic-5.jpg" alt="" class="preview__pic">
+				</div>
+			</div>
+
+			</div>
+		</div>
+	</section>
+	<!--секция специалиста данной категории-->
+	<section class="specialist-card__blue">
+		<div class="container">
+			<div class="row">
+
+		        <div class="col-lg-6 col-md-6 col-sm-6">
+		            <div class="specialist">
+		                <div class="spec-portrait">
+		                    <img src="img/masters-olga.png" alt="">                                
+		                </div>
+		                <h3 class="spec-name">
+		                    Величко Ольга Сергеевна
+		                </h3>
+		                <p class="spec-text">
+		                    Отличница с красным дипломом, спортсменка, и просто красавица, Ольга великолепный специалист в своей сложной сфере. Косметолог с врожденным талантом, по мнению ее благодарных клиенток. 
+		                </p>
+		            </div>
+		        </div>
+
+				<div class="col-lg-6 col-md-6 col-sm-6">
+
+					<form class="page-callback text-center">
+
+						<div class="success"><span>Спасибо за заявку</span></div>
+						<!-- Hidden required fields -->
+						<input type="hidden" name="project_name" value="Rapunzel">
+						<input type="hidden" name="admin_email" value="grayfoxbox@gmail.com">
+						<input type="hidden" name="form_subject" value="Заявка с Rapunzel">
+						<!-- END Hidden required fields -->
+						<input type="hidden" name="Страница" value=""> <!-- это будет помечать для админа, с какой страницы ушла заявка-->
+						<div class="callback-logo"><img src="img/logo.png" alt="сайт лого"></div>
+						<div class="formhead">Записаться к специалисту</div>
+						<p>Оставьте заявку, и мы перезвоним вам в течение 15 минут.</p>
+						<input type="text" name="Имя" placeholder="Ваше имя..." required>
+						<input type="text" name="Телефон" placeholder="Ваш телефон..." required>
+						<select name="Услуга" class="callback__select">
+							<option>Коррекция бровей</option>							
+							<option>Кератиновое ламинирование ресниц</option>							
+							<option>Косметологический массаж</option>							
+              				<option>Озонотерапия</option>
+              				<option>Контурная пластика</option>
+						</select>
+						<button class="button button-white">Подтвердить</button>
+						
+					</form>
+					
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!--подвал сайта-->
+	<footer class="main-footer">
+		<div class="container">
+			<div class="row">
+                <!--колонка футера социальных ссылок-->
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="footer-column first">
+						<a href="index.html"><img src="img/logo.png" alt="логотип сайта" class="logo-footer"></a>
+						<p>Салон красоты<br>бизнес-класса в Москве</p>
+						<div class="social-footer">      			
+  							<nav class="social">
+  								<ul>
+  									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+  									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+  									<li><a href="#"><i class="fab fa-vk"></i></a></li>
+  								</ul>
+  							</nav>
+  						</div>    					
+
+					</div>
+				</div>
+                <!--колонка футера со ссылками навигации-->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="footer-column">
+						<nav class="footer-menu">							
+							<ul>
+								<li>
+									<a href="hairs.html">Парикмахерский сервис</a>
+								</li>
+								<li class="active">
+									<a href="cosmetic.html">Косметологический сервис</a>
+								</li>
+								<li>
+									<a href="nails.html">Маникюрный сервис</a>
+								</li>
+								<li>
+									<a href="massage.html">Массаж и SPA</a>
+								</li>
+								<li>
+									<a href="solarium.html">Солярий</a>
+								</li>
+								<li>
+									<a href="team.html">Наши специалисты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+                <!--колонка футера с адресом и графиком-->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="footer-column">
+						<p class="footer-addr"><i class="fas fa-location-arrow"></i>г.Москва, ул. Ивана Бабушкина 22с1 / м.Профсоюзная</p>  
+						<p class="footer-addr"><i class="far fa-clock"></i>Время работы: ежедневно,<br>10:00 - 22:00</p>
+						<p class="footer-addr"><span class="footer-phone"><i class="fas fa-mobile-alt"></i>+7 (495) 922-77-72</span></p>
+					</div>
+				</div>
+                <!--колонка футера с картой-->
+				<div class="col-lg-4 col-md-12 col-sm-6">
+					<div class="footer-column">
+					   <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c9b9b490c7484bf9b4feeeb061de59ebfb8a6bf086b2524949bb8bb4ec8b6c1&amp;width=100%&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+	<!--кнопка наверх-->
+	<div class="top" title="Наверх">
+    	<i class="fas fa-angle-double-up"></i>
+	</div>
+
+</div>
+	<!--скрипты-->
+	<script src="js/scripts.min.js"></script>
+
+	<script>
+		//настройки плагина owl-carousel
+		$('.preview__wrapper').owlCarousel({
+			nav: true,
+			dots: false,
+			loop: true,
+			smartSpeed: 900,
+			items: 3,      
+			navText: ['<img src="img/left-arrow.svg" class="prev-btn">', '<img src="img/right-arrow.svg" class="next-btn">'],
+			responsiveClass: true,
+			responsive: {
+				0: {
+				items: 1
+				},
+				500: {
+				items: 2
+				},
+				1000: {
+				items: 3
+				}
+			}
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Rapunzel</title>	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="home">
+<!--враппер сайта-->
+<div class="site-wrapper">
+	<!--шапка сайта-->
+	<header class="header" style="background-image: url('img/category-solarium.jpg');">
+    	<!--меню навигации (плавающее)-->
+	    <div class="navigation">
+	    	<!--логотип-ссылка-->
+	    	<div class="page-logo">
+	    		<a href="index.html" class="page-logo__link">
+	        		<img src="img/logo.png" class="page-logo__pic">
+	        	</a>
+	    	</div>
+	    	<!--структура меню-->
+	    	<ul class="navigation-wrapper">
+
+		        <li class="navigation__item dropdown" id="glow">
+
+		        	<div class="navigation__link point active">Услуги</div>
+
+					<ul class="sub-navigation">
+						<li class="sub-navigation__item">
+							<a href="hairs.html" class="sub-navigation__link">Парикмахерский сервис</a>
+						</li>
+						<li class="sub-navigation__item">
+							<a href="cosmetic.html" class="sub-navigation__link">Косметологический сервис</a>
+						</li>
+						<li class="sub-navigation__item">
+							<a href="nails.html" class="sub-navigation__link">Маникюрный сервис</a>
+						</li>
+						<li class="sub-navigation__item">
+							<a href="massage.html" class="sub-navigation__link">Массаж и SPA</a>
+						</li>
+						<li class="sub-navigation__item">
+							<a href="solarium.html" class="sub-navigation__link">Солярий</a>
+						</li>
+					</ul>
+		        </li>
+
+				<li class="navigation__item">
+					<a href="team.html" class="navigation__link">Специалисты</a>
+				</li>
+				<li class="navigation__item">
+					<a href="price.html" class="navigation__link">Прайс-лист</a>
+				</li>
+				<li class="navigation__item">
+					<a href="about.html" class="navigation__link">О салоне</a>
+				</li>
+
+	    	</ul>
+			<!--анимированная кнопка-бургер-->
+			<div class="burger">
+				<span></span>
+			</div>
+
+	    </div>
+    	<!--содержимое шапки дополнительных страниц-->
+		<div class="page-flex">
+			<div class="container">
+	        	<!--заголовок категории-->
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+						<div class="header-composition">
+							<div class="welcome-page">
+								<p><span>Rapunzel</span></p>
+								<h1 class="h1">солярий</h1>  														
+							</div>
+						</div>     							
+					</div>
+				</div>
+		        <!--описание категории-->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="page-header text-center">
+							<p>Соскучились по жаркому летнему солнцу? Устали от постоянной серости и полумрака осенних дней в средней полосе России? Не знаете, чем поднять настроение и вернуть радость жизни? На все эти вопросы ответ один - посещение солярия.</p>
+							<p>Ровный бронзовый загар сообщит всем окружающим о вашей успешности и умении находить время для себя в ежедневной деловой рутине. В нашем салоне созданы все условия для того, чтобы вы могли выбрать и использовать наиболее подходящий именно вам метод загара.</p>
+						</div>
+					</div>
+				</div>
+				<!--анимированное превью раздела-->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="tan-babe">
+							<div class="tan-babe__wrapper">
+								<img src="img/tan-babe-bot.jpg" alt="" class="tan-babe__pic">
+								<img src="img/tan-babe-top.png" alt="" class="tan-babe__pic-t">		
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--карточки преимуществ солярия-->
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="solarium slider">
+
+							<div class="slider__item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+								<span class="slider__pin"><i class="fas fa-crown"></i></span>
+								<p class="slider__desc">Красивый загар круглый год без серьезных затрат!</p>				
+							</div>
+							<div class="slider__item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+								<span class="slider__pin"><i class="fas fa-crown"></i></span>
+								<p class="slider__desc">Современная техника от ведущих производителей</p>
+							</div>
+							<div class="slider__item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+								<span class="slider__pin"><i class="fas fa-crown"></i></span>
+								<p class="slider__desc">Возможность создать свой плейлист для сеанса</p>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+    		</div>
+		</div>
+
+	</header>
+	<!--секция описаний выполняемых работ-->
+	<section class="s-services">
+    <!--карусель услуг-->
+    <div class="owl-carousel carousel-sevices">
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Глэминг (эко-загар)</h3>
+						<p>Моментальный загар напылением без вреда для здоровья, не оставляет на поверхности кожи пятен и разводов. По эффективности одна процедура глэминга равноценна десяти походам в солярий</p>                     
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/zagar-2.jpg);"></div>
+		</div>
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Megasun 7900 Alfa</h3>
+						<p>Ультрамощная установка дающая быстрый, насыщенный загар. Гибридная технология, коллагеновые лампы для лица увлажняют кожу во время загара. Голосовая система сопровождения на русском языке во время всего сеанса загара.</p>             
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/zagar-1.jpg);"></div>
+		</div>
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Комфорт</h3>
+						<p>Внутри установок присутствует аудиосистема с музыкой, кондиционер, освежающий водный туман и водное орошение, а также системы обдува — все это делает сеанс загара приятным.</p>             
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/zagar-3.jpg);"></div>
+		</div>
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Турбосолярий</h3>
+						<p>Большое количество ламп способствует уменьшению сеанса загара до 10 минут из-за своей мощности. В отличие от горизонтальных моделей, здесь полностью исключается контакт со стенками, что повышает гигиеничность.</p>          
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/zagar-4.jpg);"></div>
+		</div>
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Термо-контроль</h3>
+						<p>Система встроенного термо-контроля позволяет держать температуру воздуха точно на заданной отметке, без скачков или перегрева от продолжительного сеанса. Это делает пребывание внутри установки комфортным и приятным.</p>             
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/zagar-5.jpg);"></div>
+		</div>
+
+		<div class="carousel-services-item">
+			<div class="carousel-services-content">
+				<div class="carousel-services-composition">
+					<h3 class="carousel-service-title">Интралипотерапия</h3>
+						<p>Новейшая технология коррекции локальных жировых отложений безоперационным путем. Метод работает исключительно в тех зонах, куда введен препарат.</p>             
+					</div>
+				</div>
+			<div class="carousel-services-image" style="background-image: url(img/cosmo-lipo.jpg);"></div>
+		</div>
+
+    </div>
+	</section>
+	<!--секция цен-->
+	<section class="hair-prices st-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<table class="prices__table">
+						<caption>Все представленные цены являются предварительными.<br>Полную стоимость услуги уточняйте при оговаривании деталей заказа с менеджером!</caption>						
+						<tr>
+							<th colspan="2" class="blue">Цены услуг солярия</th>
+						</tr>
+						<tr>
+							<td>Горизонтальный солярий</td>
+							<td>от 30 руб/мин</td>							
+						</tr>
+						<tr>
+							<td>Вертикальный солярий</td>
+							<td>от 30 руб/мин</td>							
+						</tr>
+						<tr>
+							<td>Турбосолярий</td>
+							<td>от 50 руб/мин</td>							
+						</tr>
+						<tr>
+							<td>Глэминг</td>
+							<td>500 руб/сеанс</td>							
+						</tr>
+					</table>	
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--секция примеров выполненных работ-->
+	<section class="preview">
+		<div class="container">
+			<div class="row">
+
+			<div class="col-md-12">
+
+			<h2 class="preview__title">Красивый загар? Легко!</h2>
+
+			<div class="preview__wrapper owl-carousel">
+				<div class="preview__item">
+					<img src="img/tan-girl-1.jpg" alt="" class="preview__pic">
+				</div>
+				<div class="preview__item">
+					<img src="img/tan-girl-2.jpg" alt="" class="preview__pic">
+				</div>
+				<div class="preview__item">
+					<img src="img/tan-girl-3.jpg" alt="" class="preview__pic">
+				</div>
+				<div class="preview__item">
+					<img src="img/tan-girl-4.jpg" alt="" class="preview__pic">
+				</div>
+				<div class="preview__item">
+					<img src="img/tan-girl-5.jpg" alt="" class="preview__pic">
+				</div>
+			</div>
+
+			</div>
+		</div>
+	</section>
+	<!--секция специалиста данной категории-->
+	<section class="specialist-card__blue">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+
+					<form class="page-callback no-board">
+
+						<div class="success"><span>Спасибо за заявку</span></div>
+						<!-- Hidden required fields -->
+						<input type="hidden" name="project_name" value="Rapunzel">
+						<input type="hidden" name="admin_email" value="grayfoxbox@gmail.com">
+						<input type="hidden" name="form_subject" value="Заявка с Rapunzel">
+						<!-- END Hidden required fields -->
+						<input type="hidden" name="Страница" value=""> <!-- это будет помечать для админа, с какой страницы ушла заявка-->
+						<div class="callback-logo"><img src="img/logo.png" alt="сайт лого"></div>
+						<div class="formhead">Записаться на сеанс</div>
+						<p>Оставьте заявку, и мы перезвоним вам в течение 15 минут.</p>
+						<input type="text" name="Имя" placeholder="Ваше имя..." required>
+						<input type="text" name="Телефон" placeholder="Ваш телефон..." required>
+						<select name="Услуга" class="callback__select">
+							<option>Посещение солярия</option>							
+							<option>Эко-загар (Глэминг)</option>							
+							<option>Турбосолярий</option>
+						</select>
+						<button class="button button-white">Подтвердить</button>
+						
+					</form>
+					
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!--подвал сайта-->
+	<footer class="main-footer">
+		<div class="container">
+			<div class="row">
+                <!--колонка футера социальных ссылок-->
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="footer-column first">
+						<a href="index.html"><img src="img/logo.png" alt="логотип сайта" class="logo-footer"></a>
+						<p>Салон красоты<br>бизнес-класса в Москве</p>
+						<div class="social-footer">      			
+  							<nav class="social">
+  								<ul>
+  									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+  									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+  									<li><a href="#"><i class="fab fa-vk"></i></a></li>
+  								</ul>
+  							</nav>
+  						</div>    					
+
+					</div>
+				</div>
+                <!--колонка футера со ссылками навигации-->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="footer-column">
+						<nav class="footer-menu">							
+							<ul>
+								<li>
+									<a href="hairs.html">Парикмахерский сервис</a>
+								</li>
+								<li>
+									<a href="cosmetic.html">Косметологический сервис</a>
+								</li>
+								<li>
+									<a href="nails.html">Маникюрный сервис</a>
+								</li>
+								<li>
+									<a href="massage.html">Массаж и SPA</a>
+								</li>
+								<li class="active">
+									<a href="solarium.html">Солярий</a>
+								</li>
+								<li>
+									<a href="team.html">Наши специалисты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+                <!--колонка футера с адресом и графиком-->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="footer-column">
+						<p class="footer-addr"><i class="fas fa-location-arrow"></i>г.Москва, ул. Ивана Бабушкина 22с1 / м.Профсоюзная</p>  
+						<p class="footer-addr"><i class="far fa-clock"></i>Время работы: ежедневно,<br>10:00 - 22:00</p>
+						<p class="footer-addr"><span class="footer-phone"><i class="fas fa-mobile-alt"></i>+7 (495) 922-77-72</span></p>
+					</div>
+				</div>
+                <!--колонка футера с картой-->
+				<div class="col-lg-4 col-md-12 col-sm-6">
+					<div class="footer-column">
+					   <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c9b9b490c7484bf9b4feeeb061de59ebfb8a6bf086b2524949bb8bb4ec8b6c1&amp;width=100%&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+	<!--кнопка наверх-->
+	<div class="top" title="Наверх">
+    	<i class="fas fa-angle-double-up"></i>
+	</div>
+
+</div>
+	<!--скрипты-->
+	<script src="js/scripts.min.js"></script>
+
+	<script>
+		//настройки плагина owl-carousel
+		$('.preview__wrapper').owlCarousel({
+			nav: true,
+			dots: false,
+			loop: true,
+			smartSpeed: 900,
+			items: 3,      
+			navText: ['<img src="img/left-arrow.svg" class="prev-btn">', '<img src="img/right-arrow.svg" class="next-btn">'],
+			responsiveClass: true,
+			responsive: {
+				0: {
+				items: 1
+				},
+				500: {
+				items: 2
+				},
+				1000: {
+				items: 3
+				}
+			}
+		});
+	</script>
+
+</body>
+</html>
