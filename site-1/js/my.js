@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	//прелоадер
-	$('.preloader').delay(500).fadeOut('slow');
+	$('.preloader').delay(2400).fadeOut();
 	//кнопка переключения меню хидера
 	const menuBtn = $('.menu-button'),
 	      menu    = $('.menu');
@@ -29,13 +29,6 @@ $(document).ready(function(){
 			$('.return').addClass('active');
 		} else
 			$('.return').removeClass('active');
-	});
-	//плавающее меню хидера
-	var zero = 0;
-	
-	$(window).on('scroll', function(){
-		$('.navbar').toggleClass('disappear', $(window).scrollTop() > zero);
-		zero = $(window).scrollTop();
 	});
 	//переключение эскизов в селекторе
 	$('.tabs a').click(function(){										
