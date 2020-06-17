@@ -1,6 +1,10 @@
 $(document).ready(function(){
 	//прелоадер
 	$('.preloader').delay(2400).fadeOut();
+	//уменьшение треугольника возврата на главный сайт
+	setTimeout(function () {
+		$('.homeworld__triangle').removeClass('hi-homeworld');
+	}, 6000);	
 	//кнопка переключения меню хидера
 	const menuBtn = $('.menu-button'),
 	      menu    = $('.menu');
