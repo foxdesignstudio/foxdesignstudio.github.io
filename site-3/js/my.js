@@ -1,6 +1,13 @@
 $(document).ready(function() {
   //отключение прелоадера    
-  $('.preloader').delay(1800).fadeOut();  
+  $('.preloader').delay(1800).fadeOut();
+  //уменьшение треугольника возврата на главный сайт
+  setTimeout(function () {
+    $('.homeworld__triangle').removeClass('hi-homeworld');
+  }, 6000);
+  setTimeout(function () {
+    $('.homeworld__title').css('visibility','hidden');
+  }, 7000);  
   //скрипт работы кнопок категорий услуг 
   $(".mc_item_wrap ul").each(function() {
     $(this).after("<div class='mc_item_wrap_af'></div>");  //эта часть отвечает за появление треугольника//

@@ -1131,3 +1131,74 @@ footer a {
 .restart.vis {
 	display: block;
 }
+
+/*Кнопка возврата на сайт-портфолио*/	
+.homeworld {
+	height: 100px;
+	width: 100px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+}
+.homeworld__triangle {		
+	display: flex;
+	align-items: flex-end;
+	background-color: #f93;
+	height: 100px;
+	width: 100px;
+	clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+	transform: translate(-40px, 40px);
+	transition: transform .5s;
+}		
+.homeworld__link {
+	display: block;
+	height: 60px;
+	width: 60px;
+}
+.homeworld__pic {
+	display: block;
+	max-height: 100%;
+}	
+.homeworld:hover .homeworld__triangle {
+	transform: translate(0, 0);
+}
+.homeworld__title {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	left: 62px;
+	bottom: 45px;
+}
+.homeworld__arrow {
+	display: block;
+	transform: scale(1);
+	width: 0px;
+	height: 0px;
+	border: 18px solid;
+	border-color: transparent #f93 transparent transparent;
+	margin-right: 6px;
+	animation: left-fade .2s linear 6s forwards;
+}
+.homeworld__text {
+	display: inline-block;
+	user-select: none;
+	transform: scale(1);
+	transform-origin: left;	
+	padding: 4px;
+	font-size: 18px;
+	color: #fff;
+	background: #f93;
+	animation: left-fade .5s linear 5s forwards;
+}
+@keyframes left-fade {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+.hi-homeworld {
+	transform: translate(0, 0);
+}
