@@ -37,3 +37,13 @@
 	font-style: normal;
 	font-weight: normal;
 }
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova/ProximaNovaLight.eot');
+	src: url('../fonts/ProximaNova/ProximaNovaLight.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/ProximaNova/ProximaNovaLight.woff') format('woff'),
+		 url('../fonts/ProximaNova/ProximaNovaLight.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 300;
+}

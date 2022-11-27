@@ -1,14 +1,7 @@
 $(document).ready(function() {
-  //отключение прелоадера    
+  //отключение прелоадера
   $('.preloader').delay(1800).fadeOut();
-  //уменьшение треугольника возврата на главный сайт
-  setTimeout(function () {
-    $('.homeworld__triangle').removeClass('hi-homeworld');
-  }, 6000);
-  setTimeout(function () {
-    $('.homeworld__title').css('visibility','hidden');
-  }, 7000);  
-  //скрипт работы кнопок категорий услуг 
+  //скрипт работы кнопок категорий услуг
   $(".mc_item_wrap ul").each(function() {
     $(this).after("<div class='mc_item_wrap_af'></div>");  //эта часть отвечает за появление треугольника//
   });
@@ -41,7 +34,7 @@ $(document).ready(function() {
           // options
           itemSelector: '.grid-item',
           columnWidth: '.grid-item',
-          percentPosition: true  
+          percentPosition: true
       });
   });
   //слайдер логотипов партнеров компании
@@ -77,6 +70,24 @@ $(document).ready(function() {
       $('.restart').addClass('vis');
     } else
       $('.restart').removeClass('vis');
+  });
+  //рекламный баннер портфолио
+  setTimeout(function () {
+    $('.banner').addClass('showBanner');
+  }, 4000);
+  setTimeout(function () {
+    $('.banner__exit').addClass('ready');
+  }, 6000);
+  setTimeout(function () {
+    $('.banner').removeClass('showBanner');
+  }, 20000);
+  $('.banner__exit').click(function(){
+    $('.banner').removeClass('showBanner');
+  });
+  //система возврата на главный сайт
+  $('.returnal__button').click(function(){
+    $(this).toggleClass('active');
+    $(".returnal__wrapper").toggleClass('ready');
   });
 
 });
