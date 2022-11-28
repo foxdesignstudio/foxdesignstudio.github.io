@@ -3,98 +3,160 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Rapunzel</title>	
+	<title>Scarlet</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<style>body { opacity: 0; overflow-x: hidden } html { background-color: #1a1a1a; }</style>
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/icomoon.css">
 </head>
 
 <body class="home">
 <!--враппер сайта-->
 <div class="site-wrapper">
 	<!--шапка сайта-->
-	<header class="short" style="background-image: url('img/salon.jpg');">
-    	<!--меню навигации (плавающее)-->
-	    <div class="navigation">
-	    	<!--логотип-ссылка-->
-	    	<div class="page-logo">
-	    		<a href="index.html" class="page-logo__link">
-	        		<img src="img/logo.png" class="page-logo__pic">
-	        	</a>
-	    	</div>
-	    	<!--структура меню-->
-	    	<ul class="navigation-wrapper">
-
-		        <li class="navigation__item dropdown" id="glow">
-
-		        	<div class="navigation__link point">Услуги</div>
-
-					<ul class="sub-navigation">
-						<li class="sub-navigation__item">
-							<a href="hairs.html" class="sub-navigation__link">Парикмахерский сервис</a>
-						</li>
-						<li class="sub-navigation__item">
-							<a href="cosmetic.html" class="sub-navigation__link">Косметологический сервис</a>
-						</li>
-						<li class="sub-navigation__item">
-							<a href="nails.html" class="sub-navigation__link">Маникюрный сервис</a>
-						</li>
-						<li class="sub-navigation__item">
-							<a href="massage.html" class="sub-navigation__link">Массаж и SPA</a>
-						</li>
-						<li class="sub-navigation__item">
-							<a href="solarium.html" class="sub-navigation__link">Солярий</a>
-						</li>
-					</ul>
-		        </li>
-
-				<li class="navigation__item">
-					<a href="team.html" class="navigation__link">Специалисты</a>
-				</li>
-				<li class="navigation__item">
-					<a href="price.html" class="navigation__link">Прайс-лист</a>
-				</li>
-				<li class="navigation__item">
-					<a href="about.html" class="navigation__link active">О салоне</a>
-				</li>
-
-	    	</ul>
-			<!--анимированная кнопка-бургер-->
-			<div class="burger">
-				<span></span>
-			</div>
-
-	    </div>
-    	<!--содержимое шапки дополнительных страниц-->
-		<div class="page-flex">
-			<div class="container">
-	        	<!--заголовок категории-->
-				<div class="row">
-					<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
-
-						<div class="header-composition">
-							<div class="welcome-page">
-								<p><span>Rapunzel</span></p>
-								<h1 class="h1 little">королевский салон</h1>											
-							</div>
-						</div>
-
-					</div>
+	<header class="header">
+	    <!--меню навигации-->
+	    <nav id="my-menu" class="nav-menu">
+	        <!--анимированная кнопка-гамбургер-->
+	      <div id="goMenu" class="hamburger hamburger--emphatic">
+	          <span class="hamburger-box">
+	            <span class="hamburger-inner"></span>
+	          </span>
+	        </div>
+	        <h4 class="nav-menu__title">Услуги салона</h4>
+	        <a href="index.html" class="nav-menu__index"><img src="img/logo.png" alt="" class="nav-menu__logo"></a>
+	      <ul class="nav-menu__wrapper">
+	        <li class="nav-menu__item"><a class="nav-menu__link" href="hairs.html">Парикмахерский сервис</a></li>
+	        <li class="nav-menu__item"><a class="nav-menu__link" href="cosmetic.html">Косметологический сервис</a></li>
+	        <li class="nav-menu__item"><a class="nav-menu__link" href="nails.html">Маникюрный сервис</a></li>
+	        <li class="nav-menu__item"><a class="nav-menu__link" href="massage.html">Массаж и SPA</a></li>
+	        <li class="nav-menu__item"><a class="nav-menu__link" href="solarium.html">Солярий</a></li>
+	        <li class="nav-menu__item"><a class="nav-menu__link" href="team.html">Наши специалисты</a></li>
+	        <li class="nav-menu__item"><a class="nav-menu__link" href="price.html">Прайс-лист</a></li>
+	        <li class="nav-menu__item"><a class="nav-menu__link" href="about.html">О салоне</a></li>
+	      </ul>
+	    </nav>
+		<!--содержимое шапки дополнительных страниц-->
+		<div class="header__content">
+		<!--попап окно-->
+			<div class="modal" id="pop-up">
+				<div class="modal__wrapper">
+					<form class="callback">
+						<img src="img/logo.png" alt="логотип_сайта" class="modal__logo">
+						<div class="formhead">Оставить заявку</div>
+						<p>Оставьте заявку, и мы перезвоним вам в течение 15 минут.</p>
+						<input type="text" name="Имя" placeholder="Ваше имя..." required>
+						<input type="text" name="Телефон" placeholder="Ваш телефон..." required>
+						<select name="Услуга" class="callback__select">
+							<option>Восстанавливающий массаж</option>
+							<option>Лимфодренажный массаж</option>
+							<option>Антицеллюлитный массаж</option>
+							<option>Тайский массаж</option>
+							<option>SPA-ванна</option>
+							<option>Скрабирование</option>
+							<option>Гемолимфодренаж</option>
+						</select>
+						<button class="button button-white">Отправить</button>
+					</form>
 				</div>
-    		</div>
+			</div>
+		<!--топ хидера-->
+		<div class="header__welcome">
+			<div class="welcome-page">
+				<p><a href="index.html" class="header__exit">Scarlet</a></p>
+				<h1 class="h1">Наш салон</h1>
+			</div>
+			<!--кнопки перехода на главную страницу и след.раздел-->
+			<div class="header__selector selector__left off-screen">
+				<a href="index.html" class="header__transfer">На главную страницу</a>
+			</div>
+			<div class="header__selector selector__right off-screen">
+				<a href="hairs.html" title="парикмахерские услуги" class="header__transfer">Следующий раздел</a>
+			</div>
+			<!--кнопки соцсетей-->
+			<div class="social-block-b">
+				<nav class="social">
+					<p>Мы в соцсетях</p>
+					<ul>
+						<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="https://vk.com/?lang=en"><i class="fab fa-vk"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+			<!--номер и график работы-->
+			<div class="infoblock-b">
+				<div class="infoblock__phone"><i class="fas fa-mobile-alt"></i>+7 (495) 922-77-73</div>
+				<div class="infoblock__time"><i class="far fa-clock"></i> Ежедн. 10:00 - 22:00</div>
+			</div>
 		</div>
-
+		<!--жалюзи с картинкой-->
+		<div class="header__short-menu">
+			<div class="blinds__thumb">
+			</div>
+		</div>
+		<!--меню навигации (плавающее)-->
+		<div class="short-navigation" id="menu">
+			<!--структура меню-->
+			<div class="header__button button-left">
+				<a href="index.html" class="header__link"><img src="img/logo.png" alt=""></a>
+			</div>
+			<ul class="navigation-wrapper">
+			<li class="navigation__item dropdown" id="glow">
+			<div class="navigation__link point active">Услуги</div>
+			<ul class="sub-navigation">
+			<li class="sub-navigation__item">
+			<a href="hairs.html" class="sub-navigation__link">Парикмахерский сервис</a>
+			</li>
+			<li class="sub-navigation__item">
+			<a href="cosmetic.html" class="sub-navigation__link">Косметологический сервис</a>
+			</li>
+			<li class="sub-navigation__item">
+			<a href="nails.html" class="sub-navigation__link">Маникюрный сервис</a>
+			</li>
+			<li class="sub-navigation__item">
+			<a href="massage.html" class="sub-navigation__link">Массаж и SPA</a>
+			</li>
+			<li class="sub-navigation__item">
+			<a href="solarium.html" class="sub-navigation__link">Солярий</a>
+			</li>
+			</ul>
+			</li>
+			<li class="navigation__item">
+			<a href="team.html" class="navigation__link">Специалисты</a>
+			</li>
+			<li class="navigation__item">
+			<a href="price.html" class="navigation__link">Прайс-лист</a>
+			</li>
+			<li class="navigation__item">
+			<a href="about.html" class="navigation__link">О салоне</a>
+			</li>
+			</ul>
+			<div class="header__button button-right">
+			<a class="header__link" data-fancybox="popup-call" href="#pop-up">
+				<img src="img/icon_phone.svg" alt="" class="header__call">
+			</a>
+			</div>
+			<!--анимированная кнопка-бургер-->
+			<div class="burger__wrapper">
+				<div class="burger">
+					<span></span>
+				</div>
+			</div>
+		</div>
+		</div>
 	</header>
 	<!--секция информации о салоне-->
 	<section class="short-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<!--описание категории-->						
-					<h4 class="thin" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1500">Восемь лет на службе у Красоты!</h4>					
+					<!--описание категории-->
+					<h4 class="article__name" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1500">Восемь лет на службе у Красоты!</h4>
 					<div class="about-slider">
 						<div class="about-slider__inner">
 							<img src="img/about-1.jpg" alt="" class="about-slider__pic" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="500">
@@ -110,7 +172,7 @@
 
 			<div class="row">
 				<div class="col-md-12">
-					<p class="about-text">История салона красоты "Rapunzel" начинается в 2011 году, когда несколько людей объединенных одной общей целью, решили попробовать свои силы в малом бизнесе. Идея была проста - создать место, где любой желающий смог бы воплотить любые свои идеи и фантазии в индивидуальный стиль. При этом, потенциальный клиент не должен переплачивать за ненужные ему услуги, может быть уверен в профессионализме и опыте мастеров, всегда должен быть доволен результатом.</p>	
+					<p class="about-text">История салона красоты "Scarlet" начинается в 2011 году, когда несколько людей объединенных одной общей целью, решили попробовать свои силы в малом бизнесе. Идея была проста - создать место, где любой желающий смог бы воплотить любые свои идеи и фантазии в индивидуальный стиль. При этом, потенциальный клиент не должен переплачивать за ненужные ему услуги, может быть уверен в профессионализме и опыте мастеров, всегда должен быть доволен результатом.</p>	
 					<p class="about-text">На протяжении всех этих восьми лет мы твердо придерживаемся озвученных выше принципов. В таком ответственном и сложном бизнесе как услуги салона красоты не может быть компромиссов. Только самые лучшие средства и препараты, только самый квалифицированный персонал! И наши постоянные клиенты это ценят.</p>
 				</div>
 			</div>
@@ -121,8 +183,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					
-					<h4 class="thin">Наши главные направления:</h4>					
+
+					<h4 class="article__name">Наши главные направления:</h4>
 
 					<div class="step__wrapper">
 
@@ -136,14 +198,14 @@
 
 							<div class="step__spec">
 								<p class="spec__title">Ведущий специалист</p>
-								<img src="img/masters-vika.png" alt="" class="spec__img">								
+								<img src="img/masters-vika.png" alt="" class="spec__img">
 								<h3 class="spec__name">Виктория</h3>
 							</div>
 						</div>
 
 						<div class="step">
 							<h3 class="step__title">Парикмахерский сервис</h3>
-							<p class="step__desc">Особое внимание в нашем салоне отдано парикмахерскому направлению. Основной зал, разделенный на несколько рабочих зон позволяет обслуживать одновременно до 8 клиентов. Комфортабельные, удобные кресла вкупе с инструментарием от ведущих мировых брендов, сделают ваше посещение Rapunzel приятным и незабываемым.</p>
+							<p class="step__desc">Особое внимание в нашем салоне отдано парикмахерскому направлению. Основной зал, разделенный на несколько рабочих зон позволяет обслуживать одновременно до 8 клиентов. Комфортабельные, удобные кресла вкупе с инструментарием от ведущих мировых брендов, сделают ваше посещение Scarlet приятным и незабываемым.</p>
 							<ul class="step__list">
 								<li class="list__item">Мастера международного класса</li>
 								<li class="list__item">Индивидуальный подход</li>
@@ -240,11 +302,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h4 class="thin">Мы ценим каждого клиента!</h4>
+					<h4 class="article__name">Мы ценим каждого клиента!</h4>
 				
-					<p class="about-text">Все эти годы салон красоты "Rapunzel" помогал тысячам людей воплощать их мечты и оставаться прекрасными! Мы планируем делать это и впредь, не считаясь с затратами. Посетив наш уютный салон хотя бы раз, вы уже не захотите расстаться с нами. "Rapunzel" - это одна большая семья, и мы будем счастливы, если вы станете ее частью!</p>
+					<p class="about-text">Все эти годы салон красоты "Scarlet" помогал тысячам людей воплощать их мечты и оставаться прекрасными! Мы планируем делать это и впредь, не считаясь с затратами. Посетив наш уютный салон хотя бы раз, вы уже не захотите расстаться с нами. "Scarlet" - это одна большая семья, и мы будем счастливы, если вы станете ее частью!</p>
 					<div class="about-logo">
-						<img src="img/prelogo.png" alt="" class="about-logo-pic">
+						<img src="img/main_logo.svg" alt="" class="about-logo-pic">
 					</div>
 				</div>
 			</div>
@@ -257,7 +319,7 @@
                 <!--колонка футера социальных ссылок-->
 				<div class="col-lg-2 col-md-4 col-sm-6">
 					<div class="footer-column first">
-						<a href="index.html"><img src="img/logo.png" alt="логотип сайта" class="logo-footer"></a>
+						<a href="index.html"><img src="img/logo-text.png" alt="логотип сайта" class="logo-footer"></a>
 						<p>Салон красоты<br>бизнес-класса в Москве</p>
 						<div class="social-footer">      			
   							<nav class="social">
@@ -312,10 +374,98 @@
 					   <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c9b9b490c7484bf9b4feeeb061de59ebfb8a6bf086b2524949bb8bb4ec8b6c1&amp;width=100%&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script></div>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 	</footer>
+	<!--система возврата к главному сайту и выбор других-->
+	<div class="returnal__wrapper">
+		<div class="returnal__button">
+			<span class="returnal__icon"></span>
+		</div>
+		<div class="returnal__menu">
+
+			<div class="returnal__item returnal__home">
+				<span class="returnal__main">
+					<img class="returnal__pic" src="img/fd_white_logo.svg" alt="">
+				</span>
+				<div class="returnal__content">
+					<a href="https://foxdesignstudio.github.io/index.html" class="returnal__link">
+						<span class="returnal__note">
+							<h4 class="returnal__title">FOX Design</h4>
+							<p class="returnal__text">Возврат на сайт портфолио</p>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="returnal__item">
+				<span class="icon-Avtoholl"></span>
+				<div class="returnal__content">
+					<a href="https://foxdesignstudio.github.io/site-3/index.html" class="returnal__link">
+						<span class="returnal__note">
+							<h4 class="returnal__title">Автохолл</h4>
+							<p class="returnal__text">Информационный многостраничник автосервиса</p>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="returnal__item">
+				<span class="icon-Skinali"></span>
+				<div class="returnal__content">
+					<a href="https://foxdesignstudio.github.io/site-1/index.html" class="returnal__link">
+						<span class="returnal__note">
+							<h4 class="returnal__title">Фабрика Скинали</h4>
+							<p class="returnal__text">Продающий лэндинг производственной компании</p>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="returnal__item">
+				<span class="icon-Rapunzel"></span>
+				<div class="returnal__content">
+					<a href="https://foxdesignstudio.github.io/site-4/index.html" class="returnal__link">
+						<span class="returnal__note">
+							<h4 class="returnal__title">Scarlet</h4>
+							<p class="returnal__text">Информационный многостраничник салона красоты</p>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="returnal__item">
+				<span class="icon-Capone"></span>
+				<div class="returnal__content">
+					<a href="https://foxdesignstudio.github.io/site-2/index.html" class="returnal__link">
+						<span class="returnal__note">
+							<h4 class="returnal__title">Capone Pizza</h4>
+							<p class="returnal__text">Интернет-магазин (пиццерия)</p>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="returnal__item">
+				<span class="icon-Hollow"></span>
+				<div class="returnal__content">
+					<a href="https://foxdesignstudio.github.io/site-5/index.html" class="returnal__link">
+						<span class="returnal__note">
+							<h4 class="returnal__title">Hollow Knight Atlas</h4>
+							<p class="returnal__text">Приложение-компаньон к игре Hollow Knight™</p>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="returnal__item">
+				<span class="icon-Fallout"></span>
+				<div class="returnal__content">
+					<a href="https://foxdesignstudio.github.io/site-6/index.html" class="returnal__link">
+						<span class="returnal__note">
+							<h4 class="returnal__title">Fallout 4 Memory Vault</h4>
+							<p class="returnal__text">Приложение-компаньон к игре Fallout 4™</p>
+						</span>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
 	<!--кнопка наверх-->
 	<div class="top" title="Наверх">
     	<i class="fas fa-angle-double-up"></i>
@@ -324,6 +474,27 @@
 </div>
 	<!--скрипты-->
 	<script src="js/scripts.min.js"></script>
+	<script>
+		//плавающее меню навигации
+		function stickyScroll(){
+		  if($(window).width()>1100){
+		    if ($(this).scrollTop() > 200) {
+		      $('#menu').addClass('change');
+		    } else
+		      $('#menu').removeClass('change');
+		  }
+		  // else if($(window).width() < 322){
+		  //   $('#menu').removeClass('change');
+		  // }
+		  else{
+		    if ($(this).scrollTop() > 190) {
+		      $('#menu').addClass('change');
+		    } else
+		      $('#menu').removeClass('change');
+		  }
+		};
 
+		$(window).scroll(stickyScroll);
+	</script>
 </body>
 </html>

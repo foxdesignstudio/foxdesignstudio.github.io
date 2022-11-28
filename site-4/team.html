@@ -3,241 +3,500 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Rapunzel</title>	
+	<title>Scarlet</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <style>body { opacity: 0; overflow-x: hidden } html { background-color: #1a1a1a; }</style>
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/icomoon.css">
 </head>
 
 <body class="home">
 <!--враппер сайта-->
 <div class="site-wrapper">
   <!--шапка сайта-->
-  <header class="header" style="background-image: url('img/category-masters.jpg');">
-    <!--меню навигации (плавающее)-->
-    <div class="navigation">
-      <!--логотип-ссылка-->
-      <div class="page-logo">
-        <a href="index.html" class="page-logo__link">
-          <img src="img/logo.png" class="page-logo__pic">
-        </a>
-      </div>
-      <!--структура меню-->
-      <ul class="navigation-wrapper">
-
-        <li class="navigation__item dropdown" id="glow">
-
-          <div class="navigation__link point">Услуги</div>
-
-          <ul class="sub-navigation">
-            <li class="sub-navigation__item">
-              <a href="hairs.html" class="sub-navigation__link">Парикмахерский сервис</a>
-            </li>
-            <li class="sub-navigation__item">
-              <a href="cosmetic.html" class="sub-navigation__link">Косметологический сервис</a>
-            </li>
-            <li class="sub-navigation__item">
-              <a href="nails.html" class="sub-navigation__link">Маникюрный сервис</a>
-            </li>
-            <li class="sub-navigation__item">
-              <a href="massage.html" class="sub-navigation__link">Массаж и SPA</a>
-            </li>
-            <li class="sub-navigation__item">
-              <a href="solarium.html" class="sub-navigation__link">Солярий</a>
-            </li>
-          </ul>
-
-        </li>
-
-        <li class="navigation__item">
-          <a href="team.html" class="navigation__link active">Специалисты</a>
-        </li>
-
-        <li class="navigation__item">
-          <a href="price.html" class="navigation__link">Прайс-лист</a>
-        </li>
-
-        <li class="navigation__item">
-          <a href="about.html" class="navigation__link">О салоне</a>
-        </li>
-
+  <header class="header">
+    <!--меню навигации-->
+    <nav id="my-menu" class="nav-menu">
+      <!--анимированная кнопка-гамбургер-->
+      <div id="goMenu" class="hamburger hamburger--emphatic">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </div>
+        <h4 class="nav-menu__title">Услуги салона</h4>
+        <a href="index.html" class="nav-menu__index"><img src="img/logo.png" alt="" class="nav-menu__logo"></a>
+      <ul class="nav-menu__wrapper">
+        <li class="nav-menu__item"><a class="nav-menu__link" href="hairs.html">Парикмахерский сервис</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="cosmetic.html">Косметологический сервис</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="nails.html">Маникюрный сервис</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="massage.html">Массаж и SPA</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="solarium.html">Солярий</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="team.html">Наши специалисты</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="price.html">Прайс-лист</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__link" href="about.html">О салоне</a></li>
       </ul>
-      <!--анимированная кнопка-бургер-->
-      <div class="burger">
-        <span></span>
-      </div>
-
-    </div>
+    </nav>
     <!--содержимое шапки дополнительных страниц-->
-    <div class="page-flex">
-      <div class="container">
-        <!--заголовок категории-->
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="header-composition">
-              <div class="welcome-page">
-                <p><span>Rapunzel</span></p>
-                <h1 class="h1">Наши специалисты</h1>                                 
-              </div>
-            </div>                  
-          </div>
+    <div class="header__content">
+      <!--попап окно-->
+      <div class="modal" id="pop-up">
+        <div class="modal__wrapper">
+          <form class="callback">
+            <img src="img/logo.png" alt="логотип_сайта" class="modal__logo">
+            <div class="formhead">Оставить заявку</div>
+            <p>Оставьте заявку, и мы перезвоним вам в течение 15 минут.</p>
+            <input type="text" name="Имя" placeholder="Ваше имя..." required>
+            <input type="text" name="Телефон" placeholder="Ваш телефон..." required>
+            <select name="Услуга" class="callback__select">
+              <option>Восстанавливающий массаж</option>
+              <option>Лимфодренажный массаж</option>
+              <option>Антицеллюлитный массаж</option>
+              <option>Тайский массаж</option>
+              <option>SPA-ванна</option>
+              <option>Скрабирование</option>
+              <option>Гемолимфодренаж</option>
+            </select>
+            <button class="button button-white">Отправить</button>
+          </form>
         </div>
-        <!--описание категории-->
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="page-header text-center">
-              <p>Успех любого начинания напрямую зависит от мастерства и заинтересованности людей занятых в этом деле. Именно поэтому, в нашем салоне собралась дружная команда настоящих специалистов своего дела. С момента основания Rapunzel, и до настоящего времени, совместными усилиями этих людей создается и приумножается
-              деловая репутация, положительное общественое мнение и узнаваемость брэнда.</p>
-              <p>Rapunzel - это мы!</p>  
-            </div>
-          </div>
+      </div>
+      <!--топ хидера-->
+      <div class="header__welcome">
+        <div class="welcome-page">
+          <p>
+            <a href="index.html" class="header__exit">Scarlet</a>
+          </p>
+          <h1 class="h1">Наши специалисты</h1>
         </div>
-        <!--калейдоскоп портретов команды-->
-        <div class="row">
-          <div class="col-md-12">
-
-            <div class="team">
-
-              <img src="img/prelogo.png" alt="" class="team__logo" data-aos="zoom-in" data-aos-delay="300">
-
-              <div class="team__member" data-aos="fade-down" data-aos-delay="600">
-                <h3 class="member__title">Ольга</h3>                
-                <img src="img/masters-olga.png" alt="" class="member__photo">                
-                <p class="member__desc">косметолог</p>
-              </div>
-              <div class="team__member" data-aos="fade-down" data-aos-delay="1800">
-                <h3 class="member__title">Вика</h3>                
-                <img src="img/masters-vika.png" alt="" class="member__photo">                
-                <p class="member__desc">парикмахер</p>
-              </div>
-              <div class="team__member" data-aos="fade-right" data-aos-delay="800">
-                <h3 class="member__title">Олег</h3>                
-                <img src="img/masters-oleg.png" alt="" class="member__photo">                
-                <p class="member__desc">массажист</p>
-              </div>
-              <div class="team__member" data-aos="fade-up-right" data-aos-delay="1000">
-                <h3 class="member__title">Света</h3>                
-                <img src="img/masters-sveta.png" alt="" class="member__photo">                
-                <p class="member__desc">мастер<br>маникюра</p>
-              </div>
-              <div class="team__member" data-aos="fade-left" data-aos-delay="1600">
-                <h3 class="member__title">Павел</h3>                
-                <img src="img/masters-pavel.png" alt="" class="member__photo">                
-                <p class="member__desc">стилист</p>
-              </div>
-              <div class="team__member" data-aos="fade-up-left" data-aos-delay="1400">
-                <h3 class="member__title">Алина</h3>                
-                <img src="img/masters-alina.png" alt="" class="member__photo">                
-                <p class="member__desc">менеджер</p>
-              </div>
-              <div class="team__member" data-aos="fade-up" data-aos-delay="1200">
-                <h3 class="member__title">Виолетта</h3>                
-                <img src="img/masters-violetta.png" alt="" class="member__photo">                
-                <p class="member__desc">консультант</p>
-              </div>
-
-            </div>
+          <!--кнопки перехода на главную страницу и след.раздел-->
+          <div class="header__selector selector__left off-screen">
+            <a href="index.html" class="header__transfer">На главную страницу</a>
+          </div>
+          <div class="header__selector selector__right off-screen">
+            <a href="about.html" title="солярий" class="header__transfer">Следующий раздел</a>
+          </div>
+          <!--кнопки соцсетей-->
+        <div class="social-block-b">
+          <nav class="social">
+            <p>Мы в соцсетях</p>
+            <ul>
+              <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://vk.com/?lang=en"><i class="fab fa-vk"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--номер и график работы-->
+          <div class="infoblock-b">
+            <div class="infoblock__phone"><i class="fas fa-mobile-alt"></i>+7 (495) 922-77-73</div>
+            <div class="infoblock__time"><i class="far fa-clock"></i> Ежедн. 10:00 - 22:00</div>
           </div>
       </div>
+      <!--жалюзи с картинкой-->
+      <div class="header__short-menu">
+        <div class="blinds__thumb">
+        </div>
       </div>
+        <!--меню навигации (плавающее)-->
+        <div class="short-navigation" id="menu">
+        <!--структура меню-->
+        <div class="header__button button-left">
+          <a href="index.html" class="header__link">
+            <img src="img/logo.png" alt="">
+          </a>
+        </div>
+          <ul class="navigation-wrapper">
+
+              <li class="navigation__item dropdown" id="glow">
+
+                <div class="navigation__link point active">Услуги</div>
+
+            <ul class="sub-navigation">
+              <li class="sub-navigation__item">
+                <a href="hairs.html" class="sub-navigation__link">Парикмахерский сервис</a>
+              </li>
+              <li class="sub-navigation__item">
+                <a href="cosmetic.html" class="sub-navigation__link">Косметологический сервис</a>
+              </li>
+              <li class="sub-navigation__item">
+                <a href="nails.html" class="sub-navigation__link">Маникюрный сервис</a>
+              </li>
+              <li class="sub-navigation__item">
+                <a href="massage.html" class="sub-navigation__link">Массаж и SPA</a>
+              </li>
+              <li class="sub-navigation__item">
+                <a href="solarium.html" class="sub-navigation__link">Солярий</a>
+              </li>
+            </ul>
+              </li>
+
+          <li class="navigation__item">
+            <a href="team.html" class="navigation__link">Специалисты</a>
+          </li>
+          <li class="navigation__item">
+            <a href="price.html" class="navigation__link">Прайс-лист</a>
+          </li>
+          <li class="navigation__item">
+            <a href="about.html" class="navigation__link">О салоне</a>
+          </li>
+
+          </ul>
+        <div class="header__button button-right">
+          <a class="header__link" data-fancybox="popup-call" href="#pop-up">
+            <img src="img/icon_phone.svg" alt="" class="header__call">
+          </a>
+        </div>
+        <!--анимированная кнопка-бургер-->
+        <div class="burger__wrapper">
+          <div class="burger">
+            <span></span>
+          </div>
+        </div>
+        </div>
     </div>
-
   </header>
-  <!--секция мастеров-->
-  <section class="masters">
-    <!--карточка мастера-1-->
-    <div class="masters__card blue">
-      <!--50% часть с изображением-->
-      <div class="masters__part wall-1">                
-      </div>
-      <!--50% часть с описанием-->
-      <div class="masters__part">
-        <div class="masters__portrait">
-          <img src="img/masters-sveta.png" alt="" class="masters__image">
+  <!--калейдоскоп портретов команды-->
+  <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+      <div class="team__wrapper">
+        <div class="team__grid">
+
+          <div class="team__item glass-effect item-1 item-1" data-aos="fade-up-left" data-aos-delay="300" data-aos-duration="500">
+
+            <div class="member__shortcut">
+              <h3 class="member__name">Ольга</h3>
+              <img src="img/masters-olga.png" alt="" class="member__img">
+              <p class="member__profession">косметолог</p>
+
+              <div class="shortcut__button s-button-left">
+                <a href="cosmetic.html" class="shortcut__link">
+                  <img src="img/icon_cosmetic.svg" alt="" class="shortcut__pic">
+                </a>
+                <p class="shortcut__text">переход в раздел сервиса косметологии</p>
+              </div>
+
+              <div class="shortcut__button s-button-right">
+                <a href="#pop-up" class="shortcut__link" data-fancybox="popup-call-2">
+                  <img src="img/icon_phone.svg" alt="" class="shortcut__pic">
+                </a>
+                <p class="shortcut__text">связь с консультантом</p>
+              </div>
+            </div>
+
+            <div class="member__description">
+              <h3 class="member__fullname">Величко Ольга Сергеевна</h3>
+              <p class="member__text">Отличница с красным дипломом, спортсменка, и просто красавица, Ольга великолепный специалист в своей сложной сфере. Косметолог с врожденным талантом, по мнению ее благодарных клиенток. Её владения - косметический отдел нашего салона, где Ольга по праву считается королевой!</p>
+              <table class="member__table">
+                <tr>
+                  <th>Стаж работы в салоне</th>
+                  <td>6 лет</td>
+                </tr>
+                <tr>
+                  <th>Достижения</th>
+                  <td>Знает, куда, когда и кого колоть, а кого резать</td>
+                </tr>
+              </table>
+            </div>
+
+          </div>
+
+          <div class="team__item glass-effect item-2" data-aos="fade-down" data-aos-delay="700" data-aos-duration="500">
+            <div class="member__shortcut">
+              <h3 class="member__name">Вика</h3>
+              <img src="img/masters-vika.png" alt="" class="member__img">
+              <p class="member__profession">парикмахер</p>
+
+              <div class="shortcut__button s-button-left">
+                <a href="hairs.html" class="shortcut__link">
+                  <img src="img/icon_scissors.svg" alt="" class="shortcut__pic">
+                </a>
+                <p class="shortcut__text">переход в раздел парикмахерского сервиса</p>
+              </div>
+
+              <div class="shortcut__button s-button-right">
+                <a href="#pop-up" class="shortcut__link" data-fancybox="popup-call-3">
+                  <img src="img/icon_phone.svg" alt="" class="shortcut__pic">
+                </a>
+                <p class="shortcut__text">связь с консультантом</p>
+              </div>
+            </div>
+
+            <div class="member__description">
+              <h3 class="member__fullname">Соколова Виктория Владимировна</h3>
+              <p class="member__text">Взрывной характер и неуемная тяга создавать вокруг себя хаос не помешали (а может, и помогли) Вике стать ведущим специалистом в своей области. Будь то участие в конкурсе, или многочасовая рабочая смена - Вика выкладыватся на все 100%</p>
+              <table class="member__table">
+                <tr>
+                  <th>Стаж работы в салоне</th>
+                  <td>5 лет</td>
+                </tr>
+                <tr>
+                  <th rowspan="3">Достижения</th>
+                  <td>1-ое место в городском конкурсе "BeautyMax" 2014</td>
+                </tr>
+                <tr>
+                  <td>Победа на конкурсе мастерства "Краса Москвы" 2017</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="team__item glass-effect item-3" data-aos="fade-down-left" data-aos-delay="300" data-aos-duration="500">
+            <div class="member__shortcut">
+              <h3 class="member__name">Олег</h3>
+              <img src="img/masters-oleg.png" alt="" class="member__img">
+              <p class="member__profession">массажист</p>
+
+              <div class="shortcut__button s-button-left">
+                <a href="massage.html" class="shortcut__link">
+                  <img src="img/icon_massage.svg" alt="" class="shortcut__pic">
+                </a>
+                <p class="shortcut__text">переход в раздел массажного сервиса</p>
+              </div>
+
+              <div class="shortcut__button s-button-right">
+                <a href="#pop-up" class="shortcut__link" data-fancybox="popup-call-4">
+                  <img src="img/icon_phone.svg" alt="" class="shortcut__pic">
+                </a>
+                <p class="shortcut__text">связь с консультантом</p>
+              </div>
+            </div>
+
+            <div class="member__description">
+              <h3 class="member__fullname">Сидоров Олег Николаевич</h3>
+              <p class="member__text">Опытный и умелый мастер, Олег в нашей команде уже почти 6 лет. За все это время успел зарекомендовать себя как самоотверженный специалист способный найти подход к любому клиенту.</p>
+              <table class="member__table">
+                <tr>
+                  <th>Стаж работы в салоне</th>
+                  <td>6 лет</td>
+                </tr>
+                <tr>
+                  <th>Достижения</th>
+                  <td>Наминает клиенток (а бывает, что и клиентов) как положено</td>
+                </tr>
+              </table>
+            </div>
+
+          </div>
+
+          <div class="team__item glass-effect item-4" data-aos="fade-left" data-aos-delay="700" data-aos-duration="500">
+            <div class="member__shortcut">
+              <h3 class="member__name">Света</h3>
+              <img src="img/masters-sveta.png" alt="" class="member__img">
+              <p class="member__profession">мастер маникюра</p>
+
+              <div class="shortcut__button s-button-left">
+                <a href="nails.html" class="shortcut__link">
+                  <img src="img/icon_nails.svg" alt="" class="shortcut__pic">
+                </a>
+                <p class="shortcut__text">переход в раздел маникюроного сервиса</p>
+              </div>
+
+              <div class="shortcut__button s-button-right">
+                <a href="#pop-up" class="shortcut__link" data-fancybox="popup-call-5">
+                  <img src="img/icon_phone.svg" alt="" class="shortcut__pic">
+                </a>
+                <p class="shortcut__text">связь с консультантом</p>
+              </div>
+            </div>
+
+            <div class="member__description">
+              <h3 class="member__fullname">Иванова Светлана Игоревна</h3>
+              <p class="member__text">Мастер высшей категории. Лауреат дизайнерских премий и международных конкурсов.<br>
+                    В команде Scarlet с 2008 года. Тысячи довольных клиентов и сотни благодарных отзывов. Руководствуется принципом: или делай превосходно, или не делай вовсе!</p>
+              <table class="member__table">
+                <tr>
+                  <th>Стаж работы в салоне</th>
+                  <td>4 года</td>
+                </tr>
+                <tr>
+                  <th>Достижения</th>
+                  <td>Расцарапала своими холёными ноготками не одну мужскую спину</td>
+                </tr>
+              </table>
+            </div>
+
+          </div>
+
+          <div class="team__item glass-effect item-5" data-aos="zoom-in" data-aos-duration="300">
+            <img src="img/logo-text.png" alt="">
+          </div>
+
+          <div class="team__item glass-effect item-6" data-aos="fade-right" data-aos-delay="700" data-aos-duration="500">
+            <div class="member__shortcut">
+              <h3 class="member__name">Наташа</h3>
+              <img src="img/masters-natasha.png" alt="" class="member__img">
+              <p class="member__profession">парикмахер</p>
+              <div class="shortcut__button s-button-left">
+                <a href="hairs.html" class="shortcut__link">
+                  <img src="img/icon_scissors.svg" alt="" class="shortcut__pic">
+                </a>
+                <p class="shortcut__text">переход в раздел парикмахерского сервиса</p>
+              </div>
+
+              <div class="shortcut__button s-button-right">
+                <a href="#pop-up" class="shortcut__link" data-fancybox="popup-call-6">
+                  <img src="img/icon_phone.svg" alt="" class="shortcut__pic">
+                </a>
+                <p class="shortcut__text">связь с консультантом</p>
+              </div>
+            </div>
+            <div class="member__description">
+              <h3 class="member__fullname">Кузнецова Наталья Владимировна</h3>
+              <p class="member__text">Наташа - второй мастер в парикмахерском зале нешего салона. Свой юный возраст и небольшой опыт она с лихвой компенсирует самоотдачей в работе и тягой к экспериментам в образах и исполненнии. Если вам нужен нестандартный подход к вашему образу - Наташа идеальный выбор!</p>
+              <table class="member__table">
+                <tr>
+                  <th>Стаж работы в салоне</th>
+                  <td>2 года</td>
+                </tr>
+                <tr>
+                  <th>Достижения</th>
+                  <td>Любит эскперименты не только на работе</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="team__item glass-effect item-7" data-aos="fade-up-right" data-aos-delay="300" data-aos-duration="500">
+            <div class="member__shortcut">
+              <h3 class="member__name">Павел</h3>
+              <img src="img/masters-pavel.png" alt="" class="member__img">
+              <p class="member__profession">стилист</p>
+              <div class="shortcut__button s-button-left">
+                <a href="index.html" class="shortcut__link">
+                  <img src="img/icon_star.svg" alt="" class="shortcut__pic">
+                </a>
+                <p class="shortcut__text">переход на главную страницу</p>
+              </div>
+
+              <div class="shortcut__button s-button-right">
+                <a href="#pop-up" class="shortcut__link" data-fancybox="popup-call-7">
+                  <img src="img/icon_phone.svg" alt="" class="shortcut__pic">
+                </a>
+                <p class="shortcut__text">связь с консультантом</p>
+              </div>
+            </div>
+            <div class="member__description">
+              <h3 class="member__fullname">Орловский Павел Евгеньевич</h3>
+              <p class="member__text">Когда клиент задается вопросом соответствия стилю, мы отправляем его на пять букв: Павел. Именно он отвечает в нашем салоне за то, чтобы всё: от верхней одежды до обуви было подчинено единой цели - выглядеть безукоризненно!</p>
+              <table class="member__table">
+                <tr>
+                  <th>Стаж работы в салоне</th>
+                  <td>С открытия</td>
+                </tr>
+                <tr>
+                  <th>Достижения</th>
+                  <td>Альфач, и точка</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="team__item glass-effect item-8" data-aos="fade-up" data-aos-delay="700" data-aos-duration="500">
+            <div class="member__shortcut">
+              <h3 class="member__name">Алина</h3>
+              <img src="img/masters-alina.png" alt="" class="member__img">
+              <p class="member__profession">менеджер</p>
+              <div class="shortcut__button s-button-left">
+                <a href="index.html" class="shortcut__link">
+                  <img src="img/icon_star.svg" alt="" class="shortcut__pic">
+                </a>
+                <p class="shortcut__text">переход на главную страницу</p>
+              </div>
+
+              <div class="shortcut__button s-button-right">
+                <a href="#pop-up" class="shortcut__link" data-fancybox="popup-call-8">
+                  <img src="img/icon_phone.svg" alt="" class="shortcut__pic">
+                </a>
+                <p class="shortcut__text">связь с консультантом</p>
+              </div>
+            </div>
+            <div class="member__description">
+              <h3 class="member__fullname">Реутова Алина Николаевна</h3>
+              <p class="member__text">Человек который отвечает за всё происходящее в салоне и решает все рабочие вопросы. Пусть вас не смущает ее нежный вид, ведь по характеру - это львица способная добиться чего угодно, от кого угодно. Да и никто другой на ее месте не справился бы со столь ответственной и сложной работой столь безукоризненно.</p>
+              <table class="member__table">
+                <tr>
+                  <th>Стаж работы в салоне</th>
+                  <td>5 лет</td>
+                </tr>
+                <tr>
+                  <th>Достижения</th>
+                  <td>Жёсткая Доминатрикс в брючном костюме нежного оттенка</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="team__item glass-effect item-9" data-aos="fade-down-right" data-aos-delay="300" data-aos-duration="500">
+            <div class="member__shortcut">
+              <h3 class="member__name">Виолетта</h3>
+              <img src="img/masters-violetta.png" alt="" class="member__img">
+              <p class="member__profession">консультант</p>
+              <div class="shortcut__button s-button-left">
+                <a href="index.html" class="shortcut__link">
+                  <img src="img/icon_star.svg" alt="" class="shortcut__pic">
+                </a>
+                <p class="shortcut__text">переход на главную страницу</p>
+              </div>
+
+              <div class="shortcut__button s-button-right">
+                <a href="#pop-up" class="shortcut__link" data-fancybox="popup-call-9">
+                  <img src="img/icon_phone.svg" alt="" class="shortcut__pic">
+                </a>
+                <p class="shortcut__text">связь с консультантом</p>
+              </div>
+            </div>
+            <div class="member__description">
+              <h3 class="member__fullname">Войтман Виолетта Эдуардовна</h3>
+              <p class="member__text">Обворожительный голос в телефонной трубке, который слышит дозвонившийся к нам клиент принадлежит именно Виолетте. Выслушает, посоветует, направит. Почти автонавигатор, только красивее!</p>
+              <table class="member__table">
+                <tr>
+                  <th>Стаж работы в салоне</th>
+                  <td>3 года</td>
+                </tr>
+                <tr>
+                  <th>Достижения</th>
+                  <td>Раньше была самым популярным номером в московской службе доставки сладостей "Кекс по телефону"</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
         </div>
-        <h2 class="masters__name">Иванова Светлана Игоревна</h2>
-        <h4 class="masters__proffesion">Мастер маникюра</h4>
-        <p class="masters__text">Мастер высшей категории. Лауреат дизайнерских премий и международных конкурсов. В команде Rapunzel с 2008 года. Тысячи довольных клиентов и сотни благодарных отзывов. Руководствуется принципом: или делай превосходно, или не делай вовсе!</p>
-        <table class="masters__skills">
-          <tr>
-            <th>Маникюр</th>
-            <th>Педикюр</th>
-          </tr>
-          <tr>
-            <th>Художественное оформление</th>
-            <th>Наращивание</th>
-          </tr>
-        </table>
       </div>
-
     </div>
-    <!--карточка мастера-2-->
-    <div class="masters__card accent mirror">
-      <!--50% часть с изображением-->
-      <div class="masters__part wall-2">                
-      </div>
-      <!--50% часть с описанием-->
-      <div class="masters__part">
-        <div class="masters__portrait">
-          <img src="img/masters-oleg.png" alt="" class="masters__image">
+  </div>
+  </div>
+  <!--секция приветствия-->
+  <section class="intro-service">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 article__part article__canvas">
+          <div class="article__intro">
+            <p>Успех любого начинания напрямую зависит от мастерства и заинтересованности людей занятых в этом деле. Именно поэтому, в нашем салоне собралась дружная команда настоящих специалистов своего дела. С момента основания Scarlet, и до настоящего времени, совместными усилиями этих людей создается и приумножается
+            деловая репутация, положительное общественое мнение и узнаваемость брэнда.</p>
+            <p>Scarlet - это мы!</p>
+          </div>
         </div>
-        <h2 class="masters__name">Сидоров Олег Николаевич</h2>
-        <h4 class="masters__proffesion">Массажист</h4>
-        <p class="masters__text">Опытный и умелый мастер, Олег в нашей команде уже почти 5 лет. За все это время успел зарекомендовать себя как самоотверженный специалист способный найти подход к любому клиенту.</p>
-        <table class="masters__skills">
-          <tr>
-            <th>Лечебный массаж</th>
-            <th>ЛФК</th>
-          </tr>
-          <tr>
-            <th>Расслабляющий массаж</th>
-            <th>Реабилитационный массаж</th>
-          </tr>
-        </table>
       </div>
-
     </div>
-    <!--карточка мастера-3-->
-    <div class="masters__card red">
-      <!--50% часть с изображением-->
-      <div class="masters__part wall-3">                
-      </div>
-      <!--50% часть с описанием-->
-      <div class="masters__part">
-        <div class="masters__portrait">
-          <img src="img/masters-olga.png" alt="" class="masters__image">
-        </div>
-        <h2 class="masters__name">Величко Ольга Сергеевна</h2>
-        <h4 class="masters__proffesion">Косметолог</h4>
-        <p class="masters__text">Отличница с красным дипломом, спортсменка, и просто красавица, Ольга великолепный специалист в своей сложной сфере. Косметолог с врожденным талантом по мнению ее благодарных клиенток.</p>
-        <table class="masters__skills">
-          <tr>
-            <th>Контурная пластика</th>
-            <th>Тредлифтинг</th>
-          </tr>
-          <tr>
-            <th>Ультразвуковая терапия</th>
-            <th>Озонотерапия</th>
-          </tr>
-        </table>
-      </div>
+  </section>
 
-    </div>
-
-  </section> 
   <!--подвал сайта-->
-  <footer class="main-footer">    
+  <footer class="main-footer">
     <div class="container">
       <div class="row">
         <!--колонка футера социальных ссылок-->
         <div class="col-lg-2 col-md-4 col-sm-6">
           <div class="footer-column first">
-            <a href="index.html"><img src="img/logo.png" alt="логотип сайта" class="logo-footer"></a>
+            <a href="index.html"><img src="img/logo-text.png" alt="логотип сайта" class="logo-footer"></a>
             <p>Салон красоты<br>бизнес-класса в Москве</p>
-            <div class="social-footer">           
+            <div class="social-footer">
                 <nav class="social">
                   <ul>
                     <li>
@@ -301,12 +560,123 @@
       </div>
     </div>
   </footer>
+  <!--система возврата к главному сайту и выбор других-->
+  <div class="returnal__wrapper">
+    <div class="returnal__button">
+      <span class="returnal__icon"></span>
+    </div>
+    <div class="returnal__menu">
+
+      <div class="returnal__item returnal__home">
+        <span class="returnal__main">
+          <img class="returnal__pic" src="img/fd_white_logo.svg" alt="">
+        </span>
+        <div class="returnal__content">
+          <a href="https://foxdesignstudio.github.io/index.html" class="returnal__link">
+            <span class="returnal__note">
+              <h4 class="returnal__title">FOX Design</h4>
+              <p class="returnal__text">Возврат на сайт портфолио</p>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="returnal__item">
+        <span class="icon-Avtoholl"></span>
+        <div class="returnal__content">
+          <a href="https://foxdesignstudio.github.io/site-3/index.html" class="returnal__link">
+            <span class="returnal__note">
+              <h4 class="returnal__title">Автохолл</h4>
+              <p class="returnal__text">Информационный многостраничник автосервиса</p>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="returnal__item">
+        <span class="icon-Skinali"></span>
+        <div class="returnal__content">
+          <a href="https://foxdesignstudio.github.io/site-1/index.html" class="returnal__link">
+            <span class="returnal__note">
+              <h4 class="returnal__title">Фабрика Скинали</h4>
+              <p class="returnal__text">Продающий лэндинг производственной компании</p>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="returnal__item">
+        <span class="icon-Rapunzel"></span>
+        <div class="returnal__content">
+          <a href="https://foxdesignstudio.github.io/site-4/index.html" class="returnal__link">
+            <span class="returnal__note">
+              <h4 class="returnal__title">Scarlet</h4>
+              <p class="returnal__text">Информационный многостраничник салона красоты</p>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="returnal__item">
+        <span class="icon-Capone"></span>
+        <div class="returnal__content">
+          <a href="https://foxdesignstudio.github.io/site-2/index.html" class="returnal__link">
+            <span class="returnal__note">
+              <h4 class="returnal__title">Capone Pizza</h4>
+              <p class="returnal__text">Интернет-магазин (пиццерия)</p>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="returnal__item">
+        <span class="icon-Hollow"></span>
+        <div class="returnal__content">
+          <a href="https://foxdesignstudio.github.io/site-5/index.html" class="returnal__link">
+            <span class="returnal__note">
+              <h4 class="returnal__title">Hollow Knight Atlas</h4>
+              <p class="returnal__text">Приложение-компаньон к игре Hollow Knight™</p>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="returnal__item">
+        <span class="icon-Fallout"></span>
+        <div class="returnal__content">
+          <a href="https://foxdesignstudio.github.io/site-6/index.html" class="returnal__link">
+            <span class="returnal__note">
+              <h4 class="returnal__title">Fallout 4 Memory Vault</h4>
+              <p class="returnal__text">Приложение-компаньон к игре Fallout 4™</p>
+            </span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
   <!--кнопка наверх-->
   <div class="top" title="Наверх"><i class="fas fa-angle-double-up"></i></div>
 
 </div>     	
-	<!--скртипы-->
+	<!--скрипты-->
   <script src="js/scripts.min.js"></script>
+  <script>
+    //плавающее меню навигации
+    function stickyScroll(){
+      if($(window).width()>1100){
+        if ($(this).scrollTop() > 200) {
+          $('#menu').addClass('change');
+        } else
+          $('#menu').removeClass('change');
+      }
+      // else if($(window).width() < 322){
+      //   $('#menu').removeClass('change');
+      // }
+      else{
+        if ($(this).scrollTop() > 190) {
+          $('#menu').addClass('change');
+        } else
+          $('#menu').removeClass('change');
+      }
+    };
+
+    $(window).scroll(stickyScroll);
+  </script>
 
 </body>
 </html>

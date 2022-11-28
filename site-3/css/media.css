@@ -253,6 +253,10 @@
 }
 
 @media only screen and (max-width : 550px) {
+	.banner {
+		left: -110%;
+		bottom: 30px;
+	}
 	.banner__wrapper {
 		height: 130px;
     	width: 320px;
@@ -269,7 +273,7 @@
 		width: 308px;
 	}
 	.banner.showBanner {
-		left: 0;
+		left: calc(50% - 160px);
 		bottom: 30px;
 	}
 	.banner__title {
@@ -380,7 +384,9 @@
 	}
 	.returnal__menu {
 		grid-template-rows: repeat(4, 120px);
-		grid-template-columns: repeat(2, 120px);
+		grid-template-columns: repeat(2, 140px);
+		padding: 10px 0;
+		grid-gap: 2px;
 	}
 	.returnal__home {
 		grid-area: 1 / 1 / 2 / 3;

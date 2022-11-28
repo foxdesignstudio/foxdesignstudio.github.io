@@ -3,218 +3,594 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Rapunzel</title>	
+	<title>Scarlet</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<style>body { opacity: 0; overflow-x: hidden } html { background-color: #1a1a1a; }</style>
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/icomoon.css">
 </head>
 
 <body class="home">
 <!--враппер сайта-->
-<div class="site-wrapper">
-	<!--шапка сайта-->
-	<header class="header" style="background-image: url('img/category-cosmetology.jpg');">
-    	<!--меню навигации (плавающее)-->
-	    <div class="navigation">
-	    	<!--логотип-ссылка-->
-	    	<div class="page-logo">
-	    		<a href="index.html" class="page-logo__link">
-	        		<img src="img/logo.png" class="page-logo__pic">
-	        	</a>
-	    	</div>
-	    	<!--структура меню-->
-	    	<ul class="navigation-wrapper">
+	<div class="site-wrapper">
+		<!--шапка сайта-->
+		<header class="header double-line">
+	        <!--меню навигации-->
+			<nav id="my-menu" class="nav-menu">
+	  			<!--анимированная кнопка-гамбургер-->
+				<div id="goMenu" class="hamburger hamburger--emphatic">
+	    			<span class="hamburger-box">
+	    				<span class="hamburger-inner"></span>
+	    			</span>
+			    </div>
+			    <h4 class="nav-menu__title">Услуги салона</h4>
+			    <a href="index.html" class="nav-menu__index"><img src="img/logo.png" alt="" class="nav-menu__logo"></a>
+				<ul class="nav-menu__wrapper">
+					<li class="nav-menu__item"><a class="nav-menu__link" href="hairs.html">Парикмахерский сервис</a></li>
+					<li class="nav-menu__item"><a class="nav-menu__link" href="cosmetic.html">Косметологический сервис</a></li>
+					<li class="nav-menu__item"><a class="nav-menu__link" href="nails.html">Маникюрный сервис</a></li>
+					<li class="nav-menu__item"><a class="nav-menu__link" href="massage.html">Массаж и SPA</a></li>
+					<li class="nav-menu__item"><a class="nav-menu__link" href="solarium.html">Солярий</a></li>
+					<li class="nav-menu__item"><a class="nav-menu__link" href="team.html">Наши специалисты</a></li>
+					<li class="nav-menu__item"><a class="nav-menu__link" href="price.html">Прайс-лист</a></li>
+					<li class="nav-menu__item"><a class="nav-menu__link" href="about.html">О салоне</a></li>
+				</ul>
+			</nav>
+	    	<!--содержимое шапки дополнительных страниц-->
+			<div class="header__content">
+				<!--попап окно-->
+				<div class="modal" id="pop-up">
+					<div class="modal__wrapper">
+						<form class="callback">
 
-		        <li class="navigation__item dropdown" id="glow">
+							<img src="img/logo.png" alt="логотип_сайта" class="modal__logo">
+							<div class="formhead">Оставить заявку</div>
+							<p>Оставьте заявку, и мы перезвоним вам в течение 15 минут.</p>
 
-		        	<div class="navigation__link point active">Услуги</div>
+							<input type="text" name="Имя" placeholder="Ваше имя..." required>
+							<input type="text" name="Телефон" placeholder="Ваш телефон..." required>
+							<select name="Услуга" class="callback__select">
+								<option>Озонотерапия</option>
+								<option>Тредлифтинг</option>
+								<option>Ультразвуковая терапия</option>
+								<option>Контурная пластика</option>
+								<option>Интралипотерапия</option>
+								<option>Микротоковая терапия</option>
+							</select>
+							<button class="button button-white">Отправить</button>
 
-					<ul class="sub-navigation">
-						<li class="sub-navigation__item">
-							<a href="hairs.html" class="sub-navigation__link">Парикмахерский сервис</a>
-						</li>
-						<li class="sub-navigation__item">
-							<a href="cosmetic.html" class="sub-navigation__link">Косметологический сервис</a>
-						</li>
-						<li class="sub-navigation__item">
-							<a href="nails.html" class="sub-navigation__link">Маникюрный сервис</a>
-						</li>
-						<li class="sub-navigation__item">
-							<a href="massage.html" class="sub-navigation__link">Массаж и SPA</a>
-						</li>
-						<li class="sub-navigation__item">
-							<a href="solarium.html" class="sub-navigation__link">Солярий</a>
-						</li>
-					</ul>
-		        </li>
+						</form>
+					</div>
+				</div>
+				<!--топ хидера-->
+				<div class="header__welcome">
+					<div class="welcome-page">
+						<p>
+							<a href="index.html" class="header__exit">Scarlet</a>
+						</p>
+						<h1 class="h1">косметологический сервис</h1>
+					</div>
+				    <!--кнопки перехода на главную страницу и след.раздел-->
+				    <div class="header__selector selector__left off-screen">
+				    	<a href="index.html" class="header__transfer">На главную страницу</a>
+				    </div>
+				    <div class="header__selector selector__right off-screen">
+				    	<a href="nails.html" title="маникюрный сервис" class="header__transfer">Следующий раздел</a>
+				    </div>
+				    <!--кнопки соцсетей-->
+					<div class="social-block">
+						<nav class="social">
+							<p>Мы в соцсетях</p>
+							<ul>
+								<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="https://vk.com/?lang=en"><i class="fab fa-vk"></i></a></li>
+							</ul>
+						</nav>
+					</div>
+					<!--номер и график работы-->
+				    <div class="infoblock">
+					    <div class="infoblock__phone"><i class="fas fa-mobile-alt"></i>+7 (495) 922-77-73</div>
+					    <div class="infoblock__time"><i class="far fa-clock"></i> Ежедн. 10:00 - 22:00</div>
+				    </div>
+				</div>
+				<!--жалюзи с картинкой-->
+				<div class="header__blinds">
+					<div class="blinds__content s-cosmetic">
+						<div class="blinds__item">
+							<div class="blinds__cover one"></div>
+							<div class="blinds__reverse one"></div>
+						</div>
+						<div class="blinds__item">
+							<div class="blinds__cover two"></div>
+							<div class="blinds__reverse two"></div>
+						</div>
+						<div class="blinds__item">
+							<div class="blinds__cover three"></div>
+							<div class="blinds__reverse three"></div>
+						</div>
+						<div class="blinds__item">
+							<div class="blinds__cover four"></div>
+							<div class="blinds__reverse four"></div>
+						</div>
+						<div class="blinds__item">
+							<div class="blinds__cover five"></div>
+							<div class="blinds__reverse five"></div>
+						</div>
+					</div>
+				</div>
+	    		<!--меню навигации (плавающее)-->
+			    <div class="navigation" id="menu">
+			    	<!--структура меню-->
+					<div class="header__button button-left">
+						<a href="index.html" class="header__link">
+							<img src="img/logo.png" alt="">
+						</a>
+					</div>
+			    	<ul class="navigation-wrapper">
 
-				<li class="navigation__item">
-					<a href="team.html" class="navigation__link">Специалисты</a>
-				</li>
-				<li class="navigation__item">
-					<a href="price.html" class="navigation__link">Прайс-лист</a>
-				</li>
-				<li class="navigation__item">
-					<a href="about.html" class="navigation__link">О салоне</a>
-				</li>
+				        <li class="navigation__item dropdown" id="glow">
 
-	    	</ul>
-			<!--анимированная кнопка-бургер-->
-			<div class="burger">
-				<span></span>
+				        	<div class="navigation__link point active">Услуги</div>
+
+							<ul class="sub-navigation">
+								<li class="sub-navigation__item">
+									<a href="hairs.html" class="sub-navigation__link">Парикмахерский сервис</a>
+								</li>
+								<li class="sub-navigation__item">
+									<a href="cosmetic.html" class="sub-navigation__link">Косметологический сервис</a>
+								</li>
+								<li class="sub-navigation__item">
+									<a href="nails.html" class="sub-navigation__link">Маникюрный сервис</a>
+								</li>
+								<li class="sub-navigation__item">
+									<a href="massage.html" class="sub-navigation__link">Массаж и SPA</a>
+								</li>
+								<li class="sub-navigation__item">
+									<a href="solarium.html" class="sub-navigation__link">Солярий</a>
+								</li>
+							</ul>
+				        </li>
+
+						<li class="navigation__item">
+							<a href="team.html" class="navigation__link">Специалисты</a>
+						</li>
+						<li class="navigation__item">
+							<a href="price.html" class="navigation__link">Прайс-лист</a>
+						</li>
+						<li class="navigation__item">
+							<a href="about.html" class="navigation__link">О салоне</a>
+						</li>
+
+			    	</ul>
+					<div class="header__button button-right">
+						<a class="header__link" data-fancybox="popup-call" href="#pop-up">
+							<img src="img/icon_phone.svg" alt="" class="header__call">
+						</a>
+					</div>
+					<!--анимированная кнопка-бургер-->
+					<div class="burger__wrapper">
+						<div class="burger">
+							<span></span>
+						</div>
+					</div>
+			    </div>
 			</div>
-
-	    </div>
-    	<!--содержимое шапки дополнительных страниц-->
-		<div class="page-flex">
+		</header>
+		<!--секция приветствия-->
+		<section class="intro-service">
 			<div class="container">
-	        	<!--заголовок категории-->
 				<div class="row">
-					<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
-						<div class="header-composition">
-							<div class="welcome-page">
-								<p><span>Rapunzel</span></p>
-								<h1 class="h1 little-3">косметологический сервис</h1>  														
-							</div>
-						</div>     							
-					</div>
-				</div>
-		        <!--описание категории-->
-				<div class="row">
-					<div class="col-md-12">
-						<div class="page-header text-center">
-							<p>Вся мощь и сила прогресса направлена на то, чтобы максимально долго сохранить вашу красоту и женственность! Самые передовые технологии, новейшие средства и накопленный опыт мастеров сошлись вместе, чтобы сполна оправдать ваши самые смелые ожидания.</p>
-							<p>С "Rapunzel" забудьте о старости и проблемах внешности. Все будет идеально!</p>
+					<div class="col-md-12 article__part article__canvas">
+						<div class="article__intro">
+							<p>Вся мощь и достижения прогресса направлены на то, чтобы максимально долго сохранить вашу красоту и женственность! Самые передовые технологии, новейшие средства и накопленный опыт мастеров сошлись вместе, чтобы сполна оправдать ваши самые смелые ожидания..</p>
+							<p>С "Scarlet" забудьте о старости и проблемах внешности. Все будет идеально! А поможет вам в этом наш косметологический сервис.</p>
 						</div>
 					</div>
 				</div>
-				<!--анимированное превью раздела-->
-				<div class="row">
-					<div class="col-md-12">
-						<div class="cosmo__slider">
-							<div class="cosmo__wrapper">
-								<img src="img/cosmetology-babe.jpg" alt="" class="cosmo__babe">
-							</div>
+			</div>
+		</section>
+		<!--секция быстрого превью выполняемых работ-->
+		<section class="s-services">
+
+			<h4 class="article__name">Мы предлагаем своим клиентам:</h4>
+
+			<!--карусель услуг-->
+			<div class="owl-carousel carousel-sevices">
+
+				<div class="carousel-services-item">
+					<div class="carousel-services-content">
+						<div class="carousel-services-composition">
+							<h3 class="carousel-service-title">Контурная пластика</h3>
+							<p>Введение в кожу препаратов, действие которых заключается в разглаживании морщин, подтяжке кожи и выравнивании ее контуров</p>
+							<a href="#cosmo-trigger-1" class="button button-white carousel-services-link">Узнать больше</a>
 						</div>
 					</div>
+					<div class="carousel-services-image" style="background-image: url(img/cosmo-contur.jpg);"></div>
 				</div>
-				<!--блок рекламы косметологических услуг-->
-	            <div class="advertising slider">
 
-	              <div class="slider__item" data-aos="fade-down-right" data-aos-delay="1000" data-aos-duration="800">
-	                <span class="slider__pin"><i class="fas fa-crown"></i></span>
-	                <p class="slider__desc">Самые передовые технологии красоты</p>
-	              </div>
-	              <div class="slider__item"  data-aos="fade-down" data-aos-delay="1000" data-aos-duration="800">
-	                <span class="slider__pin"><i class="fas fa-crown"></i></span>
-	                <p class="slider__desc">Квалифицированный персонал</p>
-	              </div>
-	              <div class="slider__item" data-aos="fade-down-left" data-aos-delay="1000" data-aos-duration="800">
-	                <span class="slider__pin"><i class="fas fa-crown"></i></span>
-	                <p class="slider__desc">Только импортные средства и препараты</p>
-	              </div>
-	              <div class="slider__item"  data-aos="fade-up-right" data-aos-delay="1000" data-aos-duration="800" data-aos-anchor-placement="bottom bottom">
-	                <span class="slider__pin"><i class="fas fa-crown"></i></span>
-	                <p class="slider__desc">Профессиональные консультации специалистов</p>
-	              </div>
-	              <div class="slider__item" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="800" data-aos-anchor-placement="bottom bottom">
-	                <span class="slider__pin"><i class="fas fa-crown"></i></span>
-	                <p class="slider__desc">Самые низкие цены в столице</p>
-	              </div>
-	              <div class="slider__item" data-aos="fade-up-left" data-aos-delay="1000" data-aos-duration="800" data-aos-anchor-placement="bottom bottom">
-	                <span class="slider__pin"><i class="fas fa-crown"></i></span>
-	                <p class="slider__desc">Удобный график работы</p>
-	              </div>  
+				<div class="carousel-services-item">
+					<div class="carousel-services-content">
+						<div class="carousel-services-composition">
+							<h3 class="carousel-service-title">Микротоковая терапия</h3>
+							<p>Позволяет воздействовать на функциональную активность клеток кожи, мышцы, лимфатические и кровеносные сосуды. Это способствует выведению лишней жидкости, улучшению питания кожи, формированию красивого овала лица.</p>
+							<a href="#cosmo-trigger-2" class="button button-white carousel-services-link">Узнать больше</a>
+						</div>
+					</div>
+					<div class="carousel-services-image" style="background-image: url(img/cosmo-micro.jpg);"></div>
+				</div>
 
-	            </div> 
+				<div class="carousel-services-item">
+					<div class="carousel-services-content">
+						<div class="carousel-services-composition">
+							<h3 class="carousel-service-title">Озонотерапия</h3>
+							<p>Озоно-кислородная смесь, вводимая по определенным активным точкам лица, шеи, живота, бедер, служит клеточным катализатором, стимулирует процессы жизнедеятельности клетки, тем самым омолаживает ткани.</p>
+							<a href="#cosmo-trigger-3" class="button button-white carousel-services-link">Узнать больше</a>
+						</div>
+					</div>
+					<div class="carousel-services-image" style="background-image: url(img/cosmo-ozon.jpg);"></div>
+				</div>
 
-    		</div>
-		</div>
+				<div class="carousel-services-item">
+					<div class="carousel-services-content">
+						<div class="carousel-services-composition">
+							<h3 class="carousel-service-title">Ультразвуковая терапия</h3>
+							<p>Ультразвук стимулирует синтез колла­гена, эластина и гиалуроновой кислоты в дерме, способствует реструктуризации ткани в целом, заметно повышается эластичность и упругость кожи</p>
+							<a href="#cosmo-trigger-4" class="button button-white carousel-services-link">Узнать больше</a>
+						</div>
+					</div>
+					<div class="carousel-services-image" style="background-image: url(img/cosmo-uzi.jpg);"></div>
+				</div>
 
-	</header>
-	<!--секция описаний выполняемых работ-->
-	<section class="s-services">
-    <!--карусель услуг-->
-    <div class="owl-carousel carousel-sevices">
+				<div class="carousel-services-item">
+					<div class="carousel-services-content">
+						<div class="carousel-services-composition">
+							<h3 class="carousel-service-title">Тредлифтинг</h3>
+							<p>Процесс установки мезонитей, которые представляют собой чрезвычайно тонкие нити, которые способны рассасываться под кожей. После процедуры морщины разгладятся и станут менее заметными.</p>
+							<a href="#cosmo-trigger-5" class="button button-white carousel-services-link">Узнать больше</a>
+						</div>
+					</div>
+					<div class="carousel-services-image" style="background-image: url(img/cosmo-tredlifting.jpg);"></div>
+				</div>
 
-		<div class="carousel-services-item">
-			<div class="carousel-services-content">
-				<div class="carousel-services-composition">
-					<h3 class="carousel-service-title">Контурная пластика</h3>
-						<p>Введение в кожу препаратов, действие которых заключается в разглаживании морщин, подтяжке кожи и выравнивании ее контуров</p>                     
+				<div class="carousel-services-item">
+					<div class="carousel-services-content">
+						<div class="carousel-services-composition">
+							<h3 class="carousel-service-title">Интралипотерапия</h3>
+							<p>Новейшая технология коррекции локальных жировых отложений безоперационным путем. Метод работает исключительно в тех зонах, куда введен препарат.</p>
+							<a href="#cosmo-trigger-6" class="button button-white carousel-services-link">Узнать больше</a>
+						</div>
+					</div>
+					<div class="carousel-services-image" style="background-image: url(img/cosmo-lipo.jpg);"></div>
+				</div>
+
+			</div>
+		</section>
+		<!--секция полного описаний выполняемых работ-->
+		<section class="introduction">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h4 class="article__name">Услуги нашего салона для вас!</h4>
+					</div>
+					<div class="col-md-12 article__part article__red">
+
+						<div class="article__block">
+							<div class="article__row">
+								<span class="article__label" id="cosmo-trigger-3"></span>
+								<h6 class="article__title">Озонотерапия</h6>
+							</div>
+							<div class="article__content">
+								<div class="article__column">
+									<div class="article__pic">
+										<img src="img/article-pic-ozon-1.jpg" alt="" class="article__img">
+									</div>
+									<p class="article__text">Процедура озонотерапии назначается для полного устранения внешних дефектов и нормализации функций кожи. Главной задачей озона является устранение гипоксии – кислородного голодания тканей. Кроме того, доставка нужного количества кислорода стимулирует выработку гемоглобина. Также подкожный ввод озона устраняет морщины, угревую сыпь, целлюлит, лишние жировые отложения.</p>
+									<p class="article__text">Озонотерапия в косметологии особенно эффективна в вопросе лечения целлюлита – она дает быстрый и видимый результат. На начальных стадиях проявления целлюлита достаточно всего нескольких косметологических процедур введения озона подкожно, чтобы избавиться от нежелательных проблем.</p>
+									<div class="article__call">
+										<a data-fancybox="popup-call-1" href="#pop-up" class="button button-white button-orange">Оформить заявку</a>
+									</div>
+								</div>
+
+								<div class="article__column column__info">
+
+									<fieldset class="article__fieldset">
+										<legend>Виды озонотерапии:</legend>
+										<h4 class="note__title">Инъекционная</h4>
+										<p class="note__text">Введение под кожу кислородно-озоновой смеси. Процедура длится примерно 15 минут, для достижения видимого эффекта необходимо хотя бы 2-3 сеанса.</p>
+										<h4 class="note__title">Наружная</h4>
+										<p class="note__text">Маски на основе озона, или же роллер, вымоченный в кислородно-озоновой смеси. Чаще всего применяется для устранения осложнений варикозной болезни, ожогов, угревой сыпи. Сеанс длится до часа.</p>
+									</fieldset>
+
+									<table class="article__list">
+										<tr>
+											<th colspan="2" class="dark-bg">Выполняемые процедуры</th>
+										</tr>
+										<tr>
+											<td>озонотерапия лица</td>
+											<td>инъекция</td>
+										</tr>
+										<tr>
+											<td>озонотерапия бёдер</td>
+											<td>инъекция</td>
+										</tr>
+										<tr>
+											<td>озонотерапия тела</td>
+											<td>комплексная</td>
+										</tr>
+										<tr>
+											<td>озонотерапия рук и плеч</td>
+											<td>комплексная</td>
+										</tr>
+									</table>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="article__block">
+							<div class="article__row">
+								<span class="article__label" id="cosmo-trigger-5"></span>
+								<h6 class="article__title">Тредлифтинг</h6>
+							</div>
+							<div class="article__content">
+								<div class="article__column column__info">
+									<fieldset class="article__fieldset">
+										<legend>Нити AMB Aestetics</legend>
+										<p class="note__text">Мезонити AMB Aestetics корейского производства изготовлены из полидиоксанона. Это биодеградирующий материал, который активно используется не только в косметологии, но и в хирургии. Материал нетоксичен, не вызывает аллергии и отторжения. Нити вводятся в кожу, не разрывая ткани, вызывает минимальную ответную реакцию.</p>
+									</fieldset>
+
+									<div class="article__gallery">
+										<figure class="article__file">
+											<img src="img/article-pic-tredlifting-3.jpg" class="article__sample">
+											<figcaption>Пример использования мезонитей AMB Aestetics</figcaption>
+										</figure>
+									</div>
+
+								</div>
+								<div class="article__column">
+									<div class="article__pic">
+										<img src="img/article-pic-tredlifting-1.jpg" alt="" class="article__img">
+									</div>
+									<p class="article__text">Тредлифтинг — процедура подтяжки кожи при помощи мезонитей. Нити для тредлифтинга состоят из специального безопасного для организма человека вещества — полидиоксанона. После введения нитей, клетки кожи вокруг них формируют каркас из коллагеновых волокон. Примерно через 6–8 месяцев полидиоксанон распадается на воду и двуокись углерода, которые выводятся из организма естественным образом. На месте мезонитей образуется коллагеновый каркас, который при следовании всем рекомендациям врача обеспечивает лифтинг до трёх лет.</p>
+									<div class="article__table">
+										<table class="article__list">
+											<tr>
+												<th class="dark-bg">Преимущества тредлифтинга</th>
+											</tr>
+											<tr>
+												<td>побочные эффекты отсутствуют</td>
+											</tr>
+											<tr>
+												<td>результат армирования мезонитями заметен сразу</td>
+											</tr>
+											<tr>
+												<td>период реабилитации отсутствует</td>
+											</tr>
+											<tr>
+												<td>нити не видны и не ощущаются под кожей</td>
+											</tr>
+										</table>
+									</div>
+									<div class="article__call">
+										<a data-fancybox="popup-call-2" href="#pop-up" class="button button-white button-orange">Оформить заявку</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="article__block">
+							<div class="article__row">
+								<span class="article__label" id="cosmo-trigger-4"></span>
+								<h6 class="article__title">Ультразвуковая терапия</h6>
+							</div>
+							<div class="article__content">
+								<div class="article__column">
+									<div class="article__pic">
+										<img src="img/article-pic-ultra-1.jpg" alt="" class="article__img">
+									</div>
+									<p class="article__text">Механизм действия УЗ терапии кожи лица заключается в том, что высокочастотные колебания (волны ультразвука), которые издает специальная металлическая пластина прибора, способны оказывать влияние на жидкую среду, нанесенную на поверхность кожи.</p>
+									<p class="article__text">Ультразвуковая терапия даёт возможность безболезненно очищать кожу от ороговевших клеток и комедонов, нормализовать выработку кожного сала, стимулировать процессы регенерации клеток и синтеза гиалуроновой кислоты, эластина и коллагена. Поскольку ультразвук разрыхляет соединительно-тканные структуры, с его помощью убирают рубцы и шрамы постакне, растяжки.</p>
+									<div class="article__call">
+										<a data-fancybox="popup-call-3" href="#pop-up" class="button button-white button-orange">Запись на процедуры</a>
+									</div>
+								</div>
+								<div class="article__column column__info">
+									<fieldset class="article__fieldset">
+										<legend>Противопоказания:</legend>
+										<h4 class="note__title">Онкологические заболевания</h4>
+										<h4 class="note__title">Вегето-сосудистые дисфункции</h4>
+										<h4 class="note__title">Хронические дерматозы</h4>
+										<h4 class="note__title">Острые инфекционные заболевания</h4>
+									</fieldset>
+									<div class="article__table">
+										<table class="article__list">
+											<tr>
+												<th class="dark-bg">Ультразвук способен устранить</th>
+											</tr>
+											<tr>
+												<td>послеродовые рубцы и растяжки</td>
+											</tr>
+											<tr>
+												<td>пигментные пятна — гормональные, солнечные, возрастные</td>
+											</tr>
+											<tr>
+												<td>акне, хронический дерматоз и экзема</td>
+											</tr>
+											<tr>
+												<td>целлюлит различной степени сложности</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="article__block">
+							<div class="article__row">
+								<span class="article__label" id="cosmo-trigger-1"></span>
+								<h6 class="article__title">Контурная пластика</h6>
+							</div>
+							<div class="article__content">
+								<div class="article__column">
+									<div class="article__pic">
+										<img src="img/article-pic-plastic-1.jpg" alt="" class="article__img">
+									</div>
+									<p class="article__text">Контурная пластика – это метод инъекционной косметологии, который заключается в точечном введении специальных гелей в кожу (так называемых филлеров), с целью увеличения объёма каких-то частей лица, тела или устранении каких-то недостатков объёма. Например, носогубных морщин, мимических, морщин-марионеток и т.д.</p>
+									<p class="article__text">Филлеры (гели гиалуроновой кислоты) – биологически инертные препараты неживотного происхождения, которые не вызывают аллергических реакций и абсолютно совместимы с тканями организма человека.</p>
+									<div class="article__call">
+										<a data-fancybox="popup-call-4" href="#pop-up" class="button button-white button-orange">Запись на процедуры</a>
+									</div>
+								</div>
+								<div class="article__column column__info">
+									<fieldset class="article__fieldset">
+										<legend>Филлеры и суть метода:</legend>
+										<h4 class="note__title">В чём заключается метод?</h4>
+										<p class="note__text">Контурная пластика филлерами представляет собой внутрикожное – интра/субдермальное или околонадкостничное введение наполнителей – гелей гиалуроновой кислоты в зону или область коррекции с помощью инъекций.</p>
+										<h4 class="note__title">Что такое филлеры?</h4>
+										<p class="note__text">Гели гиалуроновой кислоты или филлеры – это стерильные, вязкоэластичные, полностью безопасные, биодергадируемые (рассасывающиеся со временем) наполнители.</p>
+									</fieldset>
+									<div class="article__table">
+										<table class="article__list">
+											<tr>
+												<th class="dark-bg">Контурная пластика устраняет</th>
+											</tr>
+											<tr>
+												<td>носогубные складки, слезные борозды</td>
+											</tr>
+											<tr>
+												<td>темные круги и впадины под глазами</td>
+											</tr>
+											<tr>
+												<td>потеря объема скул, щек и висков</td>
+											</tr>
+											<tr>
+												<td>мимические морщины, вертикальные морщины "курильщика"</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="article__block">
+							<div class="article__row">
+								<span class="article__label" id="cosmo-trigger-6"></span>
+								<h6 class="article__title">Интралипотерапия</h6>
+							</div>
+							<div class="article__content">
+								<div class="article__column column__info">
+									<fieldset class="article__fieldset">
+										<legend>Интралипотерапия Aqualyx</legend>
+										<h4 class="note__title">Что такое Aqualyx?</h4>
+										<p class="note__text">Интралипотерапия Aqualyx — это инъекционная методика безоперационной липосакции, позволяющая уменьшить жировые отложения в различных частях тела всего за одну процедуру. Данный препарат разработан Паскуале Мотолезе — испанским пластическим хирургом и профессором.</p>
+									</fieldset>
+									<div class="article__table">
+										<table class="article__list">
+											<tr>
+												<th class="dark-bg">Преимущества метода</th>
+											</tr>
+											<tr>
+												<td>интралипотерапия безболезненна и не требует применения анестезии</td>
+											</tr>
+											<tr>
+												<td>отсутствие осложнений, препарат действует только на жировую ткань</td>
+											</tr>
+											<tr>
+												<td>результат виден уже после первой процедуры</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div class="article__column">
+									<div class="article__pic">
+										<img src="img/article-pic-intralipo.jpg" alt="" class="article__img">
+									</div>
+									<p class="article__text">Интралипотерапия — это новейший метод избавления от целлюлита и лишних жировых отложений без операций. Для его проведения используются современные безопасные уколы Aqualyx, которые расщепляют подкожный жир и активируют лимфодренаж. В современной косметологии интралипотерапия Aqualyx считается единственным инъекционным методом, способным уменьшить объемы локальных жировых отложений, не повреждая при этом мышечную ткань и поверхностные слои кожи.</p>
+									<div class="article__call">
+										<a data-fancybox="popup-call-5" href="#pop-up" class="button button-white button-orange">Записаться на приём</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="article__block">
+							<div class="article__row">
+								<span class="article__label" id="cosmo-trigger-2"></span>
+								<h6 class="article__title">Микротоковая терапия</h6>
+							</div>
+							<div class="article__content">
+								<div class="article__column">
+									<div class="article__pic">
+										<img src="img/article-pic-microtok.jpg" alt="" class="article__img">
+									</div>
+									<p class="article__text">Микротоковая терапия кожи - это процедура омоложения с использованием слабоимпульсного низкочастотного тока. Деликатное воздействие микротоков на кожу стимулирует синтез белков и улучшает обмен веществ в клетках, а также восстанавливает тонус лицевых мышц. Импульсивный ток, с помощью которого проводиться массаж, схож с электрическими импульсами человеческого тела. Благодаря этому он не несет никакой опасности для здоровья, оказывая исключительно положительный эффект.</p>
+									<div class="article__call">
+										<a data-fancybox="popup-call-6" href="#pop-up" class="button button-white button-orange">Запись на процедуру</a>
+									</div>
+								</div>
+
+								<div class="article__column column__info">
+									<fieldset class="article__fieldset">
+										<legend>Длительность полного курса зависит от возраста</legend>
+										<h4 class="note__title">до 40 лет:</h4>
+										<p class="note__text">5-6 процедур, с интервалом в 7 дней</p>
+										<h4 class="note__title">до 50 лет:</h4>
+										<p class="note__text">8-12 сеансов с интервалом три дня</p>
+										<h4 class="note__title">после 50 лет:</h4>
+										<p class="note__text">показатель определяет косметолог</p>
+									</fieldset>
+									<table class="article__list">
+										<tr>
+											<th class="dark-bg">Особенности применения микротоков</th>
+										</tr>
+										<tr>
+											<td>тонизация и повышение упругости кожи</td>
+										</tr>
+										<tr>
+											<td>улучшение цвета лица, уменьшение пор</td>
+										</tr>
+										<tr>
+											<td>разглаживание легких морщин, подтяжка кожи</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+
+
 					</div>
 				</div>
-			<div class="carousel-services-image" style="background-image: url(img/cosmo-contur.jpg);"></div>
-		</div>
-
-		<div class="carousel-services-item">
-			<div class="carousel-services-content">
-				<div class="carousel-services-composition">
-					<h3 class="carousel-service-title">Микротоковая терапия</h3>
-						<p>Позволяет воздействовать на функциональную активность клеток кожи, мышцы, лимфатические и кровеносные сосуды. Это способствует выведению лишней жидкости, улучшению питания кожи, формированию красивого овала лица.</p>             
-					</div>
-				</div>
-			<div class="carousel-services-image" style="background-image: url(img/cosmo-micro.jpg);"></div>
-		</div>
-
-		<div class="carousel-services-item">
-			<div class="carousel-services-content">
-				<div class="carousel-services-composition">
-					<h3 class="carousel-service-title">Озонотерапия</h3>
-						<p>Озоно-кислородная смесь, вводимая по определенным активным точкам лица, шеи, живота, бедер, служит клеточным катализатором, стимулирует процессы жизнедеятельности клетки, тем самым омолаживает ткани.</p>             
-					</div>
-				</div>
-			<div class="carousel-services-image" style="background-image: url(img/cosmo-ozon.jpg);"></div>
-		</div>
-
-		<div class="carousel-services-item">
-			<div class="carousel-services-content">
-				<div class="carousel-services-composition">
-					<h3 class="carousel-service-title">Ультразвуковая терапия</h3>
-						<p>Ультразвук стимулирует синтез колла­гена, эластина и гиалуроновой кислоты в дерме, способствует реструктуризации ткани в целом, заметно повышается эластичность и упругость кожи</p>             
-					</div>
-				</div>
-			<div class="carousel-services-image" style="background-image: url(img/cosmo-uzi.jpg);"></div>
-		</div>
-
-		<div class="carousel-services-item">
-			<div class="carousel-services-content">
-				<div class="carousel-services-composition">
-					<h3 class="carousel-service-title">Тредлифтинг</h3>
-						<p>Процесс установки мезонитей, которые представляют собой чрезвычайно тонкие нити, которые способны рассасываться под кожей. После процедуры морщины разгладятся и станут менее заметными.</p>             
-					</div>
-				</div>
-			<div class="carousel-services-image" style="background-image: url(img/cosmo-tredlifting.jpg);"></div>
-		</div>
-
-		<div class="carousel-services-item">
-			<div class="carousel-services-content">
-				<div class="carousel-services-composition">
-					<h3 class="carousel-service-title">Интралипотерапия</h3>
-						<p>Новейшая технология коррекции локальных жировых отложений безоперационным путем. Метод работает исключительно в тех зонах, куда введен препарат.</p>             
-					</div>
-				</div>
-			<div class="carousel-services-image" style="background-image: url(img/cosmo-lipo.jpg);"></div>
-		</div>
-
-    </div>
-	</section>
-	<!--секция цен-->
-	<section class="hair-prices st-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
+			</div>
+		</section>
+		<!--секция цен-->
+		<section class="hair-prices st-section">
+			<div class="container">
+				<div class="row">
 					<table class="prices__table">
-						<caption>Все представленные цены являются предварительными.<br>Полную стоимость услуги уточняйте при оговаривании деталей заказа с менеджером!</caption>						
+						<caption>Все представленные цены являются предварительными.<br>Полную стоимость услуги уточняйте при оговаривании деталей заказа с менеджером!</caption>
 						<tr>
-							<th colspan="2" class="blue">Цены услуг косметологии</th>
+							<th colspan="2" class="table-title">Цены услуг косметологии</th>
+						</tr>
+						<tr>
+							<td>Озонотерапия</td>
+							<td>от 4200</td>
+						</tr>
+						<tr>
+							<td>Тредлифтинг</td>
+							<td>7000-10000</td>
 						</tr>
 						<tr>
 							<td>Коррекция бровей</td>
-							<td>400</td>							
+							<td>400</td>
+						</tr>
+						<tr>
+							<td>Интралипотерапия</td>
+							<td>4800/сеанс</td>
 						</tr>
 						<tr>
 							<td>Форма бровей</td>
@@ -233,208 +609,302 @@
 							<td>1800</td>							
 						</tr>
 						<tr>
+							<td>Ультразвуковая терапия</td>
+							<td>3500</td>
+						</tr>
+						<tr>
 							<td>Маска</td>
-							<td>650</td>							
+							<td>650</td>
 						</tr>
 						<tr>
 							<td>Маска для глаз</td>
-							<td>300</td>							
+							<td>300</td>
 						</tr>
 						<tr>
 							<td>Косметологический массаж</td>
-							<td>900</td>							
+							<td>900</td>
 						</tr>
 						<tr>
 							<td>Бандажная маска для лица</td>
-							<td>1400</td>							
+							<td>1400</td>
 						</tr>
 						<tr>
 							<td>Коллагеновая маска для лица</td>
-							<td>1300</td>							
+							<td>1300</td>
 						</tr>
-					</table>	
+						<tr>
+							<td>Контурная пластика лица</td>
+							<td>от 5500/сеанс</td>
+						</tr>
+					</table>
 				</div>
 			</div>
-		</div>
-	</section>
-	<!--секция примеров выполненных работ-->
-	<section class="preview">
-		<div class="container">
-			<div class="row">
+		</section>
+		<!--секция примеров выполненных работ-->
+		<section class="preview">
+			<div class="container">
+				<div class="row">
 
-			<div class="col-md-12">
+				<div class="col-md-12">
 
-			<h2 class="preview__title">Наши довольные клиентки</h2>
+				<h2 class="preview__title">Наши довольные клиентки</h2>
 
-			<div class="preview__wrapper owl-carousel">
-				<div class="preview__item">
-					<img src="img/cosmetic-1.jpg" alt="" class="preview__pic">
+				<div class="preview__wrapper owl-carousel">
+					<div class="preview__item">
+						<img src="img/cosmetic-1.jpg" alt="" class="preview__pic">
+					</div>
+					<div class="preview__item">
+						<img src="img/cosmetic-2.jpg" alt="" class="preview__pic">
+					</div>
+					<div class="preview__item">
+						<img src="img/cosmetic-4.jpg" alt="" class="preview__pic">
+					</div>
+					<div class="preview__item">
+						<img src="img/cosmetic-3.jpg" alt="" class="preview__pic">
+					</div>
+					<div class="preview__item">
+						<img src="img/cosmetic-5.jpg" alt="" class="preview__pic">
+					</div>
 				</div>
-				<div class="preview__item">
-					<img src="img/cosmetic-2.jpg" alt="" class="preview__pic">
-				</div>
-				<div class="preview__item">
-					<img src="img/cosmetic-4.jpg" alt="" class="preview__pic">
-				</div>
-				<div class="preview__item">
-					<img src="img/cosmetic-3.jpg" alt="" class="preview__pic">
-				</div>
-				<div class="preview__item">
-					<img src="img/cosmetic-5.jpg" alt="" class="preview__pic">
+
 				</div>
 			</div>
+		</section>
+		<!--секция специалиста данной категории-->
+		<section class="specialist-card">
+			<div class="container">
+				<div class="row">
 
-			</div>
-		</div>
-	</section>
-	<!--секция специалиста данной категории-->
-	<section class="specialist-card__blue">
-		<div class="container">
-			<div class="row">
+			        <div class="col-lg-6 col-md-6 col-sm-6">
+			            <div class="specialist">
+			                <div class="spec-portrait">
+			                    <img src="img/masters-olga.png" alt="">
+			                </div>
+			                <h3 class="spec-name">
+			                    Величко Ольга Сергеевна
+			                </h3>
+			                <p class="spec-text">
+			                    Отличница с красным дипломом, спортсменка, и просто красавица, Ольга великолепный специалист в своей сложной сфере. Косметолог с врожденным талантом, по мнению ее благодарных клиенток.
+			                </p>
+			            </div>
+			        </div>
 
-		        <div class="col-lg-6 col-md-6 col-sm-6">
-		            <div class="specialist">
-		                <div class="spec-portrait">
-		                    <img src="img/masters-olga.png" alt="">                                
-		                </div>
-		                <h3 class="spec-name">
-		                    Величко Ольга Сергеевна
-		                </h3>
-		                <p class="spec-text">
-		                    Отличница с красным дипломом, спортсменка, и просто красавица, Ольга великолепный специалист в своей сложной сфере. Косметолог с врожденным талантом, по мнению ее благодарных клиенток. 
-		                </p>
-		            </div>
-		        </div>
+					<div class="col-lg-6 col-md-6 col-sm-6">
 
-				<div class="col-lg-6 col-md-6 col-sm-6">
+						<form class="page-callback text-center">
 
-					<form class="page-callback text-center">
-
-						<div class="success"><span>Спасибо за заявку</span></div>
-						<!-- Hidden required fields -->
-						<input type="hidden" name="project_name" value="Rapunzel">
-						<input type="hidden" name="admin_email" value="grayfoxbox@gmail.com">
-						<input type="hidden" name="form_subject" value="Заявка с Rapunzel">
-						<!-- END Hidden required fields -->
-						<input type="hidden" name="Страница" value=""> <!-- это будет помечать для админа, с какой страницы ушла заявка-->
-						<div class="callback-logo"><img src="img/logo.png" alt="сайт лого"></div>
-						<div class="formhead">Записаться к специалисту</div>
-						<p>Оставьте заявку, и мы перезвоним вам в течение 15 минут.</p>
-						<input type="text" name="Имя" placeholder="Ваше имя..." required>
-						<input type="text" name="Телефон" placeholder="Ваш телефон..." required>
-						<select name="Услуга" class="callback__select">
-							<option>Коррекция бровей</option>							
-							<option>Кератиновое ламинирование ресниц</option>							
-							<option>Косметологический массаж</option>							
-              				<option>Озонотерапия</option>
-              				<option>Контурная пластика</option>
-						</select>
-						<button class="button button-white">Подтвердить</button>
+							<div class="success"><span>Спасибо за заявку</span></div>
+							<!-- Hidden required fields -->
+							<input type="hidden" name="project_name" value="Scarlet">
+							<input type="hidden" name="admin_email" value="grayfoxbox@gmail.com">
+							<input type="hidden" name="form_subject" value="Заявка с Scarlet">
+							<!-- END Hidden required fields -->
+							<input type="hidden" name="Страница" value=""> <!-- это будет помечать для админа, с какой страницы ушла заявка-->
+							<div class="callback-logo"><img src="img/logo.png" alt="сайт лого"></div>
+							<div class="formhead">Записаться к специалисту</div>
+							<p>Оставьте заявку, и мы перезвоним вам в течение 15 минут.</p>
+							<input type="text" name="Имя" placeholder="Ваше имя..." required>
+							<input type="text" name="Телефон" placeholder="Ваш телефон..." required>
+							<select name="Услуга" class="callback__select">
+								<option>Коррекция бровей</option>							
+								<option>Кератиновое ламинирование ресниц</option>							
+								<option>Косметологический массаж</option>							
+	              				<option>Озонотерапия</option>
+	              				<option>Контурная пластика</option>
+							</select>
+							<button class="button button-white">Подтвердить</button>
+							
+						</form>
 						
-					</form>
-					
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!--подвал сайта-->
+		<footer class="main-footer">
+			<div class="container">
+				<div class="row">
+	                <!--колонка футера социальных ссылок-->
+					<div class="col-lg-2 col-md-4 col-sm-6">
+						<div class="footer-column first">
+							<a href="index.html"><img src="img/logo-text.png" alt="логотип сайта" class="logo-footer"></a>
+							<p>Салон красоты<br>бизнес-класса в Москве</p>
+							<div class="social-footer">      			
+	  							<nav class="social">
+	  								<ul>
+	  									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+	  									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+	  									<li><a href="#"><i class="fab fa-vk"></i></a></li>
+	  								</ul>
+	  							</nav>
+	  						</div>    					
+
+						</div>
+					</div>
+	                <!--колонка футера со ссылками навигации-->
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="footer-column">
+							<nav class="footer-menu">
+								<ul>
+									<li>
+										<a href="hairs.html">Парикмахерский сервис</a>
+									</li>
+									<li class="active">
+										<a href="cosmetic.html">Косметологический сервис</a>
+									</li>
+									<li>
+										<a href="nails.html">Маникюрный сервис</a>
+									</li>
+									<li>
+										<a href="massage.html">Массаж и SPA</a>
+									</li>
+									<li>
+										<a href="solarium.html">Солярий</a>
+									</li>
+									<li>
+										<a href="team.html">Наши специалисты</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+	                <!--колонка футера с адресом и графиком-->
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="footer-column">
+							<p class="footer-addr"><i class="fas fa-location-arrow"></i>г.Москва, ул. Ивана Бабушкина 22с1 / м.Профсоюзная</p>  
+							<p class="footer-addr"><i class="far fa-clock"></i>Время работы: ежедневно,<br>10:00 - 22:00</p>
+							<p class="footer-addr"><span class="footer-phone"><i class="fas fa-mobile-alt"></i>+7 (495) 922-77-72</span></p>
+						</div>
+					</div>
+	                <!--колонка футера с картой-->
+					<div class="col-lg-4 col-md-12 col-sm-6">
+						<div class="footer-column">
+						   <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c9b9b490c7484bf9b4feeeb061de59ebfb8a6bf086b2524949bb8bb4ec8b6c1&amp;width=100%&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+		<!--система возврата к главному сайту и выбор других-->
+		<div class="returnal__wrapper">
+			<div class="returnal__button">
+				<span class="returnal__icon"></span>
+			</div>
+			<div class="returnal__menu">
+
+				<div class="returnal__item returnal__home">
+					<span class="returnal__main">
+						<img class="returnal__pic" src="img/fd_white_logo.svg" alt="">
+					</span>
+					<div class="returnal__content">
+						<a href="https://foxdesignstudio.github.io/index.html" class="returnal__link">
+							<span class="returnal__note">
+								<h4 class="returnal__title">FOX Design</h4>
+								<p class="returnal__text">Возврат на сайт портфолио</p>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="returnal__item">
+					<span class="icon-Avtoholl"></span>
+					<div class="returnal__content">
+						<a href="https://foxdesignstudio.github.io/site-3/index.html" class="returnal__link">
+							<span class="returnal__note">
+								<h4 class="returnal__title">Автохолл</h4>
+								<p class="returnal__text">Информационный многостраничник автосервиса</p>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="returnal__item">
+					<span class="icon-Skinali"></span>
+					<div class="returnal__content">
+						<a href="https://foxdesignstudio.github.io/site-1/index.html" class="returnal__link">
+							<span class="returnal__note">
+								<h4 class="returnal__title">Фабрика Скинали</h4>
+								<p class="returnal__text">Продающий лэндинг производственной компании</p>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="returnal__item">
+					<span class="icon-Rapunzel"></span>
+					<div class="returnal__content">
+						<a href="https://foxdesignstudio.github.io/site-4/index.html" class="returnal__link">
+							<span class="returnal__note">
+								<h4 class="returnal__title">Scarlet</h4>
+								<p class="returnal__text">Информационный многостраничник салона красоты</p>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="returnal__item">
+					<span class="icon-Capone"></span>
+					<div class="returnal__content">
+						<a href="https://foxdesignstudio.github.io/site-2/index.html" class="returnal__link">
+							<span class="returnal__note">
+								<h4 class="returnal__title">Capone Pizza</h4>
+								<p class="returnal__text">Интернет-магазин (пиццерия)</p>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="returnal__item">
+					<span class="icon-Hollow"></span>
+					<div class="returnal__content">
+						<a href="https://foxdesignstudio.github.io/site-5/index.html" class="returnal__link">
+							<span class="returnal__note">
+								<h4 class="returnal__title">Hollow Knight Atlas</h4>
+								<p class="returnal__text">Приложение-компаньон к игре Hollow Knight™</p>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="returnal__item">
+					<span class="icon-Fallout"></span>
+					<div class="returnal__content">
+						<a href="https://foxdesignstudio.github.io/site-6/index.html" class="returnal__link">
+							<span class="returnal__note">
+								<h4 class="returnal__title">Fallout 4 Memory Vault</h4>
+								<p class="returnal__text">Приложение-компаньон к игре Fallout 4™</p>
+							</span>
+						</a>
+					</div>
 				</div>
 
 			</div>
 		</div>
-	</section>
-	<!--подвал сайта-->
-	<footer class="main-footer">
-		<div class="container">
-			<div class="row">
-                <!--колонка футера социальных ссылок-->
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<div class="footer-column first">
-						<a href="index.html"><img src="img/logo.png" alt="логотип сайта" class="logo-footer"></a>
-						<p>Салон красоты<br>бизнес-класса в Москве</p>
-						<div class="social-footer">      			
-  							<nav class="social">
-  								<ul>
-  									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-  									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-  									<li><a href="#"><i class="fab fa-vk"></i></a></li>
-  								</ul>
-  							</nav>
-  						</div>    					
-
-					</div>
-				</div>
-                <!--колонка футера со ссылками навигации-->
-				<div class="col-lg-3 col-md-4 col-sm-6">
-					<div class="footer-column">
-						<nav class="footer-menu">							
-							<ul>
-								<li>
-									<a href="hairs.html">Парикмахерский сервис</a>
-								</li>
-								<li class="active">
-									<a href="cosmetic.html">Косметологический сервис</a>
-								</li>
-								<li>
-									<a href="nails.html">Маникюрный сервис</a>
-								</li>
-								<li>
-									<a href="massage.html">Массаж и SPA</a>
-								</li>
-								<li>
-									<a href="solarium.html">Солярий</a>
-								</li>
-								<li>
-									<a href="team.html">Наши специалисты</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-                <!--колонка футера с адресом и графиком-->
-				<div class="col-lg-3 col-md-4 col-sm-6">
-					<div class="footer-column">
-						<p class="footer-addr"><i class="fas fa-location-arrow"></i>г.Москва, ул. Ивана Бабушкина 22с1 / м.Профсоюзная</p>  
-						<p class="footer-addr"><i class="far fa-clock"></i>Время работы: ежедневно,<br>10:00 - 22:00</p>
-						<p class="footer-addr"><span class="footer-phone"><i class="fas fa-mobile-alt"></i>+7 (495) 922-77-72</span></p>
-					</div>
-				</div>
-                <!--колонка футера с картой-->
-				<div class="col-lg-4 col-md-12 col-sm-6">
-					<div class="footer-column">
-					   <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c9b9b490c7484bf9b4feeeb061de59ebfb8a6bf086b2524949bb8bb4ec8b6c1&amp;width=100%&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script></div>
-					</div>
-				</div>
-				
-			</div>
+		<!--кнопка наверх-->
+		<div class="top" title="Наверх">
+	    	<i class="fas fa-angle-double-up"></i>
 		</div>
-	</footer>
-	<!--кнопка наверх-->
-	<div class="top" title="Наверх">
-    	<i class="fas fa-angle-double-up"></i>
+
 	</div>
-
-</div>
 	<!--скрипты-->
 	<script src="js/scripts.min.js"></script>
-
 	<script>
-		//настройки плагина owl-carousel
-		$('.preview__wrapper').owlCarousel({
-			nav: true,
-			dots: false,
-			loop: true,
-			smartSpeed: 900,
-			items: 3,      
-			navText: ['<img src="img/left-arrow.svg" class="prev-btn">', '<img src="img/right-arrow.svg" class="next-btn">'],
-			responsiveClass: true,
-			responsive: {
-				0: {
-				items: 1
-				},
-				500: {
-				items: 2
-				},
-				1000: {
-				items: 3
-				}
-			}
-		});
+	//плавающее меню навигации
+	function stickyScroll(){
+		if($(window).width()>1100){
+			if ($(this).scrollTop() > 482) {
+			$('#menu').addClass('change');
+		} else
+			$('#menu').removeClass('change');
+		}
+		// else if($(window).width() < 322){
+		//   $('#menu').removeClass('change');
+		// }
+		else{
+			if ($(this).scrollTop() > 190) {
+				$('#menu').addClass('change');
+			} else
+			$('#menu').removeClass('change');
+		}
+	};
+
+	$(window).scroll(stickyScroll);
 	</script>
 
 </body>

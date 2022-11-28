@@ -1255,8 +1255,6 @@
 			slidesToShow: 3,
 			infinite: false,
 			arrows : false,
-			autoplay: true,
-  			autoplaySpeed: 5000,
 			responsive: [
 			{
 		      breakpoint: 2560,
@@ -1274,6 +1272,9 @@
 		      breakpoint: 670,
 		      settings: {
 		        slidesToShow: 1,
+		        infinite: true,
+		        autoplay: true,
+  				autoplaySpeed: 3000,
 		      }
 		    },
 		    ]
@@ -1287,6 +1288,14 @@
 			autoplay: true,
   			autoplaySpeed: 3000,
 			dotsClass: 'slideshow__dots',
+			responsive: [
+			{
+		      breakpoint: 550,
+		      settings: {
+		        autoplay: false,
+		      }
+		    },
+		    ]
 		});
 	</script>
 

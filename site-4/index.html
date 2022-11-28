@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Rapunzel</title>
+	<title>Scarlet</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
@@ -11,115 +11,196 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/icomoon.css">
 </head>
 
 <body class="home">
-<!--враппер сайта-->  
+<!--враппер сайта-->
 <div class="site-wrapper">
     <!--прелоадер сайта-->
 	<div class="preloader">
         <!--лого-->
         <div class="prelogo">
-            <img src="img/prelogo.png" alt="rapunzel pre-logo">
+        	<img class="prelogo__part part-d" src="img/logo-text.svg" alt="Scarlet pre-logo">
+        	<img class="prelogo__part part-a" src="img/logo-center.svg" alt="Scarlet pre-logo">
+            <img class="prelogo__part part-b" src="img/logo-left.png" alt="Scarlet pre-logo">
+            <img class="prelogo__part part-c" src="img/logo-right.png" alt="Scarlet pre-logo">
+            <!--точки анимации-->
+	        <div class="loader">
+	            <span></span>
+	            <span></span>
+	            <span></span>
+	        </div>
         </div>
-        <!--точки анимации-->
-        <div class="loader">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>    
+
+    </div>
     <!--шапка сайта-->
-  	<header class="site-header" style="background-image: url('img/main-bg.jpg');"> <!--для упрощения посадки на ЦМС пишут не в стилях ЦСС-->
+  	<header class="site-header">
         <!--меню навигации-->
-  		<div class="top-line">
-            <!--логотип-ссылка-->
-  			<a href="#" class="logo"><img src="img/logo.png" alt="site logo"></a>
-            <!--телефон для связи-->
-  			<div class="phone"><i class="fas fa-mobile-alt"></i>+7 (495) 922-77-73</div>
+		<nav id="my-menu" class="nav-menu">
   			<!--анимированная кнопка-гамбургер-->
-			<a href="#my-menu" class="hamburger hamburger--emphatic">
+			<div id="goMenu" class="hamburger hamburger--emphatic">
     			<span class="hamburger-box">
     				<span class="hamburger-inner"></span>
     			</span>
-		    </a>
-            <!--меню навигации на плагине mmenu-->
-			<nav id="my-menu">
-				<ul>
-					<li><a href="hairs.html">Парикмахерский сервис</a></li>
-					<li><a href="cosmetic.html">Косметологический сервис</a></li>
-					<li><a href="nails.html">Маникюрный сервис</a></li>
-					<li><a href="massage.html">Массаж и SPA</a></li>
-					<li><a href="solarium.html">Солярий</a></li>
-					<li><a href="team.html">Наши специалисты</a></li>					
-					<li><a href="price.html">Прайс-лист</a></li>					
-					<li><a href="about.html">О салоне</a></li>
-				</ul>
-			</nav>
-  			
-  		</div>
+		    </div>
+		    <h4 class="nav-menu__title">Услуги салона</h4>
+		    <a href="index.html" class="nav-menu__index"><img src="img/logo.png" alt="" class="nav-menu__logo"></a>
+			<ul class="nav-menu__wrapper">
+				<li class="nav-menu__item"><a class="nav-menu__link" href="hairs.html">Парикмахерский сервис</a></li>
+				<li class="nav-menu__item"><a class="nav-menu__link" href="cosmetic.html">Косметологический сервис</a></li>
+				<li class="nav-menu__item"><a class="nav-menu__link" href="nails.html">Маникюрный сервис</a></li>
+				<li class="nav-menu__item"><a class="nav-menu__link" href="massage.html">Массаж и SPA</a></li>
+				<li class="nav-menu__item"><a class="nav-menu__link" href="solarium.html">Солярий</a></li>
+				<li class="nav-menu__item"><a class="nav-menu__link" href="team.html">Наши специалисты</a></li>
+				<li class="nav-menu__item"><a class="nav-menu__link" href="price.html">Прайс-лист</a></li>
+				<li class="nav-menu__item"><a class="nav-menu__link" href="about.html">О салоне</a></li>
+			</ul>
+		</nav>
         <!--содержимое шапки индексной страницы-->
-  		<div class="header-flex">
-  			<div class="flex-center">
-  				<div class="container">
-  					<div class="row">
-  						<div class="col-md-6 col-sm-8 col-xs-10">
-
-  							<div class="header-composition">
-  								<div class="welcome">
-                                    <span class="mobile-logo">
-                                        <img src="img/logo.png" alt="" class="mobile-logo__pic">
-                                    </span>
-  									<p><span>добро пожаловать в профессиональный</span></p>
-  									<h1 class="h1">салон красоты</h1>
-  									<strong><i class="fas fa-star"></i>в москве<i class="fas fa-star"></i></strong>					
-  								</div>
-  								<p><strong>Rapunzel</strong> - это салон красоты бизнес-класса. Мастера салона дарят
-  								посетителям уверенность в себе и индивидуальный стиль. Здесь
-  								представлены все самые востребованные услуги бьюти-индустрии.</p>
-                                <!--кнопка "о салоне"-->
-  								<a href="about.html" class="button">о салоне
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                </a>
-  							</div>
-  							
-  						</div>
-  					</div>
-  				</div>
-  			</div>
-  		</div>
-        <!--социальные ссылки шапки-->
-  		<div class="header-social">      			
-  			<nav class="social">
-  				<ul>
-  					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-  					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-  					<li><a href="#"><i class="fab fa-vk"></i></a></li>
-  				</ul>
-  			</nav>
-  		</div>
+        <div class="header__overlay">
+			<div class="header-composition">
+				<!--логотип-->
+				<div class="welcome">
+					<p><span>добро пожаловать в салон красоты</span></p>
+					<!-- <h1 class="h1">салон красоты</h1> -->
+					<img src="img/logo-text.png" alt="" class="welcome__title-logo">
+					<strong><i class="fas fa-star"></i>в москве<i class="fas fa-star"></i></strong>
+				</div>
+				<p class="header-text"><strong>Scarlet</strong> - это салон красоты бизнес-класса. Мастера салона дарят
+				посетителям уверенность в себе и индивидуальный стиль. Здесь
+				представлены все самые востребованные услуги бьюти-индустрии.</p>
+            <!--кнопка "о салоне"-->
+			<a href="about.html" class="button index-button">о салоне
+	            <span></span>
+	            <span></span>
+	            <span></span>
+	            <span></span>
+            </a>
+			</div>
+        </div>
+        <div class="controls__block">
+        	<div class="controls__item">
+        		<a href="hairs.html" class="controls__link">
+        			<span class="controls__content">
+        				<span class="controls__top">
+        					<img class="controls__img" src="img/icon_scissors.svg" alt="Парикмахерские услуги_img">
+        				</span>
+        				<span class="controls__bottom">
+        					<h4 class="controls__title">Волосы</h4>
+        					<p class="controls__text">Парикмахерские услуги</p>
+        				</span>
+        			</span>
+        		</a>
+        		<a href="hairs.html" class="controls__preview hair">
+        		</a>
+        	</div>
+        	<div class="controls__item">
+        		<a href="cosmetic.html" class="controls__link">
+        			<span class="controls__content">
+        				<span class="controls__top">
+        					<img class="controls__img" src="img/icon_cosmetic.svg" alt="Услуги косметологии_img">
+        				</span>
+        				<span class="controls__bottom">
+        					<h4 class="controls__title">Косметология</h4>
+        					<p class="controls__text">Всё для красоты лица и тела</p>
+        				</span>
+        			</span>
+        		</a>
+        		<a href="cosmetic.html" class="controls__preview cosmo">
+        		</a>
+        	</div>
+        	<div class="controls__item">
+        		<a href="nails.html" class="controls__link">
+        			<span class="controls__content">
+        				<span class="controls__top">
+        					<img class="controls__img" src="img/icon_nails.svg" alt="ногтевой уход_img">
+        				</span>
+        				<span class="controls__bottom">
+        					<h4 class="controls__title">Ногти</h4>
+        					<p class="controls__text">Уход и забота для ногтей</p>
+        				</span>
+        			</span>
+        		</a>
+        		<a href="nails.html" class="controls__preview nail">
+        		</a>
+        	</div>
+        	<div class="controls__item">
+        		<a href="massage.html" class="controls__link">
+        			<span class="controls__content">
+        				<span class="controls__top">
+        					<img class="controls__img" src="img/icon_massage.svg" alt="массаж_img">
+        				</span>
+        				<span class="controls__bottom">
+        					<h4 class="controls__title">Массаж</h4>
+        					<p class="controls__text">Лечебный и расслабляющий</p>
+        				</span>
+        			</span>
+        		</a>
+        		<a href="massage.html" class="controls__preview hand">
+        		</a>
+        	</div>
+        	<div class="controls__item">
+        		<a href="solarium.html" class="controls__link">
+        			<span class="controls__content">
+        				<span class="controls__top">
+        					<img class="controls__img" src="img/icon_solarium.svg" alt="солярий_img">
+        				</span>
+        				<span class="controls__bottom">
+        					<h4 class="controls__title">Солярий</h4>
+        					<p class="controls__text">Бронзовый загар - круглый год!</p>
+        				</span>
+        			</span>
+        		</a>
+        		<a href="solarium.html" class="controls__preview sun">
+        		</a>
+        	</div>
+        	<div class="controls__item">
+        		<a href="team.html" class="controls__link">
+        			<span class="controls__content">
+        				<span class="controls__top">
+        					<img class="controls__img" src="img/icon_team.svg" alt="команда_img">
+        				</span>
+        				<span class="controls__bottom">
+        					<h4 class="controls__title">Команда</h4>
+        					<p class="controls__text">Всё о наших специалистах и о салоне</p>
+        				</span>
+        			</span>
+        		</a>
+        		<a href="team.html" class="controls__preview horde">
+        		</a>
+        	</div>
+        </div>
         <!--контакты салона и график-->
   		<div class="header-contacts">
-  			
-  			<div class="container">
-  				<div class="row">
-  					<div class="col-md-4 col-sm-6">
-  						<div class="city"><i class="fas fa-location-arrow"></i> г.Москва, ул.Ивана Бабушкина, 22с1</div>
-  					</div>
-  					<div class="col-md-4 col-sm-6">
-  						<div class="phone-n"><i class="fas fa-mobile-alt"></i> +7 (495) 922-77-73</div>
-  					</div>
-  					<div class="col-md-4 hidden-sm hidden-xs">
-  						<i class="far fa-clock"></i> Время работы: ежедневно, 10:00 - 22:00
-  					</div>
-  				</div>
-  			</div>
-
+			<div><i class="fas fa-location-arrow"></i> г.Москва, ул.Ивана Бабушкина, 22с1</div>
+			<div><i class="fas fa-mobile-alt"></i> +7 (495) 922-77-73</div>
+			<div><i class="far fa-clock"></i> Время работы: ежедневно, 10:00 - 22:00</div>
   		</div>
-  		
+
+  		<div class="mobile__header">
+  			<div class="mobile__grid">
+  				<a href="hairs.html" class="mobile__link">
+  					<img src="img/icon_scissors.svg" alt="" class="mobile__pic">
+  				</a>
+  				<a href="cosmetic.html" class="mobile__link">
+  					<img src="img/icon_cosmetic.svg" alt="" class="mobile__pic">
+  				</a>
+  				<a href="nails.html" class="mobile__link">
+  					<img src="img/icon_nails.svg" alt="" class="mobile__pic">
+  				</a>
+  				<a href="massage.html" class="mobile__link">
+  					<img src="img/icon_massage.svg" alt="" class="mobile__pic">
+  				</a>
+  				<a href="solarium.html" class="mobile__link">
+  					<img src="img/icon_solarium.svg" alt="" class="mobile__pic">
+  				</a>
+  				<a href="team.html" class="mobile__link">
+  					<img src="img/icon_team.svg" alt="" class="mobile__pic">
+  				</a>
+  			</div>
+  		</div>
+
   	</header>
     <!--секция услуг-->
 	<section class="s-services">
@@ -129,7 +210,7 @@
 			<div class="carousel-services-item">
 				<div class="carousel-services-content">
 					<div class="carousel-services-composition">
-						<div class="carousel-logo"><img src="img/logo.png" alt="Rapunzel"></div>
+						<div class="carousel-logo"><img src="img/logo.png" alt="Scarlet"></div>
 						<h3 class="h3">Косметологический сервис</h3>
 						<ul class="carousel-services-list">
 							<li>Коллагеновая маска для лица - <strong>1300 <i class="fas fa-ruble-sign"></i></strong></li>
@@ -146,7 +227,7 @@
 			<div class="carousel-services-item">
 				<div class="carousel-services-content">
 					<div class="carousel-services-composition">
-						<div class="carousel-logo"><img src="img/logo.png" alt="Rapunzel"></div>
+						<div class="carousel-logo"><img src="img/logo.png" alt="Scarlet"></div>
 						<h3 class="h3">Парикмахерский сервис</h3>
 						<ul class="carousel-services-list">
 							<li>Стрижка горячими ножницами - <strong>1000 <i class="fas fa-ruble-sign"></i></strong></li>
@@ -163,7 +244,7 @@
 			<div class="carousel-services-item">
 				<div class="carousel-services-content">
 					<div class="carousel-services-composition">
-						<div class="carousel-logo"><img src="img/logo.png" alt="Rapunzel"></div>
+						<div class="carousel-logo"><img src="img/logo.png" alt="Scarlet"></div>
 						<h3 class="h3">Маникюрный сервис</h3>
 						<ul class="carousel-services-list">
 							<li>Наращивание ногтей гелем - <strong>1700 <i class="fas fa-ruble-sign"></i></strong></li>
@@ -180,7 +261,7 @@
 			<div class="carousel-services-item">
 				<div class="carousel-services-content">
 					<div class="carousel-services-composition">
-						<div class="carousel-logo"><img src="img/logo.png" alt="Rapunzel"></div>
+						<div class="carousel-logo"><img src="img/logo.png" alt="Scarlet"></div>
 						<h3 class="h3">Массаж SPA</h3>
 						<ul class="carousel-services-list">
 							<li>Общий оздоровительный массаж - <strong>5000 <i class="fas fa-ruble-sign"></i></strong></li>
@@ -197,7 +278,7 @@
 			<div class="carousel-services-item">
 				<div class="carousel-services-content">
 					<div class="carousel-services-composition">
-						<div class="carousel-logo"><img src="img/logo.png" alt="Rapunzel"></div>
+						<div class="carousel-logo"><img src="img/logo.png" alt="Scarlet"></div>
 						<h3 class="h3">Услуги солярия</h3>
 						<ul class="carousel-services-list">
 							<li>Солярий - <strong>от 30 <i class="fas fa-ruble-sign"></i>/мин </strong></li>
@@ -214,7 +295,7 @@
 			<div class="carousel-services-item">
 				<div class="carousel-services-content">
 					<div class="carousel-services-composition">
-						<div class="carousel-logo"><img src="img/logo.png" alt="Rapunzel"></div>
+						<div class="carousel-logo"><img src="img/logo.png" alt="Scarlet"></div>
 						<h3 class="h3">Наши специалисты</h3>
 						<ul class="carousel-services-list">
 							<li>Иванова Светлана Игоревна</li>
@@ -232,13 +313,13 @@
 		
 	</section>
     <!--секция фотогалереи интерьера салона-->
-	<section class="s-king inverse section-overley" style="background-image: url(img/area-hairs-2.jpg);">
+	<section class="s-king inverse section-overley">
 		<div class="container">
 			<div class="row">
                 <!--описание содержимого секции-левая сторона-->
 				<div class="col-md-5">
 					<h2 class="h2">Королевский салон</h2> <!--класс назван именем дива для SEO, если спец решит поменять h2 верстка не слетит-->
-					<p><strong>Rapunzel</strong> встречает своих посетителей современным дизайном и атмосферой уюта: огромное светлое пространство, изящная мебель,
+					<p><strong>Scarlet</strong> встречает своих посетителей современным дизайном и атмосферой уюта: огромное светлое пространство, изящная мебель,
 					мягкие бархатные кресла. Это отличное место для того, чтобы посвятить пару часов только себе!</p>
 					<p>Дамам здесь предложат экстраординарный ассортимент косметологических процедур и качественный нейл-сервис, а мужчин порадуют
 					услугами стилистов и уходом за лицом.</p>
@@ -268,9 +349,9 @@
 						<div class="success"><span>Спасибо за заявку</span></div>
 
 						<!-- Hidden required fields -->
-						<input type="hidden" name="project_name" value="Rapunzel">
+						<input type="hidden" name="project_name" value="Scarlet">
 						<input type="hidden" name="admin_email" value="grayfoxbox@gmail.com">
-						<input type="hidden" name="form_subject" value="Заявка с Rapunzel">
+						<input type="hidden" name="form_subject" value="Заявка с Scarlet">
 						<!-- END Hidden required fields -->
 
 						<input type="hidden" name="Страница" value=""> <!-- это будет помечать для админа, с какой страницы ушла заявка-->
@@ -279,8 +360,8 @@
 						<div class="formhead">Оставить заявку</div>
 						<p>Оставьте заявку, и мы перезвоним вам в течение 15 минут.</p>
 
-						<input type="text" name="Имя" placeholder="Ваше имя..." required>
-						<input type="text" name="Телефон" placeholder="Ваш телефон..." required>
+						<input type="text" name="Имя" placeholder="Ваше имя..." class="callback__input" required>
+						<input type="text" name="Телефон" placeholder="Ваш телефон..." class="callback__input" required>
 						<select name="Услуга" class="callback__select">
 							<option>Парикмахерский сервис</option>
 							<option>Косметологический сервис</option>
@@ -289,15 +370,14 @@
 							<option>Солярий</option>
 						</select>
 						<button class="button button-white">Отправить</button>
-						
-					</form>					
+					</form>
 				</div>
 
 			</div>
 		</div>
 	</section>
     <!--секция отзывов-->
-	<section class="s-review inverse section-overley" style="background-image: url(img/review-bg.jpg);">
+	<section class="s-review inverse section-overley">
 		<div class="container">
 			<div class="row">
                 <!--заголовок секции-->
@@ -316,7 +396,7 @@
 							<div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 							</div>
 							<div class="review-text">
-								Мне очень повезло! Я случайно попала в салон красоты Rapunzel, когда возвращалась с работы.
+								Мне очень повезло! Я случайно попала в салон красоты Scarlet, когда возвращалась с работы.
 								Времени записываться на стрижку у меня не было. И, на удачу, я попала в смену стилиста Марины.
 								Я сама не знала, как хочу подстричься, но Марина предложила несколько вариантов. И в итоге я
 								получила колоссальное удовольствие от конечного итога! Марина с моими волосами сделала что-то
@@ -332,7 +412,7 @@
 							</div>
 							<div class="review-text">
 								Прекрасный салон! Была приятно удивлена внимательностью и мастерством персонала, а также ответственностью подхода к работе.
-								Мастер по имени Светлана не только проконсультировала по огромному ассортименту красок представленных в салоне, но и помогла определиться с выбором. После окраски результат превзошел все мои ожидания! Это именно тот цвет, который я хотела! Rapunzel - вы лучшие!
+								Мастер по имени Светлана не только проконсультировала по огромному ассортименту красок представленных в салоне, но и помогла определиться с выбором. После окраски результат превзошел все мои ожидания! Это именно тот цвет, который я хотела! Scarlet - вы лучшие!
 							</div>    							
 						</div>
                         <!--элемент карусели отзывов-3-->
@@ -342,7 +422,7 @@
 							<div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 							</div>
 							<div class="review-text">
-								У мастеров салона Rapunzel просто золотые руки! Никогда не думала, что простой массаж может быть настолько приятным и полезным.
+								У мастеров салона Scarlet просто золотые руки! Никогда не думала, что простой массаж может быть настолько приятным и полезным.
 								Всего одно посещение салона помогло избавиться от надоевшего ощущения зажатости в спине, избавило от усталости и плохого настроения.
 								Теперь буду советовать всем подругам: не задумываясь оформляйте абонемент на регулярное посещение массажного кабинета этого салона! Не пожалеете!
 							</div>    							
@@ -397,7 +477,7 @@
 				<div class="col-lg-2 col-md-4 col-sm-6">
 					<div class="footer-column first">
 
-						<a href="index.html"><img src="img/logo.png" alt="логотип сайта" class="logo-footer"></a>
+						<a href="index.html"><img src="img/logo-text.png" alt="логотип сайта" class="logo-footer"></a>
 						<p>Салон красоты<br>бизнес-класса в Москве</p>
 						<div class="social-footer">      			
   							<nav class="social">
@@ -444,54 +524,112 @@
 			</div>
 		</div>
 	</div>
+	<!--система возврата к главному сайту и выбор других-->
+	<div class="returnal__wrapper">
+		<div class="returnal__button">
+			<span class="returnal__icon"></span>
+		</div>
+		<div class="returnal__menu">
+
+			<div class="returnal__item returnal__home">
+				<span class="returnal__main">
+					<img class="returnal__pic" src="img/fd_white_logo.svg" alt="">
+				</span>
+				<div class="returnal__content">
+					<a href="https://foxdesignstudio.github.io/index.html" class="returnal__link">
+						<span class="returnal__note">
+							<h4 class="returnal__title">FOX Design</h4>
+							<p class="returnal__text">Возврат на сайт портфолио</p>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="returnal__item">
+				<span class="icon-Avtoholl"></span>
+				<div class="returnal__content">
+					<a href="https://foxdesignstudio.github.io/site-3/index.html" class="returnal__link">
+						<span class="returnal__note">
+							<h4 class="returnal__title">Автохолл</h4>
+							<p class="returnal__text">Информационный многостраничник автосервиса</p>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="returnal__item">
+				<span class="icon-Skinali"></span>
+				<div class="returnal__content">
+					<a href="https://foxdesignstudio.github.io/site-1/index.html" class="returnal__link">
+						<span class="returnal__note">
+							<h4 class="returnal__title">Фабрика Скинали</h4>
+							<p class="returnal__text">Продающий лэндинг производственной компании</p>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="returnal__item">
+				<span class="icon-Rapunzel"></span>
+				<div class="returnal__content">
+					<a href="https://foxdesignstudio.github.io/site-4/index.html" class="returnal__link">
+						<span class="returnal__note">
+							<h4 class="returnal__title">Scarlet</h4>
+							<p class="returnal__text">Информационный многостраничник салона красоты</p>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="returnal__item">
+				<span class="icon-Capone"></span>
+				<div class="returnal__content">
+					<a href="https://foxdesignstudio.github.io/site-2/index.html" class="returnal__link">
+						<span class="returnal__note">
+							<h4 class="returnal__title">Capone Pizza</h4>
+							<p class="returnal__text">Интернет-магазин (пиццерия)</p>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="returnal__item">
+				<span class="icon-Hollow"></span>
+				<div class="returnal__content">
+					<a href="https://foxdesignstudio.github.io/site-5/index.html" class="returnal__link">
+						<span class="returnal__note">
+							<h4 class="returnal__title">Hollow Knight Atlas</h4>
+							<p class="returnal__text">Приложение-компаньон к игре Hollow Knight™</p>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="returnal__item">
+				<span class="icon-Fallout"></span>
+				<div class="returnal__content">
+					<a href="https://foxdesignstudio.github.io/site-6/index.html" class="returnal__link">
+						<span class="returnal__note">
+							<h4 class="returnal__title">Fallout 4 Memory Vault</h4>
+							<p class="returnal__text">Приложение-компаньон к игре Fallout 4™</p>
+						</span>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!--баннер рекламы главного сайта-->
+	<div class="banner">
+		<div class="banner__wrapper">
+			<div class="banner__border"></div>
+			<img src="img/return_banner.png" alt="рекламный баннер портфолио" class="banner__pic">
+			<span class="banner__bg"></span>
+			<h2 class="banner__title">Посмотрите</h2>
+			<mark class="banner__text">другие сайты портфолио, кликнув<br> по кнопке ниже!</mark>
+			<div class="banner__exit"></div>
+		</div>
+	</div>
 	<!--кнопка наверх-->
 	<div class="top" title="Наверх"><i class="fas fa-angle-double-up"></i></div>
-	<!--кнопка возврата на главный сайт-->
-	<div class="homeworld__wrapper">
-		<div class="homeworld">			
-			<div class="homeworld__triangle hi-homeworld" title="Возврат на главный сайт">
-				<a href="https://foxdesignstudio.github.io/#portfolio" class="homeworld__link">
-					<img src="img/favicon_invert.png" alt="" class="homeworld__pic">
-				</a>
-			</div>
-		</div>
-		<div class="homeworld__title">
-			<span class="homeworld__arrow"></span>
-			<span class="homeworld__text">Возврат на главный сайт</span>
-		</div>
-	</div>	
 
 </div>
 	<!--скрипты-->
 	<script src="js/scripts.min.js"></script>
-    <script>
-        //боковая панель навигации на плагине .mmenu
-        $('#my-menu').mmenu({
-            extensions: [ 'widescreen', 'theme-black', 'fx-menu-slide', 'pagedim-black', 'position-right' ],
-            navbar: {
-                title: '<img src="img/logo.png">'
-            }
-        });
-        //кнопка-гамбургер бокового меню
-        var API = $('#my-menu').data('mmenu');
-        var $icon = $('.hamburger');
-     
-        API.bind( "open:finish", function()
-        {
-        setTimeout(function() 
-        {
-          $icon.addClass( "is-active" );
-        }, 10);
-        });
-
-        API.bind( "close:finish", function() 
-        {
-        setTimeout(function() 
-        {
-          $icon.removeClass( "is-active" );
-        }, 10);
-        });﻿
-    </script>
 
 </body>
 </html>
