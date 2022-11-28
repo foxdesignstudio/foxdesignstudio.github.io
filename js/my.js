@@ -94,14 +94,15 @@ $(document).ready(function(){
 	//скрипт выбора правой/левой части превью
 	$('.toLeft').click(function(){
 		$(this).addClass('active');
-		$('.toRight').removeClass('active');
-		$('.portfolio__slide').addClass('preview');
+		$(this).parent().find($('.toRight')).removeClass('active');
+		$(this).parent().parent().addClass('preview');
 	});
 	$('.toRight').click(function(){
 		$(this).addClass('active');
-		$('.toLeft').removeClass('active');
-		$('.portfolio__slide').removeClass('preview');
+		$(this).parent().find($('.toLeft')).removeClass('active');
+		$(this).parent().parent().removeClass('preview');
 	});
+	//исправление ошибки сдвига блока влево при ресайзе
 	$(window).resize(function(){
 		if($(window).width()>1000){
 			$('.portfolio__slide').removeClass('preview');
