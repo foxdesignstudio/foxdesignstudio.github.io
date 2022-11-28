@@ -253,13 +253,35 @@
 }
 
 @media only screen and (max-width : 550px) {
-	.banner {
-		transform: scale(0.6);
-		bottom: 12px;
+	.banner__wrapper {
+		height: 130px;
+    	width: 320px;
+	}
+	.banner__border {
+		height: 130px;
+    	width: 320px;
+	}
+	.banner__pic {
+		width: 308px;
+		top: -40px;
+	}
+	.banner__bg {
+		width: 308px;
 	}
 	.banner.showBanner {
-		left: -90px;
-		bottom: 12px;
+		left: 0;
+		bottom: 30px;
+	}
+	.banner__title {
+		font-size: 1.5em;
+		bottom: 48px;
+		left: 10px;
+		width: auto;
+	}
+	.banner__text {
+		font-size: 14px;
+		width: 310px;
+		bottom: 4px;
 	}
 }
 
