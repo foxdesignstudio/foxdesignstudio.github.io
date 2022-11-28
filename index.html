@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--IE8-9 only!-->
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -19,28 +20,34 @@
 			<div class="particles__center"></div>
 			<div class="particles__right" id="particles-2"></div>
 		</div>
-		<!--прелоадер-->
+		<!--прелоадер с заполняющимся логотипом-лисой-->
 		<div class="preloader">
-			<div class="preloader__content">
-				<div class="preloader__img">
-					<img src="img/fox-logo.svg" alt="лого_прелоадера_сайта">
+			<div class="preloader__canvas">
+				<img src="img/FD_logo.svg" alt="" class="preloader__pic">
+				<span class="preloader__blind blind__main"></span>
+				<span class="preloader__blind blind__neck"></span>
+				<span class="preloader__blind blind__head"></span>
+				<div class="preloader__text">
+					<span class="preloader__letter">D</span>
+					<span class="preloader__letter">E</span>
+					<span class="preloader__letter">S</span>
+					<span class="preloader__letter">I</span>
+					<span class="preloader__letter">G</span>
+					<span class="preloader__letter">N</span>
 				</div>
-				<div class="preloader__title">
-					FOX Design
-				</div>
-			</div>			
+			</div>
 		</div>
 		<!--общий контейнер задающий ширину-->
 		<div class="container" id="first">
 			<!--меню навигации слева-->
 			<div class="navigator">
 				<!--кнопка фиксации заголовков меню-->
-				<span class="navigator__link--trigger">			
+				<span class="navigator__link--trigger">
 				</span>
 				<!--структура меню-->
 				<ul class="navigator__menu">
 					<li class="navigator__item">
-						<a href="#" class="navigator__link color" data-tooltip="наверх"></a>
+						<span href="#" class="navigator__link color toUp" data-tooltip="наверх"></span>
 					</li>
 					<li class="navigator__item">
 						<a href="#info" class="navigator__link" data-tooltip="введение"></a>
@@ -67,39 +74,30 @@
 
 				<div class="top-line">
 					<div class="logo">
-						<img src="img/FD_logo.svg" alt="лого_студии_хидер">
-						<span class="logo__text">design</span>
+						<img src="img/fox-design-logo.svg" alt="лого_студии_хидер">
 					</div>
 					<div class="language">
 						<a href="" class="language__link">RU</a> | <a href="english.html" class="language__link">EN</a>
 					</div>
 				</div>
 				<!--анимированная левая часть рамки хидера-->
-				<span class="side__part--left"
-					  data-0="transform: rotateY(0deg)"
-					  data-200="transform: rotateY(90deg)"></span>
-				<!--неанимированный задник хидера для малых разрешений-->
-				<div class="header-small__wrapper">
-					<img src="img/header-small.jpg" class="header-small">
-				</div>
+				<span class="side__part--left"></span>
 				<!--анимированный задник хидера-->
-				<div class="header__wrapper"
-					data-0="transform: translate3d(0px, 2px, 0px)"
-					data-600="transform: translate3d(0px, -750px, 0px)">
+				<div class="header__wrapper">
 
 					<div class="header__layer--mountains"
 					data-0="background-position: 0 -1px"
 					data-400="background-position: 0 -100px">
 
 						<div class="header__layer--climber"
-						data-0="background-position: 0 -80px"										
-						data-600="background-position: 0 200px">					
+						data-0="background-position: 0 -80px"
+						data-600="background-position: 0 200px">
 						</div>
 
 							<div class="header__layer--text"
-							data-0="left: 38%; opacity: 1"							
+							data-0="left: 38%; opacity: 1"
 							data-100="left: 100%; opacity: 0">
-								<div class="line" 
+								<div class="line"
 									data-sal="zoom-in"
 									data-sal-duration="1300"
 									data-sal-delay="500"
@@ -127,28 +125,23 @@
 				</div>
 			</header>
 			<!--меню навигации снизу хидера-->
-			<ul class="dial"
-				data-0="transform: rotateX(0deg)"
-				data-200="transform: rotateX(90deg)">
-				<li class="dial__item">
-					<a href="#skillz" class="dial__link orange-btns" data-name="Резюме"></a>
-				</li>
-				<li class="dial__item">
-					<a href="#portfolio" class="dial__link orange-btns" data-name="Портфолио"></a>
-				</li>
-				<li class="dial__item">
-					<a href="#feedback" class="dial__link orange-btns" data-name="Связь"></a>
-				</li>
-				<li class="dial__item">
-					<a href="#menu" class="dial__link orange-btns small-btn"><span class="trio-btn"></span></a>
-				</li>
-				<li class="dial__item">
-					<button class="dial__link orange-btns small-switcher">	
-					</button>
-				</li>
-			</ul>
-			<!--кнопка вызова зафиксированного бокового меню слева-->
-			<span class="menu-launch" id="menu"></span>
+			<div class="dial-wrapper">
+				<ul class="dial">
+					<li class="dial__item">
+						<a href="#skillz" class="dial__link left-btns" data-name="Резюме"></a>
+					</li>
+					<li class="dial__item">
+						<a href="#portfolio" class="dial__link left-btns wide-btns" data-name="Портфолио"></a>
+					</li>
+					<li class="dial__item">
+						<a href="#about" class="dial__link left-btns" data-name="Инфо"></a>
+					</li>
+					<li class="dial__item">
+						<a href="#feedback" class="dial__link left-btns" data-name="Связь"></a>
+					</li>
+					<!-- <a href="#menu" class="center-btns">Меню</a> -->
+				</ul>
+			</div>
 			<!--секция вступления-->
 			<section class="main">
 
@@ -191,7 +184,7 @@
 
 					<div class="content">
 
-						<div class="content__item click-item wide" id="tab-1">
+						<div class="content__item click-item" id="tab-1">
 
 							<div class="skills">
 
@@ -201,7 +194,7 @@
 									data-sal-delay="100"
 									data-sal-easing="ease-out-bounce">
 									<div class="skills__image">
-										<img src="img/logo/html.png" alt="html">
+										<img src="img/logo/html.svg" alt="html">
 									</div>
 									<div class="skills__desc">HTML<br>язык гипертекстовой<br>разметки</div>			
 								</div>
@@ -212,7 +205,7 @@
 									data-sal-delay="150"
 									data-sal-easing="ease-out-bounce">
 									<div class="skills__image">
-										<img src="img/logo/css.png" alt="css">
+										<img src="img/logo/css.svg" alt="css">
 									</div>
 									<div class="skills__desc">Таблицы<br>каскадных стилей<br>CSS</div>					
 								</div>
@@ -223,7 +216,7 @@
 									data-sal-delay="200"
 									data-sal-easing="ease-out-bounce">
 									<div class="skills__image">
-										<img src="img/logo/js.png" alt="javascript">
+										<img src="img/logo/js.svg" alt="javascript">
 									</div>
 									<div class="skills__desc">JavaScript<br>и jQuery</div>								
 								</div>
@@ -234,7 +227,7 @@
 									data-sal-delay="250"
 									data-sal-easing="ease-out-bounce">
 									<div class="skills__image">
-										<img src="img/logo/sass-color.png" alt="sass">
+										<img src="img/logo/sass-color.svg" alt="sass">
 									</div>
 									<div class="skills__desc">Препроцессоры<br>Sass / SCSS</div>						
 								</div>
@@ -245,7 +238,7 @@
 									data-sal-delay="300"
 									data-sal-easing="ease-out-bounce">
 									<div class="skills__image">
-										<img src="img/logo/wordpress.png" alt="wordpress">
+										<img src="img/logo/wordpress.svg" alt="wordpress">
 									</div>
 									<div class="skills__desc">Фреймворк/CMS<br>Wordpress</div>			
 								</div>
@@ -256,9 +249,9 @@
 									data-sal-delay="350"
 									data-sal-easing="ease-out-bounce">
 									<div class="skills__image">
-										<img src="img/logo/Bootstrap.png" alt="bootstrap">
+										<img src="img/logo/bootstrap.svg" alt="bootstrap">
 									</div>
-									<div class="skills__desc">Фреймворк Bootstrap<br>(ver.3-4)</div>					
+									<div class="skills__desc">Фреймворк Bootstrap<br>(ver.3-4)</div>
 								</div>
 
 								<div class="skills__item"
@@ -267,9 +260,9 @@
 									data-sal-delay="400"
 									data-sal-easing="ease-out-bounce">
 									<div class="skills__image">
-										<img src="img/logo/gulp.png" alt="gulp">
+										<img src="img/logo/gulp.svg" alt="gulp">
 									</div>
-									<div class="skills__desc">Таск-менеджер GULP<br>и автоматизация<br>процесса сборки</div>								
+									<div class="skills__desc">Таск-менеджер GULP<br>и автоматизация<br>процесса сборки</div>
 								</div>
 
 								<div class="skills__item"
@@ -278,10 +271,10 @@
 									data-sal-delay="450"
 									data-sal-easing="ease-out-bounce">
 									<div class="skills__image">
-										<img src="img/logo/git.png" alt="git">
+										<img src="img/logo/git.svg" alt="git">
 									</div>
 									<div class="skills__desc">Контроль версий
-									<br>Git</div>								
+									<br>Git</div>
 								</div>
 
 								<div class="skills__item"
@@ -290,9 +283,9 @@
 									data-sal-delay="500"
 									data-sal-easing="ease-out-bounce">
 									<div class="skills__image">
-										<img src="img/logo/bem.png" alt="бэм">
+										<img src="img/logo/bem.svg" alt="бэм">
 									</div>
-									<div class="skills__desc">Методология БЭМ</div>								
+									<div class="skills__desc">Методология БЭМ</div>
 								</div>
 
 								<div class="skills__item"
@@ -301,9 +294,9 @@
 									data-sal-delay="550"
 									data-sal-easing="ease-out-bounce">
 									<div class="skills__image">
-										<img src="img/logo/pug.png" alt="шаблонизатор pug">
+										<img src="img/logo/pug.svg" alt="шаблонизатор pug">
 									</div>
-									<div class="skills__desc">Шаблонизатор Pug</div>								
+									<div class="skills__desc">Шаблонизатор Pug</div>
 								</div>
 
 							</div>
@@ -318,21 +311,22 @@
 								<li class="ability__item">Шаблонизатор <span class="text-fat">Pug</span>. HTML-препроцессинг</li>
 								<li class="ability__item">Использование системы контроля версий <span class="text-fat">Git</span> (консольный Git Bash или GitHub Desktop)</li>
 								<li class="ability__item">Применение таск-менеджера <span class="text-fat">Gulp</span></li>
-								<li class="ability__item">Создание страниц на основе фреймворка <span class="text-fat">Bootstrap</span></li>							
+								<li class="ability__item">Создание страниц на основе фреймворка <span class="text-fat">Bootstrap</span></li>
 								<li class="ability__item">Фреймворк <span class="text-fat">WordPress</span> (создание тем/подключение CMS к верстке)</li>
-								<li class="ability__item"><span class="text-fat">SEO</span>-оптимизация</li>	
+								<li class="ability__item"><span class="text-fat">SEO</span>-оптимизация</li>
 								<li class="ability__item">Работа с <span class="text-fat">JavaScript</span>/jQuery-скриптами. Создание/модификация/подключение</li>
 								<li class="ability__item">Модификация статичных страниц в адаптивные (даже без макета)</li>
 								<li class="ability__item"><span class="text-fat">Кроссбраузерность</span> кода</li>
-								<li class="ability__item">Технический <span class="text-fat">английский язык</span> (документация, тех.задание, и т.д.)</li>													
+								<li class="ability__item">Технический <span class="text-fat">английский язык</span> (документация, тех.задание, и т.д.)</li>
 							</ul>
 						</div>
 
 						<div class="content__item click-item hide" id="tab-3">
 
-							<div class="bio">						
+							<div class="bio">
+								<h2 class="bio__title">Здравствуйте!</h2>
 								<p class="bio__text">Некоторым из нас везет сразу же занять свое место в жизни. Мой путь к работе мечты занял больше времени, чем хотелось. С самого начала рассматривая
-								лишь один возможный путь развития карьеры - мир компьютеров и IT - стартовал со сборки, настройки и ремонта компьютерной техники. Набравшись практического опыта 
+								лишь один возможный путь развития карьеры - мир компьютеров и IT - стартовал со сборки, настройки и ремонта компьютерной техники. Набравшись практического опыта
 								захотел опробовать свои силы в чем-то более разнообразном, чем непрерывное копание в компьютерном железе, так и попал в крупную фирму которая первой в моем городе
 								начала развивать направление цифровой фотопечати.</p>
 								<p class="bio__text">Начав с должности оператора цифровой минифотолаборатории (Konica QD-21 Plus) параллельно осваивал полиграфию и дизайн, замещая одного
@@ -346,284 +340,512 @@
 								Sass-синтаксис, нативный JavaScript ES5-6, знакомство с react-jsx, БЭМ-методология и всё, что должен знать опытный web-разработчик. Никаких тестовых шаблонов - только реальные макеты коммерческих проектов.</p>
 								<p class="bio__text">Сейчас, спустя почти два года, весь этот процесс не только не надоел, не превратился в опостылевшую рутину, а наоборот, раскрывает
 								все новые и новые горизонты применений, впечатляет новыми трендами, усовершенствованной технологией.</p>
-								<p class="bio__text">Найти свое место в жизни... это та самая кажущаяся неприступной горная вершина, глядя на которую испытываешь трепет и желание достичь цели. Ведь в конце концов, 
-								вершины и созданы для того, чтобы их покоряли!</p>
+								<p class="bio__text">Найти свое место в жизни... это та самая кажущаяся неприступной горная вершина, глядя на которую испытываешь трепет и желание достичь цели. Ведь в конце концов, вершины и созданы для того, чтобы их покоряли!</p>
 							</div>
 
 						</div>
 
 					</div>
-					
+
 				</div>
-				
+
 			</section>
 			<!--секция портфолио-->
 			<section class="works">
 
-				<div class="splitter" id="portfolio">					
+				<div class="splitter" id="portfolio">
 					<h5 class="splitter__header">Портфолио</h5>
-					<p class="splitter__text">Ниже представлены описание и прямые ссылки на некоторые выполненные работы. <span class="mobile-hide">Кликните по кнопке с названием ниже, чтобы перейти к детальному описанию сайта. Наведите курсор на изображение страницы выбранного сайта слева, чтобы появилось меню выбора миниатюр. Клик по кнопке "перейти" позволит ознакомиться с представленным сайтом напрямую, перейдя по ссылке на хостинг.</span></p>
+					<p class="splitter__text">Ниже представлены описание и прямые ссылки на некоторые выполненные работы. <span class="mobile-hide">Наведите курсор на плитку с логотипом, чтобы появилось название и краткая информация. Кликните по поверхности плитки с описанием, чтобы открыть детальное описание сайта с интерактивным превью. Нажатие кнопки "Посмотреть" позволит ознакомиться с представленным сайтом напрямую, перейдя по ссылке на хостинг.</span></p>
 				</div>
+				<!--общий враппер созданных сайтов-->
 
-				<div class="click-wrapper">
-					<!--кнопки-ссылки созданных сайтов-->
-					<ul class="preview click">
-						<li class="preview__item active">
-							<a href="#tab-4" class="preview__link air-button">Автосервис</a>
-						</li>
-						<li class="preview__item">
-							<a href="#tab-5" class="preview__link air-button">Интернет-магазин</a>
-						</li>
-						<li class="preview__item">
-							<a href="#tab-6" class="preview__link air-button">Салон красоты</a>
-						</li>
-						<li class="preview__item">
-							<a href="#tab-7" class="preview__link air-button">Лэндинг</a>
-						</li>
-						<li class="preview__item">
-							<a href="#tab-0" class="preview__link air-button-small">
-								<img src="img/power-off-black.png" class="power">
-							</a>
-						</li>
-					</ul>
-					<!--общий враппер созданных сайтов-->
-					<div class="sites">
-						<!--сайт#1-->
-						<div class="sites__item click-item" id="tab-0">
-							<!--слайдшоу-заглушка-->
-							<div class="slideshow__wrapper"
-									data-sal="zoom-in"
-									data-sal-duration="500"									
-									data-sal-easing="linear">
+				<div class="portfolio">
+					<div class="portfolio__selector">
+						<div class="portfolio__item portfolio__stats top-axis">
+							<span class="icon-Avtoholl"></span>
+							<div class="portfolio__content">
+								<a href="#site-1" class="portfolio__link">
+									<span class="portfolio__note">
+										<h4 class="portfolio__title">Автохолл</h4>
+										<p class="portfolio__text">Информационный многостраничник автосервиса</p>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="portfolio__item portfolio__stats top-axis">
+							<span class="icon-Skinali"></span>
+							<div class="portfolio__content">
+								<a href="#site-2" class="portfolio__link">
+									<span class="portfolio__note">
+										<h4 class="portfolio__title">Фабрика Скинали</h4>
+										<p class="portfolio__text">Продающий лэндинг производственной компании</p>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="portfolio__item portfolio__stats top-axis">
+							<span class="icon-Rapunzel"></span>
+							<div class="portfolio__content">
+								<a href="#site-3" class="portfolio__link">
+									<span class="portfolio__note">
+										<h4 class="portfolio__title">Scarlet</h4>
+										<p class="portfolio__text">Информационный многостраничник салона красоты</p>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="portfolio__item portfolio__stats bot-axis">
+							<span class="icon-Capone"></span>
+							<div class="portfolio__content">
+								<a href="#site-4" class="portfolio__link">
+									<span class="portfolio__note">
+										<h4 class="portfolio__title">Capone Pizza</h4>
+										<p class="portfolio__text">Интернет-магазин (пиццерия)</p>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="portfolio__item portfolio__stats bot-axis">
+							<span class="icon-Hollow"></span>
+							<div class="portfolio__content">
+								<a href="#site-5" class="portfolio__link">
+									<span class="portfolio__note">
+										<h4 class="portfolio__title">Hallownest Atlas</h4>
+										<p class="portfolio__text">Приложение-компаньон к игре Hollow Knight™</p>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="portfolio__item portfolio__stats bot-axis">
+							<span class="icon-Fallout"></span>
+							<div class="portfolio__content">
+								<a href="#site-6" class="portfolio__link">
+									<span class="portfolio__note">
+										<h4 class="portfolio__title">Fallout 4 Memory Vault</h4>
+										<p class="portfolio__text">Приложение-компаньон к игре Fallout 4™</p>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="portfolio__return">
+							<div class="portfolio__return--front portfolio__stats">
+								<h4>Выберите сайт для перехода</h4>
+							</div>
+							<div class="portfolio__return--back portfolio__stats">
+								<img src="img/power-off-black.png" alt="выключение_иконка">
+							</div>
+						</div>
 
-								<div class="slideshow__part glide-top-1">
-									<div class="slideshow__pic">
-										<div class="slideshow__inner s-one"></div>
+						<div class="portfolio__slide" id="site-1">
+							<div class="slide__left">
+								<div class="slide__content active" id="slide-1">
+									<div class="pc__preview">
+										<div class="pc__overlay"></div>
+										<div class="pc__wrapper">
+											<img src="img/pc_autoservice.png" alt="автосервис_пк_превью" class="pc__img" id="sitePreview-3">
+										</div>
+									</div>
+								</div>
+								<div class="slide__content" id="slide-2">Тест-2</div>
+								<div class="slide__content" id="slide-3">
+									<div class="slide__mobile">
+										<div class="mobile__wrapper">
+											<img src="img/autoholl_mobile.png" alt="автохолл_мобильный" class="mobile__image" id="drag-2">
+											<div class="mobile__cover">
+												<p class="cover__text"><span class="fox">Кликните</span> по любой точке экрана телефона, <span class="fox">чтобы ознакомиться</span> с мобильной версией сайта</p>
+												<div class="cover__icon">
+													<img src="img/clicker.svg" alt="значок_клик">
+												</div>
+												<p class="cover__text"> <span class="fox">Прокручивайте</span> содержимое экрана телефона курсором, <span class="fox">зажав</span> левую <span class="fox">кнопку мыши</span></p>
+											</div>
+										</div>
+										<div class="mobile__control">
+											<div class="mobile__up scroll-top"></div>
+											<div class="mobile__switch shutdown"></div>
+											<div class="mobile__down scroll-bottom"></div>
+										</div>
+									</div>
+								</div>
+								<div class="slide__selector">
+									<a href="#slide-1" class="slide__link active">
+										<img src="img/mouse.png" alt="пк_иконка">
+									</a>
+									<a href="#slide-2" class="slide__link">
+										<img src="img/list.png" alt="разное_иконка">
+									</a>
+									<a href="#slide-3" class="slide__link mobile">
+										<img src="img/mobile.png" alt="мобильный_телефон_иконка">
+									</a>
+								</div>
+							</div>
+							<div class="slide__right">
+								<div class="slide__description">
+									<p class="description__note">Проект 01 / 2018</p>
+									<h2 class="description__title">Автосервис "АвтоХолл"</h2>
+									<p class="description__text">Самый первый выполненный проект. Дизайн и общая концепция макета взяты из работы автора канала WDM, и доработана.</p>
+									<ul class="description__list">
+										<li>Дизайн макета индексной страницы: youtube-канал WebDesignMaster</li>
+										<li>Дизайн остальных страниц, доработка: FOX Design</li>
+										<li>Сетка Bootstrap 4, стандартная блочная вёрстка</li>
+										<li>Полностью адаптивен, поддержка всех мобильных устройств</li>
+									</ul>
+								</div>
+								<div class="slide__line">
+									<a href="#" class="slide__button">Посмотреть</a>
+								</div>
+							</div>
+							<div class="slide__controls">
+								<div class="slide__switcher toLeft">Описание</div>
+								<div class="slide__switcher toRight active">Превью</div>
+							</div>
+						</div>
+
+						<div class="portfolio__slide" id="site-2">
+							<div class="slide__left">
+								<div class="slide__content active" id="slide-4">
+									<div class="pc__preview">
+										<div class="pc__overlay"></div>
+										<div class="pc__wrapper">
+											<img src="img/pc_skinali.png" alt="скинали_пк_превью" class="pc__img" id="sitePreview-1">
+										</div>
+									</div>
+								</div>
+								<div class="slide__content" id="slide-5">
+									<div class="features__wrapper owl-carousel">
+										<div class="features__item">
+											<p class="features__desc">Блок интерактивной примерки эскизов скинали с выбором цвета кухни</p>
+											<img src="img/preview_skinali_1.png" alt="">
+										</div>
+										<div class="features__item">
+											<p class="features__desc">Блок сравнения интерьера "До и после"</p>
+											<img src="img/preview_skinali_2.png" alt="">
+										</div>
+										<div class="features__item">
+											<p class="features__desc">Модальные окна и формы обратной связи</p>
+											<img src="img/preview_skinali_3.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="slide__content" id="slide-6">
+									<div class="slide__mobile">
+										<div class="mobile__wrapper skinali">
+											<img src="img/mobile_skinali.png" alt="фабрика_скинали_мобильный" class="mobile__image" id="drag-1">
+											<div class="mobile__cover">
+												<p class="cover__text"><span class="fox">Кликните</span> по любой точке экрана телефона, <span class="fox">чтобы ознакомиться</span> с мобильной версией сайта</p>
+												<div class="cover__icon">
+													<img src="img/clicker.svg" alt="значок_клик">
+												</div>
+												<p class="cover__text"> <span class="fox">Прокручивайте</span> содержимое экрана телефона курсором, <span class="fox">зажав</span> левую <span class="fox">кнопку мыши</span></p>
+											</div>
+										</div>
+										<div class="mobile__control">
+											<div class="mobile__up scroll-top"></div>
+											<div class="mobile__switch shutdown"></div>
+											<div class="mobile__down scroll-bottom-skinali"></div>
+										</div>
+									</div>
+								</div>
+								<div class="slide__selector">
+									<a href="#slide-4" class="slide__link active">
+										<img src="img/mouse.png" alt="пк_иконка">
+									</a>
+									<a href="#slide-5" class="slide__link">
+										<img src="img/list.png" alt="разное_иконка">
+									</a>
+									<a href="#slide-6" class="slide__link mobile">
+										<img src="img/mobile.png" alt="мобильный_телефон_иконка">
+									</a>
+								</div>
+							</div>
+							<div class="slide__right">
+								<div class="slide__description">
+									<p class="description__note">Проект 02 / 2021</p>
+									<h2 class="description__title">"Фабрика скинали"</h2>
+									<p class="description__text">Продающий лэндинг комапнии по производству защитных фартуков для кухни (скинали).</p>
+									<ul class="description__list">
+										<li>Идея, вёрстка, дизайн макета: FOX Design</li>
+										<li>Флексы + БЭМ</li>
+										<li>Интерактивная примерка шаблонов со сменой цветов интерьера</li>
+										<li>Блок сравнения интерьера кухни 'До и после'</li>
+										<li>Полностью адаптивен, поддержка всех мобильных устройств</li>
+									</ul>
+								</div>
+								<div class="slide__line">
+									<a href="#" class="slide__button">Посмотреть</a>
+								</div>
+							</div>
+							<div class="slide__controls">
+								<div class="slide__switcher toLeft">Описание</div>
+								<div class="slide__switcher toRight active">Превью</div>
+							</div>
+						</div>
+
+						<div class="portfolio__slide" id="site-3">
+							<div class="slide__left">
+								<div class="slide__content active" id="slide-7">
+									<div class="pc__preview">
+										<div class="pc__overlay"></div>
+										<div class="pc__wrapper">
+											<img src="img/pc_scarlet.jpg" alt="скарлет_пк_превью" class="pc__img" id="sitePreview-2">
+										</div>
+									</div>
+								</div>
+								<div class="slide__content" id="slide-8">
+									<div class="features__wrapper owl-carousel">
+										<div class="features__item">
+											<p class="features__desc">Адаптивная галерея-карусель с авторасчётом высоты</p>
+											<img src="img/preview_scarlet_1.png" alt="">
+										</div>
+										<div class="features__item">
+											<p class="features__desc">CSS-анимация на страницах</p>
+											<img src="img/preview_scarlet_2.png" alt="">
+										</div>
+										<div class="features__item">
+											<p class="features__desc">Страницы услуг каждого направления работы салона</p>
+											<img src="img/preview_scarlet_3.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="slide__content" id="slide-9">
+									<div class="slide__mobile">
+										<div class="mobile__wrapper">
+											<img src="img/mobile_scarlet.png" alt="скарлет_мобильный" class="mobile__image" id="drag-3">
+											<div class="mobile__cover">
+												<p class="cover__text"><span class="fox">Кликните</span> по любой точке экрана телефона, <span class="fox">чтобы ознакомиться</span> с мобильной версией сайта</p>
+												<div class="cover__icon">
+													<img src="img/clicker.svg" alt="значок_клик">
+												</div>
+												<p class="cover__text"> <span class="fox">Прокручивайте</span> содержимое экрана телефона курсором, <span class="fox">зажав</span> левую <span class="fox">кнопку мыши</span></p>
+											</div>
+										</div>
+										<div class="mobile__control">
+											<div class="mobile__up scroll-top"></div>
+											<div class="mobile__switch shutdown"></div>
+											<div class="mobile__down scroll-bottom-scarlet"></div>
+										</div>
 									</div>
 								</div>
 
-								<div class="slideshow__part glide-bottom-1">
-									<div class="slideshow__pic">
-										<div class="slideshow__inner s-two"></div>
+								<div class="slide__selector">
+									<a href="#slide-7" class="slide__link active">
+										<img src="img/mouse.png" alt="пк_иконка">
+									</a>
+									<a href="#slide-8" class="slide__link">
+										<img src="img/list.png" alt="разное_иконка">
+									</a>
+									<a href="#slide-9" class="slide__link mobile">
+										<img src="img/mobile.png" alt="мобильный_телефон_иконка">
+									</a>
+								</div>
+							</div>
+							<div class="slide__right">
+								<div class="slide__description">
+									<p class="description__note">Проект 03 / 2020</p>
+									<h2 class="description__title">Салон красоты "Scarlet"</h2>
+									<p class="description__text">Сайт московского салона красоты</p>
+									<ul class="description__list">
+										<li>Идея, вёрстка, дизайн макета: FOX Design</li>
+										<li>Сетка Bootstrap 3, флексы, гриды</li>
+										<li>Страницы услуг каждого направления салона, с развернутым описанием и пояснениями</li>
+										<li>Адаптивная галерея-карусель предоставляемых услуг с автоматическим выравниванием всех блоков по высоте содержимого</li>
+										<li>CSS-анимация</li>
+										<li>Полностью адаптивен, поддержка всех мобильных устройств</li>
+									</ul>
+								</div>
+								<div class="slide__line">
+									<a href="#" class="slide__button">Посмотреть</a>
+								</div>
+							</div>
+							<div class="slide__controls">
+								<div class="slide__switcher toLeft">Описание</div>
+								<div class="slide__switcher toRight active">Превью</div>
+							</div>
+						</div>
+
+						<div class="portfolio__slide" id="site-4">
+							<div class="slide__left">
+								<div class="slide__content active" id="slide-10">Тест-1</div>
+								<div class="slide__content" id="slide-11">Тест-2</div>
+								<div class="slide__content" id="slide-12">
+									<div class="slide__mobile">
+										<div class="mobile__wrapper">
+											<img src="img/capone_mobile.png" alt="капоне_пицца_мобильный" class="mobile__image" id="drag-4">
+											<div class="mobile__cover">
+												<p class="cover__text"><span class="fox">Кликните</span> по любой точке экрана телефона, <span class="fox">чтобы ознакомиться</span> с мобильной версией сайта</p>
+												<div class="cover__icon">
+													<img src="img/clicker.svg" alt="значок_клик">
+												</div>
+												<p class="cover__text"> <span class="fox">Прокручивайте</span> содержимое экрана телефона курсором, <span class="fox">зажав</span> левую <span class="fox">кнопку мыши</span></p>
+											</div>
+										</div>
+										<div class="mobile__control">
+											<div class="mobile__up scroll-top"></div>
+											<div class="mobile__switch shutdown"></div>
+											<div class="mobile__down scroll-bottom"></div>
+										</div>
 									</div>
 								</div>
+								<div class="slide__selector">
+									<a href="#slide-10" class="slide__link active">
+										<img src="img/mouse.png" alt="пк_иконка">
+									</a>
+									<a href="#slide-11" class="slide__link">
+										<img src="img/list.png" alt="разное_иконка">
+									</a>
+									<a href="#slide-12" class="slide__link mobile">
+										<img src="img/mobile.png" alt="мобильный_телефон_иконка">
+									</a>
+								</div>
+							</div>
+							<div class="slide__right">
+								<div class="slide__description">
+									<p class="description__note">Проект 04 / 2021</p>
+									<h2 class="description__title">Пиццерия "Capone Pizza"</h2>
+									<p class="description__text">Сайт минской пиццерии для заказов онлайн.</p>
+									<ul class="description__list">
+										<li>Идея и дизайн макета: FOX Design</li>
+										<li>Гриды, флексы, БЭМ</li>
+										<li>Анимированный плиточный интерфейс страниц</li>
+										<li>Полностью адаптивен, поддержка всех мобильных устройств</li>
+									</ul>
+								</div>
+								<div class="slide__line">
+									<a href="#" class="slide__button">Посмотреть</a>
+								</div>
+							</div>
+							<div class="slide__controls">
+								<div class="slide__switcher toLeft">Описание</div>
+								<div class="slide__switcher toRight active">Превью</div>
+							</div>
+						</div>
 
-								<div class="slideshow__part glide-top-2">
-									<div class="slideshow__pic">
-										<div class="slideshow__inner s-three"></div>
+						<div class="portfolio__slide" id="site-5">
+							<div class="slide__left">
+								<div class="slide__content active" id="slide-13">
+									<div class="pc__preview restrict">
+										<div class="pc__overlay"></div>
+										<div class="pc__wrapper wide">
+											<img src="img/pc_hollownest_w962.png" alt="холлоунайт_пк_превью" class="pc__img" id="sitePreview-3">
+										</div>
 									</div>
 								</div>
-
-								<div class="slideshow__part glide-bottom-2">
-									<div class="slideshow__pic">
-										<div class="slideshow__inner s-four"></div>
+								<div class="slide__content" id="slide-14">
+									<div class="features__wrapper owl-carousel">
+										<div class="features__item">
+											<p class="features__desc">Места обитания и статы боссов (включая грёзы)</p>
+											<img src="img/preview_hollownest_1.png" alt="">
+										</div>
+										<div class="features__item">
+											<p class="features__desc">Система фильтров отображаемого контента</p>
+											<img src="img/preview_hollownest_2.png" alt="">
+										</div>
+										<div class="features__item">
+											<p class="features__desc">Условия проходимости нанесённые на карту</p>
+											<img src="img/preview_hollownest_3.png" alt="">
+										</div>
 									</div>
 								</div>
-								
+								<div class="slide__selector">
+									<a href="#slide-13" class="slide__link active">
+										<img src="img/mouse.png" alt="пк_иконка">
+									</a>
+									<a href="#slide-14" class="slide__link">
+										<img src="img/list.png" alt="разное_иконка">
+									</a>
+								</div>
 							</div>
-							<!--статичная заглушка с логотипами-->
-							<div class="logos__wrapper">
-								<!--крест между логотипами-->
-								<span class="logos__cross-v"></span>
-								<span class="logos__cross-h"></span>
-								<!--логотипы-->
-								<div class="logos__item">
-									<img src="img/logos-autoholl.png" alt="" class="logos__pic">
-								</div>
-								<div class="logos__item">
-									<img src="img/logos-aware.png" alt="" class="logos__pic">
-								</div>
-								<div class="logos__item">
-									<img src="img/logos-rapunzel.png" alt="" class="logos__pic">
-								</div>
-								<div class="logos__item">
-									<img src="img/logos-skinali.png" alt="" class="logos__pic">
-								</div>
-							</div>						
-						</div>
-						<!--сайт#2-->
-						<div class="sites__item click-item hide" id="tab-4">
-							<div class="sites__picture"
-								data-sal="slide-right"
-								data-sal-duration="700"
-								data-sal-delay="50"
-								data-sal-easing="linear">
-								<!--меню выбора миниатюр слева-->
-								<div class="sites__navigation push">
-									<ul class="navigation">
-										<li class="navigation__item active">
-											<a href="#pic1" class="navigation__link" data-number="1"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic2" class="navigation__link" data-number="2"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic3" class="navigation__link" data-number="3"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic4" class="navigation__link" data-number="M"></a>
-										</li>
+							<div class="slide__right">
+								<div class="slide__description">
+									<p class="description__note">Проект 05 / 2021</p>
+									<h2 class="description__title">Hollow Knight Hallownest atlas</h2>
+									<p class="description__text">Информационное приложение-компаньон для игры Hollow Knight. Интерактивная, настраиваемая карта всего Халлоунеста со встроенной базой данных по всем объектам.</p>
+									<ul class="description__list">
+										<li>Интерфейс приложения повторяет графический стиль игры</li>
+										<li>Система фильтров для быстрого поиска объектов</li>
+										<li>Места нахождения и характеристики всех боссов и воинов Грёз</li>
+										<li>Расположение и развернутое описание всех амулетов, включая add-on "The Grimm Troupe"</li>
+										<li>Контурные отметки проходимости, препятствий и условий доступа наложенные на карту</li>
+										<li><span class="warning">Десктоп-версия. Не предназначена для мобильных устройств!</span></li>
 									</ul>
 								</div>
-								<!--миниатюры страниц сайта слева-->
-								<div class="sites__picture--content">
-									<img class="sites__picture--img" id="pic1" src="img/autoservice.png" alt="">							
-									<img class="sites__picture--img hide" id="pic2" src="img/autoservicel-preview-2.png" alt="">						
-									<img class="sites__picture--img hide" id="pic3" src="img/autoservicel-preview-3.png" alt="">
-									<img class="sites__picture--img hide" id="pic4" src="img/autoservicel-preview-4.png" alt="">
+								<div class="slide__line">
+									<a href="#" class="slide__button">Посмотреть</a>
 								</div>
 							</div>
-							<!--описание сайта#2-->
-							<div class="sites__description"
-								data-sal="slide-left"
-								data-sal-duration="700"
-								data-sal-delay="50"
-								data-sal-easing="linear">
-								<p class="sites__date">Проект 01 / 2018</p>
-								<h2 class="sites__name">Автосалон "АвтоХолл"</h2>
-								<p class="sites__text">Самый первый выполненный проект. Полностью адаптивен. Многоуровневое вариативное меню навигации. Сайт построен на сетке Bootstrap 4 без применения остального функционала фреймворка. Masonry-grid для галереи изображений, модальные окна на плагине fancybox.</p>
-								<a href="https://foxdesignstudio.github.io/site-3/index.html" class="sites__btn air-button">Перейти на сайт</a>						
+							<div class="slide__controls">
+								<div class="slide__switcher toLeft">Описание</div>
+								<div class="slide__switcher toRight active">Превью</div>
 							</div>
 						</div>
-						<!--сайт#3-->
-						<div class="sites__item click-item hide" id="tab-5">
-							<div class="sites__picture"
-								data-sal="slide-right"
-								data-sal-duration="700"
-								data-sal-delay="50"
-								data-sal-easing="linear">
-								<!--меню выбора миниатюр слева-->
-								<div class="sites__navigation push">
-									<ul class="navigation">
-										<li class="navigation__item active">
-											<a href="#pic5" class="navigation__link" data-number="1"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic6" class="navigation__link" data-number="2"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic7" class="navigation__link" data-number="3"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic8" class="navigation__link" data-number="M"></a>
-										</li>
-									</ul>
-								</div>
-								<!--миниатюры страниц сайта слева-->
-								<div class="sites__picture--content">
-									<img class="sites__picture--img" id="pic5" src="img/aware-preview-1.png">
-									<img class="sites__picture--img hide" id="pic6" src="img/aware-preview-2.png">
-									<img class="sites__picture--img hide" id="pic7" src="img/aware-preview-3.png">
-									<img class="sites__picture--img hide" id="pic8" src="img/aware-preview-4.png">							
-								</div>
-							</div>
-							<!--описание сайта#3-->
-							<div class="sites__description"
-								data-sal="slide-left"
-								data-sal-duration="700"
-								data-sal-delay="50"
-								data-sal-easing="linear">
-								<p class="sites__date">Проект 08 / 2018</p>
-								<h2 class="sites__name">Интернет-магазин "Aware"</h2>
-								<p class="sites__text">Пример сложной верстки в виде <span class="alarm">одной страницы.</span> <span class="warning">Без скриптов обработки форм и выборки!</span> Показано умение качественно сверстать макет интернет-магазина с огромным количеством деталей и элементов, под все возможные разрешения и устройства. Страница полностью адаптивна. Без фреймворков и бутстрап-сетки.</p>
-								<a href="https://foxdesignstudio.github.io/site-2/index.html" class="sites__btn air-button">Перейти на сайт</a>						
-							</div>
-						</div>
-						<!--сайт#4-->
-						<div class="sites__item click-item hide" id="tab-6">
-							<div class="sites__picture"
-								data-sal="slide-right"
-								data-sal-duration="700"
-								data-sal-delay="50"
-								data-sal-easing="linear">
-								<!--меню выбора миниатюр слева-->
-								<div class="sites__navigation push">
-									<ul class="navigation">
-										<li class="navigation__item active">
-											<a href="#pic9" class="navigation__link" data-number="1"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic10" class="navigation__link" data-number="2"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic11" class="navigation__link" data-number="3"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic12" class="navigation__link" data-number="M"></a>
-										</li>
-									</ul>
-								</div>
-								<!--миниатюры страниц сайта слева-->
-								<div class="sites__picture--content">
-									<img class="sites__picture--img scroller" id="pic9" src="img/rapunzel-preview-1.png">
-									<img class="sites__picture--img scroller-med hide" id="pic10" src="img/rapunzel-preview-2.jpg">
-									<img class="sites__picture--img hide" id="pic11" src="img/rapunzel-preview-3.png">
-									<img class="sites__picture--img hide" id="pic12" src="img/rapunzel-preview-4.png">				
-								</div>
-							</div>
-							<!--описание сайта#4-->
-							<div class="sites__description"
-								data-sal="slide-left"
-								data-sal-duration="700"
-								data-sal-delay="50"
-								data-sal-easing="linear">
-								<p class="sites__date">Проект 05 / 2018</p>
-								<h2 class="sites__name">Салон красоты "Rapunzel"</h2>
-								<p class="sites__text">Полностью адаптивен. Сетка Bootstrap 3 + флексы. Плавающее меню навигации. CSS-анимация.</p>
-								<a href="https://foxdesignstudio.github.io/site-4/index.html" class="sites__btn air-button">Перейти на сайт</a>					
-							</div>
-						</div>
-						<!--сайт#5-->
-						<div class="sites__item click-item hide" id="tab-7">
-							<div class="sites__picture"
-								data-sal="slide-right"
-								data-sal-duration="700"
-								data-sal-delay="50"
-								data-sal-easing="linear">
-								<!--меню выбора миниатюр слева-->
-								<div class="sites__navigation push">
-									<ul class="navigation">
-										<li class="navigation__item active">
-											<a href="#pic13" class="navigation__link" data-number="1"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic14" class="navigation__link" data-number="2"></a>
-										</li>
-										<li class="navigation__item">
-											<a href="#pic16" class="navigation__link" data-number="M"></a>
-										</li>
-									</ul>
-								</div>
-								<!--миниатюры страниц сайта слева-->
-								<div class="sites__picture--content">
-									<img class="sites__picture--img scroller-slow" id="pic13" src="img/skinali-preview.png">
-									<img class="sites__picture--img hide" id="pic14" src="img/skinali-preview-2.png">
-									<img class="sites__picture--img hide" id="pic16" src="img/skinali-preview-4.png">
 
+						<div class="portfolio__slide" id="site-6">
+							<div class="slide__left">
+								<div class="slide__content active" id="slide-15">
+									<div class="pc__preview restrict">
+										<div class="pc__overlay"></div>
+										<div class="pc__wrapper wide">
+											<img src="img/pc_fallout.png" alt="фаллоут_пк_превью" class="pc__img" id="sitePreview-3">
+										</div>
+									</div>
+								</div>
+								<div class="slide__content" id="slide-16">
+									<div class="features__wrapper owl-carousel">
+										<div class="features__item">
+											<p class="features__desc">Система фильтров поиска</p>
+											<img src="img/preview_fallout_1.png" alt="">
+										</div>
+										<div class="features__item">
+											<p class="features__desc">Сетка координат синхронизированная с пип-боем</p>
+											<img src="img/preview_fallout_2.png" alt="">
+										</div>
+										<div class="features__item">
+											<p class="features__desc">Ячейка поиска нужной локации</p>
+											<img src="img/preview_fallout_3.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="slide__selector">
+									<a href="#slide-15" class="slide__link active">
+										<img src="img/mouse.png" alt="пк_иконка">
+									</a>
+									<a href="#slide-16" class="slide__link">
+										<img src="img/list.png" alt="разное_иконка">
+									</a>
 								</div>
 							</div>
-							<!--описание сайта#5-->
-							<div class="sites__description"
-								data-sal="slide-left"
-								data-sal-duration="700"
-								data-sal-delay="50"
-								data-sal-easing="linear">
-								<p class="sites__date">Проект 09 / 2019</p>
-								<h2 class="sites__name">Салон продаж "Skinali Fabric"</h2>
-								<p class="sites__text">Полностью адаптивен. Без применения фреймворков, на флексах. Pop-up окна и формы на модифицированном плагине fancybox. Блок сравнения интерьера 'before-after' на плагине twenty-twenty.js</p>
-								<a href="https://foxdesignstudio.github.io/site-1/index.html" class="sites__btn air-button">Перейти на сайт</a>					
+							<div class="slide__right">
+								<div class="slide__description">
+									<p class="description__note">Проект 06 / 2021</p>
+									<h2 class="description__title">Fallout 4 Memory Vault</h2>
+									<p class="description__text">Приложение-компаньон для игры Fallout 4. Предназначено для точного ориентирования пользователя на игровой карте.</p>
+									<ul class="description__list">
+										<li>Стилизация интерфейса приложения под аппаратуру в стиле ретрофутуризма</li>
+										<li>Система фильтров для отображения местонахождения журналов, пупсов, уникального оружия и силовой брони</li>
+										<li>Интерактивная карта всей пустоши Содружества (Commonwealth) с отметками всех локаций</li>
+										<li>Сетка координат для удобного поиска местонахождения нужной локации во внутреннеигровом Пип-бое</li>
+										<li>Активный поиск по полному названию локации или по сочетанию букв, реализованный через нативный JS с анимированной индикацией результата</li>
+										<li><span class="warning">Десктоп-версия. Не предназначена для мобильных устройств!</span></li>
+									</ul>
+								</div>
+								<div class="slide__line">
+									<a href="#" class="slide__button">Посмотреть</a>
+								</div>
+							</div>
+							<div class="slide__controls">
+								<div class="slide__switcher toLeft">Описание</div>
+								<div class="slide__switcher toRight active">Превью</div>
 							</div>
 						</div>
 
 					</div>
-					
 				</div>
+
 
 			</section>
 			<!--секция преимуществ-->
 			<section class="advantages">
 
-				<div class="splitter">					
+				<div class="splitter">
 					<h5 class="splitter__header">Преимущества</h5>
 					<p class="splitter__text">Почему Вам стоит доверить работу именно мне?</p>
 				</div>
@@ -634,7 +856,7 @@
 
 						<div class="advantages__card card-top-left" style="left: 140px" data-aos="flip-up" data-aos-delay="200" data-aos-duration="700">
 							<div class="inner top-left inner-rev">
-								<h5 class="card__header-l">Точность</h5>						
+								<h5 class="card__header-l">Точность</h5>
 								<span class="card__text-l">
 									Вополощение макета в вёрстку именно<br>так, как видите это Вы
 								</span>							
@@ -667,7 +889,11 @@
 							data-aos-delay="700"
 							data-aos-duration="1100"
 							data-aos="flip-left">
-							<img src="img/logo-old.png" class="advantages__pic" alt="site logo">
+							<img src="img/logo-part-canvas.svg" class="advantages__pic" alt="site logo">
+							<img src="img/logo-part-neck.svg" class="advantages__pic zoom-1" alt="site logo">
+							<img src="img/logo-part-fur.svg" class="advantages__pic zoom-2" alt="site logo">
+							<img src="img/logo-part-head.svg" class="advantages__pic zoom-3" alt="site logo">
+							<img src="img/logo-part-ears.svg" class="advantages__pic zoom-4" alt="site logo">
 						</div>
 
 					</div>
@@ -706,33 +932,32 @@
 				</div>
 
 			</section>
+			<div class="splitter square" id="about">
+				<h5 class="splitter__header">Автор, его инструменты и рабочее место</h5>
+				<p class="splitter__text">Краткий обзор рабочего места и периферии. Раздел создан для того, чтобы потенциальный работодатель имел общее представление о том, как выглядит рабочее место соискателя.</p>
+			</div>
 			<!--секция об авторе-->
 			<section class="about">
-
-				<div class="splitter" id="about">					
-					<h5 class="splitter__header">Автор, рабочее место и инструменты</h5>
-					<p class="splitter__text">Краткий обзор рабочего места и периферии. Раздел создан для того, чтобы потенциальный работодатель имел общее представление о том, как выглядит рабочее место соискателя.</p>
-				</div>
 				<!--основная часть блока-->
-				<div class="about__header">				
+				<div class="about__header">
 
 					<div class="about__portrait"
 					data-sal="slide-up"
 					data-sal-duration="500"
 					data-sal-delay="500"
-					data-sal-easing="ease-out-bounce">						
-						<img class="about__pic" src="img/Me.png" alt="фото_автора">						
+					data-sal-easing="ease-out-bounce">
+						<img class="about__pic" src="img/Me.png" alt="фото_автора">
 					</div>
 
-					<div class="about__desc">						
+					<div class="about__desc">
 						<p class="about__text">Хотя главными инструментами в web-разработке являются голова и умелые руки, нельзя отрицать, что грамотно подобранная периферия значительно облегчает и ускоряет столь нелегкий процесс.</p>
-						<p class="about__text">Конечно, в идеале, неплохо бы заниматься набором кода на жарком побережье Тайланда, вальяжно тыкая потным пальчиком по кнопкам макбука. Но эту вершину еще предстоит покорить, а пока что справляемся нижеперечисленным.</p>						
+						<p class="about__text">Конечно, в идеале, неплохо бы заниматься набором кода на жарком побережье Тайланда, вальяжно тыкая потным пальчиком по кнопкам макбука. Но эту вершину еще предстоит покорить, а пока что справляемся нижеперечисленным.</p>
 					</div>
-					
+
 				</div>
 				<!--панель с фотографиями-->
 				<div class="about__photos">
-					<ul class="about-slider"						
+					<ul class="about-slider"
 						data-aos="fade-left"
 						data-aos-duration="1000">
 						<li class="about-slider__item">
@@ -783,20 +1008,243 @@
 								</div>
 							</div>
 						</li>
-					</ul>					
+					</ul>
 				</div>
+
+			</section>
+
+			<section class="author">
+				<div id="background">
+					<div class="background__desc cinema">
+						<div>
+							<p class="background__text">Любимые жанры: <span class="black-text">триллер</span> / <span class="black-text">ромком</span> / <span class="black-text">хоррор</span></p>
+						</div>
+						<div>
+							<p class="background__text">Любимые фильмы: <span class="black-text">Семь</span> (Se7en) / <span class="black-text">Видок</span> (Vidocq) / <span class="black-text">Глубина</span> (Below)</p>
+						</div>
+						<div>
+							<p class="background__text">Любимые сериалы: <span class="black-text">Игра престолов</span> / <span class="black-text">Доктор Хаус</span> / <span class="black-text">Шерлок</span></p>
+						</div>
+					</div>
+					<div class="background__desc moneys">
+						<div>
+							<p class="background__text long">Бонистика - <span class="black-text low-letter">коллекционирование денежных банкнот (бон) различных стран мира, вышедших из обращения и действующих, имеющих платёжную силу или коллекционных художественных вариантов стандартных банкнот</span></p>
+						</div>
+					</div>
+					<div class="background__desc games">
+						<div>
+							<p class="background__text">Любимые жанры: <span class="black-text">immersive sim</span> / <span class="black-text">FPS</span> / <span class="black-text">RPG</span> / <span class="black-text">strategy</span> / <span class="black-text">survival</span></p>
+						</div>
+						<div>
+							<p class="background__text">Любимые игры: <span class="black-text">The Last of Us I-II</span> / <span class="black-text">Bioshock I-III</span> / <span class="black-text">Total War</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="megasquare">
+
+					<div class="megasquare__panel">
+						<div class="panel__left">
+							<div class="panel creator">
+								<div class="panel__writer">
+									<div class="writer__wrapper">
+										<h2 class="panel__title">Увлечения и хобби</h4>
+									</div>
+								</div>
+								<p class="panel__text left-text">
+									Нельзя всё время быть занятым одной лишь работой, нужно найти время и на развлечения. Самое любимое времяпровождение, и то, без чего немыслим мой отдых!
+								</p>
+								<p class="panel__text left-text">
+									<span class="bold-text">Кино и сериалы</span> - в коллекции более 1600 фильмов<br>и все сезоны 72-х тайтлов любимых сериалов)
+								</p>
+								<p class="panel__text left-text">
+									<span class="bold-text">Бонистика</span> - коллекция бон разных стран,<br> включая серии островных государств
+								</p>
+								<p class="panel__text left-text">
+									<span class="bold-text">Видеоигры</span> - на ПК и PlayStation 4
+								</p>
+							</div>
+							<div class="panel hobby"> тест хобби</div>
+							<div class="panel soft">
+								<div class="panel__writer">
+									<div class="writer__wrapper">
+										<h2 class="panel__title">Мои инструменты</h4>
+									</div>
+								</div>
+								<p class="panel__text left-text">
+									Программы, которые помогают воплощать дерзкие замыслы в еще более впечатляющие завершенные проекты.
+								</p>
+								<p class="panel__text left-text">
+									Сборщик <span class="bold-text">Gulp 3.0</span> + шаблонизатор <span class="bold-text">Pug</span> + препроцессор<br><span class="bold-text">Sass</span> для ускорения вёрстки.
+								</p>
+								<p class="panel__text left-text">
+									Среда разработки: <span class="bold-text">Sublime Text</span> или<br> <span class="bold-text">Visual Studio Code</span>
+								</p>
+								<p class="panel__text left-text">
+									Работа по <span class="bold-text">БЭМ</span>-методологии
+								</p>
+							</div>
+							<div class="panel place">
+								<div class="panel__square square-place-1" descript="Компьютер">
+									<div class="panel__inner">
+										<a href="img/photo-4.jpg" class="panel__link" data-fancybox="megasquare-gallery" data-options='{"caption" : "Общий вид моего системного блока"}'>
+										<img src="img/photo-sm-4.jpg" alt="фото_компьютера">
+										</a>
+									</div>
+								</div>
+								<div class="panel__square square-place-2" descript="Стол">
+									<div class="panel__inner">
+										<a href="img/photo-1.jpg" class="panel__link" data-fancybox="megasquare-gallery" data-options='{"caption" : "Мое рабочее место"}'>
+											<img src="img/photo-sm-1.jpg" alt="фото_рабочего_стола">
+										</a>
+									</div>
+								</div>
+								<div class="panel__square square-place-3" descript="Мониторы">
+									<div class="panel__inner">
+										<a href="img/photo-2.jpg" class="panel__link" data-fancybox="megasquare-gallery" data-options='{"caption" : "Монитор LG 29UM69G-B Ultrawide 29&#8221 в связке с TV 42&#8221 LG"}'>
+											<img src="img/photo-mega-1.jpg" alt="фото_монитора">
+										</a>
+									</div>
+								</div>
+								<div class="panel__square square-place-4" descript="Периферия">
+									<div class="panel__inner">
+										<a href="img/photo-3.jpg" class="panel__link" data-fancybox="megasquare-gallery" data-options='{"caption" : "Razer Tartarus Chroma + Logitech G213 Prodigy + Roccat Tyon Black"}'>
+											<img src="img/photo-mega-2.jpg" alt="фото_периферии">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel__right">
+							<div class="panel creator">
+								<div class="panel__square square-creator-1" pic="one">
+									<img src="img/mega-square-cinema.jpg" alt="cinema_img">
+								</div>
+								<div class="panel__square square-creator-2" pic="two">
+									<img src="img/mega-square-bones.jpg" alt="gulp">
+								</div>
+								<div class="panel__square square-creator-3" pic="three">
+									<img src="img/mega-square-games.jpg" alt="gulp">
+								</div>
+							</div>
+							<div class="panel hobby">
+								<div class="panel__writer">
+									<div class="writer__wrapper">
+										<h2 class="panel__title">Немного обо мне:</h4>
+									</div>
+								</div>
+								<p class="panel__text right-side-text">
+									<span class="bold-text">ФИО:</span> Тышкевич Сергей Иванович<br>
+									<span class="bold-text">Возраст:</span> 38 лет<br>
+									<span class="bold-text">Место проживания:</span> Г.Борисов, Минская обл.<br>
+									<span class="bold-text">Зодиак:</span> Скорпион<br>
+									<span class="bold-text">Семейный статус:</span> Одиночка
+								</p>
+							</div>
+							<div class="panel soft">
+								<div class="panel__square square-soft-1">
+									<div class="panel__inner">
+										<img src="img/logo/sublime.png" class="panel__img colour" alt="gulp">
+									</div>
+								</div>
+								<div class="panel__square square-soft-2">
+									<div class="panel__inner">
+										<img src="img/logo/pug.svg" class="panel__img" alt="pug">
+									</div>
+								</div>
+								<div class="panel__square square-soft-3">
+									<div class="panel__inner">
+										<img src="img/logo/bem.svg" class="panel__img" alt="bem">
+									</div>
+								</div>
+								<div class="panel__square square-soft-4">
+									<div class="panel__inner">
+										<img src="img/logo/sass-color.svg" class="panel__img" alt="sass">
+									</div>
+								</div>
+								<div class="panel__square square-soft-5">
+									<div class="panel__inner">
+										<img src="img/logo/gulp.svg" class="panel__img" alt="sass">
+									</div>
+								</div>
+							</div>
+							<div class="panel place">
+								<div class="panel__writer">
+									<div class="writer__wrapper">
+										<h2 class="panel__title">Рабочее место</h4>
+									</div>
+								</div>
+								<p class="panel__text">
+									Хотя главными инструментами в web-разработке являются голова и умелые руки, нельзя отрицать, что грамотно подобранная периферия значительно облегчает и<br> ускоряет столь нелегкий процесс.
+								</p>
+								<p class="panel__text">
+									Конечно, в идеале, неплохо бы заниматься<br>набором кода на жарком побережье,<br>вальяжно скользя пальцами по<br> кнопкам макбука.<br>Но эту вершину еще предстоит<br> покорить, а пока что справляемся<br>перечисленным.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="megasquare__reset"></div>
+					<div class="megasquare__item" id="creator">
+						<div class="megasquare__inner creator">
+							<div class="inner__content creator" marker="хобби"></div>
+						</div>
+						<div class="megasquare__petal inactive megasquare__creator square-1">
+							<img src="img/hobby.gif" alt="" class="petal__img">
+						</div>
+						<div class="megasquare__petal megasquare__creator square-2">
+							<div class="petal__inner">наведите курсор для<br> подробностей</div>
+						</div>
+					</div>
+					<div class="megasquare__item" id="hobby">
+						<div class="megasquare__inner hobby">
+							<div class="inner__content hobby" marker="автор"></div>
+						</div>
+						<div class="megasquare__petal megasquare__hobby right-side square-1">
+							<img src="img/megasquare-pic-me.jpg" alt="" class="petal__photo">
+						</div>
+						<div class="megasquare__petal megasquare__hobby square-2"></div>
+					</div>
+					<div class="megasquare__item" id="soft">
+						<div class="megasquare__inner soft">
+							<div class="inner__content soft" marker="инструменты"></div>
+						</div>
+						<div class="megasquare__petal right-side megasquare__soft square-1">
+							<div class="petal__inner">
+								Предпочитаемый редактор кода - Sublime Text
+							</div>
+						</div>
+						<div class="megasquare__petal inactive megasquare__soft square-2">
+							<img src="img/coding.gif" alt="" class="petal__img">
+						</div>
+					</div>
+					<div class="megasquare__item" id="place">
+						<div class="megasquare__inner place">
+							<div class="inner__content place" marker="рабочее место"></div>
+						</div>
+						<div class="megasquare__petal inactive megasquare__place square-1">
+							<img src="img/workplace.gif" alt="" class="petal__img">
+						</div>
+						<div class="megasquare__petal megasquare__place square-2">
+							<div class="petal__inner">
+								доступна фотогалерея
+							</div>
+						</div>
+					</div>
+
+				</div>
+
 				<!--панель с информацией-->
 				<div class="about__content">
 					<h3 class="about__title">Цифры и факты:</h3>
 					<div class="about__questions">
 						<div class="questions__row">
-							<span class="text-fat">Процесс:</span><p class="questions__text">less + Koala (компилятор) для маленьких проектов, Gulp 3.0 + Pug + Sass или Webpack 4 для больших.<br>Avocode, Photoshop или Figma для работы с макетом.<br>Среда разработки: Sublime Text или Visual Studio Code.</p>
+							<span class="text-fat">Процесс:</span><p class="questions__text">less + Koala (компилятор) для маленьких проектов, Gulp 3.0 + Pug + Sass для больших.<br>Avocode, Photoshop или Figma для работы с макетом.<br>Среда разработки: Sublime Text или Visual Studio Code.</p>
 						</div>
 						<div class="questions__row">
 							<span class="text-fat">Технологии:</span><p class="questions__text">Верстка макета через:<br>- флексы (CSS Flexible Box)<br>- гриды (CSS Grid Layout)<br>- Bootstrap 4</p>
 						</div>
 						<div class="questions__row">
-							 <span class="text-fat">Опыт:</span><p class="questions__text">Более 8-ми лет работы графическим дизайнером, 1,5 года в веб-разработке.</p>
+							 <span class="text-fat">Опыт:</span><p class="questions__text">Более 8-ми лет работы графическим дизайнером, 2,5 года в веб-разработке.</p>
 						</div>
 						<div class="questions__row">
 							 <span class="text-fat">Скорость:</span><p class="questions__text">Пропорциональна размеру оплаты</p>
@@ -808,6 +1256,7 @@
 				</div>
 
 			</section>
+
 			<!--секция обратной связи-->
 			<section class="feedback" id="feedback">
 
@@ -819,7 +1268,7 @@
 				</p>
 				<!--кнопка вызова меню обратной связи-->
 				<button class="feedback__btn air-button">Контакты</button>
-				
+
 				<div class="callback-wrapper">
 
 					<div class="callback">
@@ -906,19 +1355,18 @@
 
 					<ul class="footer-shortcuts">
 						<li class="footer-shortcuts__item">
-							<a href="#first" class="footer-shortcuts__link orange-btns" data-name="вверх"></a>
+							<span class="footer-shortcuts__link left-btns toUp" data-name="вверх"></span>
 						</li>
 						<li class="footer-shortcuts__item">
-							<a href="#skillz" class="footer-shortcuts__link orange-btns" data-name="резюме"></a>
+							<a href="#skillz" class="footer-shortcuts__link left-btns" data-name="резюме"></a>
 						</li>
 						<li class="footer-shortcuts__item">
-							<a href="#portfolio" class="footer-shortcuts__link orange-btns" data-name="портфолио"></a>
+							<a href="#portfolio" class="footer-shortcuts__link left-btns wide-btns" data-name="портфолио"></a>
 						</li>
 					</ul>
 
 					<div class="footer__logo">
 						<img src="img/FD_logo.svg" alt="логотип_студии_футер">
-						<span class="footer__text">design</span>
 					</div>
 
 				</div>
@@ -930,9 +1378,7 @@
 			</footer>
 			<!--меню навигации для мобильных устройств-->
 			<div class="fab">
-				
 				<div class="cloud">
-					<div class="cloud-bg"></div>
 				</div>
 				<div class="fab-action-button">
 					<div class="fab-action-button__icon">
@@ -943,27 +1389,32 @@
 				</div>
 				<ul class="fab-buttons">
 					<li class="fab-buttons__item">
-						<a href="#" class="fab-buttons__link" fab-title="Вверх">
+						<span class="fab-buttons__link toUp" title="Вверх">
 							<img src="img/icon-up.png" alt="иконка_вверх">
-						</a>
+						</span>
 					</li>
 					<li class="fab-buttons__item">
-						<a href="#skillz" class="fab-buttons__link" fab-title="Резюме">
+						<a href="#skillz" class="fab-buttons__link" title="Резюме">
 							<img src="img/icon-resume.png" alt="иконка_резюме">
 						</a>
 					</li>
 					<li class="fab-buttons__item">
-						<a href="#portfolio" class="fab-buttons__link" fab-title="Портфолио">
+						<a href="#portfolio" class="fab-buttons__link" title="Портфолио">
 							<img src="img/icon-portfolio.png" alt="иконка_портфолио">
 						</a>
 					</li>
 					<li class="fab-buttons__item">
-						<a href="#feedback" class="fab-buttons__link" fab-title="Связь">
+						<a href="#about" class="fab-buttons__link" title="Инфо">
+							<img src="img/icon-about.png" alt="иконка_портфолио">
+						</a>
+					</li>
+					<li class="fab-buttons__item">
+						<a href="#feedback" class="fab-buttons__link" title="Связь">
 							<img src="img/icon-callback.png" alt="иконка_связь">
 						</a>
 					</li>
 					<li class="fab-buttons__item">
-						<a href="#end" class="fab-buttons__link" fab-title="Вниз">
+						<a href="#end" class="fab-buttons__link" title="Вниз">
 							<img src="img/icon-down.png" alt="иконка_вниз">
 						</a>
 					</li>
@@ -976,8 +1427,8 @@
 	<script src="js/libs.min.js"></script>	
 	<script src="js/my.js"></script>
 	<!--инициализация плагинов анимации при скролле sal.js, aos.js-->
-	<script>		
-		sal({			
+	<script>
+		sal({
 			once: false,
 		});
 
@@ -985,7 +1436,17 @@
 
 		var s = skrollr.init({
         	forceHeight: false
-    	});	
-	</script>		
+    	});
+
+		$('.features__wrapper').owlCarousel({
+			items: 1,
+		    loop: false,
+		    nav: true,
+		    navText: ['<img src="img/icon_back.png" class="prev-btn">', '<img src="img/icon_front.png" class="next-btn">'],
+		    dots: true,
+		    touchDrag: true,
+		});
+	</script>
+
 </body>
 </html>
