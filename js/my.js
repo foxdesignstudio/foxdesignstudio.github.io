@@ -37,7 +37,6 @@ $(document).ready(function(){
 	//раскрытие fab-меню при клике
 	$('.fab').click(function(){
 		$(this).toggleClass('spread');
-		$('.cloud').toggleClass('spread');
 	});
 	//появление обратной связи по клику
 	$('.feedback__btn').click(function(){
@@ -46,6 +45,7 @@ $(document).ready(function(){
 	//прокрутка вверх
 	$('.toUp').click(function(){
 		$('html, body').stop().animate({scrollTop: 0}, 1000);
+		$('.fab').removeClass('spread');
 		return false;
 	});
 	//вкл/выкл анимированного задника сайта
@@ -130,6 +130,10 @@ $(document).ready(function(){
 		if($('.megasquare__item').hasClass('active')){
 			$('.megasquare__reset').addClass('ready')
 		};
+	});
+	//скрипт работы квестора для мобильных
+	$('.questor__item').click(function(){
+		$(this).toggleClass('active');
 	});
 	//смена задника панели мегаквадрата
 	$('.panel__square').hover(function(){
