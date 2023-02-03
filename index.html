@@ -324,6 +324,9 @@
 						<div class="content__item click-item hide" id="tab-3">
 
 							<div class="bio">
+								<div class="bio__photo">
+									<img src="img/its_me.jpg" alt="фото_автора" class="bio__img">
+								</div>
 								<h2 class="bio__title">Здравствуйте!</h2>
 								<p class="bio__text">Некоторым из нас везет сразу же занять свое место в жизни. Мой путь к работе мечты занял больше времени, чем хотелось. С самого начала рассматривая
 								лишь один возможный путь развития карьеры - мир компьютеров и IT - стартовал со сборки, настройки и ремонта компьютерной техники. Набравшись практического опыта
@@ -338,9 +341,11 @@
 								<p class="bio__text">С апреля 2018 года своим главным направлением деятельности выбрал web-разработку. Благодаря неоценимой помощи нескольких опытных специалистов давно занимающихся WebDev'ом удалось избежать платных курсов, онлайн-школ и прочего,
 								сразу же сосредоточившись на изучении действительно нужных и восстребованных методах вёрстки и web-программирования. Mobile-first, Git-контроль, использование сборщиков Gulp / Webpack, html-препроцессоры для больших проектов,
 								Sass-синтаксис, нативный JavaScript ES5-6, знакомство с react-jsx, БЭМ-методология и всё, что должен знать опытный web-разработчик. Никаких тестовых шаблонов - только реальные макеты коммерческих проектов.</p>
-								<p class="bio__text">Сейчас, спустя почти два года, весь этот процесс не только не надоел, не превратился в опостылевшую рутину, а наоборот, раскрывает
+								<p class="bio__text">Сейчас, спустя почти три года, весь этот процесс не только не надоел, не превратился в опостылевшую рутину, а наоборот, раскрывает
 								все новые и новые горизонты применений, впечатляет новыми трендами, усовершенствованной технологией.</p>
 								<p class="bio__text">Найти свое место в жизни... это та самая кажущаяся неприступной горная вершина, глядя на которую испытываешь трепет и желание достичь цели. Ведь в конце концов, вершины и созданы для того, чтобы их покоряли!</p>
+								<h2 class="bio__subtitle">С уважением, и надеждой на скорое плодотворное сотрудничество</h2>
+								<h6 class="bio__signature">Сергей Тышкевич</h6>
 							</div>
 
 						</div>
@@ -440,17 +445,36 @@
 							<div class="slide__left">
 								<div class="slide__content active" id="slide-1">
 									<div class="pc__preview">
-										<div class="pc__overlay"></div>
+										<div class="pc__overlay">
+											<div class="overlay__help">
+												<p class="overlay__text">Наведите курсор, чтобы увеличить превью сайта для прокрутки</p>
+											</div>
+										</div>
 										<div class="pc__wrapper">
 											<img src="img/pc_autoservice.png" alt="автосервис_пк_превью" class="pc__img" id="sitePreview-3">
 										</div>
 									</div>
 								</div>
-								<div class="slide__content" id="slide-2">Тест-2</div>
+								<div class="slide__content" id="slide-2">
+									<div class="features__wrapper owl-carousel">
+										<div class="features__item">
+											<p class="features__desc">Многоуровневое вариативное меню</p>
+											<img src="img/preview_avtoholl_1.png" alt="">
+										</div>
+										<div class="features__item">
+											<p class="features__desc">Галерея работ на плагине masonry-grid</p>
+											<img src="img/preview_avtoholl_2.jpg" alt="">
+										</div>
+										<div class="features__item">
+											<p class="features__desc">Детальное описание выполняемых работ</p>
+											<img src="img/preview_avtoholl_3.jpg" alt="">
+										</div>
+									</div>
+								</div>
 								<div class="slide__content" id="slide-3">
 									<div class="slide__mobile">
-										<div class="mobile__wrapper">
-											<img src="img/autoholl_mobile.png" alt="автохолл_мобильный" class="mobile__image" id="drag-2">
+										<div class="mobile__wrapper avtoholl">
+											<img src="img/mobile_avtoholl.jpg" alt="автохолл_мобильный" class="mobile__image" id="drag-2">
 											<div class="mobile__cover">
 												<p class="cover__text"><span class="fox">Кликните</span> по любой точке экрана телефона, <span class="fox">чтобы ознакомиться</span> с мобильной версией сайта</p>
 												<div class="cover__icon">
@@ -462,7 +486,7 @@
 										<div class="mobile__control">
 											<div class="mobile__up scroll-top"></div>
 											<div class="mobile__switch shutdown"></div>
-											<div class="mobile__down scroll-bottom"></div>
+											<div class="mobile__down scroll-bottom-avtoholl"></div>
 										</div>
 									</div>
 								</div>
@@ -504,9 +528,13 @@
 							<div class="slide__left">
 								<div class="slide__content active" id="slide-4">
 									<div class="pc__preview">
-										<div class="pc__overlay"></div>
+										<div class="pc__overlay">
+											<div class="overlay__help">
+												<p class="overlay__text">Наведите курсор, чтобы увеличить превью сайта для прокрутки</p>
+											</div>
+										</div>
 										<div class="pc__wrapper">
-											<img src="img/pc_skinali.png" alt="скинали_пк_превью" class="pc__img" id="sitePreview-1">
+											<img src="img/pc_skinali.jpg" alt="скинали_пк_превью" class="pc__img" id="sitePreview-1">
 										</div>
 									</div>
 								</div>
@@ -529,7 +557,7 @@
 								<div class="slide__content" id="slide-6">
 									<div class="slide__mobile">
 										<div class="mobile__wrapper skinali">
-											<img src="img/mobile_skinali.png" alt="фабрика_скинали_мобильный" class="mobile__image" id="drag-1">
+											<img src="img/mobile_skinali.jpg" alt="фабрика_скинали_мобильный" class="mobile__image" id="drag-1">
 											<div class="mobile__cover">
 												<p class="cover__text"><span class="fox">Кликните</span> по любой точке экрана телефона, <span class="fox">чтобы ознакомиться</span> с мобильной версией сайта</p>
 												<div class="cover__icon">
@@ -584,7 +612,11 @@
 							<div class="slide__left">
 								<div class="slide__content active" id="slide-7">
 									<div class="pc__preview">
-										<div class="pc__overlay"></div>
+										<div class="pc__overlay">
+											<div class="overlay__help">
+												<p class="overlay__text">Наведите курсор, чтобы увеличить превью сайта для прокрутки</p>
+											</div>
+										</div>
 										<div class="pc__wrapper">
 											<img src="img/pc_scarlet.jpg" alt="скарлет_пк_превью" class="pc__img" id="sitePreview-2">
 										</div>
@@ -608,8 +640,8 @@
 								</div>
 								<div class="slide__content" id="slide-9">
 									<div class="slide__mobile">
-										<div class="mobile__wrapper">
-											<img src="img/mobile_scarlet.png" alt="скарлет_мобильный" class="mobile__image" id="drag-3">
+										<div class="mobile__wrapper scarlet">
+											<img src="img/mobile_scarlet.jpg" alt="скарлет_мобильный" class="mobile__image" id="drag-3">
 											<div class="mobile__cover">
 												<p class="cover__text"><span class="fox">Кликните</span> по любой точке экрана телефона, <span class="fox">чтобы ознакомиться</span> с мобильной версией сайта</p>
 												<div class="cover__icon">
@@ -664,12 +696,38 @@
 
 						<div class="portfolio__slide" id="site-4">
 							<div class="slide__left">
-								<div class="slide__content active" id="slide-10">Тест-1</div>
-								<div class="slide__content" id="slide-11">Тест-2</div>
+								<div class="slide__content active" id="slide-10">
+									<div class="pc__preview">
+										<div class="pc__overlay">
+											<div class="overlay__help">
+												<p class="overlay__text">Наведите курсор, чтобы увеличить превью сайта для прокрутки</p>
+											</div>
+										</div>
+										<div class="pc__wrapper">
+											<img src="img/pc_capone.jpg" alt="капоне_пк_превью" class="pc__img" id="sitePreview-4">
+										</div>
+									</div>
+								</div>
+								<div class="slide__content" id="slide-11">
+									<div class="features__wrapper owl-carousel">
+										<div class="features__item">
+											<p class="features__desc">Многослойный блок-трансформер информационной секции / обратной связи</p>
+											<img src="img/preview_capone_1.png" alt="капоне_пк_превью">
+										</div>
+										<div class="features__item">
+											<p class="features__desc">Анимированные блоки выбора товара</p>
+											<img src="img/preview_capone_2.jpg" alt="капоне_пк_превью">
+										</div>
+										<div class="features__item">
+											<p class="features__desc">Трансформация меню навигации при ресайзе и скролле</p>
+											<img src="img/preview_capone_3.jpg" alt="капоне_пк_превью">
+										</div>
+									</div>
+								</div>
 								<div class="slide__content" id="slide-12">
 									<div class="slide__mobile">
-										<div class="mobile__wrapper">
-											<img src="img/capone_mobile.png" alt="капоне_пицца_мобильный" class="mobile__image" id="drag-4">
+										<div class="mobile__wrapper capone">
+											<img src="img/mobile_capone.jpg" alt="капоне_пицца_мобильный" class="mobile__image" id="drag-4">
 											<div class="mobile__cover">
 												<p class="cover__text"><span class="fox">Кликните</span> по любой точке экрана телефона, <span class="fox">чтобы ознакомиться</span> с мобильной версией сайта</p>
 												<div class="cover__icon">
@@ -681,7 +739,7 @@
 										<div class="mobile__control">
 											<div class="mobile__up scroll-top"></div>
 											<div class="mobile__switch shutdown"></div>
-											<div class="mobile__down scroll-bottom"></div>
+											<div class="mobile__down scroll-bottom-capone"></div>
 										</div>
 									</div>
 								</div>
@@ -701,12 +759,14 @@
 								<div class="slide__description">
 									<p class="description__note">Проект 04 / 2021</p>
 									<h2 class="description__title">Пиццерия "Capone Pizza"</h2>
-									<p class="description__text">Сайт минской пиццерии для заказов онлайн.</p>
+									<p class="description__text">Сайт минской пиццерии для приёма заказов онлайн. Представлена только вёрстка проекта, без подключённых скриптов корзины, выборки товара.</p>
 									<ul class="description__list">
 										<li>Идея и дизайн макета: FOX Design</li>
 										<li>Гриды, флексы, БЭМ</li>
 										<li>Анимированный плиточный интерфейс страниц</li>
 										<li>Полностью адаптивен, поддержка всех мобильных устройств</li>
+										<li>Анимированный плиточный интерфейс страниц</li>
+										<li><span class="warning">Без сриптов работы корзины и выборки товара!</span></li>
 									</ul>
 								</div>
 								<div class="slide__line">
@@ -722,10 +782,14 @@
 						<div class="portfolio__slide" id="site-5">
 							<div class="slide__left">
 								<div class="slide__content active" id="slide-13">
-									<div class="pc__preview restrict">
-										<div class="pc__overlay"></div>
+									<div class="pc__preview">
+										<div class="pc__overlay">
+											<div class="overlay__help">
+												<p class="overlay__text">Наведите курсор, чтобы увеличить превью сайта</p>
+											</div>
+										</div>
 										<div class="pc__wrapper wide">
-											<img src="img/pc_hollownest_w962.png" alt="холлоунайт_пк_превью" class="pc__img" id="sitePreview-3">
+											<img src="img/pc_hollownest_w962.jpg" alt="холлоунайт_пк_превью" class="pc__img" id="sitePreview-3">
 										</div>
 									</div>
 								</div>
@@ -781,10 +845,14 @@
 						<div class="portfolio__slide" id="site-6">
 							<div class="slide__left">
 								<div class="slide__content active" id="slide-15">
-									<div class="pc__preview restrict">
-										<div class="pc__overlay"></div>
+									<div class="pc__preview">
+										<div class="pc__overlay">
+											<div class="overlay__help">
+												<p class="overlay__text">Наведите курсор, чтобы увеличить превью сайта</p>
+											</div>
+										</div>
 										<div class="pc__wrapper wide">
-											<img src="img/pc_fallout.png" alt="фаллоут_пк_превью" class="pc__img" id="sitePreview-3">
+											<img src="img/pc_fallout.jpg" alt="фаллоут_пк_превью" class="pc__img" id="sitePreview-3">
 										</div>
 									</div>
 								</div>
@@ -913,7 +981,7 @@
 							<div class="inner inner-right">
 								<h5 class="card__header-r">Ответственность</h5>								
 								<span class="card__text-r">
-									Безупречное исполнение заказа, либо полный возврат средств 
+									Безупречное исполнение заказа, точное соответствие заданию
 								</span>	
 							</div>
 						</div>
@@ -933,8 +1001,8 @@
 
 			</section>
 			<div class="splitter square" id="about">
-				<h5 class="splitter__header">Автор, его инструменты и рабочее место</h5>
-				<p class="splitter__text">Краткий обзор рабочего места и периферии. Раздел создан для того, чтобы потенциальный работодатель имел общее представление о том, как выглядит рабочее место соискателя.</p>
+				<h5 class="splitter__header">Обо мне, и о моём рабочем месте дома</h5>
+				<p class="splitter__text">Краткий обзор рабочего места и периферии. Иногда беглый взгляд на окружение человека способен сказать о нём больше, чем множество слов. Где живу, как работаю, чем увлекаюсь - всё в этом разделе.</p>
 			</div>
 
 			<!--секция об авторе-->
@@ -961,9 +1029,27 @@
 							<p class="background__text">Любимые жанры: <span class="black-text">immersive sim</span> / <span class="black-text">FPS</span> / <span class="black-text">ARPG</span> / <span class="black-text">strategy</span> / <span class="black-text">survival</span></p>
 						</div>
 						<div>
-							<p class="background__text">Любимые игры: <span class="black-text">The Last of Us I-II</span> / <span class="black-text">Bioshock I-III</span> / <span class="black-text">Total War</span></p>
+							<p class="background__text">Любимые игры: <span class="black-text">The Last of Us I-II</span> / <span class="black-text">Bioshock I-III</span> / <span class="black-text">Path of Exile</span></p>
 						</div>
 					</div>
+					<table class="questor__table nv">
+						<tr>
+							<th>Лучшие в коллекции:</th>
+						</tr>
+						<tr>
+							<td><span class="bold-text">16 бат (Таиланд)</span>  - коллекционная бона в честь 80-летия короля Рамы IX</td>
+						</tr>
+						<tr>
+							<td><span class="bold-text">1 доллар (Багамы)</span>  - коллекционный выпуск в честь 500-летия путешествия Х.Колумба</td>
+						</tr>
+						<tr>
+							<td><span class="bold-text">2000 лей (Румыния)</span> - коллекционный выпуск в честь полного солнечного затмения 1999, с передающей голограммой для лазерного луча, изображающей Луну затмевающую Солнце</td>
+						</tr>
+					</table>
+					<a class="qr__links" href="https://steamcommunity.com/id/silencesir/">
+						<h6>Мой STEAM-профиль</h6>
+						<img src="img/qr_steam_link.png" alt="">
+					</a>
 				</div>
 				<div class="megasquare">
 
@@ -988,7 +1074,36 @@
 									<span class="bold-text">Видеоигры</span> - на ПК и PlayStation 4
 								</p>
 							</div>
-							<div class="panel hobby"> тест хобби</div>
+							<div class="panel hobby">
+								<div class="intro">
+									Всё, что вы видите, создано мной.<br> От идеи концепта, до строк кода<br>воплощенного в графику.
+									Если вы ищете<br>человека способного реализовать ваши идеи<br>и планы на высоком техническом уровне,<br>я именно тот, кто вам нужен!<br>Так давайте работать вместе!
+								</div>
+								<div class="panel__square square-hobby-1">
+									<div class="panel__inner vertical">
+										<img src="img/icon/responsibility.png" alt="иконка_скилла_1" class="panel__icon">
+										<p class="trigger__desc static">Ответственный</p>
+									</div>
+								</div>
+								<div class="panel__square square-hobby-2">
+									<div class="panel__inner vertical">
+										<img src="img/icon/speed.png" alt="иконка_скилла_2" class="panel__icon">
+										<p class="trigger__desc static">Пунктуальный</p>
+									</div>
+								</div>
+								<div class="panel__square square-hobby-3">
+									<div class="panel__inner vertical">
+										<img src="img/icon/magnify.png" alt="иконка_скилла_3" class="panel__icon">
+										<p class="trigger__desc static">Внимательный</p>
+									</div>
+								</div>
+								<div class="panel__square square-hobby-4">
+									<div class="panel__inner vertical">
+										<img src="img/icon/star.png" alt="иконка_скилла_3" class="panel__icon">
+										<p class="trigger__desc static">А еще очень скромный...</p>
+									</div>
+								</div>
+							</div>
 							<div class="panel soft">
 								<div class="panel__writer">
 									<div class="writer__wrapper">
@@ -1012,28 +1127,28 @@
 								<div class="panel__square square-place-1" descript="Компьютер">
 									<div class="panel__inner">
 										<a href="img/photo-4.jpg" class="panel__link" data-fancybox="megasquare-gallery" data-options='{"caption" : "Общий вид моего системного блока"}'>
-										<img src="img/photo-sm-4.jpg" alt="фото_компьютера">
+										<img src="img/photo-4.jpg" alt="фото_компьютера" class="panel__photo_pc">
 										</a>
 									</div>
 								</div>
 								<div class="panel__square square-place-2" descript="Стол">
 									<div class="panel__inner">
 										<a href="img/photo-1.jpg" class="panel__link" data-fancybox="megasquare-gallery" data-options='{"caption" : "Мое рабочее место"}'>
-											<img src="img/photo-sm-1.jpg" alt="фото_рабочего_стола">
+											<img src="img/photo-1.jpg" alt="фото_рабочего_стола" class="panel__photo_place">
 										</a>
 									</div>
 								</div>
 								<div class="panel__square square-place-3" descript="Мониторы">
 									<div class="panel__inner">
-										<a href="img/photo-2.jpg" class="panel__link" data-fancybox="megasquare-gallery" data-options='{"caption" : "Монитор LG 29UM69G-B Ultrawide 29&#8221 в связке с TV 42&#8221 LG"}'>
-											<img src="img/photo-mega-1.jpg" alt="фото_монитора">
+										<a href="img/photo-2.jpg" class="panel__link" data-fancybox="megasquare-gallery" data-options='{"caption" : "Монитор LG 29UM69G-B Ultrawide 29&#8221 в связке с TV 22&#8221 LG"}'>
+											<img src="img/photo-2.jpg" alt="фото_монитора" class="panel__photo_monitor">
 										</a>
 									</div>
 								</div>
 								<div class="panel__square square-place-4" descript="Периферия">
 									<div class="panel__inner">
-										<a href="img/photo-3.jpg" class="panel__link" data-fancybox="megasquare-gallery" data-options='{"caption" : "Razer Tartarus Chroma + Logitech G213 Prodigy + Roccat Tyon Black"}'>
-											<img src="img/photo-mega-2.jpg" alt="фото_периферии">
+										<a href="img/photo-3.jpg" class="panel__link" data-fancybox="megasquare-gallery" data-options='{"caption" : "Razer Tartarus Chroma + Logitech G213 Prodigy + Roccat Tyon Black + Prestigio click&touch"}'>
+											<img src="img/photo-3.jpg" alt="фото_периферии" class="panel__photo_devices">
 										</a>
 									</div>
 								</div>
@@ -1041,14 +1156,14 @@
 						</div>
 						<div class="panel__right">
 							<div class="panel creator">
-								<div class="panel__square square-creator-1" pic="one">
+								<div class="panel__square square-creator-1" pic="one" descript="Кино">
 									<img src="img/mega-square-cinema.jpg" alt="cinema_img">
 								</div>
-								<div class="panel__square square-creator-2" pic="two">
-									<img src="img/mega-square-bones.jpg" alt="gulp">
+								<div class="panel__square square-creator-2" pic="two" descript="Бонистика">
+									<img src="img/mega-square-bones.jpg" alt="money_img">
 								</div>
-								<div class="panel__square square-creator-3" pic="three">
-									<img src="img/mega-square-games.jpg" alt="gulp">
+								<div class="panel__square square-creator-3" pic="three" descript="Видеоигры">
+									<img src="img/mega-square-games.jpg" alt="videogames_img">
 								</div>
 							</div>
 							<div class="panel hobby">
@@ -1057,12 +1172,16 @@
 										<h2 class="panel__title">Немного о себе:</h4>
 									</div>
 								</div>
-								<p class="panel__text right-side-text">
+								<p class="panel__text rst-v2">
 									<span class="bold-text">ФИО:</span> Тышкевич Сергей Иванович<br>
 									<span class="bold-text">Возраст:</span> 38 лет<br>
-									<span class="bold-text">Место проживания:</span> Г.Борисов, Минская обл.<br>
+									<span class="bold-text">Место проживания:</span> г.Борисов, Минская обл.<br>
 									<span class="bold-text">Зодиак:</span> Скорпион<br>
 									<span class="bold-text">Семья:</span> нет
+								</p>
+								<p class="panel__text rst-v3">
+									<span class="bold-text">Специальность:</span> графический дизайнер / Front-end разработчик<br>
+									<span class="bold-text">Опыт:</span> 3 года в WEB-разработке <br>
 								</p>
 							</div>
 							<div class="panel soft">
@@ -1107,14 +1226,18 @@
 							</div>
 						</div>
 					</div>
-
-					<div class="megasquare__reset"></div>
 					<div class="megasquare__item" id="creator">
 						<div class="megasquare__inner creator">
 							<div class="inner__content creator" marker="хобби"></div>
 						</div>
-						<div class="megasquare__petal inactive megasquare__creator square-1">
-							<img src="img/hobby.gif" alt="" class="petal__img">
+						<div class="megasquare__petal megasquare__creator right-side square-1">
+							<div class="petal__trigger money-bg">
+								<div class="trigger__line">
+									<div class="line__slider">Открыть&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Закрыть</div>
+								</div>
+								<p class="trigger__desc">галерею<br>банкнот</p>
+								<img src="img/savings.png" class="savings-pig" alt="">
+							</div>
 						</div>
 						<div class="megasquare__petal megasquare__creator square-2">
 							<div class="petal__inner">наведите курсор для<br> подробностей</div>
@@ -1125,9 +1248,21 @@
 							<div class="inner__content hobby" marker="автор"></div>
 						</div>
 						<div class="megasquare__petal megasquare__hobby right-side square-1">
-							<img src="img/megasquare-pic-me.jpg" alt="" class="petal__photo">
+							<img src="img/its_me.jpg" alt="" class="petal__photo">
 						</div>
-						<div class="megasquare__petal megasquare__hobby square-2"></div>
+						<div class="megasquare__petal megasquare__hobby square-2 inactive">
+							<div class="petal__activator">
+								<a href="img/photo-author-3.jpg" class="activator__link" data-fancybox="author_photo">
+									<p class="trigger__desc b-105">доступно несколько фотографий</p>
+									<img src="img/camera.png" alt="иконка_камера">
+								</a>
+								<a href="img/photo-author-2.jpg" class="questor__blank" data-fancybox="author_photo"></a>
+								<a href="img/photo-author-1.jpg" class="questor__blank" data-fancybox="author_photo"></a>
+							</div>
+<!-- 							<div class="petal__inner">
+								доступна фотогалерея
+							</div> -->
+						</div>
 					</div>
 					<div class="megasquare__item" id="soft">
 						<div class="megasquare__inner soft">
@@ -1139,7 +1274,12 @@
 							</div>
 						</div>
 						<div class="megasquare__petal inactive megasquare__soft square-2">
-							<img src="img/coding.gif" alt="" class="petal__img">
+							<div class="petal__activator">
+								<a href="#portfolio" class="activator__link">
+									<p class="trigger__desc">увидеть<br>готовые<br>работы</p>
+									<img src="img/clicker.svg" alt="указатель_вверх">
+								</a>
+							</div>
 						</div>
 					</div>
 					<div class="megasquare__item" id="place">
@@ -1147,11 +1287,84 @@
 							<div class="inner__content place" marker="рабочее место"></div>
 						</div>
 						<div class="megasquare__petal inactive megasquare__place square-1">
-							<img src="img/workplace.gif" alt="" class="petal__img">
+							<div class="petal__activator">
+								<a href="img/photo-2.jpg" class="activator__link" data-fancybox="myWorkplace">
+									<p class="trigger__desc b-80">здесь<br>создаются<br>ваши<br>сайты</p>
+									<img src="img/light.png" alt="ссылка_фото_стол">
+								</a>
+							</div>
 						</div>
 						<div class="megasquare__petal megasquare__place square-2">
 							<div class="petal__inner">
 								доступна фотогалерея
+							</div>
+						</div>
+					</div>
+					<div class="megasquare__reset"></div>
+
+					<div class="megasquare__screen" id="screen">
+						<div class="screen__wrapper">
+							<div class="screen__inner">
+								<div class="screen__slideshow">
+									<div class="slider__content" id="sliderContent">
+										<div class="slideshow__item">
+											<div class="slideshow__side" id="si-1a">
+												<div class="slideshow__title">
+													<span>1 Доллар (Багамские о-ва)</span>
+													<span>Юбилейный выпуск в честь 500-летия первой высадки Х.Колумба на острова.</span>
+												</div>
+												<img src="img/money_dolBahams_a.jpg" data-magnify-src="img/money_dolBahams_a-large.jpg" class="moneyZoom">
+											</div>
+											<div class="slideshow__side hide" id="si-1b">
+												<img src="img/money_dolBahams_b.jpg" data-magnify-src="img/money_dolBahams_b-large.jpg" class="moneyZoom">
+											</div>
+											<div class="slider-selector">
+												<a href="#si-1a" class="selector__button view-a active"></a>
+												<a href="#si-1b" class="selector__button view-b"></a>
+												<a href="img/money_dolBahams_a-large.jpg" class="selector__viewer-a" data-fancybox="bahamsDollar">увеличить</a>
+												<a href="img/money_dolBahams_b-large.jpg" class="selector__viewer-b closed" data-fancybox="bahamsDollar">увеличить</a>
+											</div>
+										</div>
+										<div class="slideshow__item">
+											<div class="slideshow__side" id="si-2a">
+												<div class="slideshow__title">
+													<span>2000 Лей (Румыния)</span>
+													<span>Коллекционный выпуск полимерной банкноты в честь полного солнечного затмения 1999 года.</span>
+												</div>
+												<img src="img/money_leiRoman_a.png" data-magnify-src="img/money_leiRoman_a-large.jpg" class="moneyZoom">
+											</div>
+											<div class="slideshow__side hide" id="si-2b">
+												<img src="img/money_leiRoman_b.png" data-magnify-src="img/money_leiRoman_b-large.jpg" class="moneyZoom">
+											</div>
+											<div class="slider-selector">
+												<a href="#si-2a" class="selector__button view-a active"></a>
+												<a href="#si-2b" class="selector__button view-b"></a>
+												<a href="img/money_leiRoman_a-large.jpg" class="selector__viewer-a" data-fancybox="romanLei">увеличить</a>
+												<a href="img/money_leiRoman_b-large.jpg" class="selector__viewer-b closed" data-fancybox="romanLei">увеличить</a>
+											</div>
+										</div>
+										<div class="slideshow__item">
+											<div class="slideshow__side" id="si-3a">
+												<img src="img/money_16bahtThai-a.jpg" data-magnify-src="img/money_16bahtThai-a-large.jpg" class="moneyZoom">
+												<div class="slideshow__title thailand">
+													<span>16 Бат<br>(Тайланд)</span>
+													<span>Коллекционный<br>выпуск в честь<br>80-летия<br>монарха Рамы IX.</span>
+												</div>
+											</div>
+											<div class="slideshow__side hide" id="si-3b">
+												<img src="img/money_16bahtThai-b.jpg" data-magnify-src="img/money_16bahtThai-b-large.jpg" class="moneyZoom">
+											</div>
+											<div class="slider-selector">
+												<a href="#si-3a" class="selector__button view-a active"></a>
+												<a href="#si-3b" class="selector__button view-b"></a>
+												<a href="img/money_16bahtThai-a-large.jpg" class="selector__viewer-a" data-fancybox="thaiBaht">увеличить</a>
+												<a href="img/money_16bahtThai-b-large.jpg" class="selector__viewer-b closed" data-fancybox="thaiBaht">увеличить</a>
+											</div>
+										</div>
+									</div>
+									<div class="slider-left" id="slider-left"></div>
+									<div class="slider-right" id="slider-right"></div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1167,8 +1380,38 @@
 						<div class="questor__item" grid-name="Автор">
 							<div class="questor__content">
 								<h3 class="questor__title">Немного о себе</h3>
-								<img src="img/Me.png" alt="" class="questor__pic">
-								<p class="questor__text">Я автор этого сайта, и тот самый человек, которого вы ищите! Даже не сомневайтесь!</p>
+								<img src="img/its_me.jpg" alt="фото_автора" class="questor__pic">
+								<p class="questor__text">Привет! Я <span class="bold-text">создатель этого сайта</span> и всех других представленных здесь. А еще - я тот самый человек, которого вы ищите! Нужно срочно реализовать очень сложный проект с массой неочевидных деталей? Легко!</p>
+								<table class="questor__table pictures">
+									<tr>
+										<th><span class="bold-text">ФИО:</span></th>
+										<td>Тышкевич Сергей Иванович</td>
+									</tr>
+									<tr>
+										<th><span class="bold-text">Возраст:</span></th>
+										<td>38 лет</td>
+									</tr>
+									<tr>
+										<th><span class="bold-text">Место проживания:</span></th>
+										<td>г.Борисов, Минская обл.</td>
+									</tr>
+									<tr>
+										<th><span class="bold-text">Зодиак:</span></th>
+										<td>Скорпион</td>
+									</tr>
+									<tr>
+										<th><span class="bold-text">Семья:</span></th>
+										<td>нет</td>
+									</tr>
+									<tr>
+										<th><span class="bold-text">Прошлая специальность:</span></th>
+										<td>графический дизайнер</td>
+									</tr>
+									<tr>
+										<th><span class="bold-text">Опыт в WEB-разработке:</span></th>
+										<td>более 3-х лет</td>
+									</tr>
+								</table>
 							</div>
 						</div>
 						<div class="questor__item" grid-name="Хобби">
@@ -1193,6 +1436,9 @@
 											<td><span class="bold-text">2000 лей (Румыния)</span> - коллекционный выпуск в честь полного солнечного затмения 1999, с передающей голограммой для лазерного луча, изображающей Луну затмевающую Солнце</td>
 										</tr>
 									</table>
+									<a href="img/money_dolBahams_a-large.jpg" class="mobileButton" data-fancybox="moneySlideshow">открыть галерею банкнот</a>
+									<a href="img/money_leiRoman_a-large.jpg" class="questor__blank" data-fancybox="moneySlideshow"></a>
+									<a href="img/money_16bahtThai-a-large.jpg" class="questor__blank" data-fancybox="moneySlideshow"></a>
 								</div>
 								<div class="questor__content--block">
 									<div class="questor__float">
@@ -1210,9 +1456,10 @@
 											<th>Любимые игры:</th>
 										</tr>
 										<tr>
-											<td>The Last of Us I-II / Bioshock I-III / Total War</td>
+											<td>The Last of Us I-II / Bioshock I-III / Path of Exile</td>
 										</tr>
 									</table>
+									<a class="mobileButton" href="https://steamcommunity.com/id/silencesir/">мой STEAM-профиль</a>
 								</div>
 								<div class="questor__content--block">
 									<div class="questor__float">
@@ -1251,26 +1498,26 @@
 										<img src="img/mega-square-table.jpg" alt="" class="questor__img">
 									</div>
 									<p class="questor__text">
-										То самое место, где идеи и планы воплощаются в элегантные строки кода, превращаясь в готовые проекты. <span class="bold-text">Рабочий стол и периферия</span>
+										То самое место, где идеи и планы воплощаются в аккуратные строки кода, превращаясь в готовые проекты. <span class="bold-text">Рабочий стол и периферия</span>
 									</p>
 									<div class="questor__gallery">
 										<div class="gallery__item">
-											<a href="img/photo-4.jpg" class="gallery__link" data-fancybox="mobile-gallery" data-options='{"caption" : "Общий вид моего системного блока"}'><img src="img/photo-sm-4.jpg" alt="фото_компьютера">
+											<a href="img/photo-4.jpg" class="gallery__link" data-fancybox="mobile-gallery" data-options='{"caption" : "Общий вид моего системного блока"}'><img src="img/sm-photo-4.jpg" alt="фото_компьютера">
 											</a>
 										</div>
 										<div class="gallery__item">
 											<a href="img/photo-1.jpg" class="gallery__link" data-fancybox="mobile-gallery" data-options='{"caption" : "Мое рабочее место"}'>
-											<img src="img/photo-sm-1.jpg" alt="фото_рабочего_стола">
+											<img src="img/sm-photo-1.jpg" alt="фото_рабочего_стола">
 										</a>
 										</div>
 										<div class="gallery__item">
 											<a href="img/photo-3.jpg" class="gallery__link" data-fancybox="mobile-gallery" data-options='{"caption" : "Razer Tartarus Chroma + Logitech G213 Prodigy + Roccat Tyon Black"}'>
-												<img src="img/photo-sm-3.jpg" alt="фото_периферии">
+												<img src="img/sm-photo-3.jpg" alt="фото_периферии">
 											</a>
 										</div>
 										<div class="gallery__item">
 											<a href="img/photo-2.jpg" class="panel__link" data-fancybox="mobile-gallery" data-options='{"caption" : "Монитор LG 29UM69G-B Ultrawide 29&#8221 в связке с TV 42&#8221 LG"}'>
-												<img src="img/photo-sm-2.jpg" alt="фото_монитора">
+												<img src="img/sm-photo-2.jpg" alt="фото_монитора">
 											</a>
 										</div>
 									</div>
@@ -1328,17 +1575,28 @@
 							<span class="text-fat">Технологии:</span><p class="questions__text">Верстка макета через:<br>- флексы (CSS Flexible Box)<br>- гриды (CSS Grid Layout)<br>- Bootstrap 4</p>
 						</div>
 						<div class="questions__row">
-							 <span class="text-fat">Опыт:</span><p class="questions__text">Более 8-ми лет работы графическим дизайнером, 2,5 года в веб-разработке.</p>
+							 <span class="text-fat">Опыт:</span><p class="questions__text">Более 8-ми лет работы графическим дизайнером, 3 года в веб-разработке.</p>
 						</div>
 						<div class="questions__row">
 							 <span class="text-fat">Скорость:</span><p class="questions__text">Пропорциональна размеру оплаты</p>
 						</div>
 						<div class="questions__row">
-							 <span class="text-fat">Планы:</span><p class="questions__text">Front-end до уровня Junior Developer/Middle Developer.<br>Углубленное изучение SEO-технологий.</p>
+							 <span class="text-fat">Планы:</span><p class="questions__text">Front-end до уровня Middle/Senior Developer.<br>Углубленное изучение SEO-технологий.</p>
 						</div>
 					</div>
 
 				</div>
+			</section>
+
+			<section class="whyme">
+				<h2 class="feedback__intro">
+					Почему нужно выбрать именно меня?
+				</h2>
+				<ul class="whyme__list">
+					<li class="whyme__item">Отсутствие семьи позволяет полностью сосредоточиться на работе, и не отвлекаться на заботу о детях, уход за пожилыми родственниками и т.д.</li>
+					<li class="whyme__item">Возможность работать в авральном режиме, в любое время, с большой нагрузкой</li>
+					<li class="whyme__item">Вместо работы по устоявшемуся общему шаблону, предпочитаю для каждого нового проекта индивидуальный подход в реализации</li>
+				</ul>
 			</section>
 
 			<!--секция обратной связи-->
@@ -1383,12 +1641,11 @@
 								data-sal-delay="0"
 								data-sal-easing="ease-out-bounce">
 							<h6 class="section__title">
-								Телефоны
+								Телефон
 							</h6>
 							<div class="section__content">
 								<ul class="list">
 									<li class="list__item">+375 29 863 08 92</li>
-									<li class="list__item">+375 25 637 76 98</li>
 								</ul>
 							</div>
 						</div>
@@ -1406,19 +1663,19 @@
 								<div class="social-wrapper">
 									<div class="social__item">
 										<a href="https://wa.me/375298630892" class="social__link">
-											<img src="img/test-wathsup.png" alt="WhatsApp_icon_pic" class="social__icon">
+											<img src="img/wathsup.png" alt="WhatsApp_icon_pic" class="social__icon">
 										</a>
 										<h6 class="social__title">WhatsApp</h6>
 									</div>
 									<div class="social__item">
 										<a href="tg://resolve?domain=@fox-ds" class="social__link">
-											<img src="img/test-telegram.png" alt="Telegram_icon_pic" class="social__icon">
+											<img src="img/telegram.png" alt="Telegram_icon_pic" class="social__icon">
 										</a>
 										<h6 class="social__title">Telegram</h6>
 									</div>
 									<div class="social__item">
 										<a href="viber://chat?number=%2b375298630892" class="social__link">
-											<img src="img/test-viber.png" alt="Viber_icon_pic" class="social__icon">
+											<img src="img/viber.png" alt="Viber_icon_pic" class="social__icon">
 										</a>
 										<h6 class="social__title">Viber</h6>
 									</div>
@@ -1457,7 +1714,7 @@
 
 				<div class="footer__row"></div>
 
-				<address class="footer__tm">© FOX Design 2019 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; разработка дизайна, вёрстка сайта, скрипты: Тышкевич Сергей.</address>	
+				<address class="footer__tm">© FOX Design 2019-2023 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; разработка дизайна, вёрстка сайта, скрипты: Тышкевич Сергей.</address>	
 
 			</footer>
 			<!--меню навигации для мобильных устройств-->
@@ -1473,36 +1730,42 @@
 				</div>
 				<ul class="fab-buttons">
 					<li class="fab-buttons__item">
-						<span class="fab-buttons__link toUp i1" title="Вверх">
+						<span class="fab-buttons__link toUp" title="Вверх">
+							<img src="img/icon-up.png" alt="">
 						</span>
 					</li>
 					<li class="fab-buttons__item">
-						<a href="#skillz" class="fab-buttons__link i2" title="Резюме">
+						<a href="#skillz" class="fab-buttons__link" title="Резюме">
+							<img src="img/icon-resume.png" alt="">
 						</a>
 					</li>
 					<li class="fab-buttons__item">
-						<a href="#portfolio" class="fab-buttons__link i3" title="Портфолио">
+						<a href="#portfolio" class="fab-buttons__link" title="Портфолио">
+							<img src="img/icon-portfolio.png" alt="">
 						</a>
 					</li>
 					<li class="fab-buttons__item">
-						<a href="#about" class="fab-buttons__link i4" title="Инфо">
+						<a href="#about" class="fab-buttons__link" title="Инфо">
+							<img src="img/icon-about.png" alt="">
 						</a>
 					</li>
 					<li class="fab-buttons__item">
-						<a href="#feedback" class="fab-buttons__link i5" title="Связь">
+						<a href="#feedback" class="fab-buttons__link" title="Связь">
+							<img src="img/icon-callback.png" alt="">
 						</a>
 					</li>
 					<li class="fab-buttons__item">
-						<a href="#end" class="fab-buttons__link i6" title="Вниз">
+						<a href="#end" class="fab-buttons__link" title="Вниз">
+							<img src="img/icon-down.png" alt="">
 						</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-		
+
 	</div>
 	<!--скрипты-->
-	<script src="js/libs.min.js"></script>	
+	<script src="js/libs.min.js"></script>
 	<script src="js/my.js"></script>
 	<!--инициализация плагинов анимации при скролле sal.js, aos.js-->
 	<script>
@@ -1524,6 +1787,11 @@
 		    dots: true,
 		    touchDrag: true,
 		});
+
+		$('.moneyZoom').magnify({
+			speed: 200,
+		});
+
 	</script>
 
 </body>
