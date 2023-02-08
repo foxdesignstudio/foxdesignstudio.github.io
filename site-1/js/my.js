@@ -36,23 +36,13 @@ $(document).ready(function(){
 		menuBtn.removeClass('cross');
 		menu.removeClass('menu--active');
 	});
-	//кнопка 'назад'
+	//кнопки 'наверх/вниз' - общий враппер
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 500) {
 			$('.navigation').addClass('active');
 		} else
 			$('.navigation').removeClass('active');
 	});
-	//кнопки прокрутки вверх и вниз
-	$('.return').click(function(){
-		$('html, body').stop().animate({scrollTop: 0}, 1000);
-		return false;
-	});
-	$('.pg_down').click(function(){
-		$('html, body').stop().animate({scrollTop:$(document).height()}, 1000);
-		return false;
-	});
-
 	//переключение эскизов в селекторе
 	$('.tabs a').click(function(){
 		$(this).parents('.tab-wrap').find('.tab-cont').addClass('hide');
@@ -94,11 +84,14 @@ $(document).ready(function(){
 		$(".before-slider__inner").removeClass(['bap-1','bap-2','bap-3']);
 		$(".before-slider__inner").addClass(block_id);
 	});
-
 	//система возврата на главный сайт
 	$('.returnal__button').click(function(){
 		$(this).toggleClass('active');
 		$(".returnal__wrapper").toggleClass('ready');
+	});
+
+	$("before-slider__wrapper").load(function(){
+		$(window).trigger("resize.twentytwenty");
 	});
 
 });
