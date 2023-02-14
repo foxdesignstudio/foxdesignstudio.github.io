@@ -239,23 +239,13 @@
 		top: -68px;
 		left: 0;
 	}
-/*	.top-line {
-		height: 60px;
-		padding: 0;
-	}
-	.logo_wrap {
-		top: -70px;
-		width: 80px;
-	}
-	.logo_wrap img {
-		max-height: 70px
-	}*/
 }
 
 @media only screen and (max-width : 550px) {
 	.banner {
 		left: -110%;
 		bottom: 30px;
+		transition: none;
 	}
 	.banner__wrapper {
 		height: 130px;
@@ -271,6 +261,7 @@
 	}
 	.banner__bg {
 		width: 308px;
+		transition: none;
 	}
 	.banner.showBanner {
 		left: calc(50% - 160px);
